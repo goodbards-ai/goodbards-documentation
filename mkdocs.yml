@@ -1,0 +1,121 @@
+# ------------------------------------------------------
+# Page tree
+# ------------------------------------------------------
+nav:
+  - index.md
+  - 🏁 Getting Started:
+      - Introduction: pages/getting-started/introduction.md
+      - Sign Up & Onboarding: pages/getting-started/signup-onboarding.md
+  -  ℹ️ Features:
+      - Settings: pages/features/settings.md
+      - Marketing Campaigns: pages/features/marketing-campaign.md
+      - Document Management: pages/features/document-management.md
+      - Connectors: pages/features/connectors.md
+      - Agents: pages/features/ai-agents.md
+      - Social Media: pages/features/social-media.md
+  - 🎓 Guides:
+      - Create Your First Campaign: pages/guides/user-guide.md
+      - Using Templates: pages/guides/developer-guide.md
+  - 🔗 API Reference:
+      - Reference: pages/api/api-reference.html
+      
+  - ❓ FAQs: pages/faqs.md
+  - 💬 Contact & Support: pages/contact.md
+  
+# ------------------------------------------------------
+# Settings
+# ------------------------------------------------------
+
+# Project information
+site_name: GoodBards Documentation
+site_url: https://docs.goodbards.ai
+site_author: Cedrick Lunven
+site_description: >-
+ Documentation for Goodbards
+
+# Repository
+repo_name: goodbards-documentation
+repo_url: https://github.com/goodbards-ai/goodbards-documentation
+edit_uri: "GoodBards"
+
+# Theme
+theme:
+ name: material
+ language: en
+
+ favicon: img/favicon.ico
+ logo: img/favicon.ico
+ custom_dir: docs/overrides
+
+ features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+ palette:
+
+    - scheme: default
+      primary: iceberg
+      accent: iceberg
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+ include_search_page: false
+ search_index_only: true
+
+# Markdown Support
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  #- pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date
+  - mkdocs-video
+  - redoc-tag
