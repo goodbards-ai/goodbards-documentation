@@ -17,12 +17,6 @@ python3 -m pip install mkdocs-video
 python3 -m pip install mkdocs-redoc-tag
 ```
 
-Or use this one-liner :) 
-
-```
-python3 -m pip install --upgrade pip && python3 -m pip install mkdocs mkdocs-material https://github.com/bmcorser/fontawesome-markdown/archive/master.zip mkdocs-git-revision-date-plugin
-```
-
 ### 2. Run
 
 ```
