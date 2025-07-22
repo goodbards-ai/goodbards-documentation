@@ -9,11 +9,12 @@ Static site is generated on branch `gh-pages` using a github actions.
 ### 1. Installation
 
 ```bash
-python3 -m pip install --upgrade pip     # install pip
-python3 -m pip install mkdocs            # install mkdocs 
-python3 -m pip install mkdocs-material   # install material theme
-python3 -m pip install mkdocs-git-revision-date-plugin # install git revision date
-python3 -m pip install mkdocs-video # install git revision date
+python3 -m pip install --upgrade pip
+python3 -m pip install mkdocs       
+python3 -m pip install mkdocs-material
+python3 -m pip install mkdocs-git-revision-date-plugin
+python3 -m pip install mkdocs-video
+python3 -m pip install mkdocs-redoc-tag
 ```
 
 Or use this one-liner :) 

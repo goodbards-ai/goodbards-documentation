@@ -33,17 +33,18 @@ jobs:
           
       - name: Install dependencies
         run: |
-          python3 -m pip install --upgrade pip     # install pip
-          python3 -m pip install mkdocs            # install mkdocs
-          python3 -m pip install mkdocs-material   # install material theme
-          python3 -m pip install mkdocs-video      # install video 
+          python3 -m pip install --upgrade pip
+          python3 -m pip install mkdocs 
+          python3 -m pip install mkdocs-material
+          python3 -m pip install mkdocs-video
           python3 -m pip install https://github.com/bmcorser/fontawesome-markdown/archive/master.zip
-          python3 -m pip install mkdocs-git-revision-date-plugin # install git revision date
-          
+          python3 -m pip install mkdocs-git-revision-date-plugin
+          python3 -m pip install mkdocs-redoc-tag
+
       - name: Build site
         run: mkdocs build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
