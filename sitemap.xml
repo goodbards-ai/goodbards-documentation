@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.goodbards.ai/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/index.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/cheat/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/cheat.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/contact/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/contact.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/faqs/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/faqs.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/api/api-reference/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/api/api-reference.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/ai-agents/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/ai-agents.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/connectors/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/connectors.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/document-management/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/document-management.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/marketing-campaign/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/marketing-campaign.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/settings/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/settings.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/features/social-media/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/features/social-media.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/getting-started/introduction/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/getting-started/introduction.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/getting-started/signup-onboarding/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/getting-started/signup-onboarding.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/guides/developer-guide/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/guides/developer-guide.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
     <url>
-         <loc>https://docs.goodbards.ai/pages/guides/user-guide/</loc>
+         <loc>https://goodbards-ai.github.io/goodbards-documentation/pages/guides/user-guide.html</loc>
          <lastmod>2025-07-22</lastmod>
     </url>
 </urlset>
