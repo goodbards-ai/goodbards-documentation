@@ -28,7 +28,7 @@ nav:
 
 # Project information
 site_name: GoodBards Documentation
-site_url: https://docs.goodbards.ai
+site_url: https://goodbards-ai.github.io/goodbards-documentation/
 site_author: Cedrick Lunven
 site_description: >-
  Documentation for Goodbards
@@ -36,7 +36,7 @@ site_description: >-
 # Repository
 repo_name: goodbards-documentation
 repo_url: https://github.com/goodbards-ai/goodbards-documentation
-edit_uri: "GoodBards"
+edit_uri: ""
 
 # Theme
 theme:
@@ -119,3 +119,10 @@ plugins:
   - git-revision-date
   - mkdocs-video
   - redoc-tag
+
+
+extra:
+  version: 1.0
+
+# Required for GitHub Pages under a subpath
+use_directory_urls: false
