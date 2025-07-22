@@ -32,3 +32,9 @@ If you get an `mkdocs not found error`, launch it this way:
 ```
 python3 -m mkdocs serve
 ```
+
+### 3. Build Locally for test purpose
+
+```
+mkdocs build
+```
