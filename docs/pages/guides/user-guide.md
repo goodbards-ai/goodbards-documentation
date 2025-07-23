@@ -1,6 +1,6 @@
 # 🧭 User Guide
 
-Welcome to the **Good Bards User Guide** — your step-by-step path to mastering the platform. Whether you're a new user or need a refresher, this guide walks you through the key features and workflows.
+Welcome to the **Good Bards User Guide** — your step-by-step path to mastering the platform. Whether you're a new user or need a refresher, this guide walks you through the key features.
 
 ---
 
