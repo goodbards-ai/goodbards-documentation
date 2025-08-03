@@ -6,7 +6,7 @@ Welcome to the **Good Bards User Guide** — your step-by-step path to mastering
 
 ## 🏁 Getting Started
 
-Before diving into features, make sure you’ve:
+Before diving into features, make sure you have:
 
 - [Signed up and created your workspace](../getting-started/signup-onboarding.md)
 - [Explored the platform overview](../getting-started/platform-overview.md)
