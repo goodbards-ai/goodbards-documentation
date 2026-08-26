@@ -7,6 +7,11 @@
         flex-grow: 0
     }
 
+    .md-main__inner > .gb-section,
+    .md-content .gb-section {
+        max-width: 61rem;
+    }
+
     .md-main__inner {
         display: flex;
         height: 100%;
@@ -42,64 +47,117 @@
     }
 
     .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: var(--md-primary-bg-color)
+        margin-top: .8rem;
+        margin-right: .6rem;
+        color: var(--md-primary-bg-color);
+        border-width: 2px;
+        font-weight: 700;
     }
 
     .tx-hero .md-button--primary {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
+        color: var(--md-primary-fg-color);
+        border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
         background-color: var(--md-accent-fg-color);
         color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
+        border-color: var(--md-accent-fg-color);
     }
 
-    .feature-item h2 svg {
-        height: 30px;
-        float: left;
-        margin-right: 10px;
-        transform: translateY(10%);
+    .tx-hero__secondary {
+        margin-top: 1.1rem;
+        font-size: .72rem;
+        opacity: .92;
     }
 
-    .top-hr {
-        margin-top: 42px;
+    .tx-hero__secondary a {
+        color: var(--md-primary-bg-color);
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
 
-    .feature-item {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
+    .tx-hero__secondary a:hover {
+        color: var(--md-accent-fg-color);
+    }
+
+    .tx-hero__secondary span {
+        opacity: .55;
+        margin: 0 .45rem;
+    }
+
+    /* ---- Capability grid ---- */
+    .gb-section {
+        max-width: 61rem;
+        width: 100%;
+        margin: 2.6rem auto 3.2rem;
+        padding: 0 1.2rem;
         box-sizing: border-box;
-        padding: 0 15px;
-        word-break: break-word
     }
 
-    .feature-item h2 {
-        color: #333;
-        font-weight: 300;
-        font-size: 25px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        line-height: normal;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-family: inherit;
+    .gb-section__title {
+        font-size: .68rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--md-default-fg-color--light);
+        margin-bottom: 1.1rem;
     }
 
-    .feature-item p {
-        font-size: 16px;
-        line-height: 1.8em;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        color: #111;
-        margin: 0 0 10px;
+    .gb-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: .9rem;
+    }
+
+    .gb-card {
         display: block;
+        padding: 1rem 1.05rem 1.05rem;
+        border: 1px solid var(--md-default-fg-color--lightest);
+        border-radius: .3rem;
+        background: var(--md-default-bg-color);
+        transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    .gb-card:hover {
+        border-color: var(--md-accent-fg-color);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, .09);
+    }
+
+    .gb-card__head {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-bottom: .4rem;
+    }
+
+    .gb-card__head svg {
+        width: 1.15rem;
+        height: 1.15rem;
+        flex: none;
+        stroke: var(--md-primary-fg-color);
+        stroke-width: 1.8;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .gb-card__head h3 {
+        margin: 0;
+        font-size: .82rem;
+        font-weight: 700;
+        color: var(--md-default-fg-color);
+        line-height: 1.3;
+    }
+
+    .gb-card p {
+        margin: 0;
+        font-size: .72rem;
+        line-height: 1.55;
+        color: var(--md-default-fg-color--light);
     }
 
     @media screen and (max-width:30em) {
@@ -153,15 +211,6 @@
             padding: 0 .2rem;
         }
 
-        .feature-item {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .feature-item:hover {
-            background-color: #526cfe47;
-            border-radius: 3px;
-        }
     }
 
     .hr {
@@ -215,45 +264,111 @@
     }
 </style>
 
-<!-- Main site Entry button descriptions -->
+<!-- Hero -->
 <section class="tx-container">
     <div class="md-grid md-typeset">
       <div class="tx-hero">
         <div class="tx-hero__image">
-          <img src="img/campaign-management.png" draggable="false">
+          <img src="img/campaign-management.png" draggable="false" alt="">
         </div>
         <div class="tx-hero__content">
-          <h1>Your AI marketing Team</h1>
-          <p>One Platform, Every Touchpoint, Full Automated</p>
-          <a href="pages/getting-started/introduction.html" title="New to GoodBards? Start here" class="md-button">
-            🏁 Get Started
+          <h1>GoodBards Documentation</h1>
+          <p>Guides for every part of your Marketing OS &mdash; written for marketers,
+             with screenshots of every screen.</p>
+          <a href="pages/getting-started/introduction.html" class="md-button md-button--primary">
+            Get started
           </a>
-          <a href="pages/getting-started/navigating.html" title="A tour of the platform, screen by screen" class="md-button">
-              🧭 Find Your Way Around
-          </a>
+          <div class="tx-hero__secondary">
+            <a href="pages/getting-started/navigating.html">Find your way around</a>
+            <span>&middot;</span>
+            <a href="pages/marketing/emails.html">Send your first email</a>
+            <span>&middot;</span>
+            <a href="pages/faqs.html">FAQs</a>
+          </div>
         </div>
       </div>
     </div>
 </section>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!-- What you can do -->
+<section class="gb-section">
+  <div class="gb-section__title">What you can do</div>
+  <div class="gb-grid">
 
-<!-- Main site box descriptions -->
-<div class="top-hr">
-    <div class="feature-item">
-        <h2><i class="fa fa-briefcase"></i><b>&nbsp;Marketing Campaigns</b></h2>
-        <p>Create your campaigns, tactics, assets, published and track successs</p>
-    </div>
-    <div class="feature-item">
-        <h2><i class="fa fa-thumbs-up"></i><b>&nbsp;Social Media</b></h2>
-        <p>Capture activity, analytics and sentiment analysis for your social media platforms.</p>
-    </div>
-    <div class="feature-item">
-        <h2><i class="fa fa-briefcase"></i><b>&nbsp;Agentic AI</b></h2>
-        <p>Use tailored marketing oriented agent for your day-to-day tasks</p>
-    </div>
-</div>
+    <a class="gb-card" href="pages/marketing/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1Z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M19 6a8 8 0 0 1 0 12"/></svg>
+        <h3>Marketing</h3>
+      </div>
+      <p>Campaigns, emails, forms and events &mdash; from a single post to a full launch.</p>
+    </a>
 
+    <a class="gb-card" href="pages/social-media/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+        <h3>Social Media</h3>
+      </div>
+      <p>Publish to your channels and see how each post actually performed.</p>
+    </a>
+
+    <a class="gb-card" href="pages/agentic-ai/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M9 14h.01M15 14h.01M2 13v2M22 13v2"/></svg>
+        <h3>Agentic AI</h3>
+      </div>
+      <p>Assistants that write, research and generate images, video and audio for you.</p>
+    </a>
+
+    <a class="gb-card" href="pages/audience/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+        <h3>Audience</h3>
+      </div>
+      <p>Contacts, companies and segments &mdash; the people your marketing reaches.</p>
+    </a>
+
+    <a class="gb-card" href="pages/website/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 14 3.5-3.5 3 3L21 6"/></svg>
+        <h3>Website</h3>
+      </div>
+      <p>Analytics, search trends and scraping &mdash; how your site is found and used.</p>
+    </a>
+
+    <a class="gb-card" href="pages/settings/brand-kit.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 1 0 0 20c.9 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16a5 5 0 0 0 5-5c0-4.7-4-9-9-9Z"/></svg>
+        <h3>Brand Kit</h3>
+      </div>
+      <p>Your colours, logos and voice, applied to everything the AI produces.</p>
+    </a>
+
+    <a class="gb-card" href="pages/workspace/calendar.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+        <h3>Calendar &amp; Actions</h3>
+      </div>
+      <p>Everything you have scheduled, and what to work on next.</p>
+    </a>
+
+    <a class="gb-card" href="pages/tool-box/index.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 1 5 5L18 13l-7 7-5-5 7-7 1.7-1.7Z"/><path d="m5 19 2-2"/></svg>
+        <h3>Tool Box</h3>
+      </div>
+      <p>Translation, QR codes, short links, image editing and a website chatbot.</p>
+    </a>
+
+    <a class="gb-card" href="pages/settings/connections.html">
+      <div class="gb-card__head">
+        <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+        <h3>Connections</h3>
+      </div>
+      <p>Link the accounts GoodBards works with &mdash; social, analytics and more.</p>
+    </a>
+
+  </div>
+</section>
 
 {% endblock %}
 {% block content %}{% endblock %}
