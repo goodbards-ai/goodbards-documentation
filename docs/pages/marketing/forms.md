@@ -1,37 +1,61 @@
 # Forms
 
-Collect sign-ups and enquiries, and feed them straight into your audience.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Collect sign-ups, registrations and feedback, and have the responses flow into
+your audience automatically.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+A form is how people tell you something: registering for an event, asking to be
+contacted, or rating an experience. Responses land in GoodBards rather than in a
+spreadsheet, so the people who reply become contacts you can market to.
 
-## Before you start
+Forms are also how you run satisfaction surveys — NPS, CSAT and similar — without
+a separate survey tool.
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+## How to create a form
 
-## How to build a form
+1. In the sidebar, choose **Marketing → Forms**.
+2. Choose **+ Create Form**.
+3. Pick a category, then add the questions you want to ask.
+4. Save it as a **Draft** while you work, and set it to **Open** when it is ready
+   to receive responses.
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+![The Forms screen, listing forms with their category, status, submission and view counts](../../img/screenshots/forms.png)
 
-1. In the sidebar, choose **Forms**.
+## Categories
 
-!!! info "Screenshot needed"
-    `forms.png` — Forms screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+Each form has a category describing what it is for:
+
+| Category | Use it for |
+| --- | --- |
+| **Registration & sign-ups** | Event registration, newsletter sign-ups, expressions of interest. |
+| **Experience metrics** | Satisfaction surveys — NPS, CSAT, CES. |
+| **Others** | Anything that does not fit the two above. |
+
+## Status
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | Still being built. Not accepting responses. |
+| **Open** | Live and accepting responses. |
+
+## Tracking responses
+
+The list shows **Submissions** (how many people completed the form) and **Views**
+(how many opened it) beside each form. A high view count with few submissions
+usually means the form is too long or asks for too much.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **A form must be Open to collect anything.** A form left as a draft will not
+  accept responses, even if you have shared the link.
+- **Ask for as little as possible.** Every extra field costs you completions.
+- **Responses become contacts.** If someone submits a form with an email address
+  you already hold, their existing contact record is updated rather than
+  duplicated.
+- **Tell people what you will do with their data.** Singapore's PDPA and similar
+  rules in other markets expect clear consent at the point of collection.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*

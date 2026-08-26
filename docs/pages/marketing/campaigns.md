@@ -1,37 +1,67 @@
 # Campaigns
 
-Group related tactics under one plan with shared goals and timing.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Group related marketing activity under one plan, with a shared objective and a
+start and end date.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+A campaign is a container for everything you are doing towards one goal — a
+product launch, an event, a seasonal push. Instead of tracking a dozen separate
+posts and emails, you see them together and track whether the goal is being met.
+
+If you only want to publish one post or one email, you do not need a campaign.
+Use [Launch a Tactic](launch-tactic.md) instead.
 
 ## Before you start
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+- Know your **objective** — for example Product Launch, Brand Awareness, or
+  Networking With Industry Professionals. You choose one when you create the
+  campaign.
+- Know roughly when the campaign should start and finish.
 
 ## How to create a campaign
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+1. In the sidebar, choose **Marketing → Campaigns**.
+2. Choose **+ Create New Campaign**.
+3. Give it a name, pick an objective, and set the start and end dates.
+4. Add the tactics that belong to it — the posts, emails and events that work
+   towards the objective.
 
-1. In the sidebar, choose **Campaigns**.
+![The Campaigns screen, showing counts of total, active, pending and completed campaigns above a table of campaigns with objective, status and dates](../../img/screenshots/campaigns.png)
 
-!!! info "Screenshot needed"
-    `campaigns.png` — Campaigns screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+## Reading the campaign list
+
+The four tiles across the top summarise where things stand: **Total**,
+**Active**, **Pending** and **Completed Campaigns**.
+
+Each row in the table shows the campaign's objective, its status, and the dates
+it runs between. Sort by any column using the arrows beside the heading.
+
+| Status | What it means |
+| --- | --- |
+| **Pending** | Created, but not started yet. |
+| **Active** | Currently running. |
+| **Completed** | Finished. |
+
+## Starting and stopping
+
+The **Start / Stop** column controls whether a campaign is running:
+
+- **▶ Start** begins a pending campaign.
+- **⏸ Pause** stops an active one.
+
+Pausing does not delete anything — it stops further activity until you start it
+again.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **A campaign is a plan, not a channel.** Publishing still happens through the
+  individual tactics inside it.
+- **Name campaigns so you can find them later.** Something like
+  `Q4-2026-Product-Launch` is easier to search than `New campaign`.
+- **End dates are not deadlines.** A campaign past its end date stays visible in
+  the list; the date describes the plan, it does not stop work by itself.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
