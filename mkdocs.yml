@@ -29,7 +29,6 @@ nav:
       - Image Generation: pages/agentic-ai/image-generation.md
       - Video Generation: pages/agentic-ai/video-generation.md
       - Text to Speech: pages/agentic-ai/text-to-speech.md
-      - Agent Parameters: pages/agentic-ai/agent-parameters.md
   - Audience:
       - pages/audience/index.md
       - Contacts: pages/audience/contacts.md

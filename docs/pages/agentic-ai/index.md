@@ -14,7 +14,6 @@ images and audio.
 - **[Image Generation](image-generation.md)** — create images from a description.
 - **[Video Generation](video-generation.md)** — create short video clips.
 - **[Text to Speech](text-to-speech.md)** — turn written copy into spoken audio.
-- **[Agent Parameters](agent-parameters.md)** — tune how your agents behave.
 
 ## Good to know
 
