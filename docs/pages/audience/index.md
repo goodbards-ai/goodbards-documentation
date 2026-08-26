@@ -1,10 +1,18 @@
 # Audience
 
-Everyone you market to: contacts, the companies they work for, and partners.
-
-!!! note "This page is a work in progress"
-    The section overview has not been written yet.
+Everyone you market to — the people, the organisations they work for, and the
+partners you work alongside.
 
 ## In this section
 
-<!-- TODO: one line per child page, saying when a reader would want it. -->
+- **[Contacts](contacts.md)** — the people you market to. Adding them, keeping
+  them current, and grouping them into segments.
+- **[Companies](companies.md)** — the organisations your contacts belong to.
+- **[Partners](partners.md)** — partner organisations you work with.
+
+## Why this comes first
+
+Almost everything else depends on your audience. Emails need recipients, forms
+create contacts, and reporting is only as good as the data behind it. If you are
+setting up GoodBards for the first time, get contacts in before building
+campaigns.
