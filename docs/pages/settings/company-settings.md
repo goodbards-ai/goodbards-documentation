@@ -1,37 +1,60 @@
-# Company Settings
+# Brand & Context
 
-Your company details, as they appear across the platform.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Everything GoodBards knows about your business — and what the AI is allowed to
+use when it writes for you.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+When an agent drafts an email or a social post, it needs to know who you are:
+what the company does, how it talks, who it competes with. This is where you tell
+it once, so you are not re-explaining your business in every prompt.
 
-## Before you start
+Get this right and everything the AI produces improves. Leave it empty and you
+get generic copy.
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+## The five tabs
 
-## How to update company details
+| Tab | What it holds |
+| --- | --- |
+| **General Information** | Company name, tagline, website and other basics. |
+| **Brand Kit** | Colours, fonts and logos. See [Brand Kit](brand-kit.md). |
+| **Voices Bank** | How your brand sounds, so the AI writes in your voice. |
+| **Marketing Campaigns** | Context about the campaigns you run. |
+| **Competitors** | Who you compete with. |
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+## How to fill in your company details
 
-1. In the sidebar, choose **Company Settings**.
+1. In the sidebar, choose **Settings → Brand & Context**.
+2. On **General Information**, fill in each field. Grey example text under each
+   one shows the kind of answer expected.
+3. Changes save as you go.
 
-!!! info "Screenshot needed"
-    `company-settings.png` — Company Settings screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+![The Brand & Context screen on the General Information tab, showing company name, tagline and website fields with Visible to AI badges](../../img/screenshots/brand-context.png)
+
+## Controlling what the AI can see
+
+Every field carries a badge showing whether the AI can use it:
+
+- **Visible to AI** — the agent may use this when writing.
+- **Hide From AI** — choose this to keep a field out of AI-generated content.
+
+Most details are safe and useful to share. Hide anything commercially sensitive
+that you would not want appearing in a draft.
+
+!!! tip "Populate With AI"
+    **Populate With AI**, at the top right, fills these fields in by reading your
+    website. It is a fast way to start — but read what it produces before
+    accepting it, since everything the AI writes later builds on it.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Do this before generating content.** Agents use whatever is here at the time
+  they write. Filling it in afterwards does not improve drafts already produced.
+- **Be specific.** "We help companies grow" tells the AI nothing. What you sell,
+  to whom, and what makes you different is what gets used.
+- **Revisit it.** When your positioning changes, update this — otherwise the AI
+  keeps writing last year's message.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*

@@ -57,7 +57,7 @@ nav:
   - Settings:
       - pages/settings/index.md
       - Personal Settings: pages/settings/personal-settings.md
-      - Company Settings: pages/settings/company-settings.md
+      - Brand & Context: pages/settings/company-settings.md
       - Brand Kit: pages/settings/brand-kit.md
       - Connections: pages/settings/connections.md
       - AI Settings: pages/settings/ai-settings.md
