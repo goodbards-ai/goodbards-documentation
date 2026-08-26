@@ -43,7 +43,11 @@ jobs:
       - name: Build site
         run: mkdocs build
       - name: Deploy
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          # Without this the deploy wipes gh-pages, removing the CNAME and
+          # dropping the custom domain until someone re-adds it by hand.
+          cname: docs.goodbards.ai

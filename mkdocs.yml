@@ -1,34 +1,79 @@
 # ------------------------------------------------------
 # Page tree
 # ------------------------------------------------------
+# Mirrors the in-app sidebar (frontend-v2 src/data/nav.ts MAIN_NAV_LINKS) so that
+# what a user sees in the product maps 1:1 onto where they look in the docs.
 nav:
-  - index.md
-  - 🏁 Getting Started:
-      - Introduction: pages/getting-started/introduction.md
+  - Home: index.md
+  - Getting Started:
+      - Welcome to GoodBards: pages/getting-started/introduction.md
       - Sign Up & Onboarding: pages/getting-started/signup-onboarding.md
-  -  ℹ️ Features:
-      - Settings: pages/features/settings.md
-      - Marketing Campaigns: pages/features/marketing-campaign.md
-      - Document Management: pages/features/document-management.md
-      - Connectors: pages/features/connectors.md
-      - Agents: pages/features/ai-agents.md
-      - Social Media: pages/features/social-media.md
-  - 🎓 Guides:
-      - Create Your First Campaign: pages/guides/user-guide.md
-      - Using Templates: pages/guides/developer-guide.md
-  - 🔗 API Reference:
-      - Reference: pages/api/api-reference.html
-      
-  - ❓ FAQs: pages/faqs.md
-  - 💬 Contact & Support: pages/contact.md
-  
+      - Finding Your Way Around: pages/getting-started/navigating.md
+  - Marketing:
+      - pages/marketing/index.md
+      - Launch a Tactic: pages/marketing/launch-tactic.md
+      - Campaigns: pages/marketing/campaigns.md
+      - Emails: pages/marketing/emails.md
+      - Forms: pages/marketing/forms.md
+      - Event Management: pages/marketing/event-management.md
+      - Digital Ads: pages/marketing/digital-ads.md
+  - Social Media:
+      - pages/social-media/index.md
+      - Analysis: pages/social-media/analysis.md
+      - Social Post: pages/social-media/social-post.md
+  - Agentic AI:
+      - pages/agentic-ai/index.md
+      - Chat Agents: pages/agentic-ai/chat-agents.md
+      - Workflow Agents: pages/agentic-ai/workflow-agents.md
+      - Research Assistant: pages/agentic-ai/research-assistant.md
+      - Image Generation: pages/agentic-ai/image-generation.md
+      - Video Generation: pages/agentic-ai/video-generation.md
+      - Text to Speech: pages/agentic-ai/text-to-speech.md
+      - Agent Parameters: pages/agentic-ai/agent-parameters.md
+  - Audience:
+      - pages/audience/index.md
+      - Contacts: pages/audience/contacts.md
+      - Companies: pages/audience/companies.md
+      - Partners: pages/audience/partners.md
+  - Website:
+      - pages/website/index.md
+      - Google Analytics: pages/website/google-analytics.md
+      - Google Trends: pages/website/google-trends.md
+      - Web Scraping: pages/website/web-scraping.md
+      - Search Console: pages/website/search-console.md
+      - Setting a Default Site: pages/website/gsc-default-site.md
+      - Search Optimisation: pages/website/search-optimisation.md
+  - Workspace:
+      - Actions: pages/workspace/actions.md
+      - Drive: pages/workspace/drive.md
+      - Calendar: pages/workspace/calendar.md
+  - Tool Box:
+      - pages/tool-box/index.md
+      - Translator: pages/tool-box/translator.md
+      - External Chatbot: pages/tool-box/external-chatbot.md
+      - QR Code Generator: pages/tool-box/qr-code-gen.md
+      - URL Shortener: pages/tool-box/url-shortener.md
+      - Image Editor: pages/tool-box/image-editor.md
+  - Settings:
+      - pages/settings/index.md
+      - Personal Settings: pages/settings/personal-settings.md
+      - Company Settings: pages/settings/company-settings.md
+      - Brand Kit: pages/settings/brand-kit.md
+      - Connections: pages/settings/connections.md
+      - AI Settings: pages/settings/ai-settings.md
+      - Users & Access: pages/settings/users-access.md
+      - Usage & Billing: pages/settings/tenant-usage.md
+  - Help:
+      - FAQs: pages/faqs.md
+      - Contact & Support: pages/contact.md
+
 # ------------------------------------------------------
 # Settings
 # ------------------------------------------------------
 
 # Project information
 site_name: GoodBards Documentation
-site_url: https://goodbards-ai.github.io/goodbards-documentation/
+site_url: https://docs.goodbards.ai/
 site_author: Cedrick Lunven
 site_description: >-
  Documentation for Goodbards
@@ -94,8 +139,8 @@ markdown_extensions:
   #- pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite

@@ -1,2 +1,0 @@
-
-<redoc src="openapi.yaml"/>

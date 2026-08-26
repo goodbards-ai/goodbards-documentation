@@ -18,9 +18,9 @@ You can reach out to our team through any of the following channels:
 
 Before reaching out, you might find the answer in our:
 - [FAQs](faqs.md)
-- [Troubleshooting Guide](troubleshooting.md)
-- [User Guide](guides/user-guide.md)
-- [Developer Guide](guides/developer-guide.md)
+- [Getting Started](getting-started/introduction.md)
+- [Finding Your Way Around](getting-started/navigating.md)
+- [FAQs](faqs.md)
 
 ---
 
