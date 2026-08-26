@@ -61,7 +61,7 @@ nav:
       - Brand Kit: pages/settings/brand-kit.md
       - Connections: pages/settings/connections.md
       - AI Settings: pages/settings/ai-settings.md
-      - Users & Access: pages/settings/users-access.md
+      - Sub-Workspaces (Sub Tenants): pages/settings/users-access.md
       - Usage & Billing: pages/settings/tenant-usage.md
   - Help:
       - FAQs: pages/faqs.md

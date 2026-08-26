@@ -1,37 +1,73 @@
-# Users & Access
+# Sub-Workspaces
 
-Invite colleagues and control what each of them can do.
+Run separate workspaces underneath your own — one per client, brand or business
+unit.
 
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+!!! note "The app calls these sub tenants"
+    You will see the word **tenant** on this screen. A *tenant* is simply a
+    workspace — a self-contained account with its own data. This page uses
+    "workspace", but the buttons say "tenant".
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+An agency running marketing for several clients does not want all that work in
+one pile. A sub-workspace is a self-contained space with its own contacts,
+campaigns and content, sitting under your main account.
 
-## Before you start
+Each has its own plan tier and its own credit allowance, so one client's heavy
+month does not consume another's.
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+If you run marketing for a single business, you will not need this.
 
-## How to invite a user
+## How to create a sub-workspace
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+1. In the sidebar, choose **Settings → Tenant Settings**.
+2. Open the **Sub Tenants** tab.
+3. Choose **Create Sub Tenant**.
+4. Give it a name and set its tier.
 
-1. In the sidebar, choose **Users & Access**.
+## Reading the list
 
-!!! info "Screenshot needed"
-    `users-access.png` — Users & Access screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+Each row shows:
+
+| Column | What it tells you |
+| --- | --- |
+| **Name** | The sub-workspace. Choose it to open. |
+| **Tier** | Its plan — for example **Pro**. |
+| **Users** | Who has access. |
+| **Credit Usage** | Consumption against that workspace's own allowance. |
+
+The bar at the top right shows how many sub-workspaces you have against your
+limit — for example *1 / 5 tenants*.
+
+## Switching between workspaces
+
+Use the workspace name at the top of the screen. Anything you then do — creating
+a campaign, adding contacts — happens inside the workspace you have selected.
+
+!!! warning "Check which workspace you are in"
+    The name at the top is the only thing distinguishing one from another.
+    Before sending an email or publishing a post, confirm you are in the right
+    workspace — content sent from the wrong one goes to the wrong audience.
+
+## The other tabs
+
+| Tab | What it holds |
+| --- | --- |
+| **Preferences** | Workspace-wide preferences. |
+| **Security** | Security settings for the workspace. |
+| **Scheduled Tasks** | Recurring jobs that run automatically. |
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Data does not leak between workspaces.** Contacts and campaigns in one are
+  invisible to another. This is deliberate — it is what makes the separation
+  safe for client work.
+- **Each has its own credits.** Check usage per workspace rather than assuming a
+  shared pool.
+- **Your limit depends on your plan.** The counter at the top right shows how many
+  more you may create.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
