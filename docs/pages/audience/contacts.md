@@ -1,37 +1,89 @@
 # Contacts
 
-Add, import and segment the people you market to.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+The people you market to — how to add them, keep their details current, and group
+them into segments.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+Every email you send and every form someone fills in comes back to a contact.
+Contacts are the centre of the platform: get them right and the rest of your
+marketing has something to work with.
 
-## Before you start
+## Adding contacts
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+There is more than one way, depending on how many you have:
 
-## How to add and segment contacts
+| Method | Use it when |
+| --- | --- |
+| **Add one at a time** | You met someone and want them in straight away. |
+| **Import** | You have a list to bring across. Progress shows under **Import Jobs**. |
+| **Card Scanner** | You came back from an event with a stack of business cards. Scan them and the details are read for you. |
+| **Forms** | Someone signs up themselves. See [Forms](../marketing/forms.md). |
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+## Reading the Contacts home
 
-1. In the sidebar, choose **Contacts**.
+**Audience → Contacts** opens on the **Home** tab, which summarises your database
+rather than listing individuals.
 
-!!! info "Screenshot needed"
-    `contacts.png` — Contacts screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+![The Contacts home tab, showing total contacts against the plan limit, subscribed and unsubscribed counts, and a score progression chart](../../img/screenshots/contacts.png)
+
+The tiles across the top tell you:
+
+- **Total Contacts** — how many you hold, and how many your plan allows. The bar
+  fills as you approach the limit.
+- **Subscribed** — contacts who have agreed to hear from you.
+- **Others (unsubscribed, do not contact)** — people you must not email.
+
+!!! warning "Subscribed is the number that matters"
+    A large database is not much use if most of it has unsubscribed. Only
+    **Subscribed** contacts can receive marketing email.
+
+**Score Progression** below tracks engagement over time, and **Contact Readiness**
+shows how complete and usable your data is.
+
+## Finding individual contacts
+
+Use the **Details List** tab to see and search individual contact records.
+
+## Segments
+
+A **segment** is a saved filter — a rule that decides who belongs, evaluated when
+you use it, so it stays current as contacts change.
+
+![The Segments tab, listing saved segments such as Contacts from Singapore and CRM Decision Makers in Top GDP Countries](../../img/screenshots/segments.png)
+
+To create one, open the **Segments** tab and choose **+ Add Segment**, then set
+the rule — location, job title, behaviour, or any custom field you have added.
+
+Useful segments look like:
+
+- *Contacts from Singapore* — everyone in one market
+- *CRM Decision Makers in Top GDP Countries* — job title plus location
+- *Contacts from 3 Largest SEA Countries* — a regional group
+
+!!! tip "Segments beat one-off filters"
+    If you find yourself applying the same filter repeatedly, save it as a
+    segment. Give it a description too — in six months you will not remember
+    what the rule was.
+
+## Other tabs
+
+| Tab | What it holds |
+| --- | --- |
+| **Mailing Lists** | Fixed lists of contacts, as opposed to rule-based segments. |
+| **Custom Fields** | Extra fields you add to hold what matters to your business. |
+| **Custom Lists** | Your own groupings. |
+| **Import Jobs** | The status of imports, including any rows that failed. |
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Segments update themselves; mailing lists do not.** A segment re-evaluates its
+  rule each time; a mailing list stays as you built it.
+- **Watch your plan limit.** The Total Contacts bar shows how close you are.
+- **Respect unsubscribes.** Under Singapore's PDPA and equivalent rules elsewhere,
+  contacts who opt out must not receive marketing email. GoodBards excludes them,
+  but do not work around it by re-importing them.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
