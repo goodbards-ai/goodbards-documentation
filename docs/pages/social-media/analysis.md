@@ -1,37 +1,81 @@
 # Analysis
 
-Review how your social content is performing across channels.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+See how your social content performed — reach, engagement, and how people
+reacted to it.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+Posting is only half the job. This is where you find out whether anyone saw a
+post, whether they engaged with it, and whether the reaction was positive.
+
+Use it to decide what to do more of. A post with high impressions but almost no
+clicks tells you something different from one with few impressions and strong
+engagement.
 
 ## Before you start
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+Your social account must be connected — see
+[Connections](../settings/connections.md).
+
+!!! warning "LinkedIn organisation pages only"
+    Report generation and analysis currently support **LinkedIn organisation
+    pages**. Personal LinkedIn accounts are not supported, and the other channel
+    tabs may have no report available yet.
 
 ## How to review social performance
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+1. In the sidebar, choose **Social Media → Analysis**.
+2. Pick a channel from the tabs across the top.
+3. Choose which organisation page to report on.
+4. Use the arrows beside the date to move between reporting days.
 
-1. In the sidebar, choose **Analysis**.
+![The Social Media Analysis screen, showing impressions, engagement rate, likes, comments, shares and clicks beside a content sentiment breakdown](../../img/screenshots/social-analysis.png)
 
-!!! info "Screenshot needed"
-    `analysis.png` — Analysis screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+Choose **Change** beside the organisation name to switch to a different page.
+
+## What the numbers mean
+
+| Metric | What it counts | What to read into it |
+| --- | --- | --- |
+| **Impressions** | How many times your content was shown. | Reach. Low impressions mean a distribution problem, not a content problem. |
+| **Engagement Rate** | The share of people who interacted. | The single most useful number here — it is reach-independent. |
+| **Likes** | Straightforward approval. | Easy to earn, weak signal. |
+| **Comments** | People who wrote something. | Far stronger than a like: it costs effort. |
+| **Shares** | People who passed it on. | The strongest signal of all. |
+| **Clicks** | People who followed your link. | The one that matters when the post has a destination. |
+
+Judge posts on **engagement rate** rather than raw likes. A post seen by 500
+people with 50 interactions is doing better than one seen by 30,000 with 100.
+
+## Content Sentiment Analysis
+
+Beside the metrics, sentiment splits engagement into **Positive**, **Neutral** and
+**Negative**.
+
+This is worth watching over time rather than per post. A shift towards negative
+sentiment is worth investigating early — it is easier to address a small
+complaint than a pattern.
+
+## Top Posts Performance
+
+Below the summary, your best-performing content is listed with its engagement
+figures. This is the fastest route to understanding what your audience responds
+to: look for what the top posts have in common — format, topic, tone, time of day.
+
+## History
+
+**History**, at the top right, holds previous reports so you can compare periods
+rather than judging a single day in isolation.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **One day is not a trend.** Social performance is noisy. Compare across several
+  reports before changing your approach.
+- **Impressions depend on the platform.** Reach is decided by each network's
+  algorithm, so a drop is not necessarily about your content.
+- **Match the metric to the goal.** For awareness, watch impressions; for traffic,
+  watch clicks; for community, watch comments and shares.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
