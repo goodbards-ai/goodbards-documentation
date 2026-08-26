@@ -1,37 +1,74 @@
 # Companies
 
-Track the organisations your contacts belong to.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+The organisations your contacts work for — and how complete your picture of them
+is.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+In B2B marketing the company matters as much as the person. Several contacts may
+work at the same organisation, and a decision usually involves more than one of
+them.
 
-## Before you start
+Companies group your contacts by the organisation they belong to, so you can see
+account-level activity rather than isolated individuals.
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+## Reading the Companies home
 
-## How to add a company
+**Audience → Companies** opens on **Home**, which summarises your data rather
+than listing organisations.
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+![The Companies home tab, showing total companies, contacts without a main contact, and company readiness charts](../../img/screenshots/companies.png)
 
-1. In the sidebar, choose **Companies**.
+| Tile | What it tells you |
+| --- | --- |
+| **Total Companies** | How many organisations you hold. |
+| **No Main Contact** | Companies with nobody nominated as the primary contact. |
+| **Linked Contacts** | Contacts successfully attached to a company. |
 
-!!! info "Screenshot needed"
-    `companies.png` — Companies screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+!!! warning "No Main Contact is the number to fix"
+    A company with no main contact means you have the organisation but no named
+    person to approach. If this figure is close to your total, your account data
+    is not yet usable for outreach.
+
+## Company Readiness
+
+The charts below score how complete your data is:
+
+- **Company Database Count** — how it has grown.
+- **Database Growth** — the rate of growth.
+- **Field Completeness** — the percentage of fields filled in. Low completeness
+  limits how well you can segment.
+- **Distribution by Industry** — which sectors you hold. Companies with no
+  industry set show as *Unknown*.
+- **Distribution by Company Size** — the spread from small to large.
+
+The letter badge beside **Company Readiness** grades your data overall. Treat a
+low grade as a prompt to fill in missing fields rather than a problem with the
+platform.
+
+## Adding companies
+
+Add them directly, or let them arrive with your contacts — importing contacts
+that include a company name creates the organisations for you.
+
+## Other tabs
+
+| Tab | What it holds |
+| --- | --- |
+| **Details List** | Individual company records. |
+| **Segments** | Saved filters over companies. |
+| **Custom Fields** | Extra fields you add. |
+| **Custom Lists** | Your own groupings. |
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Unknown industry limits targeting.** You cannot segment by a field you have
+  not filled in.
+- **Link contacts to companies.** An unlinked contact cannot be counted towards
+  the account they work for.
+- **Nominate a main contact.** It is who the platform treats as your route into
+  that organisation.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
