@@ -1,0 +1,56 @@
+/* GoodBards brand palette, taken from goodbards.com
+   navy  #1D3869 — primary surfaces and headings
+   teal  #177E89 — accent, links and interactive state
+   pale  #F0F6F7 — light section backgrounds */
+
+:root {
+  --gb-navy: #1D3869;
+  --gb-navy-dark: #16294d;
+  --gb-teal: #177E89;
+  --gb-teal-light: #1f9aa7;
+  --gb-pale: #F0F6F7;
+}
+
+/* Light scheme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--gb-navy);
+  --md-primary-fg-color--light: #2c4d86;
+  --md-primary-fg-color--dark: var(--gb-navy-dark);
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: var(--gb-teal);
+  --md-typeset-a-color: var(--gb-teal);
+}
+
+/* Dark scheme — lift the teal so it stays legible on dark surfaces */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--gb-navy);
+  --md-primary-fg-color--dark: var(--gb-navy-dark);
+  --md-accent-fg-color: var(--gb-teal-light);
+  --md-typeset-a-color: #4fc3cf;
+}
+
+/* Admonitions in brand colours rather than the theme defaults */
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip {
+  border-color: var(--gb-teal);
+}
+
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title {
+  background-color: rgba(23, 126, 137, .1);
+}
+
+/* Section tabs across the top */
+.md-tabs {
+  background-color: var(--gb-navy-dark);
+}
+
+/* Tables: brand-tinted header row, used heavily across these docs */
+.md-typeset table:not([class]) th {
+  background-color: var(--gb-navy);
+  color: #fff;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tr:hover {
+  background-color: var(--gb-pale);
+}

@@ -6,6 +6,7 @@
 nav:
   - Home: index.md
   - Getting Started:
+      - What is GoodBards?: pages/getting-started/what-is-goodbards.md
       - Welcome to GoodBards: pages/getting-started/introduction.md
       - Sign Up & Onboarding: pages/getting-started/signup-onboarding.md
       - Finding Your Way Around: pages/getting-started/navigating.md
@@ -101,15 +102,15 @@ theme:
  palette:
 
     - scheme: default
-      primary: iceberg
-      accent: iceberg
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
 
     - scheme: slate
-      primary: black
-      accent: black
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -160,6 +161,9 @@ plugins:
   - mkdocs-video
   - redoc-tag
 
+
+extra_css:
+  - stylesheets/brand.css
 
 extra:
   version: 1.0
