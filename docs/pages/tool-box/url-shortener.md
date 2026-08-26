@@ -1,37 +1,47 @@
 # URL Shortener
 
-Shorten links and see how often they are clicked.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Turn long links into short ones, and see how often each is clicked.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
-
-## Before you start
-
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+Two reasons to shorten a link. It looks tidier in a social post, an SMS or on
+print. More usefully, a shortened link is a **tracked** link — you can see how
+many people clicked, which tells you whether a channel is working.
 
 ## How to shorten a link
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+1. In the sidebar, choose **Tool Box → URL Shortener**.
+2. Choose **+ New Link**.
+3. Paste the destination URL and save.
+4. Copy the short link and use it wherever you need.
 
-1. In the sidebar, choose **URL Shortener**.
+![The URL Shortener with no links yet, offering New Link](../../img/screenshots/url-shortener.png)
 
-!!! info "Screenshot needed"
-    `url-shortener.png` — URL Shortener screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+Before you create your first link, the list is empty — as above. Every link you
+create appears here with its click count.
+
+## Finding a link later
+
+Use **Search links…** to find one by name or destination, and **View** to change
+which columns are shown.
+
+## Where shortened links are used
+
+Beyond links you create by hand, the shortener is used elsewhere in the platform:
+
+- The [QR Code Generator](qr-code-gen.md) uses it when you enable **Track URL**.
+- Links in emails can be tracked the same way, which is what click reporting is
+  built on.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Shortened links are permanent-ish.** Once printed or posted, you cannot take
+  them back — so do not delete a link that is still in circulation.
+- **Name links so you recognise them.** `Q4 flyer — Orchard Road` beats a row of
+  identical-looking codes.
+- **One link per placement.** Using a separate link for the flyer and the poster
+  tells you which one worked. Reusing one link for both tells you nothing.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
