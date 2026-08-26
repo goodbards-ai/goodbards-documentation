@@ -1,47 +1,45 @@
-# 💬 Contact & Support
+# Contact & Support
 
-Need help, have questions, or want to give feedback? We're here to help!
+## Before you get in touch
 
----
+Many questions are already answered here:
 
-## 📮 Contact Us
+- **[FAQs](faqs.md)** — the questions we are asked most often.
+- **[What is GoodBards?](getting-started/what-is-goodbards.md)** — how the
+  platform fits together.
+- **[Finding Your Way Around](getting-started/navigating.md)** — where each
+  feature lives.
 
-You can reach out to our team through any of the following channels:
+If a screen looks different from the documentation, the product may have moved on
+ahead of these pages — tell us and we will update them.
 
-- **Email**: [support@goodbards.com](mailto:support@goodbards.com)  
-- **Live Chat**: Available on the bottom-right of the web app  
-- **Slack** (for enterprise clients): Request an invite via email
+## How to reach us
 
----
+| | |
+| --- | --- |
+| **Email** | [support@goodbards.com](mailto:support@goodbards.com) |
+| **Live chat** | Bottom right of the app |
+| **Billing** | [billing@goodbards.com](mailto:billing@goodbards.com) |
 
-## 📘 Documentation
+## What to include
 
-Before reaching out, you might find the answer in our:
-- [FAQs](faqs.md)
-- [Getting Started](getting-started/introduction.md)
-- [Finding Your Way Around](getting-started/navigating.md)
-- [FAQs](faqs.md)
+The more of this you can give us, the faster we can help:
 
----
+- What you were trying to do, and what happened instead.
+- The page you were on — the address from your browser is ideal.
+- Your workspace name, shown at the top of the app.
+- A screenshot, if something looks wrong on screen.
 
-## 📅 Schedule a Call
+!!! warning "Never send us your password"
+    GoodBards support will never ask for your password. If you receive a message
+    claiming to be from us and asking for it, do not reply — forward it to
+    [support@goodbards.com](mailto:support@goodbards.com).
 
-Need onboarding or want a personalized demo?
+## Billing and subscriptions
 
-📆 Book a time: [https://calendly.com/goodbards/support](https://calendly.com/goodbards/support)
+For invoices, refunds and plan changes, email
+[billing@goodbards.com](mailto:billing@goodbards.com) from the address your
+account is registered to, and include your workspace name.
 
----
-
-## 🛠️ Support Hours
-
-Our team is available Monday to Friday, from **9 AM to 6 PM CET**.  
-We aim to respond to all support requests within **1 business day**.
-
----
-
-## 🧾 Billing & Account Issues
-
-For billing inquiries, refunds, or subscription questions, email:  
-**billing@goodbards.com**
-
-Please inclu
+To check what your team has used against your plan, see
+[Usage & Billing](settings/tenant-usage.md).

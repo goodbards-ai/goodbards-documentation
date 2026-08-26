@@ -1,51 +1,57 @@
-# 👋 Welcome to Good Bards
+# Welcome to GoodBards
 
-> *Your AI-powered marketing assistant for beautiful, efficient, and collaborative content creation.*
+GoodBards is an **Agentic AI Marketing OS** — one platform where you plan, create
+and publish your marketing, with AI that knows your brand.
 
----
+This documentation covers every part of it, written for the people using the
+product rather than the people building it. Each page tells you what a feature is
+for, how to do the common task, and what to watch out for.
 
-## 🚀 What is Good Bards?
+## New here? Start with these
 
-**Good Bards** is a SaaS platform that empowers marketing teams to:
-- Create and manage marketing assets with AI assistance
-- Collaborate across teams and organizations
-- Publish content across multiple channels
-- Track performance with built-in analytics
+<div class="grid cards" markdown>
 
-Whether you're running campaigns, crafting copy, or managing brand assets — Good Bards helps streamline your workflow.
+-   **[What is GoodBards?](what-is-goodbards.md)**
 
----
+    The platform explained — what makes it different, and how the parts fit
+    together.
 
-## ✨ Key Features
+-   **[Sign Up & Onboarding](signup-onboarding.md)**
 
-=== "Smart Content Creation"
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+    Create your account and set up the four things worth doing first.
 
-=== "Asset Management"
-    Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+-   **[Finding Your Way Around](navigating.md)**
 
-=== "Cross-Channel Publishing"
-    Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+    A tour of the sidebar, so you know where everything lives.
 
----
+-   **[Send your first email](../marketing/emails.md)**
 
-## 📚 Who is this for?
+    The quickest way to see the platform work end to end.
 
-- **Marketers** who want speed and scale without losing creativity.
-- **Designers** looking to manage visual assets and templates.
-- **Managers** tracking asset usage and campaign impact.
-- **Developers** integrating via API.
+</div>
 
----
+## What you can do with it
 
-## 🧭 What’s Next?
+| Area | What it covers |
+| --- | --- |
+| **[Marketing](../marketing/index.md)** | Campaigns, emails, forms, events and single-channel tactics. |
+| **[Social Media](../social-media/index.md)** | Publishing to your channels, and how those posts performed. |
+| **[Agentic AI](../agentic-ai/index.md)** | Assistants that write, research and generate images, video and audio. |
+| **[Audience](../audience/index.md)** | Contacts, companies and segments. |
+| **[Website](../website/index.md)** | Analytics, search trends and web scraping. |
+| **[Tool Box](../tool-box/index.md)** | Translation, QR codes, short links, image editing, website chatbot. |
+| **[Settings](../settings/index.md)** | Your brand, your connected accounts, your plan usage. |
 
-Continue to the [Sign Up & Onboarding](signup-onboarding.md) guide to create your account and get started.
+## How these pages are written
 
----
+Every feature page follows the same shape, so you can skim to the part you need:
 
-## 🧪 Demo Video
+- **What it's for** — the problem it solves, in plain language.
+- **Before you start** — anything you need in place first.
+- **How to…** — numbered steps that match the screen.
+- **Good to know** — limits, and the mistakes people actually make.
 
-!!! tip "Want a quick overview?"
-    Watch our 2-minute demo to see Good Bards in action!  
-    👉 *Coming soon...*
+## Something missing or wrong?
+
+The product changes often, and these pages are maintained by hand. If a screen
+does not match what you see here, [tell us](../contact.md) — it helps.
