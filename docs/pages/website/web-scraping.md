@@ -1,37 +1,56 @@
 # Web Scraping
 
-Pull content from a web page so the platform can work with it.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Pull the content of a web page into GoodBards so you can work with it.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+Sometimes the information you need is on a page rather than in a file — a
+competitor's pricing, a partner's announcement, an article you want summarised.
+Scraping extracts the text so an agent can read it or you can store it.
 
-## Before you start
+Three ways to gather content, on the tabs across the top:
 
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+| Tab | What it does |
+| --- | --- |
+| **Scrape** | One page, once. |
+| **Crawl** | Follows links to gather several pages. |
+| **Feed Scan** | Watches an RSS feed for new items. |
 
 ## How to scrape a page
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
+1. In the sidebar, choose **Website → Web Scraping**.
+2. On the **Scrape** tab, paste the address into **URL**.
+3. Adjust the options if you need to.
+4. Run the scrape. The text appears under **Result**.
 
-1. In the sidebar, choose **Web Scraping**.
+![The Web Scraping screen on the Scrape tab, with a URL field, timeout and extraction options beside a result panel](../../img/screenshots/web-scraping.png)
 
-!!! info "Screenshot needed"
-    `web-scraping.png` — Web Scraping screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+## The options
+
+| Option | What it does | When to change it |
+| --- | --- | --- |
+| **Timeout (ms)** | How long to wait before giving up. Defaults to 30,000 (30 seconds). | Raise it for slow sites. |
+| **Save to Drive** | Stores the result as a file. | When you want to keep it rather than read it once. |
+| **Include links** | Captures outbound links as well as text. | On by default; useful for finding related pages. |
+| **Include HTML** | Returns the full markup, not just the text. | Rarely needed — the text is usually what you want. |
+| **Wait for network idle** | Waits for the page to finish loading. | On by default. More complete, but slower. |
+| **Force refresh** | Fetches again rather than reusing a cached copy. | When checking a page you know has just changed. |
+
+!!! tip "Leave the defaults alone to start"
+    The default settings work for most pages. If a scrape comes back empty or
+    incomplete, raise the timeout first — slow-loading pages are the usual cause.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Some sites cannot be scraped.** Pages behind a login, or ones that block
+  automated access, will not return content.
+- **Scrape responsibly.** Check the site's terms before pulling content
+  repeatedly, and do not republish what you collect as your own.
+- **Content is a snapshot.** A scrape captures the page as it was at that moment;
+  re-run it if you need current information.
+- **Text, not layout.** Extraction gives you the words. Design, images and
+  formatting are not preserved.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*

@@ -39,9 +39,6 @@ nav:
       - Google Analytics: pages/website/google-analytics.md
       - Google Trends: pages/website/google-trends.md
       - Web Scraping: pages/website/web-scraping.md
-      - Search Console: pages/website/search-console.md
-      - Setting a Default Site: pages/website/gsc-default-site.md
-      - Search Optimisation: pages/website/search-optimisation.md
   - Workspace:
       - Actions: pages/workspace/actions.md
       - Drive: pages/workspace/drive.md
