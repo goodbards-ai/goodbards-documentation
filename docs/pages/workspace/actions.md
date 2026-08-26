@@ -1,37 +1,54 @@
 # Actions
 
-Your to-do list: what the platform suggests you do next.
-
-!!! note "This page is a work in progress"
-    Written content and screenshots have not been added yet. See the
-    [documentation style guide](../../contributing.md).
+Your to-do list — what GoodBards suggests you work on next.
 
 ## What it's for
 
-<!-- TODO: 2-3 sentences, in plain language, on the problem this solves.
-     Write for a marketer, not an engineer. No jargon, no internal names. -->
+Marketing platforms are good at telling you what happened and less good at telling
+you what to do about it. Actions is the answer to "I have ten minutes, what is
+worth doing?"
 
-## Before you start
-
-<!-- TODO: anything required first - a connected account, a plan, a permission.
-     Delete this section if there are genuinely no prerequisites. -->
+Items arrive here from three places: your **daily pulse**, automated **site
+checks**, and things you have asked for yourself.
 
 ## How to work through your actions
 
-<!-- TODO: numbered steps that match the UI exactly. Quote button labels
-     verbatim, in bold. One screenshot after the step that needs it most. -->
-
 1. In the sidebar, choose **Actions**.
+2. Work through the **To do** list.
+3. Completed items move to **Done**, so you can see what has been dealt with.
 
-!!! info "Screenshot needed"
-    `actions.png` — Actions screen.
-    Demo tenant, light theme, 1440x900. See the
-    [style guide](../../contributing.md#screenshots).
+![The Actions screen with nothing outstanding, explaining that new recommendations appear as daily checks run](../../img/screenshots/actions.png)
+
+## When the list is empty
+
+An empty list is a good sign, not a broken screen. It means the daily checks have
+run and found nothing needing attention.
+
+New recommendations appear as those checks run, so it is worth looking again
+tomorrow rather than assuming the feature is not working.
+
+## Where actions come from
+
+| Source | What it produces |
+| --- | --- |
+| **Daily pulse** | A regular review of your marketing, flagging what changed and what to do about it. |
+| **Site checks** | Automated checks on your website and connected services — for example a missing configuration. |
+| **Your own asks** | Follow-ups you have created yourself. |
+
+!!! tip "Configuration warnings are worth doing first"
+    Actions such as *Configure GA4 property* or *Add site to Search Console* tend
+    to be quick, and they unblock reporting elsewhere in the platform. Clearing
+    them early makes everything else more useful.
 
 ## Good to know
 
-<!-- TODO: limits, gotchas, and the mistakes users actually make. -->
+- **Actions are suggestions, not instructions.** You know your business; if a
+  recommendation does not fit, skip it.
+- **They depend on your connectors.** With nothing connected, there is little for
+  the checks to look at. See [Connections](../settings/connections.md).
+- **Impact and effort labels help you choose.** Where shown, prefer high impact
+  and low effort when time is short.
 
 ---
 
-*Still stuck? [Contact support](../../pages/contact.md).*
+*Still stuck? [Contact support](../contact.md).*
