@@ -8,7 +8,6 @@ partners you work alongside.
 - **[Contacts](contacts.md)** — the people you market to. Adding them, keeping
   them current, and grouping them into segments.
 - **[Companies](companies.md)** — the organisations your contacts belong to.
-- **[Partners](partners.md)** — partner organisations you work with.
 
 ## Why this comes first
 

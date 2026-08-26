@@ -34,7 +34,6 @@ nav:
       - pages/audience/index.md
       - Contacts: pages/audience/contacts.md
       - Companies: pages/audience/companies.md
-      - Partners: pages/audience/partners.md
   - Website:
       - pages/website/index.md
       - Google Analytics: pages/website/google-analytics.md
