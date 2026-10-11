@@ -1,0 +1,135 @@
+/* GoodBards brand palette, taken from goodbards.com (checked 2026-10-11)
+   navy  #1D3869 — header text, hero band, headings
+   teal  #177E89 — accent, links and interactive state
+   cream #DFDFBF — the hero headline accent
+   pale  #F0F6F7 — light section backgrounds
+   Font: goodbards.com uses Proxima Nova (licensed via Wix); Figtree is the
+   closest free Google Font, set in mkdocs.yml (theme.font). */
+
+:root {
+  --gb-navy: #1D3869;
+  --gb-navy-dark: #16294d;
+  --gb-teal: #177E89;
+  --gb-teal-light: #1f9aa7;
+  --gb-cream: #DFDFBF;
+  --gb-pale: #F0F6F7;
+  --gb-pale-teal: #E2EEF0;
+}
+
+/* Header: white with navy text and a thin rule, like goodbards.com */
+[data-md-color-scheme="default"] .md-header {
+  background-color: #fff;
+  color: var(--gb-navy);
+  box-shadow: 0 1px 0 rgba(29, 56, 105, .12);
+}
+
+[data-md-color-scheme="default"] .md-header .md-search__input {
+  background-color: var(--gb-pale);
+  color: var(--gb-navy);
+}
+
+[data-md-color-scheme="default"] .md-header .md-search__input::placeholder,
+[data-md-color-scheme="default"] .md-header .md-search__icon {
+  color: var(--gb-navy);
+}
+
+/* Tabs: white like the goodbards.com menu, navy text, teal for the current one */
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: #fff;
+  color: var(--gb-navy);
+  border-bottom: 1px solid rgba(29, 56, 105, .12);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  opacity: .85;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-tabs__item--active .md-tabs__link {
+  color: var(--gb-teal);
+  opacity: 1;
+}
+
+/* Headings: bold navy, not Material's light grey */
+.md-typeset h1,
+.md-typeset h2 {
+  color: var(--gb-navy);
+  font-weight: 700;
+}
+
+.md-typeset h3 {
+  color: var(--gb-teal);
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #4fc3cf;
+}
+
+/* Buttons: rounded pills, as on goodbards.com */
+.md-typeset .md-button {
+  border-radius: 999px;
+}
+
+/* "Guide coming soon": a cream chip, so planned guides read as planned */
+.md-typeset .gb-soon {
+  display: inline-block;
+  padding: .1rem .6rem;
+  border-radius: 999px;
+  background-color: var(--gb-cream);
+  color: var(--gb-navy);
+  font-size: .7rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Sidebar section titles in navy */
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__item--section > .md-nav__link {
+  color: var(--gb-navy);
+  font-weight: 700;
+}
+
+/* Light scheme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--gb-navy);
+  --md-primary-fg-color--light: #2c4d86;
+  --md-primary-fg-color--dark: var(--gb-navy-dark);
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: var(--gb-teal);
+  --md-typeset-a-color: var(--gb-teal);
+}
+
+/* Dark scheme — lift the teal so it stays legible on dark surfaces */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--gb-navy);
+  --md-primary-fg-color--dark: var(--gb-navy-dark);
+  --md-accent-fg-color: var(--gb-teal-light);
+  --md-typeset-a-color: #4fc3cf;
+}
+
+/* Admonitions in brand colours rather than the theme defaults */
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip {
+  border-color: var(--gb-teal);
+}
+
+[data-md-color-scheme="default"] .md-typeset .tip > .admonition-title {
+  background-color: rgba(23, 126, 137, .1);
+}
+
+
+/* Tables: brand-tinted header row, used heavily across these docs */
+.md-typeset table:not([class]) th {
+  background-color: var(--gb-navy);
+  color: #fff;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tr:hover {
+  background-color: var(--gb-pale);
+}
