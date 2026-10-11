@@ -53,11 +53,19 @@
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.goodbards.ai/pages/audience/adding-contacts.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.goodbards.ai/pages/audience/companies.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
          <loc>https://docs.goodbards.ai/pages/audience/contacts.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/audience/lead-scoring.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
@@ -69,11 +77,27 @@
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.goodbards.ai/pages/content-hub/content-workspace.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/content-hub/research-plan.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.goodbards.ai/pages/emails/index.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
          <loc>https://docs.goodbards.ai/pages/events/index.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/events/check-in.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/events/tickets-waitlist.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
@@ -141,6 +165,10 @@
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.goodbards.ai/pages/marketing/email-designs.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.goodbards.ai/pages/marketing/emails.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
@@ -197,11 +225,87 @@
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/index.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/chartbeat.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/email-sending.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/facebook.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/google-ads.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/google-analytics.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/google-drive.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/google-search-console.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/google-trends.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/instagram.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/linkedin-community.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/linkedin.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/pipedrive.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/tiktok.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/twitter-x.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/wordpress-com.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/wordpress.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/settings/connectors/youtube.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.goodbards.ai/pages/social-media/index.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
          <loc>https://docs.goodbards.ai/pages/social-media/analysis.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/social-media/reports.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
@@ -241,11 +345,27 @@
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
+         <loc>https://docs.goodbards.ai/pages/website/ai-readiness.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
          <loc>https://docs.goodbards.ai/pages/website/google-analytics.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
          <loc>https://docs.goodbards.ai/pages/website/google-trends.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/website/momentum.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/website/page-fixes.html</loc>
+         <lastmod>2026-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.goodbards.ai/pages/website/performance-report.html</loc>
          <lastmod>2026-10-11</lastmod>
     </url>
     <url>
