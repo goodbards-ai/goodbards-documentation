@@ -18,7 +18,7 @@ Three ways to gather content, on the tabs across the top:
 
 ## How to scrape a page
 
-1. In the sidebar, choose **Website → Web Scraping**.
+1. In the sidebar, choose **Tool Box → Web Scraping**.
 2. On the **Scrape** tab, paste the address into **URL**.
 3. Adjust the options if you need to.
 4. Run the scrape. The text appears under **Result**.
@@ -39,6 +39,21 @@ Three ways to gather content, on the tabs across the top:
 !!! tip "Leave the defaults alone to start"
     The default settings work for most pages. If a scrape comes back empty or
     incomplete, raise the timeout first — slow-loading pages are the usual cause.
+
+## Crawling a whole site
+
+On the **Crawl** tab, give a **Start URL**: GoodBards follows the links from that
+page, up to a **Max depth** (how many clicks away) and **Max pages**. Keep
+**Same domain only** on to stay on that website. Choose **Start Crawl**; a crawl
+runs in the background and can take several minutes. **Crawl jobs** lists your
+crawls, newest first; expand a finished one to see its pages.
+
+## Following a news feed
+
+On the **Feed Scan** tab, give an RSS or Atom feed (or a page that has one) and
+how many entries to read, then **Start Feed Scan**. With **Save to Drive** on,
+each entry is saved in your Content Repository, so your agents can use it. Use it
+to follow an industry blog or a competitor's news.
 
 ## Good to know
 

@@ -14,7 +14,7 @@ preferences does not affect colleagues, unlike
 1. Choose your profile picture at the top right, then **Personal Settings**.
 2. On **Profile Information**, update your details.
 
-![The Personal Settings tabs: Profile Information, Password & Security, Preferences and My Memory](../../img/screenshots/personal-settings.png)
+![The Preferences tab: language, timezone, and the light or dark theme](../../img/screenshots/personal-settings.png)
 
 ## Profile Information
 

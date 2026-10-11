@@ -22,7 +22,7 @@ people.
 
 Your images appear under **Generated Images** on the left.
 
-![The Image Generation screen, with model selection, a prompt box, aspect ratio options and a Generate Images button](../../img/screenshots/image-generation.png)
+![The Image Generation screen: generated images on the left; model, prompt with AI Assist, aspect ratio and style options on the right](../../img/screenshots/image-generation.png)
 
 ## Choosing an aspect ratio
 

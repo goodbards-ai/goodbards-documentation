@@ -15,11 +15,38 @@ them.
 
 ## How to upload and organise files
 
-1. In the sidebar, choose **Content Hub → Content Repository**.
-2. Choose **+ New** to upload a file or create a folder.
-3. Open a folder to work inside it.
+1. In the sidebar, choose **Content Hub → Content Repository**, or the
+   repository icon in the top bar.
+2. Open a folder to work inside it.
+3. Choose **+ New**:
+
+    | Option | What it does |
+    | --- | --- |
+    | **Upload** | Adds a file from your computer. Give it a marketing stage and, if it should not be used after a date, an expiration date. |
+    | **Add Website** | Adds a web page by its address; GoodBards reads its content so the AI can use it. |
+    | **Import WordPress** | Brings in your existing WordPress articles. Connect WordPress first under **Connections**. |
+    | **Folder** | Creates a folder. |
 
 ![The Assets folder: a blog draft and LinkedIn, Facebook and Instagram posts, with their type, author, date, size and AI switch](../../img/screenshots/content-repository.png)
+
+Each file's **Actions** menu lets you share, move, rename or delete it, and see
+where it is used, for example in which campaigns and tactics.
+
+## Editing an article or a post
+
+Open an article or a post to edit it in the **Asset Studio**.
+
+![The Asset Studio: Back To Folder, the title, the Document view, Autosave, Quality Review, Preview and Save, above the editor toolbar with Improve With AI](../../img/screenshots/asset-studio.png)
+
+- **Improve With AI** (or ++cmd+j++) rewrites the whole document following your
+  instruction, for example *shorter and warmer*. The change applies straight
+  away; choose **Revert** to undo it.
+- **Quality Review** scores the piece, as in the
+  [Content Workspace](../content-hub/content-workspace.md), and says what to
+  improve.
+- **Preview** shows it as it will be published; **Autosave** saves as you type.
+- The **⋯** menu offers **Create social posts** (a series of posts from an
+  article), exports to HTML, Markdown or JSON, **Duplicate** and **Delete**.
 
 ## The default folders
 

@@ -41,10 +41,28 @@ grid — so you can see at a glance which campaign is driving a busy week.
 A day with several items shows the first few and then **+ 3 more**. Choose that
 to see everything scheduled for the day.
 
+## Opening an item
+
+Choose any item to see it in a side panel: its status, network, date and time,
+objective and campaign, and the content itself.
+
+![An Instagram post opened from the calendar: Published, October 8 at 7:45 PM, objective customer retention, the Festive Gifting Guide campaign, and its text](../../img/screenshots/calendar-item.png)
+
 ## Adding to the calendar
 
-**Create Event** adds an event directly. Most things arrive here on their own,
-though — schedule an email or a social post and it appears without further work.
+Most things arrive here on their own: schedule an email, a social post or an
+event and it appears without further work.
+
+**Create Event** adds your own entry. Choose its type:
+
+- **Event**: something to remember, such as a trade show or a sale weekend.
+- **Blackout**: a period when nothing should go out, such as a public holiday or
+  a crisis. It shows on the calendar so the team does not schedule into it.
+
+Give it a title, a colour, the start and end (or **All day**), and a
+description.
+
+![Create Event or Blackout: the type, colour, title, description, start and end, and All day](../../img/screenshots/calendar-create.png)
 
 ## Good to know
 

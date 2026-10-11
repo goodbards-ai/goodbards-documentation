@@ -14,7 +14,7 @@ coming.
 
 ## How to check your usage
 
-1. In the sidebar, choose **Settings → Usage & Billing**.
+1. Open your account menu (your picture, top right), then choose **Tenant Usage**.
 2. Pick a period — **24h**, **7d**, **30d** or **90d**.
 
 ![The usage dashboard, showing credits used, token counts, a monthly credit quota dial and a daily usage chart](../../img/screenshots/tenant-usage.png)
@@ -42,8 +42,11 @@ go you have plenty of room; at 80% with a week left, plan accordingly.
 | --- | --- |
 | **AI Overview** | The summary described above. |
 | **AI Request Details** | Individual requests, useful for tracing a spike. |
-| **Guardrails** | Limits in place on AI usage. |
-| **Models** | Which AI models were used. |
+| **Guardrails** | Your plan's limits and how much of each you use: monthly AI credits, messages per conversation, storage, users, API keys, sub-workspaces, posts published and emails sent this month, contacts and chat agents. |
+| **Models** | Which AI models were used, and how much. |
+
+Check **Guardrails** before a big campaign: if a limit is close (for example
+emails sent this month), the send stops when it is reached.
 
 ## Good to know
 

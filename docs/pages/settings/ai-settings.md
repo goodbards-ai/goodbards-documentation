@@ -13,7 +13,7 @@ Changing a model here affects everyone in your company.
 
 ## How to change a default model
 
-1. In the sidebar, choose **Settings → AI Settings**.
+1. Open your account menu (your picture, top right), then choose **AI Settings**.
 2. On the **Models** tab, find the type of generation you want to change.
 3. Pick a **Provider**, then a **Large Language Model (LLM)** from that provider.
 
@@ -42,7 +42,31 @@ for images.
 | **Models** | Default model per generation type, as above. |
 | **MCP Tools** | External tools your agents may use. |
 | **Skills** | Capabilities available to your agents. |
-| **Learned Memory** | What the AI has remembered about your business over time. |
+| **Learned Memory** | What the AI has remembered about your business over time. See [How the AI knows your brand](brand-voice-memory.md). |
+
+## MCP Tools: give your agents outside tools
+
+MCP (Model Context Protocol) servers let your AI agents use other services:
+read your Mailchimp or Klaviyo campaigns, post in Slack, manage a Wix or
+WordPress.com site, or reach thousands of apps through Zapier.
+
+![MCP Tools: Good Bards (Live), Hugging Face, Klaviyo, Mailchimp and OpenRouter, each with Connect, and Add Custom MCP Server](../../img/screenshots/ai-mcp-tools.png)
+
+1. On the **MCP Tools** tab, choose **Connect** on a service and sign in to it,
+   or paste the key or URL it asks for (Zapier asks for your personal Zapier MCP
+   URL).
+2. Once connected, its tools are available to your agents. Choose which agent
+   uses them in the agent's settings.
+
+**Add Custom MCP Server** connects any other MCP server by its address.
+
+## Skills: ready-made expertise
+
+Skills are packaged know-how an agent can use, for example **AI Search
+Optimization (GEO)**, **Content Strategy Planner**, **Marketing Ideas**,
+**Marketing Plan Builder** or **Public Relations & Earned Media**, each tuned for
+Southeast Asian markets. The tab lists the skills available to your company;
+you give a skill to an agent in the agent's configuration.
 
 ## Good to know
 

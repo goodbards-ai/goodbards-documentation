@@ -48,17 +48,36 @@ platform.
 
 ## Adding companies
 
-Add them directly, or let them arrive with your contacts — importing contacts
-that include a company name creates the organisations for you.
+On the **Details List** tab, choose **Add Company**. Link contacts to it from
+the company field of each contact.
 
-## Other tabs
+## A company's page
+
+Choose a company's code in the **Details List** to open its page.
+
+![A company's page: Straits Hotels, Active, with About, Company Details (code, annual revenue, employees, timezone), the timeline, social links and legal information](../../img/screenshots/company-record.png)
+
+| Section | What it shows |
+| --- | --- |
+| **About** and **Company Details** | The description, code, annual revenue, employees and timezone. |
+| **Location** | Country, city and address. |
+| **Custom Fields** | Your own company fields, such as a gifting budget. |
+| **Timeline** | Owners, and when the record was created and last updated. |
+| **Social Links** and **Legal Information** | Social profiles, registration number and legal entity type. |
+| **Contact List** | The people who work there, with their status, and which one is marked as the **main recipient**. |
+
+![The company's Contact List: code, name, email, status, last update and main recipient](../../img/screenshots/company-contacts.png)
+
+Choose **Edit Company** to change the details.
+
+## The other tabs
 
 | Tab | What it holds |
 | --- | --- |
-| **Details List** | Individual company records. |
-| **Segments** | Saved filters over companies. |
-| **Custom Fields** | Extra fields you add. |
-| **Custom Lists** | Your own groupings. |
+| **Details List** | All your companies, with owners; assign owners in bulk with **Assign Owners**. |
+| **Segments** | Saved filters over companies, for example *hotels in Singapore*. |
+| **Custom Fields** | Your own company fields. Same as for contacts: see [Custom Fields](contacts.md#custom-fields). |
+| **Custom Lists** | The value lists for Select fields. See [Custom Lists](contacts.md#custom-lists). |
 
 ## Good to know
 

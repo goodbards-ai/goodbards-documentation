@@ -17,7 +17,7 @@ Google Trends must be connected. If the page says you are not connected, go to
 
 ## How to compare search interest
 
-1. In the sidebar, choose **Website → Google Trends**.
+1. In the sidebar, choose **Organic Visibility → Google Trends**.
 2. Type a term into **Add a search term** and press ++enter++.
 3. Add a second term to compare against the first.
 4. Set **Location** and **Time Period**.

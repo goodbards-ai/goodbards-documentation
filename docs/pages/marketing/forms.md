@@ -71,6 +71,16 @@ choose **Create new** to start from the event registration template. The event
 then manages the form's confirmation email and thank-you page, under
 **Registration → Confirmation**. See [Event Management](event-management.md).
 
+## Sharing a form
+
+From a form's menu in the list:
+
+- **Copy Link** copies the form's short link, to share in a post, a message or a
+  QR code.
+- **Embed form** gives you a code to paste into your own website, so visitors fill
+  in the form without leaving your site. Set the **height** you want; the form
+  keeps its own design and adapts its height to the page.
+
 ## Categories and status
 
 | Category | Use it for |
@@ -81,8 +91,21 @@ then manages the form's confirmation email and thank-you page, under
 | **Data capture** | Contact and demo requests. |
 
 A form is a **Draft** while you build it and **Open** when it accepts responses.
-The list shows **Submissions** and **Views** for each form: many views and few
-submissions usually means the form asks too much.
+
+## Reading the answers
+
+In a form's menu, choose **View Analytics** to open its results: views
+and submissions over time, then every submission with its answers and date.
+
+- **Download Raw CSV**: every answer, one row per submission, for your own
+  analysis.
+- **Download Contact CSV**: the people who answered, as contacts.
+
+A view is one display of the form, whether people come from its link, an email
+button or your website. Your own clicks on **Open Form** and visits by robots
+are not counted.
+
+Many views and few submissions usually means the form asks too much.
 
 ## Good to know
 

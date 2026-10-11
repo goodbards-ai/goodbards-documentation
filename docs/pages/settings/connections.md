@@ -14,18 +14,22 @@ this is worth setting up early.
 
 ## How to connect a service
 
-1. In the sidebar, choose **Settings → Connections**.
+1. Open your account menu (your picture, top right), then choose **Connections**.
 2. Pick the category across the top — for example **Social Media** or
    **Web Analytics**.
 3. Find the service and choose **Connect**.
 4. Sign in to that service and grant the permissions it asks for. You are taken
    back to GoodBards when it is done.
 
-![The Connectors screen, with categories for Social Media, Instant Messenger, Web Analytics, Digital Ads, Storage, CRM, CMS and Email](../../img/screenshots/connections.png)
+![The Connectors screen on Social Media: LinkedIn, Instagram and Facebook connected with Manage Configuration, and LinkedIn Community, Twitter (X), YouTube and TikTok ready to connect](../../img/screenshots/connections.png)
 
 Use **Search connectors…** to find one by name rather than hunting the tabs.
 
 ## Categories
+
+Each connector has its own page: what it lets GoodBards do, what you need before
+connecting, and what GoodBards reads or publishes. See
+[All connectors](connectors/index.md).
 
 | Category | What it connects |
 | --- | --- |

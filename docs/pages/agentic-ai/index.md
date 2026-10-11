@@ -16,6 +16,11 @@ images and audio.
 - **[Image Generation](image-generation.md)** — create images from a description.
 - **[Video Generation](video-generation.md)** — create short video clips.
 - **[Text to Speech](text-to-speech.md)** — turn written copy into spoken audio.
+- **Agent Parameters** — the variables your agents' prompts can use, such as
+  *Audience*, *CallToAction* or *Boilerplate100*. Many are filled in for you
+  from your Brand & Context, such as your company boilerplate. The colour of
+  each row shows whether it is a global, system or local variable; **New
+  Variable** adds your own. Most teams never need to change them.
 
 ## Good to know
 

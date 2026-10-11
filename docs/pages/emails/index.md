@@ -23,7 +23,7 @@ The frame around your emails: header, footer, colours and fonts from your Brand
 Kit. Pick a design once and every email, event email and form confirmation uses
 it.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Email designs](../marketing/email-designs.md).
 
 ### Forms
 

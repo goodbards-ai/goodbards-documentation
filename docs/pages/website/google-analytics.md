@@ -20,7 +20,7 @@ tells you that you are not connected, start at
 
 ## How to read your traffic report
 
-1. In the sidebar, choose **Website → Google Analytics**.
+1. In the sidebar, choose **Organic Visibility → Google Analytics**.
 2. Check the **GA4 Property** shown — this is the website being reported on.
 3. Pick a **Time Period**, such as *Last 7 days*.
 
@@ -62,6 +62,24 @@ delivering.
 
 **Friction Finder** and **Journey Mapper** are the two worth returning to. Traffic
 tells you how many arrived; these tell you why they left.
+
+### Friction Finder
+
+A four-step funnel from arriving through search to buying, and the step where
+most people are lost, with the page responsible.
+
+![Friction Finder: the critical friction point between content read and deep engagement, where 73.5% of users are lost, above the conversion funnel](../../img/screenshots/ga-friction.png)
+
+### Journey Mapper
+
+Where people arriving from search land (left) and what they do next (right).
+Hover a band to highlight one path.
+
+![Journey Mapper: landing pages such as the homepage, blog and about page flowing to page views, engagement, session starts and reading](../../img/screenshots/ga-journey.png)
+
+On these analysis tabs, **Fetch from GA4** loads the latest figures for the date
+range; the date of the last fetch is shown under it. **Generate Insights** asks
+the **AI Marketing Advisor** what to do about what it sees.
 
 ## Good to know
 

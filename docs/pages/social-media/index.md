@@ -33,4 +33,4 @@ See [Analysis](analysis.md).
 Period reports per network (LinkedIn, Instagram, YouTube), sent to you on a
 schedule if you want.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Social reports](reports.md).

@@ -98,7 +98,7 @@ To change one:
 2. Change the **Subject** at the top and the text in the editor, then choose
    **Apply**.
 
-![An event email card: the email as guests receive it with Edit on the preview, the link Use one of my emails instead, and the send button below](../../img/screenshots/event-email-card.png)
+![The invitation email card: a sample preview with Edit, the link Use one of my emails instead, and below it Re-Send Invitations, the last send to 1,180 contacts, and Email Metrics](../../img/screenshots/event-email-card.png)
 
 The invitation and the reminders work the same way, on the **Communications**
 tab. See [Editing an email](../marketing/event-management.md#editing-an-email).
@@ -116,7 +116,25 @@ with the number of recipients.
 
 ![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png)
 
-To announce the event on social media, see [Social Post](../social-media/social-post.md).
+### Promote it on social media
+
+On the **Overview** tab, **Promote On Social** writes the event's posts for
+you: the announcement, a reminder, a last call and a *happening today* post,
+from the event's own facts and with its cover image, for the social channels of
+the campaign.
+
+The posts arrive as **drafts** on the campaign's social tactics, each with a
+suggested date counted back from the event. Nothing is published until you
+schedule it. The button is not available for private events or events without a
+date. See also [Social Post](../social-media/social-post.md).
+
+### Show your events on your website
+
+In **Marketing → Event Management**, the menu at the top right offers **Open
+public page** (the page listing all your public events) and **Embed form**. The
+embed gives you a code to paste into your website, with a light, dark or
+automatic theme and a list or grid layout, so visitors see and register for
+your events without leaving your site.
 
 ## 6. Manage registrations
 
@@ -146,7 +164,9 @@ Every confirmed guest has a QR code in their confirmation and reminder emails.
 
     ![The Badge block: label format, Print Test Badge, and the two lines printed on each badge](../../img/screenshots/event-badge.png)
 
-![The Actions menu with Close registration, Send invitations, Scan attendee, Kiosk mode, Export attendees, End event and Cancel event](../../img/screenshots/event-actions-menu.png)
+![The event Actions menu: Open public page and Unpublish, Close registration and Send invitations, Scan attendee, Kiosk mode and Export attendees, End event and Cancel event](../../img/screenshots/event-actions-menu.png)
+
+See [Check-in and badges](../events/check-in.md) for the details.
 
 ## 8. Follow up
 
@@ -159,6 +179,15 @@ Every confirmed guest has a QR code in their confirmation and reminder emails.
    form field, and choose **Email Performance** to see how every event email did.
 
     ![Event Analytics: a donut chart of registrations by status, mostly attended, some absent, a few cancelled, with Email Performance](../../img/screenshots/event-analytics.png)
+
+4. If you attached a survey to the follow-up, its answers appear on the
+   **Follow-up** tab as charts per question, with a CSV download.
+
+### Cancelling an event
+
+**Actions → Cancel event** cancels it. Every registered guest is emailed that the
+event is cancelled, and it cannot be undone. To stop new registrations but keep
+the event, use **Close registration** instead.
 
 ## Good to know
 

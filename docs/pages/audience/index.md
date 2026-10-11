@@ -36,14 +36,14 @@ Add one contact, import a spreadsheet with **Bulk Add Contacts**, or photograph 
 business card with **Scan Business Card**. **Import Jobs** shows how each import
 went.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Adding contacts](adding-contacts.md).
 
 ### Lead scoring
 
 A 0–100 score per contact, from what they did: opened, clicked, registered,
 attended. Use it to see who is ready for a sales conversation.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Lead scoring](lead-scoring.md).
 
 ## Why this comes first
 

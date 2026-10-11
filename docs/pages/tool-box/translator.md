@@ -14,13 +14,18 @@ survive. You can paste copy in or import a file.
 
 ## How to translate content
 
-1. In the sidebar, choose **Tool Box → Translator**.
+1. In the sidebar, choose **Content Hub → Translator**.
 2. Put your copy into **Source Text** — type it, paste it, or use **Import File**.
 3. Set **Source Language** and **Source Region**.
 4. Set **Target Language** and **Destination Region**.
 5. Choose **TRANSLATE**.
 
 ![The AI Translator, with a rich text editor for source text above source and target language and region selectors](../../img/screenshots/translator.png)
+
+Next to the translation, **AI Translation Insights** explains the **Context** the
+AI took into account and gives **Quality Notes**: places where a term was
+adapted rather than translated word for word, or where you may want a native
+speaker to check.
 
 ## Why region matters as well as language
 

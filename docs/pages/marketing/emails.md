@@ -42,11 +42,38 @@ your audience is available when you choose recipients.
     the content and design and only asks for new recipients — usually faster than
     building it again.
 
+## Editing an email
+
+Choose an email's preview in the gallery to open it. Its page shows the subject
+and the body as recipients will see it, with an **Edit** button on each, and
+**Send Test Email**.
+
+![An email's page: the title, author and dates, the subject with Edit, the body preview inside the Tropika Home design with Edit, and Send Test Email](../../img/screenshots/email-details.png)
+
+**Edit** on the body opens the editor. The design (header and footer) is locked:
+you edit only your content inside it.
+
+![The email editor: Visual, Code and AI on the left, Desktop, Email width and Mobile previews, the email in the middle, and blocks to drag in on the right](../../img/screenshots/email-editor.png)
+
+- **Visual**: click any text to change it; drag blocks from the right (heading,
+  text, button, image, two columns, divider…). Personal fields such as **First
+  name** are filled in for each recipient.
+- **Code**: edit the HTML directly.
+- **AI**: describe the change, for example *make it shorter and warmer*.
+- **Desktop**, **Email width** and **Mobile** preview the email at each size.
+
+Choose **Apply** to keep your changes, or **Cancel**.
+
+The card menu in the gallery also offers **Show Tactics** (where the email is
+used), **Duplicate**, **Attach to tactic** and **Delete**.
+
 ## Finding your emails
 
 Everything you have created is listed under **Email Gallery**, on the **Emails**
 tab. Use the search box to find one by name, and the buttons beside it to switch
 between grid and list view.
+
+![The Email Gallery in grid view: each email as a preview inside the Tropika Home design, with its name and a menu](../../img/screenshots/emails-gallery.png)
 
 ![The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated](../../img/screenshots/emails-list.png)
 

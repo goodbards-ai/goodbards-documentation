@@ -52,7 +52,20 @@ has no agents in it.
 ## Creating your own
 
 **+ Create New Agent** builds an agent for your account, which appears as
-**Local**. Your plan sets how many custom agents you may have.
+**Local**. Your plan sets how many custom agents you may have. The **Tutorial**
+button at the top walks you through the form.
+
+| Part | What to set |
+| --- | --- |
+| **General Information** | A name, an avatar, the agent type and its category, and a short description your team will see on its card. |
+| **Prompt Definition** | The AI model, and the **System Prompt**: who the agent is and how it should behave. A good starting prompt is already filled in; adapt it to the agent's job. Optional: a **User Prompt** added to every conversation, a **Welcome Message** and **Sample Requests** shown when a chat starts. |
+| **Data Retrievers** | **Search Knowledge Base**: let the agent read your Content Repository files marked for AI. **Web Search**: let it search the web. |
+| **Tools** | The actions the agent may take inside GoodBards, and outside tools connected under [AI Settings → MCP Tools](../settings/ai-settings.md#mcp-tools-give-your-agents-outside-tools). |
+| **Agent Skills** | Ready-made expertise, assigned once the agent exists. |
+| **Memory** | **Persistent Memory** lets the agent remember facts from past conversations; **Promote Facts to Tenant** shares important ones with all your agents. Leave the numbers at their defaults unless support asks you to change them. |
+
+Choose **Create Agent**. To change an agent later, use the pencil on its card.
+Global agents, provided by GoodBards, cannot be edited.
 
 ## Good to know
 

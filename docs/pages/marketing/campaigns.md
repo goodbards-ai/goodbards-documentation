@@ -63,6 +63,36 @@ posts, emails and events, each with its status and end date.
 - **Plan With AI** suggests the tactics that fit the campaign's objective.
 - **Write Content With AI** drafts the content of the tactics.
 
+### Duplicating a tactic
+
+To run a tactic again, for example last year's festive email, choose
+**Duplicate** in the tactic's menu. Give the copy a name and a destination
+campaign (the same one or another). The copy starts as a draft: dates, status
+and figures are reset; budget, description and audience are kept.
+
+For its emails and content, choose:
+
+- **Reuse existing assets**: the copy uses the same emails and posts. Editing
+  them later changes both tactics.
+- **Create new copies**: fresh copies, so the original is never touched.
+
+For an event, its settings are copied too, and its registration form is always
+duplicated so the two events keep their registrations apart.
+
+## The Budget tab
+
+The **Budget** tab splits the campaign's budget across its tactics. On the left,
+how much is used of the total, with the remaining amount, the amount
+**Allocated** (choose the pencil to change it) and the average per tactic. On the
+right, every tactic with its own budget; choose the pencil on a row to change
+it.
+
+![The Budget tab: 38,500 used of 45,000, with total, remaining, allocated and average, and each tactic's budget](../../img/screenshots/campaign-budget.png)
+
+A red mark next to a tactic's budget means it is above the average budget per
+tactic. The tactic budgets are your plan. For ads, Google Ads spends its own daily
+budget; see [Ads in a campaign](digital-ads.md#ads-in-a-campaign).
+
 ## The campaign report
 
 The **Analytics** tab gathers the results of every tactic in one place: reach and
@@ -72,6 +102,10 @@ change against the previous report. Use the arrows to move between report
 dates, or **History** to see them all.
 
 ![The campaign report: impressions, clicks, likes, shares, comments and engagement rate, then emails delivered, open and click rates, event registrations, attendance rate and waitlisted, each with its change](../../img/screenshots/campaign-analytics.png)
+
+Below the totals, a table lists every tactic with its own figures. Choose one to
+open its details: the same figures for that tactic alone, and its share of the
+campaign total.
 
 ## Starting and stopping
 

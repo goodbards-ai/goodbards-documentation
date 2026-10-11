@@ -13,14 +13,14 @@ Write with an AI writer and reviewer. Give a short brief (topic, audience,
 format); the writer drafts it in your brand voice, the reviewer scores it and
 says what to improve, and you revise until it is ready to save.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Content Workspace](content-workspace.md).
 
 ### Research & Plan
 
 What to write next: topics your market searches for, questions your customers
 ask and gaps against competitors, each one ready to turn into a brief.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Research & Plan](research-plan.md).
 
 ### Content Repository
 

@@ -25,6 +25,16 @@ create appears here with its click count.
 Use **Search links…** to find one by name or destination, and **View** to change
 which columns are shown.
 
+## A link's menu
+
+The menu at the end of each row offers:
+
+- **QR code**: a QR code for the short link, to print on a flyer or in a store.
+- **Click timeline**: the link's clicks day by day.
+- **Edit**: change the title, the destination or the UTM tags. The short code
+  stays the same, so links already shared keep working.
+- **Delete**.
+
 ## Where shortened links are used
 
 Beyond links you create by hand, the shortener is used elsewhere in the platform:

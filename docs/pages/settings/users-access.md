@@ -21,7 +21,7 @@ If you run marketing for a single business, you will not need this.
 
 ## How to create a sub-workspace
 
-1. In the sidebar, choose **Settings → Tenant Settings**.
+1. Open your account menu (your picture, top right), then choose **Tenant Settings**.
 2. Open the **Sub Tenants** tab.
 3. Choose **Create Sub Tenant**.
 4. Give it a name and set its tier.
@@ -54,9 +54,23 @@ a campaign, adding contacts — happens inside the workspace you have selected.
 
 | Tab | What it holds |
 | --- | --- |
-| **Preferences** | Workspace-wide preferences. |
-| **Security** | Security settings for the workspace. |
-| **Scheduled Tasks** | Recurring jobs that run automatically. |
+| **Preferences** | The workspace's name, timezone, engagement decay and badge format (below). |
+| **Security** | Users, roles, contact ownership and API keys. See [Users, roles & permissions](users-roles.md). |
+| **Sub Tenants** | The sub-workspaces described on this page. |
+
+### Preferences
+
+![Tenant Settings › Preferences: the organisation name, the timezone and the engagement decay velocity](../../img/screenshots/tenant-preferences.png)
+
+- **Organisation Name:** the workspace name everyone sees in the top bar.
+- **Timezone:** the workspace's timezone, used for schedules and reports.
+- **Engagement Decay Velocity:** how fast old engagement stops counting in the
+  decay score, for example *8 weeks (Normal)*. Shorter suits fast buying cycles,
+  longer suits long B2B ones. See [Lead scoring](../audience/lead-scoring.md).
+- **Attendee Badge Format:** the default label size for event badges, with a
+  preview and **Print Test Badge**. Badges under 80 mm wide print a compact
+  layout. Each event can override it. See
+  [Check-in and badges](../events/check-in.md).
 
 ## Good to know
 

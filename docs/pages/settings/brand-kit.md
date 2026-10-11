@@ -15,7 +15,7 @@ a generic template.
 
 ## How to set up your brand kit
 
-1. In the sidebar, choose **Settings → Brand & Context**.
+1. Open your account menu (your picture, top right), then choose **Brand & Context**.
 2. Open the **Brand Kit** tab.
 3. Choose **+ Add Brand Kit**.
 4. Add your colours, fonts and logo.

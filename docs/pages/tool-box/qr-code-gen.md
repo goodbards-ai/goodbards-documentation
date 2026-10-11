@@ -11,7 +11,7 @@ scanned.
 
 ## How to generate a QR code
 
-1. In the sidebar, choose **Tool Box → QR Code Generator**.
+1. In the sidebar, choose **Tool Box → QR Code Gen**.
 2. Enter the destination in **URL**. The preview appears once the URL is valid.
 3. Style it to match your brand using the options below.
 4. Download the finished code.

@@ -19,4 +19,4 @@ See [Digital Ads](../marketing/digital-ads.md).
 Research the keywords your market searches for, with volumes and costs, when your
 Google Ads account is connected.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Choosing keywords](../marketing/digital-ads.md#choosing-keywords).

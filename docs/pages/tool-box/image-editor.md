@@ -24,6 +24,17 @@ in place — so you are not exporting files back and forth.
 
 ![The Image Editor, offering drag-and-drop upload, Paste URL and Load From Drive](../../img/screenshots/image-editor.png)
 
+## The editing tabs
+
+Once an image is loaded, the panel on the right has four tabs:
+
+| Tab | What you can do |
+| --- | --- |
+| **Style** | Filters, and adjustments such as brightness, contrast and saturation. |
+| **Transform** | Crop, rotate and zoom. |
+| **Resize** | Resize to a preset for each social network, or to your own size. |
+| **AI** | Describe the change in words, for example *remove the background* or *add a sunset sky*, and the AI edits the image. With no image loaded, it generates one from your description. |
+
 ## Supported formats
 
 **JPG**, **PNG**, **WebP** and **GIF**.

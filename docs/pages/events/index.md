@@ -21,11 +21,11 @@ See [Event Management](../marketing/event-management.md).
 On the day: scan guests' QR codes at the door, or let them check in themselves at
 a kiosk, and print name badges.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Check-in and badges](check-in.md).
 
 ### Ticket types and waitlist
 
 Offer several ticket types or time slots, each with its own capacity, and decide
 whether freed seats go to the waitlist automatically or by hand.
 
-<span class="gb-soon">Guide coming soon</span>
+See [Ticket types and waitlist](tickets-waitlist.md).

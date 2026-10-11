@@ -35,6 +35,8 @@ nav:
       - pages/audience/index.md
       - Contacts: pages/audience/contacts.md
       - Mailing lists: pages/audience/mailing-lists.md
+      - Adding contacts: pages/audience/adding-contacts.md
+      - Lead scoring: pages/audience/lead-scoring.md
       - Companies: pages/audience/companies.md
   - Marketing:
       - Campaigns:
@@ -44,24 +46,34 @@ nav:
       - Emails & Forms:
           - pages/emails/index.md
           - Emails: pages/marketing/emails.md
+          - Email designs: pages/marketing/email-designs.md
           - Forms: pages/marketing/forms.md
       - Events:
           - pages/events/index.md
           - Event Management: pages/marketing/event-management.md
+          - Ticket types and waitlist: pages/events/tickets-waitlist.md
+          - Check-in and badges: pages/events/check-in.md
       - Social Media:
           - pages/social-media/index.md
           - Social Post: pages/social-media/social-post.md
           - Analysis: pages/social-media/analysis.md
+          - Social reports: pages/social-media/reports.md
       - Digital Ads:
           - pages/ads/index.md
           - Digital Ads: pages/marketing/digital-ads.md
   - Content & SEO:
       - Content Hub:
           - pages/content-hub/index.md
+          - Content Workspace: pages/content-hub/content-workspace.md
+          - Research & Plan: pages/content-hub/research-plan.md
           - Content Repository: pages/workspace/drive.md
           - Translator: pages/tool-box/translator.md
       - Organic Visibility:
           - pages/website/index.md
+          - Performance & Report: pages/website/performance-report.md
+          - Page Fixes: pages/website/page-fixes.md
+          - AI Readiness & Authority: pages/website/ai-readiness.md
+          - Momentum: pages/website/momentum.md
           - Google Analytics: pages/website/google-analytics.md
           - Google Trends: pages/website/google-trends.md
   - AI & Tools:
@@ -88,6 +100,25 @@ nav:
       - How the AI knows your brand: pages/settings/brand-voice-memory.md
       - Brand Kit: pages/settings/brand-kit.md
       - Connections: pages/settings/connections.md
+      - Connectors:
+          - pages/settings/connectors/index.md
+          - LinkedIn: pages/settings/connectors/linkedin.md
+          - LinkedIn Community: pages/settings/connectors/linkedin-community.md
+          - Facebook: pages/settings/connectors/facebook.md
+          - Instagram: pages/settings/connectors/instagram.md
+          - Twitter (X): pages/settings/connectors/twitter-x.md
+          - YouTube: pages/settings/connectors/youtube.md
+          - TikTok: pages/settings/connectors/tiktok.md
+          - Google Analytics: pages/settings/connectors/google-analytics.md
+          - Google Search Console: pages/settings/connectors/google-search-console.md
+          - Google Trends: pages/settings/connectors/google-trends.md
+          - Chartbeat: pages/settings/connectors/chartbeat.md
+          - Google Ads: pages/settings/connectors/google-ads.md
+          - Google Drive: pages/settings/connectors/google-drive.md
+          - Pipedrive: pages/settings/connectors/pipedrive.md
+          - WordPress (self-hosted): pages/settings/connectors/wordpress.md
+          - WordPress.com: pages/settings/connectors/wordpress-com.md
+          - Email sending: pages/settings/connectors/email-sending.md
       - AI Settings: pages/settings/ai-settings.md
       - Users, roles & permissions: pages/settings/users-roles.md
       - Sub-Workspaces: pages/settings/users-access.md

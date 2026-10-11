@@ -137,6 +137,25 @@ new registrations join a queue. Choose how a freed seat is given:
 On the day, use **Scan attendee** to check people in. Each guest's confirmation and
 reminder emails carry a QR code; scanning it records them as attended.
 
+## The Actions menu
+
+| Action | What it does |
+| --- | --- |
+| **Publish** / **Unpublish** | Puts the event page online, or takes it offline. |
+| **Open public page** | Opens the event page as guests see it. |
+| **Open** / **Close registration** | Starts or stops accepting registrations, without touching the event itself. |
+| **Send invitations** | Emails the invitation to the event's audience. |
+| **Scan attendee** / **Kiosk mode** | Checks guests in. See [Check-in and badges](../events/check-in.md). |
+| **Export attendees** | Downloads the guest list as a spreadsheet. |
+| **End event** | Ends it now; guests not checked in become absent. Ended events reopen with **Reopen** if you ended one too early. GoodBards also ends an event on its own when its end date passes. |
+| **Cancel event** | Cancels it and emails every registered guest. Cannot be undone. |
+
+To run an event again, duplicate its tactic on the campaign page: the event
+comes with it. See [Duplicating a tactic](campaigns.md#duplicating-a-tactic).
+
+The **Overview** tab also has quick actions: **Open Public Page**, **Copy
+Registration Link** and **Preview Invitation Email**.
+
 ## Good to know
 
 - **Publish before you share the link.** A draft event does not accept

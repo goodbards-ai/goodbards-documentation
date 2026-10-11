@@ -56,6 +56,19 @@ This is worth watching over time rather than per post. A shift towards negative
 sentiment is worth investigating early — it is easier to address a small
 complaint than a pattern.
 
+## Who your audience is (LinkedIn)
+
+**Audience Demographics** breaks down the people who follow your LinkedIn page
+by **Role**, **Seniority**, **Industry** and **Company Size**. Check that it
+matches who you sell to: a B2B brand followed mostly by students has a reach
+problem, not a content problem.
+
+![Audience Demographics on the Role tab: followers by job function, with Marketing the largest group](../../img/screenshots/social-demographics.png)
+
+Next to it, **Channel Engagements** shows the account's daily activity over the
+period, straight from the network: engagement (split by type on LinkedIn) and
+impressions.
+
 ## Top Posts Performance
 
 Below the summary, your best-performing content is listed with its engagement
