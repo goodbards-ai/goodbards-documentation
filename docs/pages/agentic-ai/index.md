@@ -3,6 +3,8 @@
 AI assistants that do marketing work for you — writing, researching, generating
 images and audio.
 
+**Who sees it:** everyone your administrator gives the **AI studio** access to.
+
 ## In this section
 
 - **[Chat Agents](chat-agents.md)** — assistants you hold a conversation with,

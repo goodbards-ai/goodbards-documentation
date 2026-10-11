@@ -1,53 +1,55 @@
 # Actions
 
-Your to-do list — what GoodBards suggests you work on next.
+Your to-do list: what is worth doing next, ranked, with the evidence behind
+each item.
 
 ## What it's for
 
-Marketing platforms are good at telling you what happened and less good at telling
-you what to do about it. Actions is the answer to "I have ten minutes, what is
-worth doing?"
-
-Items arrive here from three places: your **daily pulse**, automated **site
-checks**, and things you have asked for yourself.
+Reports tell you what happened; Actions tells you what to do about it. Each
+daily check (your website, social channels, emails and events) turns what it
+finds into an action, ranked by impact and effort. Your team adds its own asks
+to the same list, so everything worth doing is in one place, and every action
+is measured once it is done.
 
 ## How to work through your actions
 
-1. In the sidebar, choose **Actions**.
-2. Work through the **To do** list.
-3. Completed items move to **Done**, so you can see what has been dealt with.
+1. In the sidebar, choose **Actions**. It opens on **Priority**: what to do
+   first.
+2. **Where to focus** groups the open actions by impact and effort. Start with
+   the **Quick wins** (high impact, low effort), then the **Big bets**.
+3. Below, the list is ranked by impact, confidence and effort. Narrow it with
+   **All sources**, **Mine** (assigned to you) or the search box.
 
-![The Actions screen with nothing outstanding, explaining that new recommendations appear as daily checks run](../../img/screenshots/actions.png)
+![The Actions screen: Priority, the To do, Doing, Done, Checking, Verified and Dismissed tiles, Where to focus with Quick wins, Big bets, Fill-ins and Low leverage, and the ranked list](../../img/screenshots/actions.png)
 
-## When the list is empty
+4. Click an action to open it: what was found, the evidence, and where it stands.
 
-An empty list is a good sign, not a broken screen. It means the daily checks have
-run and found nothing needing attention.
+    ![An action opened: its labels, title and reason, Open the page, the stages from To do to Verified, the evidence, and its activity](../../img/screenshots/actions-detail.png)
 
-New recommendations appear as those checks run, so it is worth looking again
-tomorrow rather than assuming the feature is not working.
+5. Choose **Take Over** to start it, assign it to a colleague, **Mark As Done**
+   when finished, or **Dismiss** it if it does not apply. Use the arrows at the
+   top to move to the next action.
 
-## Where actions come from
+To add your own, choose **Add An Ask**.
 
-| Source | What it produces |
+## How an action moves
+
+| Stage | Meaning |
 | --- | --- |
-| **Daily pulse** | A regular review of your marketing, flagging what changed and what to do about it. |
-| **Site checks** | Automated checks on your website and connected services — for example a missing configuration. |
-| **Your own asks** | Follow-ups you have created yourself. |
-
-!!! tip "Configuration warnings are worth doing first"
-    Actions such as *Configure GA4 property* or *Add site to Search Console* tend
-    to be quick, and they unblock reporting elsewhere in the platform. Clearing
-    them early makes everything else more useful.
+| **To do** | Found, not started yet. |
+| **Doing** | Someone is on it. |
+| **Done** | Finished. GoodBards then measures the effect. |
+| **Checking** | The effect is being measured. |
+| **Verified** | The change worked. |
+| **Dismissed** | Not relevant to you; set aside. |
 
 ## Good to know
 
-- **Actions are suggestions, not instructions.** You know your business; if a
-  recommendation does not fit, skip it.
-- **They depend on your connectors.** With nothing connected, there is little for
-  the checks to look at. See [Connections](../settings/connections.md).
-- **Impact and effort labels help you choose.** Where shown, prefer high impact
-  and low effort when time is short.
+- **Your own asks come first** in the ranking, ahead of the automatic ones.
+- **An empty list is good news.** The checks have run and found nothing needing
+  attention. New actions appear as they run.
+- **Actions depend on your connections.** With nothing connected, there is little
+  for the checks to read. See [Connections](../settings/connections.md).
 
 ---
 

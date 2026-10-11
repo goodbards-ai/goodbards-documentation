@@ -25,13 +25,15 @@ There is more than one way, depending on how many you have:
 **Audience → Contacts** opens on the **Home** tab, which summarises your database
 rather than listing individuals.
 
-![The Contacts home tab, showing total contacts against the plan limit, subscribed and unsubscribed counts, and a score progression chart](../../img/screenshots/contacts.png)
+![The Contacts home tab: 2,917 contacts out of 20,000 allowed, 2,435 subscribed, 208 regular, 274 unsubscribed or do-not-contact, and the score progression chart](../../img/screenshots/contacts.png)
 
 The tiles across the top tell you:
 
 - **Total Contacts** — how many you hold, and how many your plan allows. The bar
   fills as you approach the limit.
 - **Subscribed** — contacts who have agreed to hear from you.
+- **Regular** — contacts with no marketing consent yet: you can work with them,
+  but not email them marketing.
 - **Others (unsubscribed, do not contact)** — people you must not email.
 
 !!! warning "Subscribed is the number that matters"
@@ -43,23 +45,34 @@ shows how complete and usable your data is.
 
 ## Finding individual contacts
 
-Use the **Details List** tab to see and search individual contact records.
+The **Details List** tab lists every contact: their code, name, owner, email,
+status and last update.
+
+![The Details List: a search box, View, Assign Owners, an owner filter, Export As CSV and Add Contact, above contacts with their code, name, owner, email, status and last update](../../img/screenshots/contacts-list.png)
+
+- Search by name or email, and choose the columns to show with **View**.
+- Each contact can have **owners**, the colleagues responsible for them. Filter by
+  owner, or select contacts and choose **Assign Owners**. Depending on their role,
+  a colleague may only see the contacts they own.
+- **Export As CSV** downloads the list; **Add Contact** creates one.
+- Click a contact's code to open their record: details, custom fields, mailing
+  lists, and the history of every email, form and event.
 
 ## Segments
 
 A **segment** is a saved filter — a rule that decides who belongs, evaluated when
 you use it, so it stays current as contacts change.
 
-![The Segments tab, listing saved segments such as Contacts from Singapore and CRM Decision Makers in Top GDP Countries](../../img/screenshots/segments.png)
+![The Segments tab: saved segments such as Singapore members, Malaysia members, Corporate buyers and Bangkok launch list, each with a description](../../img/screenshots/segments.png)
 
-To create one, open the **Segments** tab and choose **+ Add Segment**, then set
+To create one, open the **Segments** tab and choose **Add Segment**, then set
 the rule — location, job title, behaviour, or any custom field you have added.
 
 Useful segments look like:
 
-- *Contacts from Singapore* — everyone in one market
-- *CRM Decision Makers in Top GDP Countries* — job title plus location
-- *Contacts from 3 Largest SEA Countries* — a regional group
+- *Singapore members* — everyone in one market
+- *Corporate buyers* — one type of customer
+- *Bangkok launch list* — the people from one event
 
 !!! tip "Segments beat one-off filters"
     If you find yourself applying the same filter repeatedly, save it as a
@@ -70,7 +83,7 @@ Useful segments look like:
 
 | Tab | What it holds |
 | --- | --- |
-| **Mailing Lists** | Fixed lists of contacts, as opposed to rule-based segments. |
+| **Mailing Lists** | Lists people subscribe to. See [Mailing lists](mailing-lists.md). |
 | **Custom Fields** | Extra fields you add to hold what matters to your business. |
 | **Custom Lists** | Your own groupings. |
 | **Import Jobs** | The status of imports, including any rows that failed. |

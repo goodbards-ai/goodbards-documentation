@@ -1,21 +1,37 @@
 # Marketing
 
-Plan, build and publish the campaigns your audience actually sees.
+Plan your campaigns and launch the tactics your audience actually sees.
 
-## In this section
+**Who sees it:** everyone your administrator gives the **Marketing** access to.
+Emails, forms, events and digital ads also sit under **Marketing** in the
+sidebar; each has its own access and its own section in these docs:
+[Emails & Forms](../emails/index.md), [Events](../events/index.md),
+[Digital Ads](../ads/index.md).
 
-- **[Launch a Tactic](launch-tactic.md)** — publish one post or one email, without
-  setting up a campaign first. Start here if you just want something out today.
-- **[Campaigns](campaigns.md)** — group related activity under one goal, with a
-  start and end date.
-- **[Emails](emails.md)** — design, send and track email to your contacts.
-- **[Forms](forms.md)** — collect sign-ups, registrations and feedback.
-- **[Event Management](event-management.md)** — run an event from registration
-  through check-in to follow-up.
-- **Digital Ads** — research keywords and plan paid advertising.
+## The screens
+
+### Launch a Tactic
+
+Publish one thing (a post, an email, an event) without setting up a campaign
+first. The AI suggests the tactics that fit your goal, with a score for each.
+
+See [Launch a Tactic](launch-tactic.md).
+
+### Campaigns
+
+Group related tactics under one goal, with dates, a budget and a report of what
+each tactic brought.
+
+See [Campaigns](campaigns.md).
+
+### Campaign report
+
+Results across every tactic of a campaign: emails, social posts, events and ads
+side by side.
+
+See [The campaign report](campaigns.md#the-campaign-report).
 
 ## Where to start
 
-If you are new: read [Launch a Tactic](launch-tactic.md) first. It explains the
-difference between a tactic and a campaign, which is the distinction the rest of
-this section builds on.
+Read [Launch a Tactic](launch-tactic.md) first. It explains the difference
+between a tactic and a campaign, which the rest of this section builds on.

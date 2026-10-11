@@ -43,6 +43,8 @@ in this order:
    connector.
 4. **[Contacts](../audience/contacts.md)** — import the people you market to.
    Without contacts there is nobody to send to.
+5. **Your team** — invite your colleagues and choose what each one can see and
+   change. See [Settings](../settings/index.md).
 
 !!! tip "Do the brand setup before generating content"
     Agents use whatever is in Brand & Context at the moment they write. Filling it

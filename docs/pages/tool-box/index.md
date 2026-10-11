@@ -1,19 +1,48 @@
 # Tool Box
 
-Small standalone utilities for the everyday jobs that come up around a marketing
-plan.
+Small standalone utilities for the everyday jobs around a marketing plan.
 
-## In this section
+**Who sees it:** everyone your administrator gives the **Tool box** access to.
 
-- **[Translator](translator.md)** — translate copy between the languages your
-  markets speak, keeping formatting intact.
-- **[External Chatbot](external-chatbot.md)** — a chatbot that answers questions
-  on your own website.
-- **[QR Code Generator](qr-code-gen.md)** — branded QR codes for print, packaging
-  and events.
-- **[URL Shortener](url-shortener.md)** — short, trackable links.
-- **[Image Editor](image-editor.md)** — crop, resize and adjust images without
-  leaving the platform.
+## The screens
 
-These tools work on their own. Nothing here needs a campaign or a connected
-account before you can use it.
+### Web Scraping
+
+Pull the content of a web page so GoodBards can work with it, for example to
+brief the AI on a competitor's page.
+
+See [Web Scraping](../website/web-scraping.md).
+
+### External Chatbot
+
+A chatbot on your own website that answers visitors' questions and captures
+leads as contacts.
+
+See [External Chatbot](external-chatbot.md).
+
+### QR Code Gen
+
+Branded QR codes for print, packaging and events.
+
+See [QR Code Generator](qr-code-gen.md).
+
+### URL Shortener
+
+Short, trackable links.
+
+See [URL Shortener](url-shortener.md).
+
+### Scheduler
+
+Run an AI agent or a report on a schedule, every morning or every Monday, and
+receive the result by email or in your Content Repository.
+
+See [Scheduler](scheduler.md).
+
+### Image Editor
+
+Crop, resize and adjust images without leaving GoodBards.
+
+See [Image Editor](image-editor.md).
+
+These tools work on their own. None needs a campaign before you can use it.

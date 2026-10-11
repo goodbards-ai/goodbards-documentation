@@ -1,16 +1,57 @@
-# Website
+# Organic Visibility
 
-Understand how your website is found, and what visitors do when they arrive.
+How your website is found, in search engines and in AI assistants, and what to
+fix first.
 
-## In this section
-
-- **[Google Analytics](google-analytics.md)** — traffic and visitor behaviour.
-- **[Google Trends](google-trends.md)** — what your market is searching for.
-- **[Web Scraping](web-scraping.md)** — pull content from a page so the platform
-  can work with it.
+**Who sees it:** everyone your administrator gives the **Website and SEO**
+access to.
 
 ## Before you start
 
-Every page in this section reads data from an external Google service, so each
-needs its connector set up first. If a screen tells you that you are not
-connected, start at [Connections](../settings/connections.md).
+These screens read your Google Search Console and Google Analytics data. If a
+screen says you are not connected, start at
+[Connections](../settings/connections.md).
+
+## The screens
+
+### Performance & Report
+
+How your site performs in search over time: clicks, impressions and position,
+with the trend and what to expect next. Other tabs give an executive report to
+share and a health check of your site.
+
+<span class="gb-soon">Guide coming soon</span>
+
+### Page Fixes
+
+The pages worth fixing first: pages close to the top of the results, pages losing
+traffic, and pages people see but rarely click. Each card says what to change,
+and you can send it to **Actions**.
+
+<span class="gb-soon">Guide coming soon</span>
+
+### AI Readiness & Authority
+
+Whether AI assistants can read, trust and quote your pages, scored page by page,
+and how often they mention you when asked about your market.
+
+<span class="gb-soon">Guide coming soon</span>
+
+### Momentum
+
+The searches and pages that are rising or falling right now, so you can act
+while it matters.
+
+<span class="gb-soon">Guide coming soon</span>
+
+### Google Analytics
+
+Traffic and visitor behaviour on your site.
+
+See [Google Analytics](google-analytics.md).
+
+### Google Trends
+
+What your market is searching for, and how interest changes over time.
+
+See [Google Trends](google-trends.md).

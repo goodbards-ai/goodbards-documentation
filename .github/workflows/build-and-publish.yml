@@ -38,7 +38,7 @@ jobs:
           python3 -m pip install mkdocs-video
           python3 -m pip install https://github.com/bmcorser/fontawesome-markdown/archive/master.zip
           python3 -m pip install mkdocs-git-revision-date-plugin
-          python3 -m pip install mkdocs-redoc-tag
+          python3 -m pip install mkdocs-glightbox
 
       - name: Build site
         run: mkdocs build

@@ -1,67 +1,97 @@
 # ------------------------------------------------------
 # Page tree
 # ------------------------------------------------------
-# Mirrors the in-app sidebar (frontend-v2 src/data/nav.ts MAIN_NAV_LINKS) so that
-# what a user sees in the product maps 1:1 onto where they look in the docs.
+# Top level = the tabs (7, in a new user's order); second level = the sidebar
+# sections. Each sidebar section is one permission module (#1045) whose index
+# page explains every screen of the module; screens without a guide yet say
+# "Guide coming soon" there and get a nav entry only once written.
+# File paths never move (only this tree does), so shared links keep working.
 nav:
-  - Home: index.md
-  - Getting Started:
-      - What is GoodBards?: pages/getting-started/what-is-goodbards.md
+  - Get started:
+      - index.md
       - Welcome to GoodBards: pages/getting-started/introduction.md
-      - Sign Up & Onboarding: pages/getting-started/signup-onboarding.md
-      - Finding Your Way Around: pages/getting-started/navigating.md
-  - Marketing:
-      - pages/marketing/index.md
-      - Launch a Tactic: pages/marketing/launch-tactic.md
-      - Campaigns: pages/marketing/campaigns.md
-      - Emails: pages/marketing/emails.md
-      - Forms: pages/marketing/forms.md
-      - Event Management: pages/marketing/event-management.md
-      - Digital Ads: pages/marketing/digital-ads.md
-  - Social Media:
-      - pages/social-media/index.md
-      - Analysis: pages/social-media/analysis.md
-      - Social Post: pages/social-media/social-post.md
-  - Agentic AI:
-      - pages/agentic-ai/index.md
-      - Chat Agents: pages/agentic-ai/chat-agents.md
-      - Workflow Agents: pages/agentic-ai/workflow-agents.md
-      - Research Assistant: pages/agentic-ai/research-assistant.md
-      - Image Generation: pages/agentic-ai/image-generation.md
-      - Video Generation: pages/agentic-ai/video-generation.md
-      - Text to Speech: pages/agentic-ai/text-to-speech.md
+      - Set up your account: pages/getting-started/signup-onboarding.md
+      - Finding your way around: pages/getting-started/navigating.md
+      - What is GoodBards?: pages/getting-started/what-is-goodbards.md
+      - Home:
+          - pages/home/index.md
+          - Home and the Daily Pulse: pages/home/home.md
+          - Actions: pages/workspace/actions.md
+          - Calendar: pages/workspace/calendar.md
+      - Help:
+          - FAQs: pages/faqs.md
+          - Contact & Support: pages/contact.md
+  # End-to-end jobs across several modules.
+  - Guides:
+      - pages/guides/index.md
+      - Run an event: pages/guides/run-an-event.md
+      - Email marketing campaign: pages/guides/email-campaign.md
+      - Social media campaign: pages/guides/social-campaign.md
+      - Improve your SEO: pages/guides/improve-seo.md
+      - For developers:
+          - Use the API: pages/guides/use-the-api.md
+          - Use GoodBards from your AI assistant (MCP): pages/guides/use-mcp.md
   - Audience:
       - pages/audience/index.md
       - Contacts: pages/audience/contacts.md
+      - Mailing lists: pages/audience/mailing-lists.md
       - Companies: pages/audience/companies.md
-  - Website:
-      - pages/website/index.md
-      - Google Analytics: pages/website/google-analytics.md
-      - Google Trends: pages/website/google-trends.md
-      - Web Scraping: pages/website/web-scraping.md
-  - Workspace:
-      - Actions: pages/workspace/actions.md
-      - Drive: pages/workspace/drive.md
-      - Calendar: pages/workspace/calendar.md
-  - Tool Box:
-      - pages/tool-box/index.md
-      - Translator: pages/tool-box/translator.md
-      - External Chatbot: pages/tool-box/external-chatbot.md
-      - QR Code Generator: pages/tool-box/qr-code-gen.md
-      - URL Shortener: pages/tool-box/url-shortener.md
-      - Image Editor: pages/tool-box/image-editor.md
+  - Marketing:
+      - Campaigns:
+          - pages/marketing/index.md
+          - Launch a Tactic: pages/marketing/launch-tactic.md
+          - Campaigns: pages/marketing/campaigns.md
+      - Emails & Forms:
+          - pages/emails/index.md
+          - Emails: pages/marketing/emails.md
+          - Forms: pages/marketing/forms.md
+      - Events:
+          - pages/events/index.md
+          - Event Management: pages/marketing/event-management.md
+      - Social Media:
+          - pages/social-media/index.md
+          - Social Post: pages/social-media/social-post.md
+          - Analysis: pages/social-media/analysis.md
+      - Digital Ads:
+          - pages/ads/index.md
+          - Digital Ads: pages/marketing/digital-ads.md
+  - Content & SEO:
+      - Content Hub:
+          - pages/content-hub/index.md
+          - Content Repository: pages/workspace/drive.md
+          - Translator: pages/tool-box/translator.md
+      - Organic Visibility:
+          - pages/website/index.md
+          - Google Analytics: pages/website/google-analytics.md
+          - Google Trends: pages/website/google-trends.md
+  - AI & Tools:
+      - Agentic AI:
+          - pages/agentic-ai/index.md
+          - Chat Agents: pages/agentic-ai/chat-agents.md
+          - Workflow Agents: pages/agentic-ai/workflow-agents.md
+          - Research Assistant: pages/agentic-ai/research-assistant.md
+          - Image Generation: pages/agentic-ai/image-generation.md
+          - Video Generation: pages/agentic-ai/video-generation.md
+          - Text to Speech: pages/agentic-ai/text-to-speech.md
+      - Tool Box:
+          - pages/tool-box/index.md
+          - Web Scraping: pages/website/web-scraping.md
+          - External Chatbot: pages/tool-box/external-chatbot.md
+          - QR Code Generator: pages/tool-box/qr-code-gen.md
+          - URL Shortener: pages/tool-box/url-shortener.md
+          - Scheduler: pages/tool-box/scheduler.md
+          - Image Editor: pages/tool-box/image-editor.md
   - Settings:
       - pages/settings/index.md
       - Personal Settings: pages/settings/personal-settings.md
       - Brand & Context: pages/settings/company-settings.md
+      - How the AI knows your brand: pages/settings/brand-voice-memory.md
       - Brand Kit: pages/settings/brand-kit.md
       - Connections: pages/settings/connections.md
       - AI Settings: pages/settings/ai-settings.md
-      - Sub-Workspaces (Sub Tenants): pages/settings/users-access.md
+      - Users, roles & permissions: pages/settings/users-roles.md
+      - Sub-Workspaces: pages/settings/users-access.md
       - Usage & Billing: pages/settings/tenant-usage.md
-  - Help:
-      - FAQs: pages/faqs.md
-      - Contact & Support: pages/contact.md
 
 # ------------------------------------------------------
 # Settings
@@ -74,15 +104,17 @@ site_author: Cedrick Lunven
 site_description: >-
  Documentation for Goodbards
 
-# Repository
-repo_name: goodbards-documentation
-repo_url: https://github.com/goodbards-ai/goodbards-documentation
+# No repository link: customers have no use for the GitHub repo in the header.
 edit_uri: ""
 
 # Theme
 theme:
  name: material
  language: en
+ # Closest free match to goodbards.com's Proxima Nova (licensed, not loadable here)
+ font:
+   text: Figtree
+   code: Roboto Mono
 
  favicon: img/favicon.ico
  logo: img/favicon.ico
@@ -92,6 +124,7 @@ theme:
     - content.code.annotate
     - navigation.indexes
     - navigation.sections
+    # 7 tabs at most: more do not fit the bar (15 did not, 2026-10-11).
     - navigation.tabs
     - navigation.top
     - navigation.tracking
@@ -159,7 +192,12 @@ plugins:
   - search
   - git-revision-date
   - mkdocs-video
-  - redoc-tag
+  # Click a screenshot to open it full size (zoom, arrows between the page's images)
+  - glightbox:
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - no-lightbox
 
 
 extra_css:

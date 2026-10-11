@@ -51,11 +51,26 @@ Rules:
 
 - **Never** screenshot a real customer's account. Names, email addresses,
   company names and metrics from a live tenant must not appear. PDPA applies.
-- One screenshot per page unless a step is genuinely unclear without a second.
-- Capture the relevant panel, not the whole desktop.
+- Screen pages: one screenshot unless a step is genuinely unclear without a
+  second. Guides: one per stage is fine, placed right under the step it shows.
+- Capture the relevant panel, not the whole desktop. Crop out the top bar: it
+  shows the signed-in person's name and photo.
 - Always write real alt text: `![The Contacts list with a segment applied](...)`.
   Screen-reader users and broken-image fallbacks both depend on it.
 - Re-capture when the UI changes. A stale screenshot is worse than none.
+- Every screenshot opens full size when clicked (glightbox). To opt one out, add
+  `{ .no-lightbox }` after it.
+
+### Animated GIFs
+
+Use a GIF only when the movement *is* the instruction: dragging, an editor
+interaction, a sequence a still image cannot show (for example inserting a field
+in the email editor). Everything else stays a PNG.
+
+- Same rules as screenshots: demo tenant, light theme, the panel only.
+- Short: one action, under 10 seconds, no idle frames at the start or end.
+- Under 2 MB. Save to `docs/img/gifs/<page-name>-<action>.gif`.
+- Alt text says what happens: `![Choosing Attendee name from Insert field…](...)`.
 
 ## Admonitions
 

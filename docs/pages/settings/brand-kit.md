@@ -21,7 +21,7 @@ a generic template.
 4. Add your colours, fonts and logo.
 5. Mark one kit as **primary**.
 
-![The Brand Kit tab, with Add Brand Kit and the option to apply the brand to the app interface](../../img/screenshots/brand-kit.png)
+![The Brand Kit tab: Apply brand to app interface with the primary, secondary, background and text colour roles, and the Tropika Home kit marked Primary with its palette of six colours and two fonts](../../img/screenshots/brand-kit.png)
 
 ## Colour roles matter more than colour names
 

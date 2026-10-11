@@ -17,7 +17,7 @@ account-level activity rather than isolated individuals.
 **Audience → Companies** opens on **Home**, which summarises your data rather
 than listing organisations.
 
-![The Companies home tab, showing total companies, contacts without a main contact, and company readiness charts](../../img/screenshots/companies.png)
+![The Companies home tab: 60 companies, 3 without a main contact, 263 linked contacts, and the Company Readiness charts for database count, growth, profile completeness and industries](../../img/screenshots/companies.png)
 
 | Tile | What it tells you |
 | --- | --- |

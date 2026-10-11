@@ -48,6 +48,8 @@ Everything you have created is listed under **Email Gallery**, on the **Emails**
 tab. Use the search box to find one by name, and the buttons beside it to switch
 between grid and list view.
 
+![The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated](../../img/screenshots/emails-list.png)
+
 The **Email Designs** tab holds the reusable looks — headers, footers and
 branding — rather than individual messages.
 

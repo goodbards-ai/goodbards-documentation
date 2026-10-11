@@ -8,19 +8,8 @@ In practice that means the work you would normally spread across an email tool, 
 social scheduler, a CRM and a folder of brand assets happens in one place, with AI
 that already knows your business.
 
-## What makes it different
-
-These are the ideas the rest of the documentation builds on. Understanding them
-early makes everything else make sense.
-
-| | What it means |
-| --- | --- |
-| **Agentic Memory** | Agents remember. Personal, agent and organisation-wide memory mean every interaction builds on the last, rather than starting from nothing. |
-| **Voice Bank** | Your brand's voice, captured once. Agents write like you rather than in a generic default. See [Brand & Context](../settings/company-settings.md). |
-| **Brand Kit** | One source of truth for colours, fonts and logos, applied across every asset. See [Brand Kit](../settings/brand-kit.md). |
-| **Content Generation** | Image, video and voice created natively — you do not leave the platform to produce an asset. |
-| **Web Intelligence** | Scraping, scheduled crawls and feeds, so you can see what your market is doing. |
-| **Connectors** | Links to the outside services you already use. See [Connections](../settings/connections.md). |
+This documentation is a user guide: how to do things, screen by screen. For what
+GoodBards offers and why, see [goodbards.com](https://www.goodbards.com).
 
 ## Where each part of the product lives
 
@@ -31,10 +20,11 @@ they line up.
 
 | On the website | In the app | Documentation |
 | --- | --- | --- |
-| **Email Marketing** | Marketing → Emails | [Emails](../marketing/emails.md) |
+| **Email Marketing** | Marketing → Emails | [Emails & Forms](../emails/index.md) |
 | **Customer Data Platform** | Audience | [Audience](../audience/index.md) |
 | **Social Media Marketing** | Social Media | [Social Media](../social-media/index.md) |
-| **Event Management** | Marketing → Event Management | [Event Management](../marketing/event-management.md) |
+| **Event Management** | Marketing → Event Management | [Events](../events/index.md) |
+| **SEO and AI search** | Organic Visibility | [Organic Visibility](../website/index.md) |
 | **AI Chatbot and AI Agent** | Agentic AI, and Tool Box → External Chatbot | [Agentic AI](../agentic-ai/index.md) |
 
 !!! note "The docs follow the app, not the website"

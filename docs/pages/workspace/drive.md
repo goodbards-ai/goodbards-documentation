@@ -1,6 +1,7 @@
-# Drive
+# Content Repository
 
-Where the images, documents and files your marketing uses are stored.
+Where the images, documents and files your marketing uses are stored. It used to
+be called **Drive**.
 
 ## What it's for
 
@@ -14,19 +15,20 @@ them.
 
 ## How to upload and organise files
 
-1. In the sidebar, choose **Drive**.
+1. In the sidebar, choose **Content Hub → Content Repository**.
 2. Choose **+ New** to upload a file or create a folder.
 3. Open a folder to work inside it.
 
-![The Drive screen, showing the My Documents and System folders in list view](../../img/screenshots/drive.png)
+![The Assets folder: a blog draft and LinkedIn, Facebook and Instagram posts, with their type, author, date, size and AI switch](../../img/screenshots/content-repository.png)
 
 ## The default folders
 
-A new account starts with two:
+A new account starts with three:
 
 | Folder | What it holds |
 | --- | --- |
-| **My Documents** | Your own uploads. Organise this however suits your team. |
+| **My Documents** | Your team's content, in **Assets** (articles and posts), **Emails**, **Images**, **Audios** and **Videos**, plus anything you upload. |
+| **Shared With Me** | What colleagues have shared with you. |
 | **System** | Files GoodBards manages itself. Leave this alone. |
 
 !!! warning "Do not reorganise System"
@@ -35,7 +37,10 @@ A new account starts with two:
 
 ## Finding files
 
-- **Search by title…** finds a file by name.
+- **Search by title…** finds a file by name. Switch from **Title** to
+  **Content** to search inside documents instead.
+- The **AI** switch on a file lets the AI agents read it as background, for
+  example your brand guidelines.
 - **Filter** narrows by file type and other attributes.
 - The two buttons beside Filter switch between **list** and **grid** view. Grid
   shows thumbnails, which is quicker for images.

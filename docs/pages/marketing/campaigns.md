@@ -27,7 +27,7 @@ Use [Launch a Tactic](launch-tactic.md) instead.
 4. Add the tactics that belong to it — the posts, emails and events that work
    towards the objective.
 
-![The Campaigns screen, showing counts of total, active, pending and completed campaigns above a table of campaigns with objective, status and dates](../../img/screenshots/campaigns.png)
+![The Campaigns screen: 7 campaigns, 2 active, 1 pending, 4 completed, above the table of campaigns with their objective, status, dates and Start button](../../img/screenshots/campaigns.png)
 
 ## Reading the campaign list
 
@@ -41,7 +41,37 @@ it runs between. Sort by any column using the arrows beside the heading.
 | --- | --- |
 | **Pending** | Created, but not started yet. |
 | **Active** | Currently running. |
-| **Completed** | Finished. |
+| **Ended** | Finished. |
+
+## Inside a campaign
+
+Click a campaign's name to open it. Its tabs are **Overview**, **Budget**,
+**Calendar** and **Analytics**.
+
+**Overview** shows the **Campaign Details**: objective, budget, target industry,
+audience, regions, and a description the AI uses as context whenever it writes
+for this campaign. Choose the pencil to change them.
+
+![Campaign Details: the objective Lead Generation and Conversion, the campaign code, a budget of 45,000, the target industry, the audience, Singapore and Malaysia, and the description](../../img/screenshots/campaign-details.png)
+
+Below, **Tactics** lists everything the campaign runs: ads, blog posts, social
+posts, emails and events, each with its status and end date.
+
+![The Tactics list: Google Ads, a blog post, LinkedIn, Facebook and Instagram posts, and an email campaign, with Write Content With AI, Plan With AI and Add Tactic](../../img/screenshots/campaign-tactics.png)
+
+- **Add Tactic** adds one yourself.
+- **Plan With AI** suggests the tactics that fit the campaign's objective.
+- **Write Content With AI** drafts the content of the tactics.
+
+## The campaign report
+
+The **Analytics** tab gathers the results of every tactic in one place: reach and
+engagement on social networks, email deliveries, opens and clicks, event
+registrations and attendance, and ad spend and returns. Each figure shows its
+change against the previous report. Use the arrows to move between report
+dates, or **History** to see them all.
+
+![The campaign report: impressions, clicks, likes, shares, comments and engagement rate, then emails delivered, open and click rates, event registrations, attendance rate and waitlisted, each with its change](../../img/screenshots/campaign-analytics.png)
 
 ## Starting and stopping
 
