@@ -16,6 +16,11 @@ check guests in on the day, and follow up afterwards.
 Choose who to reach, write and design the email, send or schedule it, and read
 the results.
 
+### [Create a social post from scratch](create-social-post.md)
+
+Write one post by hand, save it as an asset, add it to a campaign, and publish
+or schedule it.
+
 ### [Run a campaign on social media](social-campaign.md)
 
 Plan a series of posts, write them with the AI in your brand voice, schedule

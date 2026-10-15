@@ -35,6 +35,14 @@ Turn one article into a series of posts for several channels at once.
 
 Nothing is published: every post waits on its channel as a draft for you to review.
 
+## How to write a post yourself
+
+Choose **New Post**, pick the **Asset Type**, keep **New Empty** as the
+**Creation Method**, give it a **Title** and choose **Create**. Type the post,
+save it, then add it to a campaign and publish or schedule it. The full
+walkthrough, with screenshots, is in
+[Create a social post from scratch](../guides/create-social-post.md).
+
 ## How to write a post with AI
 
 1. In the sidebar, choose **Social Media → Social Post**, then **New Post**.
@@ -48,8 +56,11 @@ Nothing is published: every post waits on its channel as a draft for you to revi
 6. Read the score and the checks. Apply the suggestions you agree with, or use
    **Ask for a change**. Then choose **Save as asset**.
 
-In the post editor, **Improve With AI** rewrites within the channel's character
-limit and **AI Hashtags** suggests hashtags once the post has ten words. The
+In the post editor, **Improve With AI** opens a small chat with the AI: ask for
+a change (*more punchy, add three hashtags*) and the post is rewritten within
+the channel's character limit, with **Revert** to undo. Paste a link (*write a
+post about https://…*) and the page is read first, so the post draws on what it
+actually says. **AI Hashtags** suggests hashtags once the post has ten words. The
 preview on the right shows the post as it will appear on the network, on desktop
 or mobile.
 

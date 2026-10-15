@@ -26,6 +26,7 @@ nav:
       - pages/guides/index.md
       - Run an event: pages/guides/run-an-event.md
       - Email marketing campaign: pages/guides/email-campaign.md
+      - Create a social post: pages/guides/create-social-post.md
       - Social media campaign: pages/guides/social-campaign.md
       - Improve your SEO: pages/guides/improve-seo.md
       - For developers:
@@ -113,6 +114,7 @@ nav:
           - Google Search Console: pages/settings/connectors/google-search-console.md
           - Google Trends: pages/settings/connectors/google-trends.md
           - Chartbeat: pages/settings/connectors/chartbeat.md
+          - Google BigQuery: pages/settings/connectors/google-bigquery.md
           - Google Ads: pages/settings/connectors/google-ads.md
           - Google Drive: pages/settings/connectors/google-drive.md
           - Pipedrive: pages/settings/connectors/pipedrive.md
