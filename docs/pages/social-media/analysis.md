@@ -47,6 +47,13 @@ Choose **Change** beside the organisation name to switch to a different page.
 Judge posts on **engagement rate** rather than raw likes. A post seen by 500
 people with 50 interactions is doing better than one seen by 30,000 with 100.
 
+!!! note "Facebook pages"
+    Impressions, clicks and the **Channel Engagements** chart come from
+    Facebook's insights, which the page connection has to allow. When it does
+    not, those figures are left out of the report rather than shown as zero.
+    Likes, comments, shares and **Fans** are always available. Reconnect the
+    page to add insights access.
+
 ## Content Sentiment Analysis
 
 Beside the metrics, sentiment splits engagement into **Positive**, **Neutral** and

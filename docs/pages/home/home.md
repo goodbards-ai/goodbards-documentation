@@ -24,7 +24,7 @@ opening ten screens.
 4. **Global performance**: website traffic (**Web Analytics**), **Social Media**
    engagement per network, and **Search Performance** from Google Search Console.
 5. **Audience & CDP**: your contacts and companies, how many engaged yesterday,
-   and your contact readiness and engagement scores.
+   and your database health and engagement scores.
 
 ![Home, lower part: Web Analytics, Social Media and Search Performance, then Audience, Engagement and CX Scores, each with its trend](../../img/screenshots/home-performance.png)
 

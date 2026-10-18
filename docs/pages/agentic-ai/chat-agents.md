@@ -60,7 +60,7 @@ button at the top walks you through the form.
 | **General Information** | A name, an avatar, the agent type and its category, and a short description your team will see on its card. |
 | **Prompt Definition** | The AI model, and the **System Prompt**: who the agent is and how it should behave. A good starting prompt is already filled in; adapt it to the agent's job. Optional: a **User Prompt** added to every conversation, a **Welcome Message** and **Sample Requests** shown when a chat starts. |
 | **Data Retrievers** | **Search Knowledge Base**: let the agent read your Content Repository files marked for AI. **Web Search**: let it search the web. |
-| **Tools** | The actions the agent may take inside GoodBards, and outside tools connected under [AI Settings → MCP Tools](../settings/ai-settings.md#mcp-tools-give-your-agents-outside-tools). |
+| **Tools** | The actions the agent may take inside GoodBards, and outside tools connected under [AI Settings → MCP Tools](../settings/ai-settings.md#mcp-tools-give-your-agents-outside-tools). As you pick internal tools, a table under the selector lists what each one lets the agent do: one row per tool, one chip per operation (for example `listMarketingCampaigns` or `createMarketingAsset`). Hover a chip to read what the operation does and what it needs. The last rows, marked **Always on**, are the core abilities every agent has, such as web search and the current date. |
 | **Agent Skills** | Ready-made expertise, assigned once the agent exists. |
 | **Memory** | **Persistent Memory** lets the agent remember facts from past conversations; **Promote Facts to Tenant** shares important ones with all your agents. Leave the numbers at their defaults unless support asks you to change them. |
 

@@ -29,7 +29,7 @@ your audience is available when you choose recipients.
 | Option | When to use it |
 | --- | --- |
 | **Designs Gallery** | The usual choice. Reuse a look and feel — header, footer and branding — and just write the message. Marked *Recommended*. |
-| **Import from External** | You already have the email elsewhere. Paste HTML, upload a `.eml` file, or fetch a URL. |
+| **Import from External** | You already have the email elsewhere. Paste HTML, upload a `.eml` file, upload a `.zip` export (for example from Canva), or fetch a URL. |
 | **Reuse existing from platform** | Send something you have written before, with fresh recipients. |
 | **Start Blank** | An empty email with no styling. Best for a plain, personal message. |
 
@@ -41,6 +41,36 @@ your audience is available when you choose recipients.
     If you send a similar email regularly, **Reuse existing from platform** keeps
     the content and design and only asks for new recipients — usually faster than
     building it again.
+
+### Importing a design from Canva
+
+Canva exports an email as a `.zip` holding the email's HTML and its images.
+
+1. In Canva, export your email design. Keep the `.zip` as it is; there's no
+   need to unzip it.
+2. In **Create Email**, choose **Import from External**, then the
+   **ZIP (Canva)** tab, and drop the `.zip`. Any `.zip` with one HTML file and
+   its images works the same way.
+3. Choose **Analyze & clean up**. The report lists what the file contained:
+   the images found, any image the HTML uses but the `.zip` lacks, and files
+   that won't be used.
+4. Check the **Import name**. It names the email and the folder its images go
+   to.
+5. Continue through **Scope** and **Images**. The images are copied to
+   **Drive › My Documents › Images › *your import name*** and made public so
+   recipients can see them; the email points at those copies.
+
+Good to know:
+
+- The plain-text version of the email is created from the HTML, with its
+  links. The `.txt` file in Canva's export is not used.
+- Canva's unsubscribe link is converted automatically. If an email has no
+  unsubscribe link, the report warns you: add one, or use a Design whose
+  footer has it, before sending.
+- If the design uses a font recipients don't have (Canva's brand fonts, for
+  example), the report names it and the font they'll see instead.
+- SVG images are not imported: Gmail and Outlook don't display them. Export
+  them from Canva as PNG instead.
 
 ## Editing an email
 
@@ -59,13 +89,38 @@ you edit only your content inside it.
   text, button, image, two columns, divider…). Personal fields such as **First
   name** are filled in for each recipient.
 - **Code**: edit the HTML directly.
-- **AI**: describe the change, for example *make it shorter and warmer*.
+- **AI**: describe the change, for example *make it shorter and warmer*. You
+  can also paste links: *write a newsletter from these posts* followed by up
+  to three web addresses builds a section per post, with a "Read more" link to
+  each. The pages are read before the AI writes, and the panel tells you which
+  ones it could read; a page whose owner blocks automated access is named, not
+  guessed at.
 - **Desktop**, **Email width** and **Mobile** preview the email at each size.
 
 Choose **Apply** to keep your changes, or **Cancel**.
 
 The card menu in the gallery also offers **Show Tactics** (where the email is
 used), **Duplicate**, **Attach to tactic** and **Delete**.
+
+## Attaching an email to a tactic
+
+An email is sent from a campaign tactic: the tactic holds the audience, the
+sender and the send button. **Attach to tactic** in the card menu links the
+email to one, in three ways:
+
+- **Existing tactic**: pick a campaign, then one of its email tactics. Only
+  tactics that can still take the email are listed: a tactic sends one email,
+  so those that already sent theirs, and closed tactics, are left out. A tactic
+  whose email is still a draft, failed, or scheduled is listed with that email's
+  name; attaching replaces it after you confirm. The audience and the sender stay;
+  a scheduled send is cancelled, and you schedule the new email again from the
+  tactic page.
+- **New tactic in a campaign**: pick a campaign and name the tactic; it is
+  created as a draft with the email attached.
+- **New campaign**: name the campaign, choose its objective and name the tactic;
+  both are created with the email attached.
+
+Each option opens the tactic page, where you set the recipients and send.
 
 ## Finding your emails
 

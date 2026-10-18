@@ -16,13 +16,57 @@ people.
 
 1. In the sidebar, choose **Agentic AI → Image Generation**.
 2. Describe what you want in **Prompt**. Detail helps.
-3. Pick an **Aspect Ratio**.
-4. Open **Style Options** if you want more control over the look.
-5. Choose **Generate Images**.
+3. **Aspect Ratio**, **Brand** and **Style Options** are folded sections. Each
+   shows its current choice next to its name (for example *1:1* or
+   *Tropika Home · Logo stamped*). Open one to change it. Your primary brand kit
+   is already selected under **Brand** (see below).
+4. Choose **Generate Images**, always at the bottom of the panel.
 
 Your images appear under **Generated Images** on the left.
 
 ![The Image Generation screen: generated images on the left; model, prompt with AI Assist, aspect ratio and style options on the right](../../img/screenshots/image-generation.png)
+
+## Keeping images on brand
+
+**Brand kit** lists your company's [brand kits](../settings/brand-kit.md). Your
+primary kit is selected when you open the screen. Choose **None** to generate
+without it.
+
+With a brand kit selected, GoodBards adds the kit's colours and its imagery
+guidelines to your prompt, so the result leans towards your palette and style.
+AI follows colours closely but not exactly, so check important brand colours by eye.
+
+### Adding your logo
+
+Turn on **Add logo** to place your real logo on the image:
+
+- **Logo**: pick which of the kit's logos to use. GoodBards remembers your
+  choice for that kit.
+- **Variant**: **Auto** picks the white version on dark backgrounds and the
+  normal one on light backgrounds. You can also pick a version yourself.
+- **Position** and **Size**: choose the corner and how large the logo is.
+
+The logo is your actual logo file placed on top of the image. The AI never
+redraws it, so it is never distorted. Changing the logo, position or size
+updates the image instantly and uses no credits. **Download**, **Edit** and
+**Save to Drive** all keep the logo.
+
+!!! tip "Brand rules about logo placement"
+    If your brand kit says the logo belongs top-left, **Position** starts there.
+
+### Putting your logo inside the scene
+
+With a Nano Banana or GPT Image model, you can also turn on **Blend logo into
+the scene**.
+The AI then draws your logo into the picture itself: printed on a cup, a bag, a
+shop sign. Pick the logo and variant as above.
+
+The AI redraws the logo, so it may not reproduce it perfectly. Check its shape,
+colours and lettering before you use the image. For an exact logo, use
+**Add logo** instead. You can only use one of the two at a time.
+
+The same **Brand kit** choice appears when you generate an image for a campaign
+tactic. That screen adds your colours and guidelines, but not the logo.
 
 ## Choosing an aspect ratio
 

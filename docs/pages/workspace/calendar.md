@@ -14,7 +14,8 @@ here automatically. You do not maintain it separately.
 
 ## How to read your calendar
 
-1. In the sidebar, choose **Calendar**.
+1. In the sidebar, choose **Marketing → Calendar**, or the Calendar icon in the
+   top bar.
 2. Switch between **Week**, **Month** and **Year** depending on how far ahead you
    are looking.
 3. Use the arrows beside the date range to move through time.

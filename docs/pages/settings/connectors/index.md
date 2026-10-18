@@ -35,6 +35,7 @@ company account can connect or disconnect a service. See
 | **Google Search Console** | Google search clicks, impressions, positions and queries — the base of the search screens. | [Google Search Console](google-search-console.md) |
 | **Google Trends** | Search interest over time and by place. | [Google Trends](google-trends.md) |
 | **Chartbeat** | Stores your Chartbeat access; no screen shows its data yet. | [Chartbeat](chartbeat.md) |
+| **Google BigQuery** | Lets your AI agents read your own BigQuery data, in your Google project. | [Google BigQuery](google-bigquery.md) |
 
 ## Digital Ads
 

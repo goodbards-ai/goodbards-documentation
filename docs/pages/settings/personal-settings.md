@@ -58,6 +58,25 @@ the **EN** control in the top bar.
 What the AI has remembered about you and how you work. Review it if the AI's
 output drifts from what you expect.
 
+## Shortcuts
+
+Choose the icons shown in the top bar, before the search. Up to six pages or
+actions — for example **Scan Business Card** to capture a business card in one tap, or
+**Emails** if you send campaigns every day.
+
+1. Tick the entries you want. They are grouped like the menu, plus **Quick
+   actions** (Create Contact, Scan Business Card, Create Campaign…).
+2. Use the arrows on each one at the top to set the order, left to right.
+3. Choose **Update**.
+
+**Reset to default** brings back Content Repository and Calendar. Remove every
+entry and only the search is left.
+
+!!! note "Same shortcuts in every workspace"
+    Your shortcuts follow you. A shortcut to a screen a workspace does not give
+    you access to is simply not shown there; one your plan does not include shows
+    a crown.
+
 ## Good to know
 
 - **These settings follow you, not the workspace.** If you have access to more

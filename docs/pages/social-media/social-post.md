@@ -48,9 +48,18 @@ walkthrough, with screenshots, is in
 1. In the sidebar, choose **Social Media → Social Post**, then **New Post**.
 2. Pick the **Asset Type**, for example a LinkedIn post.
 3. Under **Creation Method**, choose **Write with AI**, then **Continue**.
-4. Fill in **What is it about?**. Optionally add **Source and materials** (web
-   pages or files from your Content Repository) and **Tuning** (audience, tone,
+4. Fill in **What is it about?**. Optionally tell the AI how to write it in
+   **Instructions for the AI**: the angle, what to stress or leave out, the
+   length or the hashtags (for example *"Focus on the ROI for agencies, under
+   150 words, end with a question"*). Then add **Source and materials**: the
+   facts the post may use, typed in **Notes & facts**, web pages, or files
+   from your Content Repository. Finish with **Tuning** (audience, tone,
    language, keywords).
+
+    !!! tip "Instructions or notes?"
+        **Instructions** say *how* to write the post; the AI follows them.
+        **Notes & facts** say *what* is true; the AI only uses them as facts
+        to cite, and never takes orders from them.
 5. Choose **Write the brief**, check it, then **Generate**. The AI drafts the post,
    reviews it and revises it once.
 6. Read the score and the checks. Apply the suggestions you agree with, or use

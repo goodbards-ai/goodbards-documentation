@@ -38,9 +38,11 @@ Open an article or a post to edit it in the **Asset Studio**.
 
 ![The Asset Studio: Back To Folder, the title, the Document view, Autosave, Quality Review, Preview and Save, above the editor toolbar with Improve With AI](../../img/screenshots/asset-studio.png)
 
-- **Improve With AI** (or ++cmd+j++) rewrites the whole document following your
-  instruction, for example *shorter and warmer*. The change applies straight
-  away; choose **Revert** to undo it.
+- **Improve With AI** (or ++cmd+j++) opens a small chat with the AI editor.
+  Ask for a change, for example *shorter and warmer*, and the whole document is
+  rewritten; the change applies straight away, and **Revert** undoes it. Paste
+  links in your request (*draft this from https://…*) and the pages are read
+  before the AI writes; the chat says which ones it could read.
 - **Quality Review** scores the piece, as in the
   [Content Workspace](../content-hub/content-workspace.md), and says what to
   improve.

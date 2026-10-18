@@ -32,11 +32,14 @@ Along the top:
 
 - **Your workspace name**, on the left. If you have access to more than one, this
   is where you switch between them.
-- **Content Repository** and **Calendar**, the two icons before the search. See
+- **Your shortcuts**, the icons before the search. By default
+  **Content Repository** and **Calendar** (see
   [Content Repository](../workspace/drive.md) and
-  [Calendar](../workspace/calendar.md).
-- **Search**, in the middle — or press ++cmd+k++ (++ctrl+k++ on Windows) from
-  anywhere.
+  [Calendar](../workspace/calendar.md)). Pick your own, up to six, in
+  [Personal Settings → Shortcuts](../settings/personal-settings.md#shortcuts):
+  for example **Scan Business Card** if you meet customers on the road.
+- **Search**, the magnifying glass — or press ++cmd+k++ (++ctrl+k++ on Windows)
+  from anywhere.
 - **Notifications**, the bell: what happened while you were away. Switch
   between **All**, **Unread** and
   **Read**, and mark one as unread to come back to it.
@@ -60,7 +63,8 @@ you through a screen step by step, for example creating a chat agent.
 | Connect a social or analytics account | Account menu → **Connections** |
 | Set your logo, colours and brand voice | Account menu → **Brand & Context** |
 | Invite a colleague | Account menu → **Tenant Settings → Security** |
-| See what is scheduled | The **Calendar** icon in the top bar |
+| See what is scheduled | **Marketing → Calendar**, or the Calendar icon in the top bar |
+| Put a screen you use every day in the top bar | Account menu → **Personal Settings → Shortcuts** |
 | Write an article or a post with AI | **Content Hub → Content Workspace** |
 
 ## Two words worth knowing

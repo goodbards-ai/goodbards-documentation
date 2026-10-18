@@ -79,6 +79,69 @@ For its emails and content, choose:
 For an event, its settings are copied too, and its registration form is always
 duplicated so the two events keep their registrations apart.
 
+The copy gets its own tactic code (the original's code followed by `-copy`), so
+Google Analytics never mixes the two tactics.
+
+### Reading a social tactic's results
+
+Once a LinkedIn, Facebook, Instagram, X or TikTok post is published, the tactic
+shows a **Performance by post** card under its posts, with one colour per post in
+every chart:
+
+- **Link clicks**: people who opened the links in each post.
+- **Reach & Visibility**: impressions of each post.
+- **Engagement Trends**: clicks, likes, shares or comments of each post.
+
+Reach and engagement are the network's figures, collected by the daily report:
+running totals since publication, so a post appears the day after it is
+published. Pick **Since publish**, **7**, **30** or **90 days** above the charts,
+and click a post's name to open its analytics. The same card appears when you
+open the tactic from the campaign's **Analytics** tab, where the campaign charts
+keep one colour per tactic.
+
+**View analytics** in a published post's menu opens the same view for one post:
+
+- **Link clicks (tracked)**: people who opened the links in the post, day by day,
+  and how many clicks each link got.
+- The network's own figures for the post (impressions, reactions, comments,
+  shares…), from the latest daily report. They appear the day after publishing.
+
+Good to know:
+
+- **"Clicks on LinkedIn" is a different number.** The network counts every click
+  on the post (image, "see more", profile); link clicks count only the people who
+  opened your links.
+- **Bots are left out.** When a post is published, the network fetches its links to
+  build the preview card; those visits are not counted. Switch on **Include bots**
+  to see them.
+- Days follow your timezone.
+- A post linked from outside GoodBards has no tracked links: it shows the network
+  figures only.
+
+### Tracking links in Google Analytics
+
+Every link GoodBards shortens in a campaign's emails and social posts carries
+UTM tags, so its visits show up in your Google Analytics reports:
+
+| Tag | Value | Example |
+| --- | --- | --- |
+| `utm_campaign` | the **campaign code** | `summer-sale-2026` |
+| `utm_content` | the **tactic code**: tells two tactics of the same campaign apart | `launch-post` |
+| `utm_source` | where the click comes from, set from the tactic type | `linkedin`, `facebook`, `newsletter` for emails, `event` for event emails |
+| `utm_medium` | the channel family, set from the tactic type | `social` or `email` |
+
+- **The codes are optional.** Leave them empty and GoodBards writes one from the
+  name ("Summer Sale 2026" becomes `summer-sale-2026`) and keeps it, even if you
+  rename the campaign later.
+- **Format:** lowercase letters, digits, `-` and `_`, up to 50 characters. A
+  campaign code is unique in your workspace, a tactic code within its campaign.
+- **Source and medium can't be edited**, so every campaign is named the same way
+  in your reports. The tactic form shows the tags its links get.
+- **Your own tags win.** A link that already contains `utm_` tags is left as you
+  wrote it.
+- Ads and blog posts get no tags: Google Ads tags its own clicks, and tags on
+  links to your own website would overwrite your visitors' real source.
+
 ## The Budget tab
 
 The **Budget** tab splits the campaign's budget across its tactics. On the left,

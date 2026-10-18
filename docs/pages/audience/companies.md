@@ -19,18 +19,26 @@ than listing organisations.
 
 ![The Companies home tab: 60 companies, 3 without a main contact, 263 linked contacts, and the Company Readiness charts for database count, growth, profile completeness and industries](../../img/screenshots/companies.png)
 
-| Tile | What it tells you |
-| --- | --- |
-| **Total Companies** | How many organisations you hold. |
-| **No Main Contact** | Companies with nobody nominated as the primary contact. |
-| **Linked Contacts** | Contacts successfully attached to a company. |
+**Total Companies**, top left, shows how many organisations you hold.
 
-!!! warning "No Main Contact is the number to fix"
-    A company with no main contact means you have the organisation but no named
-    person to approach. If this figure is close to your total, your account data
-    is not yet usable for outreach.
+**Data quality**, next to it, is your clean-up list for accounts. Each tile
+counts the companies that need attention, with their share of the total; hover
+it to read what it checks, and choose it to open the list filtered to those
+companies:
 
-## Company Readiness
+- **No contacts** — organisations nobody at your company can reach. Add or link
+  a contact.
+- **Under 5 contacts** — accounts below the number of contacts you aim for. On
+  the filtered list, change the number in the filter chip above the table to
+  use your own target.
+
+In the **Details List**, the **Contacts** column shows how many contacts each
+company has; sort on it to see the thinnest accounts first. The assistant in the
+top bar answers the same questions in plain words, for example *companies with
+fewer than 5 contacts* or *top 10 companies by clicks in the last 30 days*; see
+[Asking the assistant](contacts.md#asking-the-assistant).
+
+## Database Health
 
 The charts below score how complete your data is:
 
@@ -42,9 +50,10 @@ The charts below score how complete your data is:
   industry set show as *Unknown*.
 - **Distribution by Company Size** — the spread from small to large.
 
-The letter badge beside **Company Readiness** grades your data overall. Treat a
-low grade as a prompt to fill in missing fields rather than a problem with the
-platform.
+The letter badge beside **Database Health** grades your data overall, and the
+small line next to it shows the score over the last 90 days. Treat a low grade
+as a prompt to fill in missing fields rather than a problem with the platform.
+**Engagement**, further down, grades how much your accounts interact with you.
 
 ## Adding companies
 

@@ -25,7 +25,9 @@ and fill in the form.
 
 1. In **Audience → Contacts**, open the **Import Jobs** tab, then **Bulk Add
    Contacts → From a CSV file**.
-2. Choose **Download Template** and put your contacts in it, one per row.
+2. Choose **Download Template** and put your contacts in it, one per row. The
+   columns and the values they accept are explained in
+   [Contacts → Prepare your CSV file](contacts.md#prepare-your-csv-file).
 3. Upload the file, give the import a **Title**, and choose:
     - **Choose Conflict Action**: what to do when an email address already exists
       (for example **Ignore** it).
@@ -36,8 +38,13 @@ and fill in the form.
 4. Under **Additional Details**, say where the contacts come from (a campaign and
    tactic, or another source), add **Tags** and **Owners**, and pick the
    **Privacy Statement** they agreed to. Choose **Upload**.
-5. The **Import Jobs** tab shows the import's progress and how many rows were
-   processed.
+5. The job appears on the **Import Jobs** tab as **READY TO START**. Nothing is
+   imported yet: check the job, then choose **Start** and confirm with **Start
+   import**.
+6. When the job shows **COMPLETED**, your contacts are in. If it shows
+   **INCOMPLETE**, open it with **View** and choose **Download logs** to see
+   which rows were rejected and why. See
+   [Import Jobs](contacts.md#import-jobs).
 
 ## Import from Pipedrive
 
