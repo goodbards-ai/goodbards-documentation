@@ -1809,6 +1809,28 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reading-a-social-tactics-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading a social tactic's results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-links-in-google-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking links in Google Analytics
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4229,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/connectors/google-bigquery.md" class="md-nav__link">
+      <a href="../settings/connectors/google-bigquery.html" class="md-nav__link">
         
   
   
@@ -4638,6 +4660,28 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reading-a-social-tactics-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading a social tactic's results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-links-in-google-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking links in Google Analytics
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4728,7 +4772,7 @@ Use <a href="launch-tactic.html">Launch a Tactic</a> instead.</p>
 <li>Add the tactics that belong to it — the posts, emails and events that work
    towards the objective.</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/campaigns.png" data-desc-position="bottom"><img alt="The Campaigns screen: 7 campaigns, 2 active, 1 pending, 4 completed, above the table of campaigns with their objective, status, dates and Start button" src="../../img/screenshots/campaigns.png"></a></p>
+<p></p>
 <h2 id="reading-the-campaign-list">Reading the campaign list<a class="headerlink" href="#reading-the-campaign-list" title="Permanent link">¶</a></h2>
 <p>The four tiles across the top summarise where things stand: <strong>Total</strong>,
 <strong>Active</strong>, <strong>Pending</strong> and <strong>Completed Campaigns</strong>.</p>
@@ -4762,10 +4806,10 @@ it runs between. Sort by any column using the arrows beside the heading.</p>
 <p><strong>Overview</strong> shows the <strong>Campaign Details</strong>: objective, budget, target industry,
 audience, regions, and a description the AI uses as context whenever it writes
 for this campaign. Choose the pencil to change them.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/campaign-details.png" data-desc-position="bottom"><img alt="Campaign Details: the objective Lead Generation and Conversion, the campaign code, a budget of 45,000, the target industry, the audience, Singapore and Malaysia, and the description" src="../../img/screenshots/campaign-details.png"></a></p>
+<p></p>
 <p>Below, <strong>Tactics</strong> lists everything the campaign runs: ads, blog posts, social
 posts, emails and events, each with its status and end date.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/campaign-tactics.png" data-desc-position="bottom"><img alt="The Tactics list: Google Ads, a blog post, LinkedIn, Facebook and Instagram posts, and an email campaign, with Write Content With AI, Plan With AI and Add Tactic" src="../../img/screenshots/campaign-tactics.png"></a></p>
+<p></p>
 <ul>
 <li><strong>Add Tactic</strong> adds one yourself.</li>
 <li><strong>Plan With AI</strong> suggests the tactics that fit the campaign's objective.</li>
@@ -4784,13 +4828,96 @@ and figures are reset; budget, description and audience are kept.</p>
 </ul>
 <p>For an event, its settings are copied too, and its registration form is always
 duplicated so the two events keep their registrations apart.</p>
+<p>The copy gets its own tactic code (the original's code followed by <code>-copy</code>), so
+Google Analytics never mixes the two tactics.</p>
+<h3 id="reading-a-social-tactics-results">Reading a social tactic's results<a class="headerlink" href="#reading-a-social-tactics-results" title="Permanent link">¶</a></h3>
+<p>Once a LinkedIn, Facebook, Instagram, X or TikTok post is published, the tactic
+shows a <strong>Performance by post</strong> card under its posts, with one colour per post in
+every chart:</p>
+<ul>
+<li><strong>Link clicks</strong>: people who opened the links in each post.</li>
+<li><strong>Reach &amp; Visibility</strong>: impressions of each post.</li>
+<li><strong>Engagement Trends</strong>: clicks, likes, shares or comments of each post.</li>
+</ul>
+<p>Reach and engagement are the network's figures, collected by the daily report:
+running totals since publication, so a post appears the day after it is
+published. Pick <strong>Since publish</strong>, <strong>7</strong>, <strong>30</strong> or <strong>90 days</strong> above the charts,
+and click a post's name to open its analytics. The same card appears when you
+open the tactic from the campaign's <strong>Analytics</strong> tab, where the campaign charts
+keep one colour per tactic.</p>
+<p><strong>View analytics</strong> in a published post's menu opens the same view for one post:</p>
+<ul>
+<li><strong>Link clicks (tracked)</strong>: people who opened the links in the post, day by day,
+  and how many clicks each link got.</li>
+<li>The network's own figures for the post (impressions, reactions, comments,
+  shares…), from the latest daily report. They appear the day after publishing.</li>
+</ul>
+<p>Good to know:</p>
+<ul>
+<li><strong>"Clicks on LinkedIn" is a different number.</strong> The network counts every click
+  on the post (image, "see more", profile); link clicks count only the people who
+  opened your links.</li>
+<li><strong>Bots are left out.</strong> When a post is published, the network fetches its links to
+  build the preview card; those visits are not counted. Switch on <strong>Include bots</strong>
+  to see them.</li>
+<li>Days follow your timezone.</li>
+<li>A post linked from outside GoodBards has no tracked links: it shows the network
+  figures only.</li>
+</ul>
+<h3 id="tracking-links-in-google-analytics">Tracking links in Google Analytics<a class="headerlink" href="#tracking-links-in-google-analytics" title="Permanent link">¶</a></h3>
+<p>Every link GoodBards shortens in a campaign's emails and social posts carries
+UTM tags, so its visits show up in your Google Analytics reports:</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>utm_campaign</code></td>
+<td>the <strong>campaign code</strong></td>
+<td><code>summer-sale-2026</code></td>
+</tr>
+<tr>
+<td><code>utm_content</code></td>
+<td>the <strong>tactic code</strong>: tells two tactics of the same campaign apart</td>
+<td><code>launch-post</code></td>
+</tr>
+<tr>
+<td><code>utm_source</code></td>
+<td>where the click comes from, set from the tactic type</td>
+<td><code>linkedin</code>, <code>facebook</code>, <code>newsletter</code> for emails, <code>event</code> for event emails</td>
+</tr>
+<tr>
+<td><code>utm_medium</code></td>
+<td>the channel family, set from the tactic type</td>
+<td><code>social</code> or <code>email</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>The codes are optional.</strong> Leave them empty and GoodBards writes one from the
+  name ("Summer Sale 2026" becomes <code>summer-sale-2026</code>) and keeps it, even if you
+  rename the campaign later.</li>
+<li><strong>Format:</strong> lowercase letters, digits, <code>-</code> and <code>_</code>, up to 50 characters. A
+  campaign code is unique in your workspace, a tactic code within its campaign.</li>
+<li><strong>Source and medium can't be edited</strong>, so every campaign is named the same way
+  in your reports. The tactic form shows the tags its links get.</li>
+<li><strong>Your own tags win.</strong> A link that already contains <code>utm_</code> tags is left as you
+  wrote it.</li>
+<li>Ads and blog posts get no tags: Google Ads tags its own clicks, and tags on
+  links to your own website would overwrite your visitors' real source.</li>
+</ul>
 <h2 id="the-budget-tab">The Budget tab<a class="headerlink" href="#the-budget-tab" title="Permanent link">¶</a></h2>
 <p>The <strong>Budget</strong> tab splits the campaign's budget across its tactics. On the left,
 how much is used of the total, with the remaining amount, the amount
 <strong>Allocated</strong> (choose the pencil to change it) and the average per tactic. On the
 right, every tactic with its own budget; choose the pencil on a row to change
 it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/campaign-budget.png" data-desc-position="bottom"><img alt="The Budget tab: 38,500 used of 45,000, with total, remaining, allocated and average, and each tactic's budget" src="../../img/screenshots/campaign-budget.png"></a></p>
+<p></p>
 <p>A red mark next to a tactic's budget means it is above the average budget per
 tactic. The tactic budgets are your plan. For ads, Google Ads spends its own daily
 budget; see <a href="digital-ads.html#ads-in-a-campaign">Ads in a campaign</a>.</p>
@@ -4800,7 +4927,7 @@ engagement on social networks, email deliveries, opens and clicks, event
 registrations and attendance, and ad spend and returns. Each figure shows its
 change against the previous report. Use the arrows to move between report
 dates, or <strong>History</strong> to see them all.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/campaign-analytics.png" data-desc-position="bottom"><img alt="The campaign report: impressions, clicks, likes, shares, comments and engagement rate, then emails delivered, open and click rates, event registrations, attendance rate and waitlisted, each with its change" src="../../img/screenshots/campaign-analytics.png"></a></p>
+<p></p>
 <p>Below the totals, a table lists every tactic with its own figures. Choose one to
 open its details: the same figures for that tactic alone, and its share of the
 campaign total.</p>
@@ -4843,7 +4970,7 @@ again.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-10-15
+    2026-10-19
   </span>
 
     

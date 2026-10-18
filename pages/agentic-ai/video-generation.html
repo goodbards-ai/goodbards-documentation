@@ -3194,6 +3194,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#starting-from-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting from an image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-videos-on-brand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keeping videos on brand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Style options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#writing-a-good-prompt" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4170,7 +4203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/connectors/google-bigquery.md" class="md-nav__link">
+      <a href="../settings/connectors/google-bigquery.html" class="md-nav__link">
         
   
   
@@ -4557,6 +4590,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#starting-from-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting from an image
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-videos-on-brand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keeping videos on brand
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#style-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Style options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#writing-a-good-prompt" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4607,11 +4673,14 @@ storytelling.</p>
 <ol>
 <li>In the sidebar, choose <strong>Agentic AI → Video Generation</strong>.</li>
 <li>Describe the clip you want in <strong>Prompt</strong>.</li>
-<li>Pick an <strong>Aspect Ratio</strong> and a <strong>Duration</strong>.</li>
-<li>Choose <strong>Generate Video</strong>.</li>
+<li><strong>Starting Image</strong>, <strong>Aspect Ratio</strong>, <strong>Duration</strong>, <strong>Brand</strong> and
+   <strong>Style Options</strong> are folded sections. Each shows its current choice next
+   to its name (for example <em>16:9</em> or <em>8s</em>). Open one to change it. Your
+   primary brand kit is already selected under <strong>Brand</strong>.</li>
+<li>Choose <strong>Generate Video</strong>, always at the bottom of the panel.</li>
 </ol>
 <p>Your clip appears under <strong>Video Preview</strong> on the left.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/video-generation.png" data-desc-position="bottom"><img alt="The Video Generation screen, with a prompt box, 16:9 and 9:16 aspect ratios, and durations from 5 to 8 seconds" src="../../img/screenshots/video-generation.png"></a></p>
+<p></p>
 <h2 id="aspect-ratio">Aspect ratio<a class="headerlink" href="#aspect-ratio" title="Permanent link">¶</a></h2>
 <table>
 <thead>
@@ -4636,6 +4705,45 @@ the sides off your subject.</p>
 <h2 id="duration">Duration<a class="headerlink" href="#duration" title="Permanent link">¶</a></h2>
 <p>Clips run from <strong>5s</strong> to <strong>8s</strong>. Shorter is usually better on social, where the
 first two seconds decide whether anyone keeps watching.</p>
+<h2 id="starting-from-an-image">Starting from an image<a class="headerlink" href="#starting-from-an-image" title="Permanent link">¶</a></h2>
+<p>Under <strong>Starting Image</strong>, choose <strong>Upload</strong> or <strong>From Drive</strong>. The video starts
+from that picture and brings it to life. GoodBards switches the aspect ratio
+to the one closest to your picture.</p>
+<p>This is how you get your logo into the scene, for example on a flag, a shop
+sign or a product. Video models never see your logo file, so a prompt like
+<em>"use our logo"</em> on its own produces a video without it.</p>
+<ol>
+<li>In <a href="image-generation.html">Image Generation</a>, create the opening shot with
+   <strong>Blend logo into the scene</strong> on. Use the aspect ratio you want for the
+   video. Keep the version where the logo looks best, and choose <strong>Save to
+   Drive</strong>.</li>
+<li>In Video Generation, open <strong>Starting Image</strong>, choose <strong>From Drive</strong> and pick
+   that image.</li>
+<li>In the prompt, describe the motion and the camera. Say that the emblem is
+   already correct and must stay identical. Don't ask for an uploaded logo.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">The logo can drift</p>
+<p>The AI redraws every frame from the first one. With a lot of motion, your
+logo can lose detail as the clip goes on. Calmer camera moves keep it
+sharper. Watch the whole clip before you publish it.</p>
+</div>
+<h2 id="keeping-videos-on-brand">Keeping videos on brand<a class="headerlink" href="#keeping-videos-on-brand" title="Permanent link">¶</a></h2>
+<p><strong>Brand</strong> lists your company's <a href="../settings/brand-kit.html">brand kits</a>. With a
+kit selected, GoodBards adds its colours and imagery guidelines to your prompt.
+Choose <strong>None</strong> to generate without it.</p>
+<p>Turn on <strong>Add logo</strong> to stamp your real logo file in a corner, as in Image
+Generation: pick the logo, the variant, the position and the size. The preview
+shows it straight away. <strong>Download</strong> and <strong>Save to Drive</strong> then record the clip
+again with the logo on every frame. This takes as long as the clip itself, so
+keep the tab open. You get an MP4 in Chrome, Edge and Brave, and a WebM file
+in some other browsers.</p>
+<h2 id="style-options">Style options<a class="headerlink" href="#style-options" title="Permanent link">¶</a></h2>
+<p><strong>Style</strong>, <strong>Lighting</strong>, <strong>Mood</strong>, <strong>Camera / Angle</strong> and <strong>Color Palette</strong> add
+a look to your prompt without you having to write it, for example
+<em>Photorealistic</em> with <em>Golden Hour</em> lighting. They are the same options as in
+<a href="image-generation.html">Image Generation</a>. Leave them on <em>Any</em> to rely on the
+prompt alone, or choose <strong>Reset Style Options</strong> to clear them.</p>
 <h2 id="writing-a-good-prompt">Writing a good prompt<a class="headerlink" href="#writing-a-good-prompt" title="Permanent link">¶</a></h2>
 <p>Describe the shot the way you would brief a videographer — subject, movement,
 setting, light. The placeholder on screen is a good model: <em>a cinematic drone shot
@@ -4673,7 +4781,7 @@ flying over misty mountains at sunrise</em>.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-10-15
+    2026-10-19
   </span>
 
     

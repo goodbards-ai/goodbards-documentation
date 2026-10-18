@@ -1885,6 +1885,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="How to create an email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-a-design-from-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing a design from Canva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1892,6 +1909,17 @@
     <span class="md-ellipsis">
       
         Editing an email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attaching-an-email-to-a-tactic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaching an email to a tactic
       
     </span>
   </a>
@@ -4179,7 +4207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/connectors/google-bigquery.md" class="md-nav__link">
+      <a href="../settings/connectors/google-bigquery.html" class="md-nav__link">
         
   
   
@@ -4552,6 +4580,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="How to create an email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-a-design-from-canva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing a design from Canva
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4559,6 +4604,17 @@
     <span class="md-ellipsis">
       
         Editing an email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attaching-an-email-to-a-tactic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attaching an email to a tactic
       
     </span>
   </a>
@@ -4625,7 +4681,7 @@ your audience is available when you choose recipients.</p>
 <li>Choose <strong>+ Create Email</strong>.</li>
 <li>Pick how you want to start. GoodBards offers four options:</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-create.png" data-desc-position="bottom"><img alt="The Create New Email dialog, showing the four ways to start an email: Designs Gallery, Import from External, Reuse existing from platform, and Start Blank" src="../../img/screenshots/emails-create.png"></a></p>
+<p></p>
 <table>
 <thead>
 <tr>
@@ -4640,7 +4696,7 @@ your audience is available when you choose recipients.</p>
 </tr>
 <tr>
 <td><strong>Import from External</strong></td>
-<td>You already have the email elsewhere. Paste HTML, upload a <code>.eml</code> file, or fetch a URL.</td>
+<td>You already have the email elsewhere. Paste HTML, upload a <code>.eml</code> file, upload a <code>.zip</code> export (for example from Canva), or fetch a URL.</td>
 </tr>
 <tr>
 <td><strong>Reuse existing from platform</strong></td>
@@ -4663,31 +4719,83 @@ your audience is available when you choose recipients.</p>
 the content and design and only asks for new recipients — usually faster than
 building it again.</p>
 </div>
+<h3 id="importing-a-design-from-canva">Importing a design from Canva<a class="headerlink" href="#importing-a-design-from-canva" title="Permanent link">¶</a></h3>
+<p>Canva exports an email as a <code>.zip</code> holding the email's HTML and its images.</p>
+<ol>
+<li>In Canva, export your email design. Keep the <code>.zip</code> as it is; there's no
+   need to unzip it.</li>
+<li>In <strong>Create Email</strong>, choose <strong>Import from External</strong>, then the
+   <strong>ZIP (Canva)</strong> tab, and drop the <code>.zip</code>. Any <code>.zip</code> with one HTML file and
+   its images works the same way.</li>
+<li>Choose <strong>Analyze &amp; clean up</strong>. The report lists what the file contained:
+   the images found, any image the HTML uses but the <code>.zip</code> lacks, and files
+   that won't be used.</li>
+<li>Check the <strong>Import name</strong>. It names the email and the folder its images go
+   to.</li>
+<li>Continue through <strong>Scope</strong> and <strong>Images</strong>. The images are copied to
+   <strong>Drive › My Documents › Images › <em>your import name</em></strong> and made public so
+   recipients can see them; the email points at those copies.</li>
+</ol>
+<p>Good to know:</p>
+<ul>
+<li>The plain-text version of the email is created from the HTML, with its
+  links. The <code>.txt</code> file in Canva's export is not used.</li>
+<li>Canva's unsubscribe link is converted automatically. If an email has no
+  unsubscribe link, the report warns you: add one, or use a Design whose
+  footer has it, before sending.</li>
+<li>If the design uses a font recipients don't have (Canva's brand fonts, for
+  example), the report names it and the font they'll see instead.</li>
+<li>SVG images are not imported: Gmail and Outlook don't display them. Export
+  them from Canva as PNG instead.</li>
+</ul>
 <h2 id="editing-an-email">Editing an email<a class="headerlink" href="#editing-an-email" title="Permanent link">¶</a></h2>
 <p>Choose an email's preview in the gallery to open it. Its page shows the subject
 and the body as recipients will see it, with an <strong>Edit</strong> button on each, and
 <strong>Send Test Email</strong>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/email-details.png" data-desc-position="bottom"><img alt="An email's page: the title, author and dates, the subject with Edit, the body preview inside the Tropika Home design with Edit, and Send Test Email" src="../../img/screenshots/email-details.png"></a></p>
+<p></p>
 <p><strong>Edit</strong> on the body opens the editor. The design (header and footer) is locked:
 you edit only your content inside it.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/email-editor.png" data-desc-position="bottom"><img alt="The email editor: Visual, Code and AI on the left, Desktop, Email width and Mobile previews, the email in the middle, and blocks to drag in on the right" src="../../img/screenshots/email-editor.png"></a></p>
+<p></p>
 <ul>
 <li><strong>Visual</strong>: click any text to change it; drag blocks from the right (heading,
   text, button, image, two columns, divider…). Personal fields such as <strong>First
   name</strong> are filled in for each recipient.</li>
 <li><strong>Code</strong>: edit the HTML directly.</li>
-<li><strong>AI</strong>: describe the change, for example <em>make it shorter and warmer</em>.</li>
+<li><strong>AI</strong>: describe the change, for example <em>make it shorter and warmer</em>. You
+  can also paste links: <em>write a newsletter from these posts</em> followed by up
+  to three web addresses builds a section per post, with a "Read more" link to
+  each. The pages are read before the AI writes, and the panel tells you which
+  ones it could read; a page whose owner blocks automated access is named, not
+  guessed at.</li>
 <li><strong>Desktop</strong>, <strong>Email width</strong> and <strong>Mobile</strong> preview the email at each size.</li>
 </ul>
 <p>Choose <strong>Apply</strong> to keep your changes, or <strong>Cancel</strong>.</p>
 <p>The card menu in the gallery also offers <strong>Show Tactics</strong> (where the email is
 used), <strong>Duplicate</strong>, <strong>Attach to tactic</strong> and <strong>Delete</strong>.</p>
+<h2 id="attaching-an-email-to-a-tactic">Attaching an email to a tactic<a class="headerlink" href="#attaching-an-email-to-a-tactic" title="Permanent link">¶</a></h2>
+<p>An email is sent from a campaign tactic: the tactic holds the audience, the
+sender and the send button. <strong>Attach to tactic</strong> in the card menu links the
+email to one, in three ways:</p>
+<ul>
+<li><strong>Existing tactic</strong>: pick a campaign, then one of its email tactics. Only
+  tactics that can still take the email are listed: a tactic sends one email,
+  so those that already sent theirs, and closed tactics, are left out. A tactic
+  whose email is still a draft, failed, or scheduled is listed with that email's
+  name; attaching replaces it after you confirm. The audience and the sender stay;
+  a scheduled send is cancelled, and you schedule the new email again from the
+  tactic page.</li>
+<li><strong>New tactic in a campaign</strong>: pick a campaign and name the tactic; it is
+  created as a draft with the email attached.</li>
+<li><strong>New campaign</strong>: name the campaign, choose its objective and name the tactic;
+  both are created with the email attached.</li>
+</ul>
+<p>Each option opens the tactic page, where you set the recipients and send.</p>
 <h2 id="finding-your-emails">Finding your emails<a class="headerlink" href="#finding-your-emails" title="Permanent link">¶</a></h2>
 <p>Everything you have created is listed under <strong>Email Gallery</strong>, on the <strong>Emails</strong>
 tab. Use the search box to find one by name, and the buttons beside it to switch
 between grid and list view.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-gallery.png" data-desc-position="bottom"><img alt="The Email Gallery in grid view: each email as a preview inside the Tropika Home design, with its name and a menu" src="../../img/screenshots/emails-gallery.png"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-list.png" data-desc-position="bottom"><img alt="The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated" src="../../img/screenshots/emails-list.png"></a></p>
+<p></p>
+<p></p>
 <p>The <strong>Email Designs</strong> tab holds the reusable looks — headers, footers and
 branding — rather than individual messages.</p>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
@@ -4721,7 +4829,7 @@ branding — rather than individual messages.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-10-15
+    2026-10-19
   </span>
 
     

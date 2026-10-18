@@ -1,0 +1,4 @@
+email,customerCode,firstName,lastName,phone,status,customerType,customerTypeInternal,jobTitle,companyName,city,country,timezone,preferredContactMethod,tags,notes,engagementType,engagementDate
+mei.tan@example.com,,Mei,Tan,+6591234567,subscribed,b2b,client-customer,Marketing Manager,Lion City Retail,Singapore,Singapore,Asia/Singapore,email,trade-show-2026;vip,Met at booth 12,event-attended,2026-09-24 14:30
+arif.rahman@example.com,CUS00102,Arif,Rahman,+60123456789,regular,b2b,target-potential-customer,Head of Growth,Kopi Digital,Kuala Lumpur,Malaysia,Asia/Kuala_Lumpur,whatsapp,trade-show-2026,,,
+linh.nguyen@example.com,,Linh,Nguyen,,,b2c,,,,Ho Chi Minh City,Vietnam,Asia/Ho_Chi_Minh,email,,,,
