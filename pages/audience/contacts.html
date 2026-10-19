@@ -4998,6 +4998,15 @@ marketing has something to work with.</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Adding and importing need the Access sensitive data permission</p>
+<p>A contact is mostly an email address and a phone number, so only colleagues
+allowed to see them can add or import contacts. Without the <em>Access
+sensitive data</em> permission, <strong>Add Contact</strong> and <strong>Bulk Add Contacts</strong> are
+greyed out; hover them to see why. Importing also requires being an
+administrator. See
+<a href="../settings/users-roles.html#additional-permissions">Additional permissions</a>.</p>
+</div>
 <h2 id="reading-the-contacts-home">Reading the Contacts home<a class="headerlink" href="#reading-the-contacts-home" title="Permanent link">¶</a></h2>
 <p><strong>Audience → Contacts</strong> opens on the <strong>Home</strong> tab, which summarises your database
 rather than listing individuals.</p>
@@ -5284,7 +5293,8 @@ the other languages of the app.</p>
 <h2 id="import-jobs">Import Jobs<a class="headerlink" href="#import-jobs" title="Permanent link">¶</a></h2>
 <p>Every spreadsheet import, with its status and how many rows were processed, so
 you can check that an import went through. Start a new one with <strong>Bulk Add
-Contacts</strong>. See <a href="adding-contacts.html#import-a-spreadsheet">Adding contacts</a>.</p>
+Contacts</strong>, which requires the <em>Access sensitive data</em> permission and an
+administrator role. See <a href="adding-contacts.html#import-a-spreadsheet">Adding contacts</a>.</p>
 <h3 id="an-import-happens-in-two-steps">An import happens in two steps<a class="headerlink" href="#an-import-happens-in-two-steps" title="Permanent link">¶</a></h3>
 <p>Uploading a file does <strong>not</strong> import anything yet. You first create the job,
 then you start it:</p>

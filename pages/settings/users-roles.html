@@ -4397,6 +4397,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#additional-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#contact-ownership" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4572,6 +4583,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#additional-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional permissions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#contact-ownership" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4714,11 +4736,11 @@ Settings</strong> are always open to them.</p>
 </tr>
 <tr>
 <td><strong>Marketer</strong></td>
-<td>Every module in read and write, and every contact. The usual role for your marketing team.</td>
+<td>Every module in read and write, and every contact. The usual role for your marketing team. Contacts' emails and phones stay hidden until you give them <a href="#additional-permissions"><em>Access sensitive data</em></a>.</td>
 </tr>
 <tr>
 <td><strong>Sales</strong></td>
-<td>Home and the Audience only. With contact ownership on, they see only the contacts they own.</td>
+<td>Home and the Audience only, with <em>Access sensitive data</em>. With contact ownership on, they see only the contacts they own.</td>
 </tr>
 </tbody>
 </table>
@@ -4726,6 +4748,55 @@ Settings</strong> are always open to them.</p>
 <p>To give a group exactly the modules it needs, choose <strong>Create Role</strong>, name it,
 and pick the permissions. For example, a <em>Reporting</em> role with read access to
 Home, Marketing and Website and SEO, for a client who only follows results.</p>
+<h2 id="additional-permissions">Additional permissions<a class="headerlink" href="#additional-permissions" title="Permanent link">¶</a></h2>
+<p>Three permissions are not tied to a module. They are given to a person, not to
+a role, and no role grants them except <strong>Sales</strong>, which includes <em>Access
+sensitive data</em>. A <strong>Marketer</strong> or an <strong>administrator</strong> does not have them until
+you tick them.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>What it gives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Access sensitive data</strong></td>
+<td>See contacts' email addresses, phone numbers and other personal details, and add or import contacts. Without it, these fields are hidden everywhere: lists, contact pages, exports and the assistant.</td>
+</tr>
+<tr>
+<td><strong>Recipient for daily report emails</strong></td>
+<td>Receive the <a href="../home/home.html">Daily Pulse</a> by email each morning: what changed, what needs attention, and the state of your connectors.</td>
+</tr>
+<tr>
+<td><strong>Recipient for lead capture alert emails</strong></td>
+<td>Receive an email each time your chatbot captures a new lead, with their details and a summary of the conversation.</td>
+</tr>
+</tbody>
+</table>
+<p>To give one of them:</p>
+<ol>
+<li>Open <strong>Tenant Settings</strong> from your account menu, then the <strong>Security</strong> tab.</li>
+<li>Under <strong>Users</strong>, choose the pencil in the person's <strong>Permissions</strong> column
+   (<strong>Edit permissions</strong>).</li>
+<li>Under <strong>Additional permissions</strong>, tick the ones they need, then choose
+   <strong>Update Permissions</strong>.</li>
+</ol>
+<p>The change applies at their next login, or when they switch workspace.</p>
+<div class="admonition warning">
+<p class="admonition-title">Nobody receives the emails until you choose who</p>
+<p>If no one in your company has <em>Recipient for daily report emails</em>, the Daily
+Pulse email is not sent. If no one has <em>Recipient for lead capture alert
+emails</em>, new chatbot leads are still saved as contacts, but nobody is told.
+Give each to at least one person.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Keep sensitive data to the people who need it</p>
+<p><em>Access sensitive data</em> is what lets someone read and download personal
+details. Under Singapore's PDPA and similar laws, give it only to colleagues
+who work with contacts directly.</p>
+</div>
 <h2 id="contact-ownership">Contact ownership<a class="headerlink" href="#contact-ownership" title="Permanent link">¶</a></h2>
 <p>Each contact can have owners: the colleagues responsible for them. Turn on
 <strong>Restrict contacts to their owners</strong> to make people without the <em>see every
