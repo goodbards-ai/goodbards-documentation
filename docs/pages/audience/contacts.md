@@ -20,6 +20,14 @@ There is more than one way, depending on how many you have:
 | **Card Scanner** | You came back from an event with a stack of business cards. Scan them and the details are read for you. |
 | **Forms** | Someone signs up themselves. See [Forms](../marketing/forms.md). |
 
+!!! note "Adding and importing need the Access sensitive data permission"
+    A contact is mostly an email address and a phone number, so only colleagues
+    allowed to see them can add or import contacts. Without the *Access
+    sensitive data* permission, **Add Contact** and **Bulk Add Contacts** are
+    greyed out; hover them to see why. Importing also requires being an
+    administrator. See
+    [Additional permissions](../settings/users-roles.md#additional-permissions).
+
 ## Reading the Contacts home
 
 **Audience → Contacts** opens on the **Home** tab, which summarises your database
@@ -270,7 +278,8 @@ the other languages of the app.
 
 Every spreadsheet import, with its status and how many rows were processed, so
 you can check that an import went through. Start a new one with **Bulk Add
-Contacts**. See [Adding contacts](adding-contacts.md#import-a-spreadsheet).
+Contacts**, which requires the *Access sensitive data* permission and an
+administrator role. See [Adding contacts](adding-contacts.md#import-a-spreadsheet).
 
 ### An import happens in two steps
 

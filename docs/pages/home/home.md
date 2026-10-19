@@ -49,6 +49,10 @@ agents. See [Chat Agents](../agentic-ai/chat-agents.md).
   [Connections](../settings/connections.md).
 - **Dates on each card say how fresh it is**: *Today*, *Yesterday*, or the date of
   the latest report.
+- **The pulse can come to you by email.** It is sent each morning to the
+  colleagues who have the *Recipient for daily report emails* permission, and to
+  nobody else. See
+  [Additional permissions](../settings/users-roles.md#additional-permissions).
 
 ---
 

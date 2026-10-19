@@ -82,6 +82,17 @@ Below the summary, your best-performing content is listed with its engagement
 figures. This is the fastest route to understanding what your audience responds
 to: look for what the top posts have in common — format, topic, tone, time of day.
 
+## Stories (Instagram)
+
+Instagram reports have a **Stories** card for the stories published from
+GoodBards: views, reach, replies and how people moved through them. A story
+still showing on Instagram is marked **Live**, with a link to open it; its
+numbers are refreshed every 2 hours. After 24 hours the story disappears from
+Instagram, its numbers are captured one last time and marked **Final**.
+
+Stories posted directly in the Instagram app are not listed: Instagram does not
+let GoodBards read them.
+
 ## History
 
 **History**, at the top right, holds previous reports so you can compare periods

@@ -1,7 +1,7 @@
 # Instagram
 
-Publish picture posts and carousels to your Instagram account and get reports on
-how it performs.
+Publish picture posts, carousels, Reels and stories to your Instagram account and
+get reports on how it performs.
 
 ## What it's for
 
@@ -40,16 +40,21 @@ can:
 
 | GoodBards… | Details |
 | --- | --- |
-| **Publishes** | A picture post (one picture) or a carousel (two or more pictures), with your caption. |
-| **Reads** | Your profile, followers, posts, post statistics, daily reach and views, and post comments. |
-| **Does not** | Publish videos, reels or stories, delete posts, or read your messages. |
+| **Publishes** | A picture post (one picture), a carousel (2 to 10 pictures) or a Reel (one video, also shown in your grid), with your caption. Any of them can go out as a 24-hour story instead. |
+| **Reads** | Your profile, followers, posts, post statistics, daily reach and views, post comments, and the numbers of the stories published from GoodBards. |
+| **Does not** | Mix pictures and videos in a carousel, add stickers to stories, read stories posted directly in the Instagram app, delete posts, or read your messages. |
 
 ## Good to know
 
-- **Every Instagram post needs a picture.** A text-only post fails.
+- **Every Instagram post needs a picture or a video.** A text-only post fails.
+- **Videos are published as Reels**: MP4 or MOV, up to 300 MB, 3 seconds to 15
+  minutes. A video story: up to 100 MB and 60 seconds. See
+  [Videos, documents, Reels and stories](../../social-media/social-post.md#videos-documents-reels-and-stories).
+- **Pictures are sent as JPEG**, whatever their original format.
 - **2,200 characters per caption.**
-- **Pictures become public.** To let Instagram fetch them, GoodBards makes the
-  pictures of the post publicly reachable by their link.
+- **Media become reachable by link.** Instagram fetches pictures and videos
+  itself, so GoodBards gives it a link to each one: pictures stay publicly
+  reachable, videos through a link that expires after an hour.
 - **Instagram limits how many posts you can publish per day** (about 50 per
   account).
 - **Access is renewed automatically** a week before it expires. If Instagram

@@ -49,7 +49,7 @@ publish *on behalf of*.
 
 | GoodBards… | Details |
 | --- | --- |
-| **Publishes** | Public posts on the chosen page: text, a link preview, or one or several pictures. |
+| **Publishes** | Public posts on the chosen page: text, a link preview, one or several pictures, a video, or a document (PDF, PowerPoint or Word) people swipe through. |
 | **Reads** | Your pages, follower numbers, post statistics, follower demographics (seniority, industry, job function, location, company size) and post comments. |
 | **Does not** | Delete or edit posts on LinkedIn, or post as anyone other than the chosen destination. |
 
@@ -61,8 +61,12 @@ publish *on behalf of*.
   profile, the daily summary skips LinkedIn and asks you to select a company
   page.
 - **3,000 characters per post**, and up to 20 pictures.
-- **Picture or link preview, not both.** Without a picture, the first link in
-  the text becomes a preview card.
+- **One kind of media per post**: pictures, one video or one document. Without
+  any, the first link in the text becomes a preview card.
+- **Videos**: MP4 only, 75 KB to 500 MB, 3 seconds to 30 minutes.
+  **Documents**: up to 100 MB and 300 pages; a PDF with one slide per page is
+  how you post a carousel. See
+  [Videos, documents, Reels and stories](../../social-media/social-post.md#videos-documents-reels-and-stories).
 - **Bold and italic** are kept: GoodBards converts them into characters LinkedIn
   can display.
 - **Access is renewed automatically.** The card shows how long access is valid.

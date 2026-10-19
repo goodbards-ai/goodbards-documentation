@@ -82,6 +82,10 @@ A new account starts with three:
   `Screenshot 2026-08-14 at 15.22.11.png` is not.
 - **Upload once, use everywhere.** A file in Drive can be used in any email,
   campaign or post — no need to re-upload it each time.
+- **Videos up to 2 GB.** Use **+ New → Video**; a percentage shows the upload's
+  progress. Videos and PDF, PowerPoint or Word files can then be attached to
+  LinkedIn and Instagram posts. See
+  [Videos, documents, Reels and stories](../social-media/social-post.md#videos-documents-reels-and-stories).
 - **Deleting affects everything using it.** If an email references an image and
   you delete that image, the email breaks. Check before removing anything.
 

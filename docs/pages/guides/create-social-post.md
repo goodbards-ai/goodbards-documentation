@@ -24,8 +24,9 @@ count with the rest.
 
 1. In the sidebar, choose **Social Media → Social Post**, then **New Post**.
 2. In **Create New Asset**, leave **Family** on **Social Media** and pick the
-   **Asset Type**: for example **LinkedIn Post**, **Instagram Post** or
-   **Facebook Post**. Use **Filter by Tactic** to show one network only.
+   **Asset Type**: for example **LinkedIn Post**, **Instagram Post (images)**,
+   **Instagram Reel (video)** or **Facebook Post**. Use **Filter by Tactic** to
+   show one network only.
 
     ![The Create New Asset window: Family set to Social Media, Filter by Tactic chips, and the grid of asset types with LinkedIn Post selected](../../img/screenshots/create-post-asset-type.png)
 
@@ -53,6 +54,11 @@ count with the rest.
    instruction (*shorter, add a question at the end*).
 
     ![The post editor: the text typed under Compose your Post, the character counter, the AI Hashtags, Improve With AI, Image and Emoji buttons, two hashtags, and the LinkedIn preview on the right](../../img/screenshots/create-post-compose.png)
+
+    On LinkedIn, **Insert → Video…** or **Insert → Document (PDF, PowerPoint,
+    Word)…** attaches a video or a document instead of a picture. For an
+    Instagram Reel, pick the video first. See
+    [Videos, documents, Reels and stories](../social-media/social-post.md#videos-documents-reels-and-stories).
 
 4. Choose **Save** at the top right. In **Save Document**, check the title and
    choose **Save** again.
@@ -93,8 +99,12 @@ campaign yet.
 
     ![The Schedule Post window: the post being scheduled, the AI Recommendations panel, Date & Time, Destination and Confirm Schedule](../../img/screenshots/create-post-schedule.png)
 
+For Instagram, **Publish as** sets whether it goes out as a **Post** or a
+24-hour **Story**.
+
 The band on the post's card then reads **Scheduled** or **Published** with the
-date. You can also do both from the campaign: open the tactic, and under
+date. A post with a video or a document shows **Sending** for a few minutes
+first, while the network processes the file. You can also do both from the campaign: open the tactic, and under
 **Asset Management** use the post's **⋮** menu.
 
 ## Good to know
@@ -108,7 +118,8 @@ date. You can also do both from the campaign: open the tactic, and under
   [Social Post](../social-media/social-post.md).
 - **Character limits are per network**: 3,000 on LinkedIn, 280 on X, 2,200 on
   Instagram and TikTok. The counter turns red past the limit.
-- **Instagram needs a picture.** Attach one with **Image** before you publish.
+- **Instagram needs a picture or a video.** A text-only Instagram post cannot
+  be published.
 - **Published posts are locked.** You cannot edit or delete them from
   GoodBards once they are out.
 

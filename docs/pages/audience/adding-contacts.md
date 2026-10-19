@@ -12,6 +12,11 @@ consent and where they came from recorded.
 
 ## Before you start
 
+- The **Access sensitive data** permission. Without it, **Add Contact** and
+  **Bulk Add Contacts** are greyed out. Importing also requires being an
+  administrator. Ask an administrator to give it to you under **Tenant Settings
+  → Security**; see
+  [Additional permissions](../settings/users-roles.md#additional-permissions).
 - Your company's **privacy statement**, under **Brand & Context → General
   Information → Privacy Statements**. Every import is linked to the statement the
   people agreed to.
