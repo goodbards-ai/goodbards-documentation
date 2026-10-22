@@ -41,7 +41,9 @@ See [Campaigns](../marketing/campaigns.md).
 1. Open the tactic. Under **Email Management**, choose **Add Email**: create a
    new one, or pick one from your Email Gallery.
 2. Write it in the editor, or let the AI draft it from the campaign's
-   description.
+   description. To greet each recipient by name, type `{{contact_firstname}}`
+   where the name should go; see
+   [Personalising an email](../marketing/emails.md#personalising-an-email).
 3. Under **Subject & sender**, set the subject and who it comes from for this
    send. Leave a field blank to use the email's own value or your default.
 

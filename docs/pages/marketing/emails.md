@@ -87,7 +87,8 @@ you edit only your content inside it.
 
 - **Visual**: click any text to change it; drag blocks from the right (heading,
   text, button, image, two columns, divider…). Personal fields such as **First
-  name** are filled in for each recipient.
+  name** are filled in for each recipient; see
+  [Personalising an email](#personalising-an-email).
 - **Code**: edit the HTML directly.
 - **AI**: describe the change, for example *make it shorter and warmer*. You
   can also paste links: *write a newsletter from these posts* followed by up
@@ -101,6 +102,51 @@ Choose **Apply** to keep your changes, or **Cancel**.
 
 The card menu in the gallery also offers **Show Tactics** (where the email is
 used), **Duplicate**, **Attach to tactic** and **Delete**.
+
+## Personalising an email
+
+A personal field is a placeholder between double curly braces, such as
+`{{contact_firstname}}`. When the email is sent, each recipient gets their own
+value in its place. Fields work in the **subject** as well as in the body.
+
+1. Open the email and choose **Edit** on the subject or the body.
+2. Type the field where the value should appear, braces included. In the
+   **Visual** editor, type it into any text; in **Code**, anywhere in the HTML.
+
+    ```
+    Hi {{contact_firstname}}, here is what's new this month.
+    ```
+
+3. Choose **Apply**, then **Send Test Email** to check it.
+
+The fields you can use:
+
+| Field | Filled with |
+| --- | --- |
+| `{{contact_firstname}}` | The recipient's first name |
+| `{{contact_lastname}}` | The recipient's last name |
+| `{{contact_email}}` | The recipient's email address |
+| `{{contact_phone}}` | The recipient's phone number |
+| `{{contact_job_title}}` | The recipient's job title |
+| `{{company_name}}` | The company name, when the tactic sends one email per company |
+| `{{unsubscribe_url}}` | The link to unsubscribe. Every design's footer already has it. |
+| `{{privacy_policy_url}}` | The link to your privacy statement |
+| `{{view_in_browser_url}}` | The link to open the email in a browser |
+
+Good to know:
+
+- **A field the recipient has no value for is left blank.** *Hi
+  {{contact_firstname}},* becomes *Hi ,* for a contact without a first name.
+  Keep names for lists you know are complete, or write the greeting so it reads
+  well without one: *Hello {{contact_firstname}}* rather than *Dear
+  {{contact_firstname}},*.
+- **Test emails use your own contact record.** The field is filled only when
+  the address you send the test to exists in **Audience → Contacts**. Otherwise
+  it shows blank in the test, and works for real recipients.
+- **Spell fields exactly as above.** `{{first_name}}` or `{{FirstName}}`, which
+  other tools use, are not recognised and show as `???` in the sent email. If
+  you import an email from Canva or another tool, replace its fields with the
+  ones in the table.
 
 ## Attaching an email to a tactic
 
