@@ -45,6 +45,12 @@ Settings** are always open to them.
 3. They receive an invitation by email. The number of users your plan allows is
    shown above the list.
 
+The invitation link stays valid for 7 days. Pending invitations are listed under
+**Users** until they are accepted, where you can extend or cancel them. If the
+email did not arrive, invite the same address again: the same link is sent again
+and its validity restarts. Someone who is already a member cannot be invited;
+change their role instead.
+
 To change someone's role later, use the pencil next to their roles.
 
 ## The roles

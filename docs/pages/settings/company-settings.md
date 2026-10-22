@@ -43,7 +43,7 @@ get generic copy.
 | **Guardrails** | **Never discuss**: subjects the AI must stay away from, for example *politics*, *religion* or *competitor bashing*. |
 | **Products & Services** | Each product or service with a description, its web page and keywords. The AI links to the right page and uses the right words. |
 | **Press Release Information** | The CEO's name and title, your boilerplate in 25, 50 and 100 words, and the media contact. Used for every press release the AI drafts. |
-| **Privacy Statements** | The statements contacts accept on your forms; one is the default. See [Adding contacts](../audience/adding-contacts.md). |
+| **Privacy Statements** | The statements contacts accept on your forms; one is the default. A statement is a text (any length, with bold, italic and bullet lists) or a link to a page on your site. See [Adding contacts](../audience/adding-contacts.md). |
 
 ![Products & Services: each with its name, description, website and keywords, and Add New Product/Service](../../img/screenshots/brand-products.png)
 

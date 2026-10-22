@@ -93,6 +93,27 @@ Instagram, its numbers are captured one last time and marked **Final**.
 Stories posted directly in the Instagram app are not listed: Instagram does not
 let GoodBards read them.
 
+## TikTok
+
+The **TikTok** tab shows the connected account: followers, following, likes
+received and number of videos, then your videos from the last 90 days with
+their **views**, likes, comments and shares.
+
+TikTok gives no day-by-day statistics, so GoodBards takes a snapshot of the
+account every night and works out what changed:
+
+- **Views, likes, comments, shares** for the period are what your videos gained
+  between snapshots, and the **Channel Engagements** chart shows them day by
+  day.
+- **Net followers** is the change in followers over the period (it can be
+  negative).
+- Numbers start **the day after you connect TikTok**. The first snapshot is the
+  starting point, so the first days of a new connection show no gains.
+- **Engagement rate** on TikTok is likes, comments and shares per view.
+
+If you unticked the statistics permission when connecting, the follower and
+likes counters are missing: reconnect TikTok and keep every box ticked.
+
 ## History
 
 **History**, at the top right, holds previous reports so you can compare periods

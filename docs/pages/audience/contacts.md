@@ -336,6 +336,9 @@ The rules of the file:
   included (`firstName`, not `First Name`). A column whose name is not
   recognised is treated as a custom field, so a misspelt `Email` column is not
   read as the email address.
+- **A custom field column is named after the field's key** (`interest_category`,
+  not `Interest category`). For a field that allows multiple values, separate
+  them with semicolons, as for tags: `Fitness;Nutrition`.
 - **Keep only the columns you need**, in any order. Every row must have as many
   cells as the header row, even when they are empty.
 - **Separate cells with commas**, and put a cell in double quotes if it contains
