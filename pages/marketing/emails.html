@@ -1916,6 +1916,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#personalising-an-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personalising an email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#attaching-an-email-to-a-tactic" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4611,6 +4622,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#personalising-an-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personalising an email
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#attaching-an-email-to-a-tactic" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4681,7 +4703,7 @@ your audience is available when you choose recipients.</p>
 <li>Choose <strong>+ Create Email</strong>.</li>
 <li>Pick how you want to start. GoodBards offers four options:</li>
 </ol>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-create.png" data-desc-position="bottom"><img alt="The Create New Email dialog, showing the four ways to start an email: Designs Gallery, Import from External, Reuse existing from platform, and Start Blank" src="../../img/screenshots/emails-create.png"></a></p>
 <table>
 <thead>
 <tr>
@@ -4752,14 +4774,15 @@ building it again.</p>
 <p>Choose an email's preview in the gallery to open it. Its page shows the subject
 and the body as recipients will see it, with an <strong>Edit</strong> button on each, and
 <strong>Send Test Email</strong>.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/email-details.png" data-desc-position="bottom"><img alt="An email's page: the title, author and dates, the subject with Edit, the body preview inside the Tropika Home design with Edit, and Send Test Email" src="../../img/screenshots/email-details.png"></a></p>
 <p><strong>Edit</strong> on the body opens the editor. The design (header and footer) is locked:
 you edit only your content inside it.</p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/email-editor.png" data-desc-position="bottom"><img alt="The email editor: Visual, Code and AI on the left, Desktop, Email width and Mobile previews, the email in the middle, and blocks to drag in on the right" src="../../img/screenshots/email-editor.png"></a></p>
 <ul>
 <li><strong>Visual</strong>: click any text to change it; drag blocks from the right (heading,
   text, button, image, two columns, divider…). Personal fields such as <strong>First
-  name</strong> are filled in for each recipient.</li>
+  name</strong> are filled in for each recipient; see
+  <a href="#personalising-an-email">Personalising an email</a>.</li>
 <li><strong>Code</strong>: edit the HTML directly.</li>
 <li><strong>AI</strong>: describe the change, for example <em>make it shorter and warmer</em>. You
   can also paste links: <em>write a newsletter from these posts</em> followed by up
@@ -4772,6 +4795,84 @@ you edit only your content inside it.</p>
 <p>Choose <strong>Apply</strong> to keep your changes, or <strong>Cancel</strong>.</p>
 <p>The card menu in the gallery also offers <strong>Show Tactics</strong> (where the email is
 used), <strong>Duplicate</strong>, <strong>Attach to tactic</strong> and <strong>Delete</strong>.</p>
+<h2 id="personalising-an-email">Personalising an email<a class="headerlink" href="#personalising-an-email" title="Permanent link">¶</a></h2>
+<p>A personal field is a placeholder between double curly braces, such as
+<code>{{contact_firstname}}</code>. When the email is sent, each recipient gets their own
+value in its place. Fields work in the <strong>subject</strong> as well as in the body.</p>
+<ol>
+<li>Open the email and choose <strong>Edit</strong> on the subject or the body.</li>
+<li>
+<p>Type the field where the value should appear, braces included. In the
+   <strong>Visual</strong> editor, type it into any text; in <strong>Code</strong>, anywhere in the HTML.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Hi {{contact_firstname}}, here is what's new this month.
+</code></pre></div>
+</li>
+<li>
+<p>Choose <strong>Apply</strong>, then <strong>Send Test Email</strong> to check it.</p>
+</li>
+</ol>
+<p>The fields you can use:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Filled with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{{contact_firstname}}</code></td>
+<td>The recipient's first name</td>
+</tr>
+<tr>
+<td><code>{{contact_lastname}}</code></td>
+<td>The recipient's last name</td>
+</tr>
+<tr>
+<td><code>{{contact_email}}</code></td>
+<td>The recipient's email address</td>
+</tr>
+<tr>
+<td><code>{{contact_phone}}</code></td>
+<td>The recipient's phone number</td>
+</tr>
+<tr>
+<td><code>{{contact_job_title}}</code></td>
+<td>The recipient's job title</td>
+</tr>
+<tr>
+<td><code>{{company_name}}</code></td>
+<td>The company name, when the tactic sends one email per company</td>
+</tr>
+<tr>
+<td><code>{{unsubscribe_url}}</code></td>
+<td>The link to unsubscribe. Every design's footer already has it.</td>
+</tr>
+<tr>
+<td><code>{{privacy_policy_url}}</code></td>
+<td>The link to your privacy statement</td>
+</tr>
+<tr>
+<td><code>{{view_in_browser_url}}</code></td>
+<td>The link to open the email in a browser</td>
+</tr>
+</tbody>
+</table>
+<p>Good to know:</p>
+<ul>
+<li><strong>A field the recipient has no value for is left blank.</strong> <em>Hi
+  {{contact_firstname}},</em> becomes <em>Hi ,</em> for a contact without a first name.
+  Keep names for lists you know are complete, or write the greeting so it reads
+  well without one: <em>Hello {{contact_firstname}}</em> rather than <em>Dear
+  {{contact_firstname}},</em>.</li>
+<li><strong>Test emails use your own contact record.</strong> The field is filled only when
+  the address you send the test to exists in <strong>Audience → Contacts</strong>. Otherwise
+  it shows blank in the test, and works for real recipients.</li>
+<li><strong>Spell fields exactly as above.</strong> <code>{{first_name}}</code> or <code>{{FirstName}}</code>, which
+  other tools use, are not recognised and show as <code>???</code> in the sent email. If
+  you import an email from Canva or another tool, replace its fields with the
+  ones in the table.</li>
+</ul>
 <h2 id="attaching-an-email-to-a-tactic">Attaching an email to a tactic<a class="headerlink" href="#attaching-an-email-to-a-tactic" title="Permanent link">¶</a></h2>
 <p>An email is sent from a campaign tactic: the tactic holds the audience, the
 sender and the send button. <strong>Attach to tactic</strong> in the card menu links the
@@ -4794,8 +4895,8 @@ email to one, in three ways:</p>
 <p>Everything you have created is listed under <strong>Email Gallery</strong>, on the <strong>Emails</strong>
 tab. Use the search box to find one by name, and the buttons beside it to switch
 between grid and list view.</p>
-<p></p>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-gallery.png" data-desc-position="bottom"><img alt="The Email Gallery in grid view: each email as a preview inside the Tropika Home design, with its name and a menu" src="../../img/screenshots/emails-gallery.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/emails-list.png" data-desc-position="bottom"><img alt="The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated" src="../../img/screenshots/emails-list.png"></a></p>
 <p>The <strong>Email Designs</strong> tab holds the reusable looks — headers, footers and
 branding — rather than individual messages.</p>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
@@ -4829,7 +4930,7 @@ branding — rather than individual messages.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-10-19
+    2026-10-22
   </span>
 
     
