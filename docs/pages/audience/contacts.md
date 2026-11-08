@@ -363,7 +363,7 @@ The rules of the file:
 | `timezone` | Their time zone, as a city name: `Asia/Singapore`, `Asia/Jakarta`, `Asia/Bangkok`. |
 | `jobTitle` | Their job title. |
 | `companyCode`, `companyName` | Their company. A company that does not exist yet is created and linked to the contact. |
-| `street`, `city`, `state`, `country`, `zipCode` | Their address. |
+| `street`, `city`, `state`, `country`, `zipCode` | Their address. Write `country` as a two-letter code (`SG`, `MY`, `ID`): GoodBards also uses it to read phone numbers written without a country code. |
 | `linkedin`, `facebook`, `twitter`, `instagram` | Their social media profiles. |
 | `preferredContactMethod` | How they prefer to be contacted. See [Accepted values](#accepted-values). |
 | `tags` | Tags for this contact, separated by a semicolon: `trade-show-2026;vip`. |
@@ -438,3 +438,4 @@ A row whose `email` is already in your audience is handled by the job's
 ---
 
 *Still stuck? [Contact support](../contact.md).*
+| `whatsappConsent`, `telegramConsent`, `smsConsent` | Whether the contact agreed to receive messages on that channel: `yes` records their consent, `no` records that they withdrew it, and an empty cell changes nothing. Only import `yes` for people who really agreed: it is your proof of consent. Applied to new contacts and, with **Overwrite**, to existing ones. |
