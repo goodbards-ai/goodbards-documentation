@@ -53,6 +53,21 @@ scripted FAQ.
 The **Embed** tab gives you the code to add to your site. Send it to whoever
 maintains your website, or paste it in yourself if you manage the site.
 
+1. Under **Embed type**, choose how the chat appears:
+    - **Floating widget**: a chat button in the corner of every page where you
+      paste the code.
+    - **In the page (iframe)**: the chat shown directly inside a section of a
+      page.
+2. Under **Select API Key**, pick the key the chatbot uses. Only keys with the
+   **CHATBOT** scope are listed.
+3. Copy the code and paste it into your site.
+
+**In the page (iframe)** only works with a key restricted to your website: a
+**CHATBOT** key with **Restrict to a specific origin** on and your website's
+address as the **Allowed Origin**. Other keys are not offered for this type; if
+you have none, the list says so. To create one, see
+[Use the API](../guides/use-the-api.md#1-create-an-api-key).
+
 ## Seeing how it performs
 
 **Dashboard Analytics** shows what visitors have been asking. Worth reviewing

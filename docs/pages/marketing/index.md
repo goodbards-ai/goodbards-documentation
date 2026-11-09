@@ -31,6 +31,13 @@ side by side.
 
 See [The campaign report](campaigns.md#the-campaign-report).
 
+### Automations
+
+Email sequences that run on their own for each contact: started by a form, a
+tag, a segment or a schedule, with waits, branches and a goal.
+
+See [Automations](automations.md).
+
 ## Where to start
 
 Read [Launch a Tactic](launch-tactic.md) first. It explains the difference

@@ -12,13 +12,14 @@ it once, so you are not re-explaining your business in every prompt.
 Get this right and everything the AI produces improves. Leave it empty and you
 get generic copy.
 
-## The six tabs
+## The seven tabs
 
 | Tab | What it holds |
 | --- | --- |
 | **General Information** | Company name, tagline, website and other basics. |
 | **Brand Kit** | Colours, fonts and logos. See [Brand Kit](brand-kit.md). |
 | **Voices Bank** | How your brand sounds, so the AI writes in your voice. |
+| **Brand Check** | Check a text or an email against your brand guidelines. See [Brand Check](brand-check.md). |
 | **Marketing Campaigns** | Context about the campaigns you run. |
 | **Competitors** | Who you compete with. |
 | **Website** | Your website, as the AI reads it. |

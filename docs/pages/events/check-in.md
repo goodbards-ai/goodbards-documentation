@@ -35,7 +35,12 @@ their name and set their status to **Attended**.
 ## How to print badges
 
 1. On the **Attendance** tab, under **Badge**, choose the **Badge label format**
-   for your label printer, or keep your company's default.
+   for your label printer, or keep your company's default. The list covers
+   Brother 100 × 62 mm labels and the NIIMBOT M2 rolls (40 × 20, 40 × 40,
+   50 × 30, 50 × 50 and 50 × 80 mm); **Custom size** takes any other roll.
+   Labels under 80 mm wide print a compact badge: name, company and event date.
+   The logo is printed only when the label is at least 40 mm tall, and the
+   20 mm-tall label keeps the name to one line.
 2. Line 1 is the guest's name. For line 2, pick the form field to print under
    it, for example their company.
 3. Choose **Print Test Badge** to check the layout, then print badges from the

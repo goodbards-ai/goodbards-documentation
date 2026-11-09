@@ -20,12 +20,13 @@ company account can connect or disconnect a service. See
 | **Google Youtube** | Channel analysis (read-only). | [YouTube](youtube.md) |
 | **TikTok** | Publish videos. | [TikTok](tiktok.md) |
 
-## Instant Messenger
+## Messaging
 
 | Connector | What it gives you | Page |
 | --- | --- | --- |
-| **Telegram** | Coming soon. | — |
+| **Telegram** | Post to your channels; personal messages to contacts who subscribed. | [Telegram](telegram.md) |
 | **WhatsApp** | Coming soon. | — |
+| **SMS** | Coming soon. | — |
 
 ## Web Analytics
 

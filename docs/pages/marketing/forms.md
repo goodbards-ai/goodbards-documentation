@@ -40,14 +40,30 @@ a separate survey tool.
 
 ### Change the fields
 
-**Edit form** opens the visual builder.
+**Edit form** opens the visual builder. It has the same menu bar as the email
+editor (**File**, **Edit**, **AI**, **View**), with **Desktop**, **Tablet** and
+**Mobile** widths on the right; see [Editing an email](emails.md#editing-an-email).
 
-- **Add a field**: drag it from **Forms** in the left panel: *Text field*, *Email
-  field*, *Phone field*, *Multi-line text*, *Dropdown*, *Checkbox*, *Consent*.
+- **Add a field**: drag it from **Add to form**, the left column, onto the form:
+  *Text field*, *Email field*, *Phone field*, *Multi-line text*, *Dropdown*,
+  *Checkbox*, *Radio buttons*, *Checkboxes*, *Consent*, *Submit button* or *Two
+  fields side by side*.
 - **Reorder**: drag a field to its new place.
-- **Make a field required**: select it, open its settings (the gear icon on the
-  right) and tick **Required**.
-- Choose **Apply** to keep your changes.
+- **Make a field required**: select it, open **Settings** on the right and tick
+  **Required**.
+- Choose **Apply** to keep your changes, then save the form. **✕** closes the
+  builder; if you changed something, it asks **Discard changes?** first.
+
+**Radio buttons** asks one question with one answer allowed; **Checkboxes** lets
+people tick several. To change the answers of either, or of a **Dropdown**:
+
+1. Click the question on the form. The whole group is selected.
+2. In **Settings**, edit the **Options** box: one option per line. Add a line to
+   add an answer, delete a line to remove one.
+3. Click outside the box. The answers on the form update.
+
+A choice question needs at least one option: if you empty the box, the previous
+answers come back.
 
 ### Turn responses into contacts
 

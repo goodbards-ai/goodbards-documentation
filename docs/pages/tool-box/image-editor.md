@@ -26,14 +26,42 @@ in place — so you are not exporting files back and forth.
 
 ## The editing tabs
 
-Once an image is loaded, the panel on the right has four tabs:
+Once an image is loaded, the panel on the right has five tabs:
 
 | Tab | What you can do |
 | --- | --- |
 | **Style** | Filters, and adjustments such as brightness, contrast and saturation. |
 | **Transform** | Crop, rotate and zoom. |
 | **Resize** | Resize to a preset for each social network, or to your own size. |
+| **Logo** | Place your brand kit's logo on the image. See below. |
 | **AI** | Describe the change in words, for example *remove the background* or *add a sunset sky*, and the AI edits the image. With no image loaded, it generates one from your description. |
+
+## Adding your logo
+
+Works on any image you load, not only AI-generated ones.
+
+1. Open the **Logo** tab and choose the brand kit.
+2. Turn on **Add logo**. The logo appears on the image.
+3. Leave the logo on **Auto**, or pick one yourself. **Auto** starts with your
+   usual logo and switches to another one from the kit if that one would be hard
+   to read on the background.
+4. Choose a **Position** and **Size**, or drag the logo anywhere on the image.
+   You can also move it with the arrow keys.
+5. Choose **Apply logo**.
+
+Save and download are off while you place the logo, so choose **Apply logo** or
+**Cancel** first. Once applied, **Undo** removes it.
+
+!!! tip "Add the logo last"
+    Filters and rotations are applied when you download, so they would change the
+    logo too. Finish those first.
+
+If an amber message says the logo may be hard to read, try another position or
+logo. Adding a lighter or darker version to your
+[brand kit](../settings/brand-kit.md) gives **Auto** more to choose from.
+
+If you open an image from Image Generation that already has your logo, the tab
+warns you, so you don't end up with two logos.
 
 ## Supported formats
 

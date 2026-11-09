@@ -84,21 +84,35 @@ and the body as recipients will see it, with an **Edit** button on each, and
 you edit only your content inside it.
 
 ![The email editor: Visual, Code and AI on the left, Desktop, Email width and Mobile previews, the email in the middle, and blocks to drag in on the right](../../img/screenshots/email-editor.png)
+<!-- screenshot stale: the left rail (Visual / Code / AI) and the Apply / Cancel footer are gone; the editor now has a top bar with File / Edit / AI / View menus on the left and the width switcher, Save and ✕ on the right -->
 
-- **Visual**: click any text to change it; drag blocks from the right (heading,
-  text, button, image, two columns, divider…). Personal fields such as **First
-  name** are filled in for each recipient; see
+Across the top of the editor are the menus **File**, **Edit**, **AI** and
+**View**. On the right are the width buttons, **Save** and **✕**.
+
+The **View** menu switches between three ways of working:
+
+- **Visual editor**: click any text to change it; drag blocks from the right
+  (heading, text, button, image, two columns, divider…). Personal fields such as
+  **First name** are filled in for each recipient; see
   [Personalising an email](#personalising-an-email).
-- **Code**: edit the HTML directly.
-- **AI**: describe the change, for example *make it shorter and warmer*. You
-  can also paste links: *write a newsletter from these posts* followed by up
-  to three web addresses builds a section per post, with a "Read more" link to
-  each. The pages are read before the AI writes, and the panel tells you which
-  ones it could read; a page whose owner blocks automated access is named, not
-  guessed at.
-- **Desktop**, **Email width** and **Mobile** preview the email at each size.
+- **HTML code**: edit the HTML directly.
+- **AI assistant**: describe the change, for example *make it shorter and
+  warmer*. You can also paste links: *write a newsletter from these posts*
+  followed by up to three web addresses builds a section per post, with a
+  "Read more" link to each. The pages are read before the AI writes, and the
+  panel tells you which ones it could read; a page whose owner blocks automated
+  access is named, not guessed at. **AI → Improve with AI** (or ⌘J) opens it too.
 
-Choose **Apply** to keep your changes, or **Cancel**.
+In the visual editor, **Desktop**, **Email width** and **Mobile** show the email
+at each size. In the other two views, a **Visual editor** button takes you back
+to the canvas. **View** also offers **Show outlines** and **Preview**, and
+**Edit** has **Undo** and **Redo**.
+
+Choose **Save** (or ⌘S) to keep your changes; *Unsaved changes* shows while
+there is something to save. **✕** (or Esc) closes the editor: if you changed
+something, it asks **Discard changes?** first. When you are writing a new email,
+the button reads **Apply** instead of **Save**: the body goes back into the
+email, which you then save.
 
 The card menu in the gallery also offers **Show Tactics** (where the email is
 used), **Duplicate**, **Attach to tactic** and **Delete**.
@@ -111,13 +125,14 @@ value in its place. Fields work in the **subject** as well as in the body.
 
 1. Open the email and choose **Edit** on the subject or the body.
 2. Type the field where the value should appear, braces included. In the
-   **Visual** editor, type it into any text; in **Code**, anywhere in the HTML.
+   **Visual editor**, type it into any text; in **HTML code**, anywhere in the
+   HTML.
 
     ```
     Hi {{contact_firstname}}, here is what's new this month.
     ```
 
-3. Choose **Apply**, then **Send Test Email** to check it.
+3. Choose **Save**, then **Send Test Email** to check it.
 
 The fields you can use:
 

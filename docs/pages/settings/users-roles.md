@@ -61,7 +61,7 @@ Under **Roles**, the **Platform** roles are ready to use:
 | --- | --- |
 | **Tenant Owner** | Everything, plus billing and transferring ownership. |
 | **Tenant Administrator** | Everything, plus users and company settings. |
-| **Marketer** | Every module in read and write, and every contact. The usual role for your marketing team. Contacts' emails and phones stay hidden until you give them [*Access sensitive data*](#additional-permissions). |
+| **Marketer** | Every module in read and write, and every contact, including creating and editing segments. The usual role for your marketing team. Contacts' emails and phones stay hidden until you give them [*Access sensitive data*](#additional-permissions). |
 | **Sales** | Home and the Audience only, with *Access sensitive data*. With contact ownership on, they see only the contacts they own. |
 
 ![The Roles section: Tenant Administrator, which bypasses permissions, and Marketer, with write access to every module and every contact](../../img/screenshots/roles.png)
@@ -69,6 +69,30 @@ Under **Roles**, the **Platform** roles are ready to use:
 To give a group exactly the modules it needs, choose **Create Role**, name it,
 and pick the permissions. For example, a *Reporting* role with read access to
 Home, Marketing and Website and SEO, for a client who only follows results.
+
+### What each Audience action needs
+
+Owners and administrators pass every module check. For everyone else, the
+action needs the permission in the second column. "Audience write" is the write
+access to the Audience module, which the **Marketer** and **Sales** roles
+include.
+
+*Access sensitive data* is the exception: it is given to a person, not a role,
+so an owner or administrator needs it ticked too before they can add or import
+contacts. See [Additional permissions](#additional-permissions).
+
+| Action | Needs |
+| --- | --- |
+| See contacts, companies and segments | Audience read |
+| Add or edit a contact | Audience write, and *Access sensitive data* (the form holds phone and address) |
+| Add or edit a company | Audience write |
+| Create, edit or delete a segment | Audience write |
+| Import contacts (**Bulk Add Contacts**) | Administrator, and *Access sensitive data* |
+| Create a mailing list, add or revoke members | Administrator, and *Access sensitive data* |
+| Assign contact owners | Administrator |
+
+A colleague who lacks a permission sees the button greyed out with the reason,
+or does not see it at all.
 
 ## Additional permissions
 

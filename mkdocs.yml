@@ -44,6 +44,7 @@ nav:
           - pages/marketing/index.md
           - Launch a Tactic: pages/marketing/launch-tactic.md
           - Campaigns: pages/marketing/campaigns.md
+          - Automations: pages/marketing/automations.md
       - Emails & Forms:
           - pages/emails/index.md
           - Emails: pages/marketing/emails.md
@@ -100,6 +101,7 @@ nav:
       - Brand & Context: pages/settings/company-settings.md
       - How the AI knows your brand: pages/settings/brand-voice-memory.md
       - Brand Kit: pages/settings/brand-kit.md
+      - Brand Check: pages/settings/brand-check.md
       - Connections: pages/settings/connections.md
       - Connectors:
           - pages/settings/connectors/index.md
@@ -110,6 +112,7 @@ nav:
           - Twitter (X): pages/settings/connectors/twitter-x.md
           - YouTube: pages/settings/connectors/youtube.md
           - TikTok: pages/settings/connectors/tiktok.md
+          - Telegram: pages/settings/connectors/telegram.md
           - Google Analytics: pages/settings/connectors/google-analytics.md
           - Google Search Console: pages/settings/connectors/google-search-console.md
           - Google Trends: pages/settings/connectors/google-trends.md

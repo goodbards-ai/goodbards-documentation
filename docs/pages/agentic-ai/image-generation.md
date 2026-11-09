@@ -40,11 +40,19 @@ AI follows colours closely but not exactly, so check important brand colours by 
 
 Turn on **Add logo** to place your real logo on the image:
 
-- **Logo**: pick which of the kit's logos to use. GoodBards remembers your
-  choice for that kit.
-- **Variant**: **Auto** picks the white version on dark backgrounds and the
-  normal one on light backgrounds. You can also pick a version yourself.
+- **Logo**: if the kit has several logos, **Auto** starts with your usual logo
+  and switches to another one if that one would be hard to read on the
+  background. Or pick a logo yourself, and GoodBards remembers your choice for
+  that kit.
+- **Variant**: for a logo you picked, **Auto** chooses the version that stands
+  out best on the background. You can also pick a version yourself.
 - **Position** and **Size**: choose the corner and how large the logo is.
+
+If an amber message says the logo may be hard to read, try another position or
+logo, or add a lighter or darker version to your brand kit.
+
+To place the logo anywhere on the image, use the
+[Image Editor](../tool-box/image-editor.md#adding-your-logo).
 
 The logo is your actual logo file placed on top of the image. The AI never
 redraws it, so it is never distorted. Changing the logo, position or size

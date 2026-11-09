@@ -22,9 +22,13 @@ in charge of what gets saved.
    Content**. You can also start from a topic in
    [Research & Plan](research-plan.md), or from an action in **Actions**.
 2. Fill in the form: the topic, who it is for, the format (for example a
-   LinkedIn post or a blog article) and the tone. Give the AI material to work
-   from: notes, web pages (up to 3) and files from your Content Repository (up
-   to 5). A link pasted in your notes is read like an imported page.
+   LinkedIn post or a blog article) and the tone. Under **Sources and model**,
+   give the AI material to work from: **Notes & facts**, web pages (up to 3)
+   and files from your Content Repository (up to 5). A link pasted in your
+   notes is read like an imported page. In the same section, **AI model** picks
+   which model writes the draft and its rewrites: choose a provider, then a
+   model. Leave it on **Default (recommended)** unless you have a reason; some
+   models use more credits and take longer. **Use the default** goes back to it.
 3. Press **Write it**. Everything runs from here, one step after the other:
    your materials are read, a brief is written, the writer drafts the piece,
    the reviewer scores it, and the writer revises once if the score asks for

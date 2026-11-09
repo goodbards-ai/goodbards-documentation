@@ -51,7 +51,9 @@ See [Brand & Context](company-settings.md) for every field.
    **Add text sample**, or choose documents with **Add from Drive**.
 3. The voice goes from **Analyzing** to **Active** in a few minutes. Open
    **Details** to read the profile it built: tone, structure, favourite phrases,
-   do's and don'ts.
+   do's and don'ts. It also shows the voice's **Language**, detected from your
+   samples. To correct it, choose **Edit**, pick the **Language** and choose
+   **Save changes**.
 4. To use it by default, go to **Personal Settings → Preferences → Default brand
    voice**. You can also pick a voice for one conversation from the **Voice** menu
    in the chat box.
@@ -75,6 +77,12 @@ See [Brand & Context](company-settings.md) for every field.
 - **Changes take up to about ten minutes** to reach the agents.
 - **Only your primary Brand Kit is used.** Its tone of voice, keywords and
   hashtags apply to every request; a Voices Bank voice applies only when selected.
+- **One voice, one language.** A voice writes in the language of its samples and
+  is never translated. When you write a piece, choose the language first: the
+  **Voice** list then offers only the voices in that language. If you change the
+  language, a voice that does not write in it is removed, and GoodBards tells
+  you. To write in another language with the same style, create a second voice
+  from samples in that language.
 - **A voice is applied when the conversation starts.** Changing it halfway
   through has no effect; start a new conversation.
 - **Company memory is shared with everyone in your company.** Do not put personal

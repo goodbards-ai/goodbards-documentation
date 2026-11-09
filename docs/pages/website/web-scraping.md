@@ -59,6 +59,11 @@ to follow an industry blog or a competitor's news.
 
 - **Some sites cannot be scraped.** Pages behind a login, or ones that block
   automated access, will not return content.
+- **GoodBards respects robots.txt.** When a site's owner does not allow
+  automated access to a page, GoodBards does not fetch it. A scrape stops with
+  the message *The site owner does not allow automated access to this page
+  (robots.txt).* A crawl skips those pages and carries on with the others. You
+  can still copy the text from the page yourself.
 - **Scrape responsibly.** Check the site's terms before pulling content
   repeatedly, and do not republish what you collect as your own.
 - **Content is a snapshot.** A scrape captures the page as it was at that moment;

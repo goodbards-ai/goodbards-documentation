@@ -42,6 +42,14 @@ Sending or delivering an email gives no points: the contact did nothing yet.
 
 - **Use the decay score to prioritise.** Two contacts with the same engagement
   score are not equal if one engaged last week and the other last year.
+- **You choose how fast points fade.** An administrator sets the **Engagement
+  Decay Velocity** in **Tenant Settings → Preferences**: 4 weeks (fast), 8
+  weeks (normal), 12 weeks (slow), or no decay. Points fade evenly to zero over
+  that period.
+- **Four tiers.** The Contacts home groups contacts by decay score: **High**
+  (100 and more), **Medium** (40 to 99), **Low** (1 to 39) and **Inactive** (0,
+  or never engaged). A segment on the score finds the quiet ones. See
+  [Unengaged contacts](contacts.md#unengaged-contacts).
 - **Scores update every day.** Today's activity shows tomorrow.
 - **Companies are scored too**, from the engagement of their contacts. See
   [Companies](companies.md).

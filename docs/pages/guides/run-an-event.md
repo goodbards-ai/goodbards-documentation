@@ -96,12 +96,15 @@ To change one:
 
 1. Open it and choose **Edit** on the preview.
 2. Change the **Subject** at the top and the text in the editor, then choose
-   **Apply**.
+   **Save**.
 
 ![The invitation email card: a sample preview with Edit, the link Use one of my emails instead, and below it Re-Send Invitations, the last send to 1,180 contacts, and Email Metrics](../../img/screenshots/event-email-card.png)
 
 The invitation and the reminders work the same way, on the **Communications**
 tab. See [Editing an email](../marketing/event-management.md#editing-an-email).
+
+Before anything goes out, choose **Send test email** under an email to receive it
+in your own inbox. See [Testing an email](../marketing/event-management.md#testing-an-email).
 
 ## 5. Invite your audience
 

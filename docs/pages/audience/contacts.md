@@ -161,6 +161,7 @@ knows about them, in one place.
 | **Contact Summary** | Job, companies, email, phone, customer type, preferred contact method, referral source and owners. |
 | **Location** | Country, city, address and timezone. |
 | **Custom Fields** | Your own fields, such as a loyalty tier or a home store. |
+| **Messaging consent** | Whether the contact agreed to WhatsApp, Telegram and SMS messages, since when and how. For Telegram, also their personal link (**QR code**, **Email link**, **Copy link**) until they subscribe. See [Telegram](../settings/connectors/telegram.md). |
 | **Policies** | The privacy statements the contact accepted, when, and how (for example through a form). This is your proof of consent. |
 | **Mailing Lists** | The lists they belong to, how they joined (public sign-up, added manually) and whether they are still subscribed. |
 | **Events** and **Form submissions** | The events they registered for and the forms they filled in. |
@@ -195,8 +196,17 @@ you use it, so it stays current as contacts change.
 ![The Segments tab: saved segments such as Singapore members, Malaysia members, Corporate buyers and Bangkok launch list, each with a description](../../img/screenshots/segments.png)
 
 To create one, open the **Segments** tab and choose **Add Segment**, then set
-the rule. A segment can filter on contact details (such as country or job title),
-on behaviour (what contacts did) and on alerts.
+the rule. Anyone with write access to the Audience module (the Marketer and
+Sales roles, and administrators) can add, edit and delete segments. A rule is made of blocks,
+combined with *and* / *or*:
+
+- **Contact** — a detail of the contact: status, country, job title, tags, a
+  custom field.
+- **Behavior** — what the contact did: an engagement type (email opened, email
+  clicked, form filled, event attended…), how many times (**Min Count**,
+  **Max Count**) and when (**Last n Days**, or a date range).
+- **Alert & KPI** — the contact's **Engagement Score** or **Decay Score**
+  compared with a number. See [Lead scoring](lead-scoring.md).
 
 Choose a segment's name to open it: its description, its filters, a summary of
 which kinds of filter are applied, and the list of contacts it holds right now.
@@ -214,6 +224,102 @@ Useful segments look like:
     If you find yourself applying the same filter repeatedly, save it as a
     segment. Give it a description too — in six months you will not remember
     what the rule was.
+
+## Unsubscribed and unengaged contacts
+
+Two groups to treat differently: people who told you to stop, and people who
+simply went quiet.
+
+### Unsubscribed contacts
+
+**How they are captured.** A contact becomes **Unsubscribed** in one of three
+ways:
+
+- **They choose it.** Every marketing email carries an unsubscribe link in its
+  footer. It opens the contact's mailing preferences page, where they can leave
+  one list or unsubscribe from everything. Unsubscribing from everything sets
+  their status to **Unsubscribed** and adds an *email unsubscribe* line to their
+  timeline. Leaving a single list only changes their status on that list; they
+  remain **Subscribed** for the rest. The link is signed for that one contact
+  and nothing changes until they confirm on the page, so the mail scanners that
+  open every link cannot unsubscribe anyone.
+- **Their mail provider says so.** A recipient who reports your email as spam
+  becomes **Do not contact**; an address that cannot be delivered becomes
+  **Bounced** (see [Reading the Contacts home](#reading-the-contacts-home)).
+- **Your team sets it.** On the contact's page, or through the `status` column
+  of an import, for opt-outs received by phone or email.
+
+**How you see them.** The **Status distribution** card counts them; a contact's
+page shows the status next to their name and the unsubscribe in their
+timeline; a mailing list shows its own **Unsubscribed** counter and each
+member's list status. To work with them as a group, create a segment with a
+Contact block *Status equals unsubscribed*.
+
+**How they are managed.** Only **Subscribed** contacts receive marketing email,
+whatever the audience of the send: chosen contacts, a segment, a mailing list or
+a company. Unsubscribed, Bounced and Do not contact contacts are dropped at send
+time, and no setting overrides this. Someone who left a list stays off it until
+they rejoin themselves. A contact enrolled in an automation flow leaves the flow
+when they unsubscribe.
+
+!!! warning "Do not re-subscribe people yourself"
+    The status can be edited, but under Singapore's PDPA and similar laws an
+    opt-out stands until the person opts in again, through a form or the
+    preferences page. Re-importing them as Subscribed is not consent.
+
+### Unengaged contacts
+
+GoodBards keeps no separate "unengaged" status, and never changes a contact's
+status because they went quiet. Instead every contact carries a score that
+fades with time, and you set the rule that decides who counts as unengaged.
+
+- **Engagement Score** adds points for every open, click, form, registration
+  and attendance. See [Lead scoring](lead-scoring.md).
+- **Decay Score** is the same points faded to zero over the **Engagement Decay
+  Velocity** your administrator chooses in **Tenant Settings → Preferences**:
+  4 weeks (fast), 8 weeks (normal), 12 weeks (slow), or no decay. With the
+  normal setting, a click from eight weeks ago is worth nothing today. Scores
+  are recomputed every night.
+- The **Engagement** grade on the Contacts home splits contacts into four tiers
+  by decay score: **High** (100 and more), **Medium** (40 to 99), **Low** (1 to
+  39) and **Inactive** (0, or never engaged). These thresholds are fixed.
+
+So an unengaged contact, for GoodBards, is one whose decay score has reached
+zero: nothing positive within the decay window. The rules are based on time,
+not on a number of campaigns.
+
+**Finding them.** Three ways, from the quickest to the most precise:
+
+1. **Ask the assistant** on the Contacts page: *"Who went cold in the last six
+   months?"* It lists contacts who engaged before but did nothing in the last
+   180 days, or the number of days you name.
+2. **Segment on the score.** Add an **Alert & KPI** block: *Decay Score, Less
+   than, 1*. The segment holds every Inactive contact and updates itself every
+   night.
+3. **Segment on behaviour**, for a rule of your own. Add a **Behavior** block
+   *Engagement: email opened, Min Count 0, Max Count 0, Last n Days 90*, and
+   another for *email clicked*: nobody who opened or clicked in the last 90
+   days. Add a Contact block *Status equals subscribed* to keep only mailable
+   contacts.
+
+**Keeping them out of a send.** An email goes to the audience you choose; there
+is no separate exclusion list. So:
+
+- Send to a segment whose rule leaves them out, for example *Decay Score,
+  Greater than or equals, 1*, instead of to everyone. The segment re-evaluates
+  at send time, so a contact who re-engages is back in.
+- Try to win them back first: send a re-engagement email to the unengaged
+  segment, then set those who stay silent to **Do not contact**. They stay in
+  your database for reporting and stop receiving marketing email.
+
+| What | Can you change it? |
+| --- | --- |
+| How fast scores fade | Yes: **Engagement Decay Velocity** in Tenant Settings → Preferences. |
+| The window and counts of a segment rule | Yes, per segment. |
+| The assistant's "cold" window | Yes, per question. 180 days by default. |
+| The tier thresholds (100, 40, 1) | No. |
+| An automatic status change after a period of silence | No. A status only changes through the contact's own choice, a bounce, a spam complaint or your team. |
+| A rule counted in campaigns rather than days | No. |
 
 ## Mailing Lists
 
@@ -369,6 +475,7 @@ The rules of the file:
 | `tags` | Tags for this contact, separated by a semicolon: `trade-show-2026;vip`. |
 | `notes` | Free text, added as a note on the contact. |
 | `engagementType`, `engagementDate` | Something the contact did, to record in their history. Fill in both or neither. The date is `YYYY-MM-DD HH:MM`: `2026-09-24 14:30`. See [Accepted values](#accepted-values). |
+| `whatsappConsent`, `telegramConsent`, `smsConsent` | Whether the contact agreed to receive messages on that channel: `yes` records their consent, `no` records that they withdrew it, and an empty cell changes nothing. Only import `yes` for people who really agreed: it is your proof of consent. Applied to new contacts and, with **Overwrite**, to existing ones. |
 | *your custom fields* | One column per custom field, named as in **Download Template**. |
 
 ### Accepted values
@@ -438,4 +545,3 @@ A row whose `email` is already in your audience is handled by the job's
 ---
 
 *Still stuck? [Contact support](../contact.md).*
-| `whatsappConsent`, `telegramConsent`, `smsConsent` | Whether the contact agreed to receive messages on that channel: `yes` records their consent, `no` records that they withdrew it, and an empty cell changes nothing. Only import `yes` for people who really agreed: it is your proof of consent. Applied to new contacts and, with **Overwrite**, to existing ones. |

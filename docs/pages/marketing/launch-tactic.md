@@ -18,11 +18,13 @@ towards the same goal over a period of time — see [Campaigns](campaigns.md).
 2. Pick the channel you want to publish on.
 
 ![The Launch a Tactic screen, showing social media channels including Twitter, Reddit, LinkedIn, Instagram, TikTok, Facebook, YouTube, Telegram and WhatsApp, plus an Email Campaign option](../../img/screenshots/launch-tactic.png)
+<!-- screenshot stale: channels now grouped as Social Media / Emails / Articles / Events / Ads with a filter row on top; Reddit gone, Twitter is now X, Short YouTube Video is now YouTube Shorts; Blog Post, Press Release, Events, Marketing Automation and Ads (Coming soon) added -->
 
 Channels are grouped by type, and each says what it is best suited to — LinkedIn
-for professional and B2B content, TikTok for short-form video, and so on. Once you
-have picked one, follow the steps for that channel to write your content and
-publish or schedule it.
+for professional and B2B content, TikTok for short-form video, and so on. To see
+one group only, choose it in the row of buttons above the channels; **All**
+shows everything again. Once you have picked a channel, follow the steps for it
+to write your content and publish or schedule it.
 
 !!! tip "Not sure which channel?"
     The short description under each one is a reminder of what that audience
@@ -33,8 +35,11 @@ publish or schedule it.
 
 | Group | Channels |
 | --- | --- |
-| **Social Media** | Twitter, Reddit, LinkedIn, Instagram, TikTok, Facebook, Short YouTube Video, YouTube Video, Telegram, WhatsApp |
-| **Emails** | Email Campaign — targeted newsletters and promotional emails |
+| **Social Media** | Facebook, Instagram, LinkedIn, TikTok, X, YouTube, YouTube Shorts |
+| **Emails** | **Email Campaign** for newsletters and promotional emails; **Marketing Automation** for a flow of emails that runs on its own (see [Automations](automations.md)) |
+| **Articles** | Blog Post, Press Release |
+| **Events** | Events: in person, virtual or hybrid |
+| **Ads** | Ads (marked **Coming soon**) |
 
 Use **Search tactics…** at the top right to jump straight to one.
 

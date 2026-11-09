@@ -83,13 +83,14 @@ Every event email (the registration emails above, and the invitation and
 reminders under **Communications**) works the same way. The card shows the
 email as guests receive it, inside your event design.
 
-1. Click the preview, or **Edit**. The editor opens, with the **Subject** at the
-   top and **Visual**, **Code** and **AI** on the side.
-2. Change the text, then choose **Apply**. The card now says *Your own version of
+1. Click the preview, or **Edit**. The editor opens, with the **Subject** under
+   the menu bar. The **View** menu switches between **Visual editor**, **HTML
+   code** and **AI assistant**; see [Editing an email](emails.md#editing-an-email).
+2. Change the text, then choose **Save**. The card now says *Your own version of
    this email*.
 3. To go back, choose **Reset to standard**.
 
-In the **Visual** editor:
+In the **Visual editor**:
 
 - **Purple dashed boxes** are parts only some guests see. The title says who,
   for example *Shown when the guest has a check-in QR code*. Edit the text
@@ -101,6 +102,24 @@ In the **Visual** editor:
 
 To send an email you built under **Emails** instead, choose **Use one of my
 emails instead** under the card.
+
+### Testing an email
+
+Every event email has a **Send test email** button under its card: the invitation,
+the reminders, the registration emails and the follow-ups. It works at any time,
+even while the event is a draft.
+
+1. Choose **Send test email**. The address is filled in with yours; change it to
+   send the test to a colleague.
+2. Choose **Send test**, and check the email in that inbox.
+
+The test is the email as it is saved right now, with your name in place of the
+guest's. Its subject starts with **[TEST]**, and it does not appear in **Sent
+emails** or in the email metrics.
+
+The check-in, cancel and calendar links in a test belong to a sample registration,
+so they do not open a real one. The registration link in a test invitation is the
+real one: if you complete the form, you are registered.
 
 ## How to send, and see what happened
 
