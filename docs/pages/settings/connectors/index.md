@@ -25,7 +25,7 @@ company account can connect or disconnect a service. See
 | Connector | What it gives you | Page |
 | --- | --- | --- |
 | **Telegram** | Post to your channels; personal messages to contacts who subscribed. | [Telegram](telegram.md) |
-| **WhatsApp** | Coming soon. | — |
+| **WhatsApp** | Your own WhatsApp Business number, through your Meta account (in development: connecting works, sending comes next). | [WhatsApp](whatsapp.md) |
 | **SMS** | Coming soon. | — |
 
 ## Web Analytics
