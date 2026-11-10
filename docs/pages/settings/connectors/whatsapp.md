@@ -9,11 +9,13 @@ to the contacts who agreed to receive them, from **your** number and under
 **your** business name. Everything goes through your own Meta account: Meta bills
 you directly for the messages, and GoodBards never pays or sees your Meta bill.
 
-!!! note "In development"
-    Today you can connect your WhatsApp number and check its status. Message
-    templates and sending to your contacts arrive next. Meta's screens are made
-    for developers: if you would rather not do this alone, contact support and we
-    set it up with you on a short call.
+A campaign can then send an approved **message template** to each contact of an
+audience, filled with their own details, and show you who received it, who read
+it, who clicked and who replied.
+
+!!! note "Setting up with us"
+    Meta's screens are made for developers: if you would rather not do the setup
+    alone, contact support and we do it with you on a short call.
 
 ## Before you start
 
@@ -195,6 +197,93 @@ or asks to stop, through a **webhook**. You set it once:
 3. Under **Webhook fields**, subscribe to **messages** and
    **message_template_status_update**.
 
+Without this step messages are still sent, but GoodBards only knows they were
+sent: not delivered, read or answered.
+
+## How to prepare a message template
+
+WhatsApp only lets a business start a conversation with a **template** that Meta
+approved. You write it once and reuse it in as many campaigns as you like.
+
+1. In **Content Hub**, create a **WhatsApp message**.
+2. Choose **New Template** and fill in:
+    - a **name** (lowercase letters, digits and `_`, for example `summer_offer`),
+      a **language** and a **category** (Marketing for offers and news, Utility
+      for order or booking updates);
+    - the **text**, up to 1,024 characters. Put `{{1}}`, `{{2}}`… where something
+      changes from one person to the next, and give an example for each: Meta
+      reviews the template with your examples;
+    - optionally a short **title**, a **footer** and a **link button**.
+3. Choose **Submit to Meta**. The template shows as **in review**. Meta usually
+   answers within minutes, sometimes a day; you get a notification when it is
+   approved or rejected, with Meta's reason.
+
+Meta's rules, checked by GoodBards before sending anything to Meta: variables
+are numbered in order without gaps, and the text cannot start or end with a
+variable.
+
+!!! note "Not supported yet"
+    Templates with a variable in the title, an image as title, or a variable in
+    the link button can be created in WhatsApp Manager but cannot be sent from
+    GoodBards for now.
+
+## How to send a WhatsApp campaign
+
+1. In a campaign, choose **Add Tactic** and pick **WhatsApp**.
+2. In **Recipients**, choose contacts, segments or mailing lists. The **Who
+   receives it** box tells you how many can be reached and why the others
+   cannot: no usable phone number, no WhatsApp consent, or marked do not contact.
+   It also shows how many messages you have used this month.
+3. Create the message: in the editor, pick an **approved template**, then say
+   what fills each variable:
+    - **First name**, **Last name** or **Job title**: taken from each contact. In
+      the field on the right, type what a contact with an empty field should get
+      (for example `there`). Without it, that contact is skipped.
+    - **Fixed text**: the same for everyone. A link typed here is replaced by a
+      short link of its own for each contact, so you see who clicked.
+4. Attach the message to the tactic, then **Publish** or **Schedule** it to
+   **Contacts of this tactic**. Messages go out over the next minutes.
+
+GoodBards checks the template with Meta again when you publish: if Meta paused or
+removed it in the meantime, nothing is sent and the message says why.
+
+!!! tip "A contact needs two things"
+    A phone number in international format (for example `+65 9123 4567`) and
+    **WhatsApp consent**, recorded on the contact page, by a form, or by an
+    import. A contact who only gave an email address is never messaged on
+    WhatsApp.
+
+## What happens after sending
+
+On the tactic page, **Delivery status** lists every message: sent, delivered,
+read and clicked, each with its time, or the reason it failed (for example *Not
+on WhatsApp, or cannot receive this message*). A dash means Meta did not report
+that step: a person who turned off read receipts stays at "delivered".
+
+- **A reply** appears on the contact's timeline, and its text is kept in the
+  contact's **Notes**. Your account gets a notification naming the contact and
+  the tactic. GoodBards does not answer for you.
+- **"STOP"**, or the **Stop promotions** button, withdraws the contact's WhatsApp
+  consent at once. They are left out of your next messages.
+- **A failed message** can be sent again: fix the cause, then publish the same
+  message again. Only the contacts whose message failed are retried; nobody
+  receives it twice.
+- A message that could not be sent within a day of publishing (for example
+  because of a payment problem in your Meta account) is cancelled rather than
+  sent late.
+
+## What you see in reports
+
+| In the campaign report | Meaning |
+| --- | --- |
+| **Sent** | Messages Meta accepted |
+| **Delivered** / **Read** | Reached the phone / opened, with their rates |
+| **Clicks** | Clicks on your links, people only (WhatsApp's own link preview is not counted) |
+| **Replies** | Contacts who wrote back |
+| **Opt-outs** | Contacts who asked to stop |
+| **Failed** | Messages that could not be delivered |
+| **Billed by Meta** | Delivered messages Meta charges you for. GoodBards shows the count, not the amount: Meta's price depends on each recipient's country, and your invoice is in WhatsApp Manager |
+
 ## If it does not work
 
 GoodBards shows Meta's refusal in plain words, with Meta's own text in brackets.
@@ -220,6 +309,11 @@ GoodBards shows Meta's refusal in plain words, with Meta's own text in brackets.
   message contacts who agreed.
 - **Consent.** GoodBards only sends to contacts with WhatsApp consent, and a
   "STOP" reply withdraws it.
+- **Monthly limit.** Your plan includes a number of WhatsApp messages per month
+  (2,000 on Pro, 10,000 on Full, unless agreed otherwise). It protects your
+  number's quality rating. You see what you have used in **Settings → Usage**
+  and on each WhatsApp tactic; a send that would go over is refused before
+  anything leaves.
 - To use a new token or number, choose **Connect** again with the new details:
   your webhook keeps working.
 

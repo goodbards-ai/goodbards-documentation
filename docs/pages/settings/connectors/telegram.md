@@ -96,7 +96,11 @@ Pick what fits:
    or job title.
 5. Publish or schedule it to **Contacts of this tactic**. Messages go out over
    the next minutes. Publishing the same message again only sends it to
-   contacts who did not get it yet.
+   contacts who did not get it yet, or whose message failed.
+
+On the tactic page, **Delivery status** lists every message: sent, clicked, or
+the reason it failed. Each message sent, each click and each opt-out also
+appears on the contact's timeline.
 
 ## What you see in reports
 
