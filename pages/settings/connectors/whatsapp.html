@@ -4268,6 +4268,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-to-prepare-a-message-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to prepare a message template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-send-a-whatsapp-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to send a WhatsApp campaign
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-after-sending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens after sending
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-see-in-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you see in reports
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#if-it-does-not-work" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4887,6 +4931,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-to-prepare-a-message-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to prepare a message template
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-send-a-whatsapp-campaign" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to send a WhatsApp campaign
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-after-sending" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happens after sending
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-you-see-in-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What you see in reports
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#if-it-does-not-work" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4943,12 +5031,13 @@
 to the contacts who agreed to receive them, from <strong>your</strong> number and under
 <strong>your</strong> business name. Everything goes through your own Meta account: Meta bills
 you directly for the messages, and GoodBards never pays or sees your Meta bill.</p>
+<p>A campaign can then send an approved <strong>message template</strong> to each contact of an
+audience, filled with their own details, and show you who received it, who read
+it, who clicked and who replied.</p>
 <div class="admonition note">
-<p class="admonition-title">In development</p>
-<p>Today you can connect your WhatsApp number and check its status. Message
-templates and sending to your contacts arrive next. Meta's screens are made
-for developers: if you would rather not do this alone, contact support and we
-set it up with you on a short call.</p>
+<p class="admonition-title">Setting up with us</p>
+<p>Meta's screens are made for developers: if you would rather not do the setup
+alone, contact support and we do it with you on a short call.</p>
 </div>
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">¶</a></h2>
 <ul>
@@ -5163,6 +5252,121 @@ or asks to stop, through a <strong>webhook</strong>. You set it once:</p>
 <li>Under <strong>Webhook fields</strong>, subscribe to <strong>messages</strong> and
    <strong>message_template_status_update</strong>.</li>
 </ol>
+<p>Without this step messages are still sent, but GoodBards only knows they were
+sent: not delivered, read or answered.</p>
+<h2 id="how-to-prepare-a-message-template">How to prepare a message template<a class="headerlink" href="#how-to-prepare-a-message-template" title="Permanent link">¶</a></h2>
+<p>WhatsApp only lets a business start a conversation with a <strong>template</strong> that Meta
+approved. You write it once and reuse it in as many campaigns as you like.</p>
+<ol>
+<li>In <strong>Content Hub</strong>, create a <strong>WhatsApp message</strong>.</li>
+<li>Choose <strong>New Template</strong> and fill in:<ul>
+<li>a <strong>name</strong> (lowercase letters, digits and <code>_</code>, for example <code>summer_offer</code>),
+  a <strong>language</strong> and a <strong>category</strong> (Marketing for offers and news, Utility
+  for order or booking updates);</li>
+<li>the <strong>text</strong>, up to 1,024 characters. Put <code>{{1}}</code>, <code>{{2}}</code>… where something
+  changes from one person to the next, and give an example for each: Meta
+  reviews the template with your examples;</li>
+<li>optionally a short <strong>title</strong>, a <strong>footer</strong> and a <strong>link button</strong>.</li>
+</ul>
+</li>
+<li>Choose <strong>Submit to Meta</strong>. The template shows as <strong>in review</strong>. Meta usually
+   answers within minutes, sometimes a day; you get a notification when it is
+   approved or rejected, with Meta's reason.</li>
+</ol>
+<p>Meta's rules, checked by GoodBards before sending anything to Meta: variables
+are numbered in order without gaps, and the text cannot start or end with a
+variable.</p>
+<div class="admonition note">
+<p class="admonition-title">Not supported yet</p>
+<p>Templates with a variable in the title, an image as title, or a variable in
+the link button can be created in WhatsApp Manager but cannot be sent from
+GoodBards for now.</p>
+</div>
+<h2 id="how-to-send-a-whatsapp-campaign">How to send a WhatsApp campaign<a class="headerlink" href="#how-to-send-a-whatsapp-campaign" title="Permanent link">¶</a></h2>
+<ol>
+<li>In a campaign, choose <strong>Add Tactic</strong> and pick <strong>WhatsApp</strong>.</li>
+<li>In <strong>Recipients</strong>, choose contacts, segments or mailing lists. The <strong>Who
+   receives it</strong> box tells you how many can be reached and why the others
+   cannot: no usable phone number, no WhatsApp consent, or marked do not contact.
+   It also shows how many messages you have used this month.</li>
+<li>Create the message: in the editor, pick an <strong>approved template</strong>, then say
+   what fills each variable:<ul>
+<li><strong>First name</strong>, <strong>Last name</strong> or <strong>Job title</strong>: taken from each contact. In
+  the field on the right, type what a contact with an empty field should get
+  (for example <code>there</code>). Without it, that contact is skipped.</li>
+<li><strong>Fixed text</strong>: the same for everyone. A link typed here is replaced by a
+  short link of its own for each contact, so you see who clicked.</li>
+</ul>
+</li>
+<li>Attach the message to the tactic, then <strong>Publish</strong> or <strong>Schedule</strong> it to
+   <strong>Contacts of this tactic</strong>. Messages go out over the next minutes.</li>
+</ol>
+<p>GoodBards checks the template with Meta again when you publish: if Meta paused or
+removed it in the meantime, nothing is sent and the message says why.</p>
+<div class="admonition tip">
+<p class="admonition-title">A contact needs two things</p>
+<p>A phone number in international format (for example <code>+65 9123 4567</code>) and
+<strong>WhatsApp consent</strong>, recorded on the contact page, by a form, or by an
+import. A contact who only gave an email address is never messaged on
+WhatsApp.</p>
+</div>
+<h2 id="what-happens-after-sending">What happens after sending<a class="headerlink" href="#what-happens-after-sending" title="Permanent link">¶</a></h2>
+<p>On the tactic page, <strong>Delivery status</strong> lists every message: sent, delivered,
+read and clicked, each with its time, or the reason it failed (for example <em>Not
+on WhatsApp, or cannot receive this message</em>). A dash means Meta did not report
+that step: a person who turned off read receipts stays at "delivered".</p>
+<ul>
+<li><strong>A reply</strong> appears on the contact's timeline, and its text is kept in the
+  contact's <strong>Notes</strong>. Your account gets a notification naming the contact and
+  the tactic. GoodBards does not answer for you.</li>
+<li><strong>"STOP"</strong>, or the <strong>Stop promotions</strong> button, withdraws the contact's WhatsApp
+  consent at once. They are left out of your next messages.</li>
+<li><strong>A failed message</strong> can be sent again: fix the cause, then publish the same
+  message again. Only the contacts whose message failed are retried; nobody
+  receives it twice.</li>
+<li>A message that could not be sent within a day of publishing (for example
+  because of a payment problem in your Meta account) is cancelled rather than
+  sent late.</li>
+</ul>
+<h2 id="what-you-see-in-reports">What you see in reports<a class="headerlink" href="#what-you-see-in-reports" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>In the campaign report</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sent</strong></td>
+<td>Messages Meta accepted</td>
+</tr>
+<tr>
+<td><strong>Delivered</strong> / <strong>Read</strong></td>
+<td>Reached the phone / opened, with their rates</td>
+</tr>
+<tr>
+<td><strong>Clicks</strong></td>
+<td>Clicks on your links, people only (WhatsApp's own link preview is not counted)</td>
+</tr>
+<tr>
+<td><strong>Replies</strong></td>
+<td>Contacts who wrote back</td>
+</tr>
+<tr>
+<td><strong>Opt-outs</strong></td>
+<td>Contacts who asked to stop</td>
+</tr>
+<tr>
+<td><strong>Failed</strong></td>
+<td>Messages that could not be delivered</td>
+</tr>
+<tr>
+<td><strong>Billed by Meta</strong></td>
+<td>Delivered messages Meta charges you for. GoodBards shows the count, not the amount: Meta's price depends on each recipient's country, and your invoice is in WhatsApp Manager</td>
+</tr>
+</tbody>
+</table>
 <h2 id="if-it-does-not-work">If it does not work<a class="headerlink" href="#if-it-does-not-work" title="Permanent link">¶</a></h2>
 <p>GoodBards shows Meta's refusal in plain words, with Meta's own text in brackets.</p>
 <table>
@@ -5218,6 +5422,11 @@ or asks to stop, through a <strong>webhook</strong>. You set it once:</p>
   message contacts who agreed.</li>
 <li><strong>Consent.</strong> GoodBards only sends to contacts with WhatsApp consent, and a
   "STOP" reply withdraws it.</li>
+<li><strong>Monthly limit.</strong> Your plan includes a number of WhatsApp messages per month
+  (2,000 on Pro, 10,000 on Full, unless agreed otherwise). It protects your
+  number's quality rating. You see what you have used in <strong>Settings → Usage</strong>
+  and on each WhatsApp tactic; a send that would go over is refused before
+  anything leaves.</li>
 <li>To use a new token or number, choose <strong>Connect</strong> again with the new details:
   your webhook keeps working.</li>
 </ul>
