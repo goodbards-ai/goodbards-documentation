@@ -1908,6 +1908,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1977,6 +1981,62 @@
     
   
     Event Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pages/events/landing-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The event page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pages/events/emails.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Event emails
   
 
     
@@ -4698,8 +4758,13 @@ consistent. The agreed convention:</p>
 <ul>
 <li><strong>Never</strong> screenshot a real customer's account. Names, email addresses,
   company names and metrics from a live tenant must not appear. PDPA applies.</li>
-<li>Screen pages: one screenshot unless a step is genuinely unclear without a
-  second. Guides: one per stage is fine, placed right under the step it shows.</li>
+<li><strong>Show as much as you can.</strong> Readers get lost in text and find their way with
+  pictures: add a screenshot for every screen, tab, dialog and menu the page
+  talks about, and for every step where the reader has to find something.
+  Place it right under the sentence or step it shows. When in doubt, add one.</li>
+<li>A small crop of one card or one dialog is often better than a full screen:
+  the reader sees at once what to look for. Limit its width when it would
+  render too large: <code>![…](…){ width="420" }</code>.</li>
 <li>Capture the relevant panel, not the whole desktop. Crop out the top bar: it
   shows the signed-in person's name and photo.</li>
 <li>Always write real alt text: <code>![The Contacts list with a segment applied](...)</code>.
@@ -4719,13 +4784,47 @@ in the email editor). Everything else stays a PNG.</p>
 <li>Alt text says what happens: <code>![Choosing Attendee name from Insert field…](...)</code>.</li>
 </ul>
 <h2 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">¶</a></h2>
-<p>Use them sparingly — one per page at most.</p>
+<p>Use them whenever a fact must not be missed: a reader who skims the page should
+still read every box. Give each a title that states the point, and pick the type
+by what it does for the reader:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Use it for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>abstract</code></td>
+<td><strong>In short</strong>: the answer in a few lines or a small table, at the top of a long section.</td>
+</tr>
+<tr>
+<td><code>info</code></td>
+<td>How GoodBards behaves on its own (what is automatic, what never happens).</td>
+</tr>
+<tr>
+<td><code>note</code></td>
+<td>A condition or an exception to what the text just said.</td>
+</tr>
+<tr>
+<td><code>tip</code></td>
+<td>A better or faster way to do it.</td>
+</tr>
+<tr>
+<td><code>warning</code></td>
+<td>Something that cannot be undone, loses data, or has a legal side (consent, PDPA).</td>
+</tr>
+</tbody>
+</table>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>!!! tip "Save time"
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    Duplicate last month's campaign instead of starting over.
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>!!! warning "This cannot be undone"
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    Deleting a segment does not delete its contacts, but the segment is gone.
 </code></pre></div>
+<p>Keep each box short (five lines at most), never put two boxes of the same type
+one after the other, and keep the steps themselves outside the boxes.</p>
 <h2 id="before-you-commit">Before you commit<a class="headerlink" href="#before-you-commit" title="Permanent link">¶</a></h2>
 <p>Run the build locally and make sure it is clean:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
