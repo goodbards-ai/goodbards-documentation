@@ -33,7 +33,7 @@ There is more than one way, depending on how many you have:
 **Audience → Contacts** opens on the **Home** tab, which summarises your database
 rather than listing individuals.
 
-![The Contacts home tab: 2,917 contacts out of 20,000 allowed, 2,435 subscribed, 208 regular, 274 unsubscribed or do-not-contact, and the score progression chart](../../img/screenshots/contacts.png)
+![The Contacts home tab: 2,917 contacts out of 20,000 allowed, the Data quality tiles (no company, missing info, no owner, possible duplicates), and the Database Health cards graded D, ending with the Status Distribution](../../img/screenshots/contacts.png)
 
 **Total Contacts**, top left, shows how many contacts you hold. The gauge fills
 as you approach your plan's limit and turns orange, then red, near it. On a plan
@@ -50,7 +50,9 @@ contacts split between statuses:
 
 !!! warning "Subscribed is the number that matters"
     A large database is not much use if most of it has unsubscribed. Only
-    **Subscribed** contacts can receive marketing email.
+    **Subscribed** contacts can receive marketing email. See
+    [Unsubscribed and unengaged contacts](#unsubscribed-and-unengaged-contacts)
+    for how each status is set and what you can do about the quiet ones.
 
 !!! info "Bounced and Do not contact are set for you"
     When a marketing email cannot be delivered, GoodBards reads the reply from
@@ -197,16 +199,26 @@ you use it, so it stays current as contacts change.
 
 To create one, open the **Segments** tab and choose **Add Segment**, then set
 the rule. Anyone with write access to the Audience module (the Marketer and
-Sales roles, and administrators) can add, edit and delete segments. A rule is made of blocks,
-combined with *and* / *or*:
+Sales roles, and administrators) can add, edit and delete segments. A rule is
+made of up to three blocks. Each block is optional, and a contact must match
+every block you fill in:
 
-- **Contact** — a detail of the contact: status, country, job title, tags, a
-  custom field.
-- **Behavior** — what the contact did: an engagement type (email opened, email
+- **Contact Profile Block** — a detail of the contact: status, country, job
+  title, tags, a custom field.
+- **Behavior Block** — what the contact did: an engagement (email opened, email
   clicked, form filled, event attended…), how many times (**Min Count**,
-  **Max Count**) and when (**Last n Days**, or a date range).
-- **Alert & KPI** — the contact's **Engagement Score** or **Decay Score**
-  compared with a number. See [Lead scoring](lead-scoring.md).
+  **Max Count**) and when (**Relative Days** with **Last n Days**, or a
+  **Specific Range** of dates).
+- **Alert & KPI Block** — the contact's **Engagement Score** or **Decay
+  Score** compared with a number. See [Lead scoring](lead-scoring.md).
+
+Inside a block, **Add Condition** adds a line.
+
+!!! info "A segment is always up to date"
+    You never refresh a segment. Its rule is evaluated each time you open it
+    and each time an email is sent to it, so the people in it today may not be
+    the same next week. For a worked example, see
+    [How to find unengaged contacts](#how-to-find-unengaged-contacts).
 
 Choose a segment's name to open it: its description, its filters, a summary of
 which kinds of filter are applied, and the list of contacts it holds right now.
@@ -228,98 +240,247 @@ Useful segments look like:
 ## Unsubscribed and unengaged contacts
 
 Two groups to treat differently: people who told you to stop, and people who
-simply went quiet.
+simply went quiet. GoodBards handles the first group for you. For the second,
+it gives every contact a score that fades with time, and you choose the rule.
+
+!!! abstract "In short"
+    | | Unsubscribed | Unengaged |
+    | --- | --- | --- |
+    | **How they are captured** | By the contact, from the unsubscribe link of an email; by a bounce or a spam complaint; or by your team. | By the score: every open, click, form or registration adds points, and points fade with time. |
+    | **How you identify them** | The contact's **status**: Unsubscribed, Bounced or Do not contact. | The **Inactive** tier: a decay score of 0, which means nothing positive within your decay period (4, 8 or 12 weeks). |
+    | **When it happens** | At once. | Scores are recalculated every night. The status never changes. |
+    | **Can you configure it?** | No. An opt-out is always respected. | The decay period, yes. The tier thresholds, no. For any other rule (for example *no open in 90 days*), build a segment. |
+    | **Can you segment them?** | Yes: *Status Equals unsubscribed*. | Yes, on the score or on behaviour. |
+    | **Excluded from campaigns?** | Always, automatically. | When you send to a segment that leaves them out. |
 
 ### Unsubscribed contacts
 
-**How they are captured.** A contact becomes **Unsubscribed** in one of three
-ways:
+#### How an unsubscribe is captured
 
-- **They choose it.** Every marketing email carries an unsubscribe link in its
-  footer. It opens the contact's mailing preferences page, where they can leave
-  one list or unsubscribe from everything. Unsubscribing from everything sets
-  their status to **Unsubscribed** and adds an *email unsubscribe* line to their
-  timeline. Leaving a single list only changes their status on that list; they
-  remain **Subscribed** for the rest. The link is signed for that one contact
-  and nothing changes until they confirm on the page, so the mail scanners that
-  open every link cannot unsubscribe anyone.
-- **Their mail provider says so.** A recipient who reports your email as spam
-  becomes **Do not contact**; an address that cannot be delivered becomes
-  **Bounced** (see [Reading the Contacts home](#reading-the-contacts-home)).
-- **Your team sets it.** On the contact's page, or through the `status` column
-  of an import, for opt-outs received by phone or email.
+A contact stops being **Subscribed** in one of three ways.
 
-**How you see them.** The **Status distribution** card counts them; a contact's
-page shows the status next to their name and the unsubscribe in their
-timeline; a mailing list shows its own **Unsubscribed** counter and each
-member's list status. To work with them as a group, create a segment with a
-Contact block *Status equals unsubscribed*.
+**1. They choose it.** The footer of every email design carries an unsubscribe
+link. It opens the contact's **Email Preferences** page, which lists your
+mailing lists with a switch for each:
 
-**How they are managed.** Only **Subscribed** contacts receive marketing email,
-whatever the audience of the send: chosen contacts, a segment, a mailing list or
-a company. Unsubscribed, Bounced and Do not contact contacts are dropped at send
-time, and no setting overrides this. Someone who left a list stays off it until
-they rejoin themselves. A contact enrolled in an automation flow leaves the flow
-when they unsubscribe.
+![The Email Preferences page a contact sees: a switch for each mailing list, Save Preferences, and Unsubscribe From All Emails](../../img/screenshots/email-preferences-page.png){ width="420" }
+
+| The contact does this | What changes |
+| --- | --- |
+| Switches one list off, then **Save Preferences** | They leave that list only. Their status stays **Subscribed**, and they still receive what your other lists and segments send. |
+| Chooses **Unsubscribe From All Emails** | Their status becomes **Unsubscribed**, and an *Email Unsubscribe* line is added to their timeline. No marketing email reaches them any more. |
+
+!!! info "Mail scanners cannot unsubscribe anyone"
+    The link is signed for that one contact, and opening it changes nothing:
+    the contact has to confirm on the page. Security tools that open every link
+    of an incoming email therefore never unsubscribe your contacts by accident.
+
+!!! note "An email without an unsubscribe link"
+    Every design in the gallery has the link in its footer. If you write an
+    email from scratch, or import one, and it has no unsubscribe link,
+    GoodBards warns you on the email before you send it. Add the link with
+    `{{unsubscribe_url}}`. See
+    [Personalising an email](../marketing/emails.md#personalising-an-email).
+
+**2. Their mail provider says so.** A recipient who reports your email as spam
+becomes **Do not contact**. An address that cannot be delivered becomes
+**Bounced**. See [Reading the Contacts home](#reading-the-contacts-home) for
+the exact bounce rule.
+
+**3. Your team sets it.** For an opt-out received by phone, by email or in a
+store: open the contact, choose **Edit Contact**, and change **Status** under
+**Subscription Detail**. For many contacts at once, use the `status` column of
+an [import](#accepted-values) with the **Overwrite** conflict action.
+
+![The Subscription Detail card of the contact form, with the Status list open: Do not contact, Bounced, Regular, Subscribed and Unsubscribed](../../img/screenshots/contact-edit-status.png){ width="420" }
+
+#### How you identify them
+
+- **In total.** On the Contacts home, the **Status Distribution** card counts
+  each status. **Trend** shows how the split moved over time.
+
+    ![The Database Health cards. Status Distribution shows 83% mailable: 2,434 subscribed, 210 regular, 199 unsubscribed, 66 bounced and 8 do not contact](../../img/screenshots/contacts-status-distribution.png)
+
+- **In the list.** In the **Details List**, choose the **Status** column
+  header to sort by status and bring the unsubscribed contacts together.
+
+    ![The Details List sorted by status, showing contacts with the orange Unsubscribed badge](../../img/screenshots/contacts-list-status-sort.png)
+
+- **One contact.** Their page shows the status next to their name, and the
+  **Engagement Timeline** shows when they unsubscribed.
+
+    ![A contact's page with the Unsubscribed badge at the top right, next to an engagement score and a decay score of 0](../../img/screenshots/contact-unsubscribed.png)
+
+    ![The Engagement Timeline of the same contact: Email Unsubscribe on November 2, after the emails delivered before it](../../img/screenshots/contact-unsubscribe-timeline.png)
+
+- **One mailing list.** A list shows its own **Unsubscribed** counter and each
+  member's status on that list. See [Mailing lists](mailing-lists.md).
+- **As a group.** Create a [segment](#segments) with one condition in the
+  **Contact Profile Block**: *Contact*, *Status*, *Equals*, `unsubscribed`.
+
+!!! tip "Type the status as its code"
+    In a segment, the status value is typed, not picked from a list. Use the
+    code, in lower case: `subscribed`, `regular`, `unsubscribed`,
+    `do-not-contact`, or `invalid-email` for **Bounced**. The codes are the
+    same as in an import: see [Accepted values](#accepted-values).
+
+#### How they are managed
+
+Only **Subscribed** contacts receive marketing email, whatever audience you
+choose for the send: contacts, a segment, a mailing list or a company.
+Unsubscribed, Bounced and Do not contact contacts are removed when the email is
+sent, and there is no setting to switch this off. You do not need to exclude
+them yourself.
+
+- Someone who left a mailing list stays off it until they rejoin themselves.
+  Nobody on your team can add them back.
+- A contact enrolled in an [automation flow](../marketing/automations.md)
+  leaves the flow as soon as they are no longer Subscribed.
+- They stay in your database, with their history, for reporting.
 
 !!! warning "Do not re-subscribe people yourself"
     The status can be edited, but under Singapore's PDPA and similar laws an
-    opt-out stands until the person opts in again, through a form or the
-    preferences page. Re-importing them as Subscribed is not consent.
+    opt-out stands until the person opts in again, through a form or their
+    Email Preferences page. Re-importing them as Subscribed is not consent.
 
 ### Unengaged contacts
 
-GoodBards keeps no separate "unengaged" status, and never changes a contact's
-status because they went quiet. Instead every contact carries a score that
-fades with time, and you set the rule that decides who counts as unengaged.
+!!! info "There is no Unengaged status"
+    GoodBards never changes a contact's status because they went quiet: a
+    silent subscriber is still **Subscribed** and still receives your emails.
+    Instead, every contact carries a score that fades with time. You read it
+    in the **Inactive** tier, or you build a segment with a rule of your own.
+
+#### What counts as unengaged
 
 - **Engagement Score** adds points for every open, click, form, registration
   and attendance. See [Lead scoring](lead-scoring.md).
-- **Decay Score** is the same points faded to zero over the **Engagement Decay
-  Velocity** your administrator chooses in **Tenant Settings → Preferences**:
-  4 weeks (fast), 8 weeks (normal), 12 weeks (slow), or no decay. With the
-  normal setting, a click from eight weeks ago is worth nothing today. Scores
-  are recomputed every night.
-- The **Engagement** grade on the Contacts home splits contacts into four tiers
-  by decay score: **High** (100 and more), **Medium** (40 to 99), **Low** (1 to
-  39) and **Inactive** (0, or never engaged). These thresholds are fixed.
+- **Decay Score** is the same points, fading evenly to zero over a period you
+  choose (see below). With 8 weeks, a click is worth half its points after four
+  weeks and nothing after eight.
+- The contact's **tier** follows from the decay score:
 
-So an unengaged contact, for GoodBards, is one whose decay score has reached
-zero: nothing positive within the decay window. The rules are based on time,
-not on a number of campaigns.
+    | Tier | Decay score | In plain words |
+    | --- | --- | --- |
+    | **High** | 100 and more | Very active: about a guest who registered for an event and came. |
+    | **Medium** | 40 to 99 | Active: at least a click or a registration recently. |
+    | **Low** | 1 to 39 | A few opens, or older activity that is fading. |
+    | **Inactive** | 0 | **Unengaged**: nothing positive within the decay period, or never engaged at all. |
 
-**Finding them.** Three ways, from the quickest to the most precise:
+So an unengaged contact, for GoodBards, is a contact whose decay score has
+reached zero: no open, click, form, registration or attendance within the decay
+period. The rule counts **time**, not a number of campaigns: a contact who
+clicked last week and then ignored five emails is not unengaged yet, and a
+contact who has not reacted for the whole period is, however many emails you
+sent.
 
-1. **Ask the assistant** on the Contacts page: *"Who went cold in the last six
-   months?"* It lists contacts who engaged before but did nothing in the last
-   180 days, or the number of days you name.
-2. **Segment on the score.** Add an **Alert & KPI** block: *Decay Score, Less
-   than, 1*. The segment holds every Inactive contact and updates itself every
-   night.
-3. **Segment on behaviour**, for a rule of your own. Add a **Behavior** block
-   *Engagement: email opened, Min Count 0, Max Count 0, Last n Days 90*, and
-   another for *email clicked*: nobody who opened or clicked in the last 90
-   days. Add a Contact block *Status equals subscribed* to keep only mailable
-   contacts.
+On the Contacts home, the **Engagement Tiers** card counts each tier.
+**Trend** shows how the tiers moved over time.
 
-**Keeping them out of a send.** An email goes to the audience you choose; there
-is no separate exclusion list. So:
+![The Engagement cards on the Contacts home. Engagement Tiers shows 33 high, 99 medium, 1,595 low and 1,190 inactive contacts](../../img/screenshots/contacts-engagement-tiers.png)
 
-- Send to a segment whose rule leaves them out, for example *Decay Score,
-  Greater than or equals, 1*, instead of to everyone. The segment re-evaluates
-  at send time, so a contact who re-engages is back in.
-- Try to win them back first: send a re-engagement email to the unengaged
-  segment, then set those who stay silent to **Do not contact**. They stay in
-  your database for reporting and stop receiving marketing email.
+#### When a contact becomes unengaged
+
+Scores are recalculated **every night**. A contact moves to **Inactive** on
+the night their last points fade out, and moves back up the night after they
+open, click or register again. Nothing else happens: no status change, no
+email, no removal from a list.
+
+#### What you can configure
+
+An administrator sets the decay period under **Tenant Settings →
+Preferences → Engagement Decay Velocity**: open the menu under your photo, top
+right, to find **Tenant Settings**.
+
+![The Engagement Decay Velocity setting with its four choices: 0 week (No Decay), 4 weeks (Fast), 8 weeks (Normal) and 12 weeks (Slow)](../../img/screenshots/settings-decay-velocity.png)
+
+| Choice | A contact becomes Inactive after |
+| --- | --- |
+| **4 weeks (Fast)** | 4 weeks without engagement. For brands that email several times a week. |
+| **8 weeks (Normal)** | 8 weeks without engagement. A good start for a weekly or monthly newsletter. |
+| **12 weeks (Slow)** | 12 weeks without engagement. For long buying cycles and occasional sends. |
+| **0 week (No Decay)** | Never: points do not fade, so only contacts who never engaged are Inactive. |
+
+!!! note "Check that a period is chosen"
+    If the field shows *Select decay velocity*, nobody has chosen a period for
+    your workspace yet. Pick one, so that everyone on your team reads the tiers
+    the same way.
 
 | What | Can you change it? |
 | --- | --- |
-| How fast scores fade | Yes: **Engagement Decay Velocity** in Tenant Settings → Preferences. |
-| The window and counts of a segment rule | Yes, per segment. |
-| The assistant's "cold" window | Yes, per question. 180 days by default. |
-| The tier thresholds (100, 40, 1) | No. |
+| How fast scores fade | Yes: **Engagement Decay Velocity**, above. |
+| The tier thresholds (100, 40, 1) | No. They are the same for every workspace. |
+| A rule of your own (*no open in 90 days*, *no click in 6 months*) | Yes, with a segment. See below. |
+| The assistant's "cold" period | Yes, per question. 180 days by default. |
 | An automatic status change after a period of silence | No. A status only changes through the contact's own choice, a bounce, a spam complaint or your team. |
 | A rule counted in campaigns rather than days | No. |
+
+#### How to find unengaged contacts
+
+Three ways, from the quickest to the most precise.
+
+**Ask the assistant.** On the Contacts page, ask *"Who went cold in the last
+six months?"* It lists the contacts who engaged at least once and did nothing
+in the last 180 days, or the number of days you name.
+
+**Segment on the score.** This follows your decay period.
+
+1. Open **Audience → Contacts**, the **Segments** tab, then **Add Segment**.
+2. In the **Alert & KPI Block**, choose *KPI*, *Decay Score*, *Less than*, and
+   type `1`.
+3. Choose **Add Segment**.
+
+![The Alert & KPI Block with one condition: KPI, Decay Score, Less than, 1](../../img/screenshots/segment-unengaged-score.png)
+
+!!! note "Contacts with no history are not in this segment"
+    A score exists once something has been recorded for a contact, such as an
+    email sent to them. Contacts with no history at all (just imported, never
+    emailed) have no score yet: the **Inactive** tier counts them, but this
+    segment does not. To include them, use the rule on behaviour below.
+
+**Segment on behaviour.** This is a rule of your own, independent of the decay
+period. The example keeps the subscribers who neither opened nor clicked an
+email in the last 90 days.
+
+1. In **Add Segment**, in the **Contact Profile Block**, choose *Contact*,
+   *Status*, *Equals*, and type `subscribed`. This keeps only the contacts you
+   can still email.
+2. In the **Behavior Block**, choose the engagement *Email Opened*, type `0`
+   in both **Min Count** and **Max Count**, set **Frequency** to *Relative
+   Days*, and type `90` in **Last n Days**.
+3. Choose **Add Condition** and do the same for *Email Clicked*.
+4. Choose **Add Segment**. Open the segment to see who is in it right now.
+
+![A segment rule: in the Contact Profile Block, Status Equals subscribed; in the Behavior Block, Email Opened 0 to 0 times in the last 90 days, and Email Clicked 0 to 0 times in the last 90 days](../../img/screenshots/segment-unengaged-behavior.png)
+
+!!! warning "Type 0 in both counts"
+    *0 to 0 times* is how you say "never" in a rule. If you leave **Min
+    Count** empty it counts as 1, and the segment comes back empty. The period
+    is required too: a behaviour condition always needs a number of days or a
+    date range.
+
+#### How to keep them out of a campaign
+
+An email goes to the audience you choose. There is no separate exclusion or
+suppression list, so you leave unengaged contacts out through the segment you
+send to.
+
+- **Send to the engaged.** Create a segment *Decay Score, Greater than or
+  equals, 1* (or *Email Opened, 1 time or more, in the last 90 days*) and
+  choose it under **Recipient Segments** when you send, instead of sending to
+  everyone. A segment is evaluated again each time an email is sent, so a
+  contact who re-engages is back in without any action from you.
+- **Try to win them back first.** Send one re-engagement email to your
+  unengaged segment. Those who open it come back on their own.
+- **Then stop for good.** For contacts who stay silent, set the status to
+  **Do not contact**. They stay in your database for reporting, and stop
+  receiving every marketing email, whatever the audience.
+
+!!! tip "Why it is worth doing"
+    Mail providers watch how recipients react to your emails. Sending again
+    and again to people who never open lowers your reputation as a sender, and
+    more of your emails end up in spam, including for the contacts who do want
+    them. A smaller, engaged audience is delivered better.
 
 ## Mailing Lists
 

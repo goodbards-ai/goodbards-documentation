@@ -53,6 +53,8 @@ nav:
       - Events:
           - pages/events/index.md
           - Event Management: pages/marketing/event-management.md
+          - The event page: pages/events/landing-page.md
+          - Event emails: pages/events/emails.md
           - Ticket types and waitlist: pages/events/tickets-waitlist.md
           - Check-in and badges: pages/events/check-in.md
       - Social Media:

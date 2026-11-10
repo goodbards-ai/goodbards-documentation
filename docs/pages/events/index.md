@@ -16,6 +16,20 @@ Attendance, Analytics and Follow-up.
 
 See [Event Management](../marketing/event-management.md).
 
+### The event page
+
+The page guests register on. It builds itself from the event's definition; make
+a copy to lay it out your own way.
+
+See [The event page](landing-page.md).
+
+### Event emails
+
+The invitation, reminders, confirmation and follow-up emails: put your brand on
+all of them at once, reword one, or send an email of your own instead.
+
+See [Event emails](emails.md).
+
 ### Check-in and badges
 
 On the day: scan guests' QR codes at the door, or let them check in themselves at

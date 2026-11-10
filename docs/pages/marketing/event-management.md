@@ -44,9 +44,14 @@ Definition tab, so it is always up to date.
 To change its layout, choose **Duplicate to customize**. You get your own copy in
 the visual editor.
 
+![The page editor: the event page in the middle with one text selected, and on the right the Layout and Components blocks to drag in](../../img/screenshots/event-landing-editor.png)
+
 !!! warning "A customized page is a copy"
     Once you customize the landing page, later changes on the Definition tab are
     no longer copied into it. Update the page yourself, or go back to the default.
+
+For the editor, the registration form block and switching back to the default,
+see [The event page](../events/landing-page.md).
 
 ### Registration
 
@@ -83,6 +88,13 @@ Every event email (the registration emails above, and the invitation and
 reminders under **Communications**) works the same way. The card shows the
 email as guests receive it, inside your event design.
 
+!!! tip "The full guide"
+    [Event emails](../events/emails.md) covers every email of an event, how to
+    put your brand on all of them at once, the list of fields you can insert,
+    and how to send an email of your own instead.
+
+![The editor on the Confirmed email: the Subject line, the email in the Tropika Home design with purple chips such as Event name and Attendee name, purple dashed boxes titled Shown when…, and the blocks on the right](../../img/screenshots/event-email-editor.png)
+
 1. Click the preview, or **Edit**. The editor opens, with the **Subject** under
    the menu bar. The **View** menu switches between **Visual editor**, **HTML
    code** and **AI assistant**; see [Editing an email](emails.md#editing-an-email).
@@ -112,6 +124,8 @@ even while the event is a draft.
 1. Choose **Send test email**. The address is filled in with yours; change it to
    send the test to a colleague.
 2. Choose **Send test**, and check the email in that inbox.
+
+![The Send a test of the Invitation email dialog: a Send to address, Cancel and Send Test](../../img/screenshots/event-email-test.png){ width="420" }
 
 The test is the email as it is saved right now, with your name in place of the
 guest's. Its subject starts with **[TEST]**, and it does not appear in **Sent

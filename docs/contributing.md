@@ -51,8 +51,13 @@ Rules:
 
 - **Never** screenshot a real customer's account. Names, email addresses,
   company names and metrics from a live tenant must not appear. PDPA applies.
-- Screen pages: one screenshot unless a step is genuinely unclear without a
-  second. Guides: one per stage is fine, placed right under the step it shows.
+- **Show as much as you can.** Readers get lost in text and find their way with
+  pictures: add a screenshot for every screen, tab, dialog and menu the page
+  talks about, and for every step where the reader has to find something.
+  Place it right under the sentence or step it shows. When in doubt, add one.
+- A small crop of one card or one dialog is often better than a full screen:
+  the reader sees at once what to look for. Limit its width when it would
+  render too large: `![…](…){ width="420" }`.
 - Capture the relevant panel, not the whole desktop. Crop out the top bar: it
   shows the signed-in person's name and photo.
 - Always write real alt text: `![The Contacts list with a segment applied](...)`.
@@ -74,7 +79,17 @@ in the email editor). Everything else stays a PNG.
 
 ## Admonitions
 
-Use them sparingly — one per page at most.
+Use them whenever a fact must not be missed: a reader who skims the page should
+still read every box. Give each a title that states the point, and pick the type
+by what it does for the reader:
+
+| Type | Use it for |
+| --- | --- |
+| `abstract` | **In short**: the answer in a few lines or a small table, at the top of a long section. |
+| `info` | How GoodBards behaves on its own (what is automatic, what never happens). |
+| `note` | A condition or an exception to what the text just said. |
+| `tip` | A better or faster way to do it. |
+| `warning` | Something that cannot be undone, loses data, or has a legal side (consent, PDPA). |
 
 ```markdown
 !!! tip "Save time"
@@ -83,6 +98,9 @@ Use them sparingly — one per page at most.
 !!! warning "This cannot be undone"
     Deleting a segment does not delete its contacts, but the segment is gone.
 ```
+
+Keep each box short (five lines at most), never put two boxes of the same type
+one after the other, and keep the steps themselves outside the boxes.
 
 ## Before you commit
 
