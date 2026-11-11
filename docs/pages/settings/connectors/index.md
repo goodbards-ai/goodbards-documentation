@@ -43,6 +43,7 @@ company account can connect or disconnect a service. See
 | Connector | What it gives you | Page |
 | --- | --- | --- |
 | **Google Ads** | Create, manage and report on campaigns; Keyword Planner. | [Google Ads](google-ads.md) |
+| **Meta Ads** | See the results of your Facebook and Instagram ads; link them to campaign tactics. | [Meta Ads](meta-ads.md) |
 
 ## Storage
 

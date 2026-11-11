@@ -15,9 +15,11 @@ everything else you are doing.
 Your Google Ads account must be connected. See
 [Connections](../settings/connections.md).
 
-!!! note "Google Ads today; Meta and LinkedIn to follow"
-    **Google Ads** is available now. **Meta Ads** and **LinkedIn Ads** appear
-    marked *Soon* and cannot be used yet.
+!!! note "Google Ads and Meta Ads today; LinkedIn to follow"
+    **Google Ads** can be created, managed and reported on from GoodBards.
+    **Meta Ads** is read-only: its tab shows your ad account's results and each
+    campaign, once [Meta Ads](../settings/connectors/meta-ads.md) is connected.
+    **LinkedIn Ads** appears marked *Soon* and cannot be used yet.
 
 ## Getting your first campaign live
 

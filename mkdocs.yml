@@ -122,6 +122,7 @@ nav:
           - Chartbeat: pages/settings/connectors/chartbeat.md
           - Google BigQuery: pages/settings/connectors/google-bigquery.md
           - Google Ads: pages/settings/connectors/google-ads.md
+          - Meta Ads: pages/settings/connectors/meta-ads.md
           - Google Drive: pages/settings/connectors/google-drive.md
           - Pipedrive: pages/settings/connectors/pipedrive.md
           - WordPress (self-hosted): pages/settings/connectors/wordpress.md
