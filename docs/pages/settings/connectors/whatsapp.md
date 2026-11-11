@@ -234,15 +234,25 @@ variable.
    receives it** box tells you how many can be reached and why the others
    cannot: no usable phone number, no WhatsApp consent, or marked do not contact.
    It also shows how many messages you have used this month.
-3. Create the message: in the editor, pick an **approved template**, then say
-   what fills each variable:
+
+    ![The Who receives it box: contacts that can be reached and messages used this month, above the recipients](../../../img/screenshots/whatsapp/20-who-receives-it.png)
+
+3. Create the message: in **Content Hub**, create a **WhatsApp message**, pick an
+   **approved template**, then say what fills each variable:
     - **First name**, **Last name** or **Job title**: taken from each contact. In
       the field on the right, type what a contact with an empty field should get
       (for example `there`). Without it, that contact is skipped.
     - **Fixed text**: the same for everyone. A link typed here is replaced by a
       short link of its own for each contact, so you see who clicked.
-4. Attach the message to the tactic, then **Publish** or **Schedule** it to
-   **Contacts of this tactic**. Messages go out over the next minutes.
+
+    The preview on the right shows the message as the contact will read it.
+
+    ![The WhatsApp message editor: an approved template, what fills each variable, and the preview](../../../img/screenshots/whatsapp/21-message-editor.png)
+
+4. Back on the tactic, choose **Import Asset**, pick your message and choose
+   **Attach Asset**. Then open the **⋮** menu of that line, choose **Publish** or
+   **Schedule**, and pick **Contacts of this tactic**. Messages go out over the
+   next minutes.
 
 GoodBards checks the template with Meta again when you publish: if Meta paused or
 removed it in the meantime, nothing is sent and the message says why.
@@ -260,9 +270,26 @@ read and clicked, each with its time, or the reason it failed (for example *Not
 on WhatsApp, or cannot receive this message*). A dash means Meta did not report
 that step: a person who turned off read receipts stays at "delivered".
 
+![Delivery status: one line per message with ticks for sent, delivered, read and clicked](../../../img/screenshots/whatsapp/22-delivery-status.png)
+
+Every step also appears on the contact's own timeline: sent, delivered, read,
+clicked, replied, stopped.
+
 - **A reply** appears on the contact's timeline, and its text is kept in the
   contact's **Notes**. Your account gets a notification naming the contact and
-  the tactic. GoodBards does not answer for you.
+  the tactic.
+- **You can answer it.** On the contact's page, **Answer on WhatsApp** lets you
+  write back in your own words for **24 hours** after the contact's last
+  message. That is WhatsApp's rule: inside those 24 hours the answer needs no
+  template and Meta does not charge for it; after that, only an approved
+  template in a campaign can reach the contact. Your answer is kept in the
+  contact's notes, next to their message, and does not count in your monthly
+  limit. It is one answer at a time, not a chat window: for a real
+  conversation, pick up the phone. The box shows until when you can answer; it
+  is not offered for a contact who asked to stop.
+
+    ![Answer on WhatsApp on the contact page: when the contact last wrote, the answer box, and until when a free answer is possible](../../../img/screenshots/whatsapp/23-answer-on-whatsapp.png)
+
 - **"STOP"**, or the **Stop promotions** button, withdraws the contact's WhatsApp
   consent at once. They are left out of your next messages.
 - **A failed message** can be sent again: fix the cause, then publish the same
@@ -273,6 +300,13 @@ that step: a person who turned off read receipts stays at "delivered".
   sent late.
 
 ## What you see in reports
+
+In the campaign's **Analytics** tab, WhatsApp tactics are listed under
+**Messaging**. Choose a line to open its detail:
+
+![Report detail of a WhatsApp tactic: sent, delivered, read, clicks, replies, opt-outs, failed](../../../img/screenshots/whatsapp/24-report-detail.png)
+
+The report is refreshed every night.
 
 | In the campaign report | Meaning |
 | --- | --- |
@@ -296,6 +330,13 @@ GoodBards shows Meta's refusal in plain words, with Meta's own text in brackets.
 | **The token is missing a permission** | One of the two permissions was not ticked. | Generate a new token with **whatsapp_business_management** and **whatsapp_business_messaging**. |
 | **The phone number ID is a number…** | The phone number itself was pasted. | Paste the **Phone Number ID** shown next to the number (step 2). |
 | **This phone number ID is not part of this WhatsApp Business Account** | The two IDs come from different accounts. | Copy both from the same place (step 2). |
+| Messages are sent but never show **Delivered** or **Read**, and replies do not arrive | The webhook is not set, the **messages** field is not subscribed, or your Meta app is still **Unpublished**: Meta says some updates are not sent to an unpublished app. | Check **How to receive delivery updates and replies**. Then publish your Meta app: in **App settings → Basic**, fill in **Privacy policy URL** (your own privacy page) and **Category** (*Business and pages*), choose **Save changes**, then open **Publish** and choose **Publish**. It takes a minute and Meta asks for no review. |
+
+!!! note "You do not need Meta's App Review"
+    Your Meta app shows **App Review** and **Facebook Login for Business** as
+    steps that are not done. Leave them. They are for apps that connect *other*
+    companies' WhatsApp accounts. An app that only sends from your own account
+    needs neither, and the two permissions it uses work as they are.
 
 ## Good to know
 

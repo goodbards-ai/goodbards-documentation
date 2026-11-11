@@ -36,9 +36,11 @@ first, so the articles stay on the page's subject.
 2. Under **Next logical development**, choose **Suggest articles**.
 3. Each suggestion shows a working title, why it is worth writing, and the
    **rising searches** it is built on.
-4. Choose **Create** to open the article writer with the title, the searches as
-   keywords and your page as source material already filled in. Check the brief,
-   then choose **Generate**. Credits are used only from that point.
+4. Choose **Create** to open the article writer with the title, the suggestion's
+   description (under **Instructions for the AI**, where you can edit it), the
+   searches as keywords and your page as source material already filled in.
+   Check the brief, then choose **Generate**. Credits are used only from that
+   point.
    Or choose **Add to Action Queue** to write it later.
 
 The suggestions stay on the page until you choose **Suggest again**.
