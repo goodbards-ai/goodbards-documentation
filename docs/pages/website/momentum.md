@@ -14,6 +14,8 @@ they are moving.
 
 - **Google Search Console** and **Google Analytics** connected under
   **Connections**.
+- To write a follow-up article straight from Momentum: the article writer
+  (**Content Workspace**) in your plan.
 
 ## How to read it
 
@@ -34,16 +36,37 @@ first, so the articles stay on the page's subject.
 
 1. Open the page's card.
 2. Under **Next logical development**, choose **Suggest articles**.
-3. Each suggestion shows a working title, why it is worth writing, and the
-   **rising searches** it is built on.
-4. Choose **Create** to open the article writer with the title, the suggestion's
-   description (under **Instructions for the AI**, where you can edit it), the
-   searches as keywords and your page as source material already filled in.
-   Check the brief, then choose **Generate**. Credits are used only from that
-   point.
-   Or choose **Add to Action Queue** to write it later.
+3. Read the suggestions. Each one shows a working title, a short description of
+   the article, and the **rising searches** it is built on.
+
+    ![Next logical development: two suggested follow-up articles, each with a working title, its upside and effort, a description, the rising search it answers, and the buttons Add To Action Queue and Create](../../img/screenshots/seo-momentum-follow-up.png){ width="560" }
+
+4. Choose **Create** on the one you want. The article writer opens with the
+   title under **What is it about?** and the suggestion's description under
+   **Instructions for the AI**.
+
+    ![The article writer opened from a suggestion: the working title under What is it about? and the suggestion's description under Instructions for the AI](../../img/screenshots/seo-momentum-create.png)
+
+5. Scroll down to **Sources and model**. Your page is already listed as a web
+   page to read, and the rising searches as **Keywords**.
+
+    ![The lower part of the article writer: the page listed under Import web pages, the rising search as a keyword, and the Write It button](../../img/screenshots/seo-momentum-create-sources.png)
+
+6. Change anything you like, for example the angle under **Instructions for the
+   AI**, then choose **Write it**.
+
+Not ready to write? Choose **Add to Action Queue** on the suggestion instead, and
+find it later under **Actions**.
+
+!!! info "Credits are used only when you choose Write it"
+    **Create** only opens the article writer with everything filled in. Nothing
+    is written, and no credit is used, until you choose **Write it**.
 
 The suggestions stay on the page until you choose **Suggest again**.
+
+!!! note "No Create button?"
+    **Create** needs the article writer (**Content Workspace**) in your plan.
+    Without it you can still choose **Add to Action Queue**.
 
 ## Good to know
 
@@ -73,7 +96,6 @@ The suggestions stay on the page until you choose **Suggest again**.
   says so.
 - **Plateau and Declining pages** get **Add refresh task** instead: a page that
   is losing ground needs an update, not a new article next to it.
-- **Create** needs the article writer (Content Workspace) in your plan.
 
 - **Momentum counts all visits**, from search, social, email and other sites, not
   only Google search.
