@@ -3509,6 +3509,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-schedule-a-task" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4701,6 +4712,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before you start
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-schedule-a-task" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4747,13 +4769,20 @@ report every month, a web page checked every morning.</p>
 competitor's page, collect the social figures for a client. The Scheduler does
 it for you at the time you choose, and sends you the result by email or saves it
 in your Content Repository.</p>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>Your plan.</strong> The Scheduler is included in the <strong>Pro</strong> and <strong>Full</strong> plans.</li>
+<li><strong>What the task needs.</strong> An agent for an agent run, a connected social
+  account for a social report, a connected Google Drive for a Drive sync. See
+  <a href="../settings/connections.html">Connections</a>.</li>
+</ul>
 <h2 id="how-to-schedule-a-task">How to schedule a task<a class="headerlink" href="#how-to-schedule-a-task" title="Permanent link">¶</a></h2>
 <ol>
 <li>In the sidebar, choose <strong>Tool Box → Scheduler</strong>, then <strong>New Task</strong>.</li>
 <li>
 <p>Give the task a <strong>Name</strong> and, if you like, a <strong>Description</strong>, then pick the
    <strong>Task type</strong>:</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/scheduler-new-task.png" data-desc-position="bottom"><img alt="The New scheduled task dialog: Name, Description, and the task types Agent run, Social report, Web scrape and Drive sync, in three steps Name &amp; type, Details and Schedule" src="../../img/screenshots/scheduler-new-task.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/scheduler-new-task.png" data-desc-position="bottom"><img alt="The New scheduled task dialog: Name, Description, and the task types Agent run, Social report, Web scrape and Drive sync, in three steps Name &amp; type, Details and Schedule" src="../../img/screenshots/scheduler-new-task.png" width="65%"></a></p>
 <table>
 <thead>
 <tr>
@@ -4764,7 +4793,7 @@ in your Content Repository.</p>
 <tbody>
 <tr>
 <td><strong>Agent run</strong></td>
-<td>Asks one of your AI agents a question, for example <em>"Summarise last week's campaign results"</em>.</td>
+<td>Asks one of your AI agents, chat or workflow, a question, for example <em>"Summarise last week's campaign results"</em>.</td>
 </tr>
 <tr>
 <td><strong>Social report</strong></td>
@@ -4772,11 +4801,11 @@ in your Content Repository.</p>
 </tr>
 <tr>
 <td><strong>Web scrape</strong></td>
-<td>Reads a web page, for example a competitor's pricing page.</td>
+<td>Scrapes a page, crawls a website or reads a feed into your Content Repository, for example a competitor's pricing page.</td>
 </tr>
 <tr>
 <td><strong>Drive sync</strong></td>
-<td>Brings files from a connected storage into your Content Repository.</td>
+<td>Keeps a Google Drive folder in sync with your Content Repository.</td>
 </tr>
 </tbody>
 </table>
@@ -4788,18 +4817,27 @@ in your Content Repository.</p>
    Repository</strong>, or both.</p>
 </li>
 <li>Choose <strong>Next</strong>, then set the <strong>Schedule</strong>: how often and at what time.</li>
-<li>Save. The task appears in the list with its next run; open it to see the
-   history of its runs.</li>
+<li>Choose <strong>Create Task</strong>. The task appears in the list with its schedule.</li>
 </ol>
+<p>From the task's menu, <strong>Run now</strong> starts it straight away, <strong>History</strong> shows
+its past runs, and <strong>Edit</strong> or <strong>Delete</strong> change or remove it.</p>
+<div class="admonition warning">
+<p class="admonition-title">Deleting a task also deletes its history</p>
+<p>The task and its run history are removed, and this cannot be undone. To
+pause a task instead, turn off <strong>Enabled</strong>.</p>
+</div>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
+<div class="admonition info">
+<p class="admonition-title">A scheduled agent does not act on its own</p>
+<p>When it runs unattended, it will not send a campaign email or publish
+content; it can prepare them for you.</p>
+</div>
 <ul>
 <li><strong>A task runs as the person who created it</strong>, with that person's access. An
-  administrator can choose to run it as another member.</li>
+  administrator can choose someone else under <strong>Run as</strong>.</li>
 <li><strong>If the delivery fails, the run still counts.</strong> For example, the agent answers
   but the email cannot be sent: the history shows the run in amber with the
   reason.</li>
-<li><strong>A scheduled agent does not act on its own.</strong> When it runs unattended, it will
-  not send a campaign email or publish content; it can prepare them for you.</li>
 </ul>
 <hr>
 <p><em>Still stuck? <a href="../contact.html">Contact support</a>.</em></p></div>
@@ -4823,7 +4861,7 @@ in your Content Repository.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-11
+    2026-11-12
   </span>
 
     

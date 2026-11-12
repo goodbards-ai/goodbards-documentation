@@ -4964,26 +4964,41 @@ re-engagement of quiet contacts, or a monthly touchpoint for a segment.</p>
 </ul>
 <h2 id="how-to-build-a-flow">How to build a flow<a class="headerlink" href="#how-to-build-a-flow" title="Permanent link">¶</a></h2>
 <ol>
-<li>In the sidebar, choose <strong>Marketing → Automations</strong>, then <strong>New flow</strong>.</li>
+<li>
+<p>In the sidebar, choose <strong>Marketing → Automations</strong>, then <strong>New Flow</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations.png" data-desc-position="bottom"><img alt="The Automations screen before any flow exists: Build your first sequence, with Show archived, Import JSON and New Flow" src="../../img/screenshots/automations.png"></a></p>
+</li>
 <li>
 <p>Give it a <strong>Name</strong> and, if you like, a <strong>Description</strong>, then choose
    <strong>Create</strong>. The designer opens.</p>
-<!-- screenshot: the flow designer with a trigger card, a Send email, a Wait and a Yes / No branch, palette on the left and side panel on the right -->
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations-new-flow.png" data-desc-position="bottom"><img alt="The New flow dialog: Name, Description, Cancel and Create" src="../../img/screenshots/automations-new-flow.png" width="40%"></a></p>
 </li>
 <li>
 <p>Select the <strong>Trigger</strong> card at the top and pick what enrols a contact under
    <strong>Starts when</strong> (see <a href="#triggers">Triggers</a>). Fill in the form, tag or segment
    it asks for.</p>
 </li>
-<li>Add steps. From the palette on the left, click a step to add it after the
-   selected card, or drag it onto a <strong>+</strong> between two cards. You can also use
-   <strong>Edit → Add step</strong>.</li>
-<li>Select each card and fill in its settings in the side panel on the right:
-   the email to send, how long to wait, the tag to add.</li>
-<li>Open <strong>File → Flow settings</strong> to choose the re-entry rule, a goal and any
-   <strong>Stop early when…</strong> rules (see <a href="#flow-settings">Flow settings</a>).</li>
-<li>Choose <strong>Save</strong>. An unfinished flow can be saved; the cards still missing
-   something are highlighted.</li>
+<li>
+<p>Add steps. Choose the <strong>+</strong> under a card: <strong>Add a step</strong> lists every step
+   with what it does, and the one you pick goes where you clicked. You can also
+   drag a step from the palette on the left onto a <strong>+</strong>, or use
+   <strong>Edit → Add step</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations-add-step.png" data-desc-position="bottom"><img alt="The Add a step dialog: Send email, Wait, Wait for open / click, Add tag, Remove tag, Set field, Ask an agent, Task for the owner and Send drafted email, then the Structure steps Yes / No branch, Routing, AI decides and Exit flow" src="../../img/screenshots/automations-add-step.png" width="65%"></a></p>
+</li>
+<li>
+<p>Select each card and fill in its settings in the side panel on the right:
+   the email to send, how long to wait, the tag to add.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations-designer.png" data-desc-position="bottom"><img alt="The flow designer: the palette on the left; a Manual enrollment trigger, a Send email, Wait 1 day and a second Send email in the middle; and the selected email's settings on the right, with Draft, Save and Activate at the top" src="../../img/screenshots/automations-designer.png"></a></p>
+</li>
+<li>
+<p>Open <strong>File → Flow settings</strong> to choose the re-entry rule, a goal and any
+   <strong>Stop early when…</strong> rules (see <a href="#flow-settings">Flow settings</a>).</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations-file-menu.png" data-desc-position="bottom"><img alt="The File menu of the designer: Save, Activate, Pause, Rename, Flow settings, Export as JSON, Import JSON, Archive and Close" src="../../img/screenshots/automations-file-menu.png" width="20%"></a></p>
+</li>
+<li>
+<p>Choose <strong>Save</strong>. An unfinished flow can be saved; the cards still missing
+   something are highlighted.</p>
+</li>
 <li>When every card is complete, choose <strong>Activate</strong>. New contacts enrol from
    that moment.</li>
 </ol>
@@ -5005,8 +5020,13 @@ audience arrives. (On a <strong>Manual</strong> flow, the same button sits on th
   example from another workspace.</li>
 </ul>
 <h2 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link">¶</a></h2>
-<p>The trigger decides who enters the flow. Only events after you activate the
-flow count: earlier form submissions, tags or contacts are never picked up.</p>
+<p>The trigger decides who enters the flow.</p>
+<div class="admonition note">
+<p class="admonition-title">Nothing is backfilled</p>
+<p>Only events after you activate the flow count: earlier form submissions,
+tags or contacts are never picked up. To include people who filled in the
+form last week, enrol them yourself.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -5125,6 +5145,7 @@ earlier email, the outcome of a task, or what an earlier step wrote.</p>
 colleagues. Contacts never see it.</p>
 <h2 id="flow-settings">Flow settings<a class="headerlink" href="#flow-settings" title="Permanent link">¶</a></h2>
 <p>In the designer, choose <strong>File → Flow settings</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations-flow-settings.png" data-desc-position="bottom"><img alt="Flow settings: Send emails with, Re-entry set to Once per contact, AI budget per month, Goal with Set A Goal, and Stop early when with Add Rule" src="../../img/screenshots/automations-flow-settings.png" width="50%"></a></p>
 <table>
 <thead>
 <tr>
@@ -5183,9 +5204,12 @@ colleagues. Contacts never see it.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Changing an active flow.</strong> Edits go into a draft; the flow keeps running as
-it was. Choose <strong>Activate changes</strong> to publish them. Contacts already in the
-flow finish on the version they started; new contacts get the new one.</p>
+<div class="admonition info">
+<p class="admonition-title">Changing an active flow</p>
+<p>Edits go into a draft; the flow keeps running as it was. Choose <strong>Activate
+changes</strong> to publish them. Contacts already in the flow finish on the
+version they started; new contacts get the new one.</p>
+</div>
 <h2 id="following-the-results">Following the results<a class="headerlink" href="#following-the-results" title="Permanent link">¶</a></h2>
 <p>From the list, choose a flow's menu, then <strong>Contacts &amp; report</strong>.</p>
 <!-- screenshot: a flow's page on the Report tab, the canvas with reached counts and opens/clicks on each email card -->
@@ -5210,16 +5234,17 @@ tactic then shows how many contacts are <strong>In the flow</strong>, <strong>Co
 <p>The tactic follows the flow: activating the flow starts the tactic, archiving
 it completes the tactic. See <a href="campaigns.html">Campaigns</a>.</p>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Only subscribed contacts stay in a flow</p>
+<p>A contact who is not <strong>Subscribed</strong> (regular, unsubscribed, bounced, do not
+contact) leaves every flow within a minute, wherever they are, even if the
+flow sends no email. An unsubscribe from any email therefore ends their
+flows.</p>
+</div>
 <ul>
-<li><strong>Only subscribed contacts stay in a flow.</strong> A contact who is not
-  <strong>Subscribed</strong> (regular, unsubscribed, bounced, do not contact) leaves every
-  flow within a minute, wherever they are, even if the flow sends no email. An
-  unsubscribe from any email therefore ends their flows.</li>
 <li><strong>One flow at a time.</strong> A contact already in a flow is skipped by any other
   flow's trigger. The skip is listed on that flow's <strong>Contacts</strong> tab under
   <strong>Skipped</strong>, so you can see who missed out.</li>
-<li><strong>Nothing is backfilled.</strong> Activating a form-triggered flow does not enrol
-  people who filled in the form last week. Enrol them yourself if you need to.</li>
 <li><strong>Goals and exit rules are checked before each step,</strong> not during a wait. A
   contact on a three-day wait who books a demo on day one leaves when the wait
   ends, before the next email goes out.</li>
@@ -5229,13 +5254,18 @@ it completes the tactic. See <a href="campaigns.html">Campaigns</a>.</p>
   with no email server connected, the contact is marked <strong>Failed</strong> and leaves.
   The same happens to <strong>Ask an agent</strong> and <strong>AI decides</strong> steps once the flow's
   monthly AI budget is spent.</li>
-<li><strong>Review AI-drafted emails.</strong> Put a <strong>Task for the owner</strong> before a <strong>Send
-  drafted email</strong> step so a colleague approves or edits the draft in
-  <strong>Actions</strong> before it goes out.</li>
-<li><strong>Delete only what never ran.</strong> You can delete a draft, or an archived flow
-  that never had a contact. Otherwise, archive it: archiving cannot be undone.</li>
 <li><strong>A flow has at most 50 steps.</strong></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Review AI-drafted emails</p>
+<p>Put a <strong>Task for the owner</strong> before a <strong>Send drafted email</strong> step, so a
+colleague approves or edits the draft in <strong>Actions</strong> before it goes out.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Archiving cannot be undone</p>
+<p>You can only delete a draft, or an archived flow that never had a contact.
+Otherwise, archive it. Everyone still in an archived flow leaves it.</p>
+</div>
 <hr>
 <p><em>Still stuck? <a href="../contact.html">Contact support</a>.</em></p></div>
 
@@ -5258,7 +5288,7 @@ it completes the tactic. See <a href="campaigns.html">Campaigns</a>.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-11
+    2026-11-12
   </span>
 
     

@@ -3419,10 +3419,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crawling-a-whole-site" class="md-nav__link">
+  <a href="#how-to-crawl-a-whole-site" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crawling a whole site
+        How to crawl a whole site
       
     </span>
   </a>
@@ -3430,10 +3430,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#following-a-news-feed" class="md-nav__link">
+  <a href="#how-to-follow-a-news-feed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Following a news feed
+        How to follow a news feed
       
     </span>
   </a>
@@ -4756,10 +4756,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crawling-a-whole-site" class="md-nav__link">
+  <a href="#how-to-crawl-a-whole-site" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Crawling a whole site
+        How to crawl a whole site
       
     </span>
   </a>
@@ -4767,10 +4767,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#following-a-news-feed" class="md-nav__link">
+  <a href="#how-to-follow-a-news-feed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Following a news feed
+        How to follow a news feed
       
     </span>
   </a>
@@ -4808,7 +4808,7 @@
 <div><h1 id="web-scraping">Web Scraping<a class="headerlink" href="#web-scraping" title="Permanent link">¶</a></h1>
 <p>Pull the content of a web page into GoodBards so you can work with it.</p>
 <h2 id="what-its-for">What it's for<a class="headerlink" href="#what-its-for" title="Permanent link">¶</a></h2>
-<p>Sometimes the information you need is on a page rather than in a file — a
+<p>Sometimes the information you need is on a page rather than in a file: a
 competitor's pricing, a partner's announcement, an article you want summarised.
 Scraping extracts the text so an agent can read it or you can store it.</p>
 <p>Three ways to gather content, on the tabs across the top:</p>
@@ -4839,7 +4839,7 @@ Scraping extracts the text so an agent can read it or you can store it.</p>
 <li>In the sidebar, choose <strong>Tool Box → Web Scraping</strong>.</li>
 <li>On the <strong>Scrape</strong> tab, paste the address into <strong>URL</strong>.</li>
 <li>Adjust the options if you need to.</li>
-<li>Run the scrape. The text appears under <strong>Result</strong>.</li>
+<li>Choose <strong>Scrape Page</strong>. The text appears under <strong>Result</strong>.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/web-scraping.png" data-desc-position="bottom"><img alt="The Web Scraping screen on the Scrape tab, with a URL field, timeout and extraction options beside a result panel" src="../../img/screenshots/web-scraping.png"></a></p>
 <h2 id="the-options">The options<a class="headerlink" href="#the-options" title="Permanent link">¶</a></h2>
@@ -4870,7 +4870,7 @@ Scraping extracts the text so an agent can read it or you can store it.</p>
 <tr>
 <td><strong>Include HTML</strong></td>
 <td>Returns the full markup, not just the text.</td>
-<td>Rarely needed — the text is usually what you want.</td>
+<td>Rarely needed: the text is usually what you want.</td>
 </tr>
 <tr>
 <td><strong>Wait for network idle</strong></td>
@@ -4887,28 +4887,38 @@ Scraping extracts the text so an agent can read it or you can store it.</p>
 <div class="admonition tip">
 <p class="admonition-title">Leave the defaults alone to start</p>
 <p>The default settings work for most pages. If a scrape comes back empty or
-incomplete, raise the timeout first — slow-loading pages are the usual cause.</p>
+incomplete, raise the timeout first: slow-loading pages are the usual cause.</p>
 </div>
-<h2 id="crawling-a-whole-site">Crawling a whole site<a class="headerlink" href="#crawling-a-whole-site" title="Permanent link">¶</a></h2>
-<p>On the <strong>Crawl</strong> tab, give a <strong>Start URL</strong>: GoodBards follows the links from that
-page, up to a <strong>Max depth</strong> (how many clicks away) and <strong>Max pages</strong>. Keep
-<strong>Same domain only</strong> on to stay on that website. Choose <strong>Start Crawl</strong>; a crawl
-runs in the background and can take several minutes. <strong>Crawl jobs</strong> lists your
-crawls, newest first; expand a finished one to see its pages.</p>
-<h2 id="following-a-news-feed">Following a news feed<a class="headerlink" href="#following-a-news-feed" title="Permanent link">¶</a></h2>
-<p>On the <strong>Feed Scan</strong> tab, give an RSS or Atom feed (or a page that has one) and
-how many entries to read, then <strong>Start Feed Scan</strong>. With <strong>Save to Drive</strong> on,
-each entry is saved in your Content Repository, so your agents can use it. Use it
-to follow an industry blog or a competitor's news.</p>
+<h2 id="how-to-crawl-a-whole-site">How to crawl a whole site<a class="headerlink" href="#how-to-crawl-a-whole-site" title="Permanent link">¶</a></h2>
+<ol>
+<li>On the <strong>Crawl</strong> tab, give a <strong>Start URL</strong>. GoodBards follows the links from
+   that page.</li>
+<li>Set <strong>Max depth</strong> (how many clicks away) and <strong>Max pages</strong>. Keep <strong>Same
+   domain only</strong> on to stay on that website.</li>
+<li>Choose <strong>Start Crawl</strong>. A crawl runs in the background and can take several
+   minutes.</li>
+<li>Under <strong>Crawl jobs</strong>, newest first, expand a finished crawl to see its pages.</li>
+</ol>
+<h2 id="how-to-follow-a-news-feed">How to follow a news feed<a class="headerlink" href="#how-to-follow-a-news-feed" title="Permanent link">¶</a></h2>
+<ol>
+<li>On the <strong>Feed Scan</strong> tab, give an RSS or Atom feed, or a page that has one.</li>
+<li>Set <strong>Max entries</strong>, how many entries to read.</li>
+<li>Turn on <strong>Save to Drive</strong> to save each entry in your Content Repository, so
+   your agents can use it.</li>
+<li>Choose <strong>Start Feed Scan</strong>.</li>
+</ol>
+<p>Use it to follow an industry blog or a competitor's news.</p>
+<div class="admonition info">
+<p class="admonition-title">GoodBards respects robots.txt</p>
+<p>When a site's owner does not allow automated access to a page, GoodBards
+does not fetch it. A scrape stops with <em>The site owner does not allow
+automated access to this page (robots.txt).</em> A crawl skips those pages and
+carries on. You can still copy the text from the page yourself.</p>
+</div>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>Some sites cannot be scraped.</strong> Pages behind a login, or ones that block
   automated access, will not return content.</li>
-<li><strong>GoodBards respects robots.txt.</strong> When a site's owner does not allow
-  automated access to a page, GoodBards does not fetch it. A scrape stops with
-  the message <em>The site owner does not allow automated access to this page
-  (robots.txt).</em> A crawl skips those pages and carries on with the others. You
-  can still copy the text from the page yourself.</li>
 <li><strong>Scrape responsibly.</strong> Check the site's terms before pulling content
   repeatedly, and do not republish what you collect as your own.</li>
 <li><strong>Content is a snapshot.</strong> A scrape captures the page as it was at that moment;
@@ -4938,7 +4948,7 @@ to follow an industry blog or a competitor's news.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-11
+    2026-11-12
   </span>
 
     

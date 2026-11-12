@@ -123,6 +123,42 @@
 }
 
 
+/* Reading column: Material's default leaves 688px for the page, which shrinks a
+   1400px app screen to half size. 68rem gives the page about 830px. */
+.md-grid {
+  max-width: 68rem;
+}
+
+/* Screenshots: the same frame everywhere, so a white screen does not melt into
+   the white page. Each screenshot's width is set in the page as a share of the
+   column (see contributing.md), so the text inside them looks the same size
+   from one picture to the next. */
+.md-typeset img:not(.twemoji):not(.emojione):not(.gb-no-frame) {
+  border: 1px solid rgba(29, 56, 105, .18);
+  border-radius: .3rem;
+  box-shadow: 0 2px 10px rgba(29, 56, 105, .08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset img:not(.twemoji):not(.emojione):not(.gb-no-frame) {
+  border-color: rgba(255, 255, 255, .16);
+  box-shadow: none;
+}
+
+/* On a phone every screenshot takes the full width, whatever share it was given */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset img[width] {
+    width: auto;
+  }
+}
+
+/* Boxes and tables: closer to the body text size (Material sets both to .64rem,
+   which reads as small print next to .8rem paragraphs) */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset table:not([class]) {
+  font-size: .72rem;
+}
+
 /* Tables: brand-tinted header row, used heavily across these docs */
 .md-typeset table:not([class]) th {
   background-color: var(--gb-navy);
