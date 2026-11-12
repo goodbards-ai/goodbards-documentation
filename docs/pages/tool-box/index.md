@@ -45,4 +45,10 @@ Crop, resize and adjust images without leaving GoodBards.
 
 See [Image Editor](image-editor.md).
 
-These tools work on their own. None needs a campaign before you can use it.
+!!! info "No campaign needed"
+    These tools work on their own. None needs a campaign before you can use it.
+
+!!! note "Not every tool is in every plan"
+    QR Code Gen and URL Shortener are in every plan. External Chatbot and Image
+    Editor are in the **Lite**, **Pro** and **Full** plans; Scheduler in **Pro**
+    and **Full**. A tool your plan does not include shows a crown in the sidebar.

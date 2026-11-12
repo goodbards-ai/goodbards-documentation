@@ -9,7 +9,12 @@ banner, a logo needs resizing for an email header, a picture needs brightening
 before it goes out.
 
 Small jobs like these do not warrant design software, and the editor handles them
-in place — so you are not exporting files back and forth.
+in place, so you are not exporting files back and forth.
+
+## Before you start
+
+- **Your plan.** The Image Editor is included in the **Lite**, **Pro** and
+  **Full** plans.
 
 ## How to edit an image
 
@@ -17,12 +22,13 @@ in place — so you are not exporting files back and forth.
 2. Load your image one of three ways:
    - **Drop it** on the upload area, or choose it to browse.
    - **Paste URL** to pull an image from the web.
-   - **Load From Drive** to use a file you already hold in
-     [Drive](../workspace/drive.md).
-3. Use the editing tools — crop, resize, filters and adjustments.
-4. Save the result.
+   - **Load From Drive** to use a file you already hold in your
+     [Content Repository](../workspace/drive.md).
+3. Use the editing tools: crop, resize, filters and adjustments.
+4. Choose **Save** to keep the result in your Content Repository, or
+   **Download** it.
 
-![The Image Editor, offering drag-and-drop upload, Paste URL and Load From Drive](../../img/screenshots/image-editor.png)
+![The Image Editor, offering drag-and-drop upload, Paste URL and Load From Drive](../../img/screenshots/image-editor.png){ width="50%" }
 
 ## The editing tabs
 
@@ -47,10 +53,11 @@ Works on any image you load, not only AI-generated ones.
    to read on the background.
 4. Choose a **Position** and **Size**, or drag the logo anywhere on the image.
    You can also move it with the arrow keys.
-5. Choose **Apply logo**.
+5. Choose **Apply Logo**.
 
-Save and download are off while you place the logo, so choose **Apply logo** or
-**Cancel** first. Once applied, **Undo** removes it.
+!!! note "Apply the logo before you save"
+    Save and download are off while you place the logo, so choose **Apply Logo**
+    or **Cancel** first. Once applied, **Undo** removes it.
 
 !!! tip "Add the logo last"
     Filters and rotations are applied when you download, so they would change the
@@ -68,8 +75,8 @@ warns you, so you don't end up with two logos.
 **JPG**, **PNG**, **WebP** and **GIF**.
 
 !!! tip "Load from Drive to keep things tidy"
-    If the image is already in Drive, use **Load From Drive** rather than
-    downloading and re-uploading it. Fewer copies means less confusion later about
+    If the image is already in your Content Repository, use **Load From Drive**
+    rather than downloading and re-uploading it. Fewer copies means less confusion later about
     which version is current.
 
 ## Good to know

@@ -4,14 +4,14 @@
 
 Many questions are already answered here:
 
-- **[FAQs](faqs.md)** — the questions we are asked most often.
-- **[What is GoodBards?](getting-started/what-is-goodbards.md)** — how the
+- **[FAQs](faqs.md)**: the questions we are asked most often.
+- **[What is GoodBards?](getting-started/what-is-goodbards.md)**: how the
   platform fits together.
-- **[Finding Your Way Around](getting-started/navigating.md)** — where each
+- **[Finding Your Way Around](getting-started/navigating.md)**: where each
   feature lives.
 
 If a screen looks different from the documentation, the product may have moved on
-ahead of these pages — tell us and we will update them.
+ahead of these pages. Tell us and we will update them.
 
 ## How to reach us
 
@@ -26,13 +26,13 @@ ahead of these pages — tell us and we will update them.
 The more of this you can give us, the faster we can help:
 
 - What you were trying to do, and what happened instead.
-- The page you were on — the address from your browser is ideal.
+- The page you were on: the address from your browser is ideal.
 - Your workspace name, shown at the top of the app.
 - A screenshot, if something looks wrong on screen.
 
 !!! warning "Never send us your password"
     GoodBards support will never ask for your password. If you receive a message
-    claiming to be from us and asking for it, do not reply — forward it to
+    claiming to be from us and asking for it, do not reply: forward it to
     [support@goodbards.com](mailto:support@goodbards.com).
 
 ## Billing and subscriptions

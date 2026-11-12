@@ -5,34 +5,38 @@ be called **Drive**.
 
 ## What it's for
 
-Marketing runs on files — logos, product photography, brochures, the PDF you
-attach to a follow-up email. Drive keeps them in one place, so anything you use in
-a campaign, email or social post is already to hand rather than sitting on
-someone's laptop.
+Marketing runs on files: logos, product photography, brochures, the PDF you
+attach to a follow-up email. The Content Repository keeps them in one place, so
+anything you use in a campaign, email or social post is already to hand rather
+than sitting on someone's laptop.
 
-Files here are available to your whole team, and to the AI features that need
-them.
+!!! info "Shared with your team and your agents"
+    Files here are available to your whole team, and to the AI features that
+    need them.
 
 ## How to upload and organise files
 
 1. In the sidebar, choose **Content Hub → Content Repository**, or the
    repository icon in the top bar.
 2. Open a folder to work inside it.
-3. Choose **+ New**:
+3. Choose what to add, at the top right:
 
-    | Option | What it does |
+    ![Create Content, Create Folder and the Upload menu open on Image, Video and Document](../../img/screenshots/drive-upload-menu.png){ width="40%" }
+
+    | Button | What it does |
     | --- | --- |
-    | **Upload** | Adds a file from your computer. Give it a marketing stage and, if it should not be used after a date, an expiration date. |
-    | **Add Website** | Adds a web page by its address; GoodBards reads its content so the AI can use it. |
-    | **Import WordPress** | Brings in your existing WordPress articles. Connect WordPress first under **Connections**. |
-    | **Folder** | Creates a folder. |
+    | **Create Content** | Starts a new article or post in the Asset Studio (below). |
+    | **Create Folder** | Creates a folder. |
+    | **Upload → Image** | Adds pictures from your computer. |
+    | **Upload → Video** | Adds a video, up to 2 GB. |
+    | **Upload → Document** | Adds a file from your computer, with a marketing stage and, if it should not be used after a date, an expiration date. The same dialog offers **Add Website** (GoodBards reads a web page so the AI can use it) and **Import WordPress** (your existing WordPress articles; connect WordPress first under **Connections**). |
 
 ![The Assets folder: a blog draft and LinkedIn, Facebook and Instagram posts, with their type, author, date, size and AI switch](../../img/screenshots/content-repository.png)
 
 Each file's **Actions** menu lets you share, move, rename or delete it, and see
 where it is used, for example in which campaigns and tactics.
 
-## Editing an article or a post
+## How to edit an article or a post
 
 Open an article or a post to edit it in the **Asset Studio**.
 
@@ -64,30 +68,35 @@ A new account starts with three:
     The **System** folder holds files the platform depends on. Moving or deleting
     things here can break emails and campaigns that reference them.
 
-## Finding files
+## How to find files
 
 - **Search by title…** finds a file by name. Switch from **Title** to
   **Content** to search inside documents instead.
-- The **AI** switch on a file lets the AI agents read it as background, for
-  example your brand guidelines.
 - **Filter** narrows by file type and other attributes.
 - The two buttons beside Filter switch between **list** and **grid** view. Grid
   shows thumbnails, which is quicker for images.
 - The refresh button reloads the folder if you have just uploaded something
   elsewhere.
 
+!!! tip "Give the AI your key documents"
+    The **AI** switch on a file lets the AI agents read it as background. Turn
+    it on for files such as your brand guidelines or product sheets.
+
 ## Good to know
 
 - **Name files so others can find them.** `logo-primary-dark.png` is findable;
   `Screenshot 2026-08-14 at 15.22.11.png` is not.
-- **Upload once, use everywhere.** A file in Drive can be used in any email,
-  campaign or post — no need to re-upload it each time.
-- **Videos up to 2 GB.** Use **+ New → Video**; a percentage shows the upload's
+- **Upload once, use everywhere.** A file in the Content Repository can be used
+  in any email, campaign or post, with no need to re-upload it each time.
+- **Videos up to 2 GB.** Use **Upload → Video**; a percentage shows the upload's
   progress. Videos and PDF, PowerPoint or Word files can then be attached to
   LinkedIn and Instagram posts. See
   [Videos, documents, Reels and stories](../social-media/social-post.md#videos-documents-reels-and-stories).
-- **Deleting affects everything using it.** If an email references an image and
-  you delete that image, the email breaks. Check before removing anything.
+
+!!! warning "Deleting affects everything using it"
+    If an email references an image and you delete that image, the email
+    breaks. Check where a file is used (its **Actions** menu) before removing
+    it.
 
 ---
 

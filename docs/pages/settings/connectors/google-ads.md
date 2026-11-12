@@ -12,7 +12,7 @@ GoodBards uses it in:
   [Digital Ads](../../marketing/digital-ads.md).
 - **Ad campaign tactics**: link a campaign tactic to an existing Google Ads
   campaign and follow its results in the campaign report.
-- **Keyword Planner**: keyword ideas with monthly searches, competition and bids —
+- **Keyword Planner**: keyword ideas with monthly searches, competition and bids,
   in the campaign wizard, when you write content, and as a demand source in
   [Research & Plan](../../content-hub/research-plan.md).
 
@@ -30,17 +30,22 @@ GoodBards uses it in:
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Digital Ads** tab, find **Google Ads** and choose **Connect**.
+
+    ![The Google Ads card once connected: the Google account, the ad account Tropika Home SG, and Settings](../../../img/screenshots/connectors/google-ads.png){ width="30%" }
+
 3. Pick your Google account and allow GoodBards to **manage your Google Ads
    campaigns**.
-4. Back in GoodBards, choose **Manage Configuration** on the card.
+4. Back in GoodBards, choose **Choose Account** on the card.
 5. Under **Google Ads Account**, pick the account, then choose **Save
    Settings**.
 
 In the list, accounts reached through a manager show **via MCC** and the manager's
-number; test accounts show **TEST**. Manager accounts themselves cannot be picked:
-they do not run ads, so pick one of their client accounts.
+number; test accounts show **TEST**.
 
-Until an account is chosen, Digital Ads shows **Select a Google Ads account**.
+!!! note "Manager accounts cannot be picked"
+    A manager account (MCC) does not run ads itself, so pick one of its client
+    accounts. Until an account is chosen, Digital Ads shows **Select a Google
+    Ads account**.
 
 ## What GoodBards does with it
 
@@ -52,31 +57,36 @@ GoodBards **reads and changes** your Google Ads account.
 | **Creates and changes** | Campaigns and their budgets, status and bidding; ad groups, keywords, negative keywords and ads; conversion actions; callouts. |
 | **Applies or dismisses** | Google's keyword recommendations, when you choose to. |
 
-## Safety rules
-
-- **New campaigns start paused.** Nothing spends until you enable it.
-- **Google checks every change first.** The campaign wizard only lets you create
-  once Google has validated the campaign.
+!!! info "New campaigns start paused"
+    Nothing spends until you enable it. Google also checks every new campaign
+    first: the campaign wizard only lets you create it once Google has
+    validated it.
 
 ## Good to know
 
 - **One account per workspace.** All Google Ads screens and reports use the
   account you picked.
-- **Changes apply at once in Google Ads.** Removing a campaign is permanent there.
 - **Keyword Planner answers are kept for 30 days**, so asking again for the same
   keywords is instant.
 - **Ad text limits** follow Google's: up to 15 headlines of 30 characters, up to
   4 descriptions of 90 characters, and callouts of 25 characters.
 
+!!! warning "Changes apply at once in Google Ads"
+    What you change in GoodBards changes your live Google Ads account straight
+    away. Removing a campaign is permanent there.
+
 ## How to disconnect
 
-1. On the Google Ads card, choose **Manage Configuration**.
+1. On the Google Ads card, choose **Settings**.
 2. Choose **Disconnect**.
 
-GoodBards forgets the access and the chosen account. Your campaigns keep running
-in Google Ads exactly as they are — pause them in Google Ads if you need to. To
-remove access on Google's side too, do it from your Google Account, under
-third-party connections.
+GoodBards forgets the access and the chosen account. To remove access on
+Google's side too, do it from your Google Account, under third-party
+connections.
+
+!!! note "Your campaigns keep running"
+    Disconnecting does not pause anything. Pause campaigns in Google Ads if you
+    need to.
 
 ---
 

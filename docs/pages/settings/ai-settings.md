@@ -5,11 +5,12 @@ Choose which AI models your team uses, and what the AI is allowed to do.
 ## What it's for
 
 GoodBards can use different AI providers and models for different jobs. Most
-teams never need to change this — the defaults are sensible. It matters when you
+teams never need to change this: the defaults are sensible. It matters when you
 have a preference about which provider handles your content, or want a
 higher-quality model for one kind of work.
 
-Changing a model here affects everyone in your company.
+!!! info "These are company-wide defaults"
+    Changing a model here changes it for every colleague, not just you.
 
 ## How to change a default model
 
@@ -23,7 +24,7 @@ Changing a model here affects everyone in your company.
 
 | Type | Used for |
 | --- | --- |
-| **Text generation** | Writing — email copy, social posts, agent replies. |
+| **Text generation** | Writing: email copy, social posts, agent replies. |
 | **Image generation** | Images created from a description. |
 | **Video Generation** | Short video clips. |
 | **Audio Generation** | Text to speech. |
@@ -70,14 +71,14 @@ you give a skill to an agent in the agent's configuration.
 
 ## Good to know
 
-- **These are company-wide defaults.** Changing a model changes it for every
-  colleague, not just you.
 - **Models differ in cost as well as quality.** A more capable model consumes
-  credits faster — see [Usage & Billing](tenant-usage.md).
-- **Test after changing.** Generate a sample piece of content and check the tone
-  still matches your brand before your team relies on it.
+  credits faster. See [Usage & Billing](tenant-usage.md).
 - **Leave it alone if unsure.** The defaults are chosen to work well; this screen
   is for teams with a specific reason to change them.
+
+!!! tip "Test after changing"
+    Generate a sample piece of content and check the tone still matches your
+    brand before your team relies on the new model.
 
 ---
 

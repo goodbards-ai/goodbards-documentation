@@ -7,6 +7,13 @@ files behind them.
 
 ## The screens
 
+### Content Repository
+
+All your files and content in one place: documents, images, articles and posts,
+in folders, searchable by their content.
+
+See [Content Repository](../workspace/drive.md).
+
 ### Content Workspace
 
 Write with an AI writer and reviewer. Give a short brief (topic, audience,
@@ -22,15 +29,20 @@ ask and gaps against competitors, each one ready to turn into a brief.
 
 See [Research & Plan](research-plan.md).
 
-### Content Repository
+### Momentum
 
-All your files and content in one place: documents, images, articles and posts,
-in folders, searchable by their content.
+The pages that are rising or falling right now, with follow-up articles to
+write while the trend is on your side.
 
-See [Content Repository](../workspace/drive.md).
+See [Momentum](../website/momentum.md).
 
 ### Translator
 
 Translate a text or a document while keeping its formatting.
 
 See [Translator](../tool-box/translator.md).
+
+!!! note "Not every screen is in every plan"
+    A screen your plan does not include shows a crown in the sidebar. Content
+    Workspace is in the **Lite**, **Pro** and **Full** plans; Research & Plan,
+    Momentum and Translator in **Pro** and **Full**.

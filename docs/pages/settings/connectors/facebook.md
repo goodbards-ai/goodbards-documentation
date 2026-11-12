@@ -29,14 +29,18 @@ you can:
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Social Media** tab, find **Facebook** and choose **Connect**.
-3. Sign in to Facebook. When Facebook asks which Pages GoodBards may use,
-   **select the Pages you want** — Pages you leave out will not appear in
-   GoodBards.
-4. Back in GoodBards, choose **Manage configuration** on the Facebook card.
-5. Under **Destination (one per tenant)**, pick your Page, then choose **Save
-   configuration**.
 
-If the list is empty, reconnect and make sure you select your Pages in step 3.
+    ![The Facebook card once connected: the Tropika Home Page, on behalf of Tropika Home, how long access is valid, and Settings](../../../img/screenshots/connectors/facebook.png){ width="30%" }
+
+3. Sign in to Facebook. When Facebook asks which Pages GoodBards may use,
+   **select the Pages you want**.
+4. Back in GoodBards, choose **Choose Destination** on the Facebook card.
+5. Under **Destination (one per tenant)**, pick your Page, then choose **Save
+   Configuration**.
+
+!!! warning "Select your Pages in step 3"
+    Pages you leave out on Facebook's screen never appear in GoodBards. If the
+    list is empty in step 5, connect again and select them.
 
 ## What GoodBards does with it
 
@@ -49,8 +53,10 @@ If the list is empty, reconnect and make sure you select your Pages in step 3.
 
 ## Good to know
 
-- **One Page per workspace.** The Page you pick is used for publishing *and* for
-  the automated reports.
+!!! info "One Page per workspace"
+    The Page you pick is used for publishing *and* for the automated reports.
+    To change it, choose **Settings** on the card.
+
 - **Picture or link preview, not both.** Without a picture, the first link in
   the text becomes a preview card.
 - **Some figures are no longer available.** Facebook no longer provides
@@ -60,7 +66,7 @@ If the list is empty, reconnect and make sure you select your Pages in step 3.
 
 ## How to disconnect
 
-1. On the Facebook card, choose **Manage configuration**.
+1. On the Facebook card, choose **Settings**.
 2. Choose **Disconnect**, then confirm.
 
 GoodBards forgets the access and the chosen Page. Posts already published stay on

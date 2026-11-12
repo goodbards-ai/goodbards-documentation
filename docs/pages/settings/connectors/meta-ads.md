@@ -13,8 +13,8 @@ GoodBards uses it in:
 - **Ad campaign tactics**: link a campaign tactic to an existing Meta campaign
   and follow its results in the campaign report, next to your other tactics.
 
-GoodBards **only reads** your ads. You keep creating and changing them in Meta
-Ads Manager.
+!!! info "GoodBards only reads your ads"
+    You keep creating and changing them in Meta Ads Manager.
 
 !!! note "Setting up with us"
     Meta's screens are made for developers: if you would rather not do the setup
@@ -100,20 +100,23 @@ Both are stored encrypted and are never shown again in GoodBards.
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Digital Ads** tab, find **Meta Ads** and choose **Connect**.
+
+    ![The Meta Ads card on the Digital Ads tab, with its Connect button](../../../img/screenshots/connectors/meta-ads.png){ width="30%" }
+
 3. Paste the **access token** (and the app secret if your app requires it), then
    choose **Check token**. GoodBards asks Meta which ad accounts the token can
    read. If Meta refuses the token, nothing is saved and Meta's reason is shown.
 
-    ![The Meta Ads dialog: access token and optional app secret](../../../img/screenshots/meta-ads/08-goodbards-token.png)
+    ![The Meta Ads dialog: access token and optional app secret](../../../img/screenshots/meta-ads/08-goodbards-token.png){ width="40%" }
 
 4. Choose your **ad account**, then **Save**.
 
-    ![The Meta Ads dialog: choosing the ad account](../../../img/screenshots/meta-ads/09-goodbards-account.png)
+    ![The Meta Ads dialog: choosing the ad account](../../../img/screenshots/meta-ads/09-goodbards-account.png){ width="50%" }
 
 The card then shows the ad account's name, its number and its currency. Until an
 ad account is chosen, it shows **No account selected**.
 
-![The Meta Ads card once connected](../../../img/screenshots/meta-ads/10-goodbards-card.png)
+![The Meta Ads card once connected](../../../img/screenshots/meta-ads/10-goodbards-card.png){ width="30%" }
 
 Your ad account now appears in **Marketing → Digital Ads**, on the **Meta Ads**
 tab:
@@ -138,20 +141,36 @@ tab:
     Meta only gives totals. It never says which person saw or clicked an ad, so
     GoodBards cannot attach an ad view or click to one of your contacts.
 
-## Replacing the token or disconnecting
-
-On the **Meta Ads** card, choose **Settings**:
-
-- **Replace the token** when the old one expired or was revoked. Your chosen ad
-  account is kept if the new token can still read it.
-- **Disconnect** forgets the token and the ad account. Tactics already linked
-  keep their link and show that Meta Ads is no longer connected.
-
-## Troubleshooting
+## If it does not work
 
 | What you see | What to do |
 | --- | --- |
-| *Meta refused the token* | The token expired or was revoked. Create a new one (step 3) and choose **Replace the token**. |
+| *Meta refused the token* | The token expired or was revoked. Create a new one (step 3) and choose **Replace The Token**. |
 | *The token may not read ads* | The token lacks **ads_read**, or the system user has no access to the ad account (step 2). |
 | *This token reaches no ad account* | Assign your ad account to the system user (step 2), then check the token again. |
 | *Meta is limiting calls* | Meta allows a limited number of reads per ad account. Wait a few minutes and reload. |
+
+## Good to know
+
+- **One ad account per workspace.** Digital Ads and the campaign reports use the
+  ad account you chose.
+- **To use a new token**, choose **Settings** on the card, then **Replace The
+  Token**. Your chosen ad account is kept if the new token can still read it.
+
+!!! warning "Keep the token secret"
+    Anyone with this token can read your ad account's results. Paste it only in
+    GoodBards, never in an email or a chat.
+
+## How to disconnect
+
+1. On the **Meta Ads** card, choose **Settings**.
+2. Choose **Disconnect**.
+
+GoodBards forgets the token and the ad account. Tactics already linked keep
+their link and show that Meta Ads is no longer connected. Nothing changes in
+your Meta account; to stop the token completely, revoke it in Business settings
+(**Revoke tokens**).
+
+---
+
+*Still stuck? [Contact support](../../contact.md).*

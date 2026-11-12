@@ -11,11 +11,12 @@ likely to bring visitors, each with its monthly searches and competition.
 
 ## Before you start
 
-- **Google Search Console** connected under **Connections**, for your own
-  searches.
-- Your competitors listed under **Brand & Context → Competitors**.
+- **Your plan.** Research & Plan is included in the **Pro** and **Full** plans.
+- **Google Search Console** connected under **Connectors**, for your own
+  searches. See [Connections](../settings/connections.md).
+- **Your competitors** listed under **Brand & Context → Competitors**.
 
-## How to use it
+## How to pick your next topic
 
 1. In the sidebar, choose **Content Hub → Research & Plan**.
 2. Read **Recommended for you**: each topic with why it is there (for example a
@@ -32,9 +33,13 @@ likely to bring visitors, each with its monthly searches and competition.
 market used, for example *English · Global*, are shown at the top right; choose
 them to change.
 
+!!! tip "Low competition is the opportunity"
+    A topic with steady searches and low competition is usually the quickest
+    win.
+
 ## The analysis behind the plan
 
-From an idea, choose **Explore demand trend** to open the **Analysis tools**:
+From an idea, choose **Explore Demand Trend** to open the **Analysis tools**:
 four views of the data the plan is ranked from. **Back To Plan** returns.
 
 | Tab | What it shows |
@@ -59,8 +64,6 @@ four views of the data the plan is ranked from. **Back To Plan** returns.
 
 - **Searches are a monthly average** from Google; a small number in a niche
   market can still be worth it.
-- **Low competition is the opportunity.** A topic with steady searches and low
-  competition is usually the quickest win.
 - **Check your own idea before writing it.** If nobody searches for it, the
   check says so before you spend the time.
 

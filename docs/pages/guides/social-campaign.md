@@ -18,7 +18,8 @@ results next to your emails, events and ads in the campaign report.
 
 ## 1. Set up the campaign
 
-1. Choose **Marketing → Campaigns**, then **Create New Campaign**.
+1. In the sidebar, choose **Marketing → Campaigns**, then **Create New
+   Campaign**.
 2. Fill in the objective, dates, audience, regions and description.
 3. Under **Tactics**, choose **Plan With AI** to get a suggested mix of tactics
    for your objective, or **Add Tactic** to add one per network yourself, for
@@ -64,9 +65,15 @@ See [Social Post](../social-media/social-post.md).
 
 ## Good to know
 
-- **Post dates must fall within the campaign's dates.** Change the campaign's
-  dates under **Campaign Details** if you need to extend it.
+!!! note "Post dates must fall within the campaign's dates"
+    Change the campaign's dates under **Campaign Details** if you need to
+    extend it.
+
 - **Each network has its own format and limit.** Write one post per network; the
   editor shows each network's character limit and preview.
 - **Results are not live.** Network figures are collected several times a day, so
   a post's first results appear a few hours after it is published.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

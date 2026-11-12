@@ -1,6 +1,6 @@
 # Chat Agents
 
-Assistants you can hold a conversation with — each one set up for a particular
+Assistants you can hold a conversation with, each one set up for a particular
 kind of marketing work.
 
 ## What it's for
@@ -15,8 +15,11 @@ tools they are given, on your campaigns, contacts and analytics.
 
 ## Before you start
 
-Chat agents are not available on every plan. If **Agentic AI** does not appear in
-your sidebar, your plan does not include agents — speak to your account contact.
+- **Your plan.** Chat agents are included in the **Pro** and **Full** plans. If
+  **Chat Agents** shows a crown in the sidebar, your plan does not include them:
+  speak to your account contact.
+- **Access.** If **Agentic AI** is missing from your sidebar, ask your
+  administrator for the **AI studio** access.
 
 ## How to start a chat
 
@@ -33,10 +36,10 @@ Each card tells you what the agent is and what it can reach:
 | On the card | What it means |
 | --- | --- |
 | **Global** / **Local** | *Global* agents are provided by GoodBards. *Local* agents were created inside your own account. |
-| **Category** | The kind of work it is for — General, Data Analysis, Content and Post, Research, Chatbot. |
+| **Category** | The kind of work it is for: General, Data Analysis, Content and Post, Research, Chatbot. |
 | **Description** | What the agent is designed to do. |
 | **Features** | Capabilities switched on for it. Some agents show *No feature enabled yet*. |
-| **Tools** | What it can actually reach — Marketing Campaigns, Google Analytics, Google Trends and so on. |
+| **Tools** | What it can actually reach: Marketing Campaigns, Google Analytics, Google Trends and so on. |
 
 !!! tip "Tools are the part that matters"
     Two agents with similar descriptions can behave very differently depending on
@@ -49,11 +52,14 @@ The buttons under the title narrow the list: **All**, **Content and Post**,
 **Data Analysis**, **General**, **Research**, **Chatbot**. A greyed-out category
 has no agents in it.
 
-## Creating your own
+## How to create your own agent
 
-**+ Create New Agent** builds an agent for your account, which appears as
-**Local**. Your plan sets how many custom agents you may have. The **Tutorial**
-button at the top walks you through the form.
+1. On **Chat Agents**, choose **+ Create New Agent**. The **Tutorial** button
+   at the top walks you through the form.
+2. Fill in each part of the form (see the table below).
+3. Choose **Create Agent**. The agent appears for your account as **Local**.
+
+Your plan sets how many custom agents you may have.
 
 | Part | What to set |
 | --- | --- |
@@ -64,16 +70,18 @@ button at the top walks you through the form.
 | **Agent Skills** | Ready-made expertise, assigned once the agent exists. |
 | **Memory** | **Persistent Memory** lets the agent remember facts from past conversations; **Promote Facts to Tenant** shares important ones with all your agents. Leave the numbers at their defaults unless support asks you to change them. |
 
-Choose **Create Agent**. To change an agent later, use the pencil on its card.
-Global agents, provided by GoodBards, cannot be edited.
+To change an agent later, use the pencil on its card.
+
+!!! note "Global agents cannot be edited"
+    Agents provided by GoodBards are maintained for you and may gain
+    capabilities over time. To change how one behaves, create your own.
 
 ## Good to know
 
 - **Agents are not identical.** Pick by tools, not by name.
 - **An agent only knows what its tools reach.** If it cannot see your contacts, it
   cannot answer questions about them.
-- **Global agents are maintained for you.** They may gain capabilities over time
-  without you changing anything.
+- **Conversations use credits.** See [Usage & Billing](../settings/tenant-usage.md).
 
 ---
 

@@ -32,12 +32,13 @@ in your style, following the rules you set.
 
 ## How to set up your Brand Context
 
-1. Go to **Brand & Context → General Information**.
-2. Choose **Populate with AI** and enter your **Website URL**: GoodBards reads your
-   home page and a few key pages, and fills in the fields as drafts. This takes
-   about a minute.
-3. Review each field. AI drafts are **Hidden from AI** until you choose **Show to
-   AI**. A field you edit and **Save** becomes visible to AI.
+1. Open your account menu (your picture, top right), then choose **Brand &
+   Context**. It opens on **General Information**.
+2. Choose **Populate With AI**, enter your **Website URL**, then choose **Start
+   Extraction**. GoodBards reads your home page and a few key pages, and fills
+   in the fields as drafts. This takes about a minute.
+3. Review each field. AI drafts are **Hidden from AI** until you choose **Show To
+   AI**. A field you edit and **Save** becomes **Visible to AI**.
 4. Fill in **Guardrails → Never discuss** with the topics the AI must avoid.
 5. On **Marketing Campaigns**, set your campaign defaults (audience, regions,
    objective).
@@ -46,9 +47,16 @@ See [Brand & Context](company-settings.md) for every field.
 
 ## How to create a Brand Voice
 
-1. Go to **Brand & Context → Voices Bank** and choose **Create Voice**.
+1. In **Brand & Context**, open the **Voices Bank** tab and choose **Create
+   Voice**.
+
+    ![The Voices Bank tab before any voice exists: Create your first voice, with Create Voice](../../img/screenshots/brand-voices.png)
+
 2. Give it a name, then add up to 10 samples of real writing: paste text with
-   **Add text sample**, or choose documents with **Add from Drive**.
+   **Add Text Sample**, or choose documents with **Add From Drive**.
+
+    ![The Create a voice dialog: the voice name, Text samples with Add Text Sample, Add From Drive, 0 of 10 samples, and Create Voice](../../img/screenshots/brand-voice-create.png){ width="40%" }
+
 3. The voice goes from **Analyzing** to **Active** in a few minutes. Open
    **Details** to read the profile it built: tone, structure, favourite phrases,
    do's and don'ts. It also shows the voice's **Language**, detected from your
@@ -68,13 +76,15 @@ See [Brand & Context](company-settings.md) for every field.
   you work, seen only in your conversations. Turn **Enable Personal Memory** off to
   stop the AI using and collecting them.
 
-![The Learned Memory tab: a box to add organisation knowledge, and the list of what the agents have learned](../../img/screenshots/learned-memory.png)
+![The Learned Memory tab: a box to add organisation knowledge, and the list of what the agents have learned](../../img/screenshots/learned-memory.png){ width="80%" }
 
 ## Good to know
 
-- **Hidden fields never reach the AI.** That includes every AI draft you have not
-  reviewed yet. If the AI ignores something, check its badge first.
-- **Changes take up to about ten minutes** to reach the agents.
+!!! info "Hidden fields never reach the AI"
+    That includes every AI draft you have not reviewed yet. If the AI ignores
+    something, check its badge first. Changes take up to about ten minutes to
+    reach the agents.
+
 - **Only your primary Brand Kit is used.** Its tone of voice, keywords and
   hashtags apply to every request; a Voices Bank voice applies only when selected.
 - **One voice, one language.** A voice writes in the language of its samples and
@@ -85,11 +95,13 @@ See [Brand & Context](company-settings.md) for every field.
   from samples in that language.
 - **A voice is applied when the conversation starts.** Changing it halfway
   through has no effect; start a new conversation.
-- **Company memory is shared with everyone in your company.** Do not put personal
-  or confidential details in it. **Clear all memory** cannot be undone.
 - **Agents learn company facts only if allowed.** An agent adds to company memory
   only when **Promote Facts to Tenant** is on in its settings (off by default).
   Learning starts after a conversation of several exchanges.
+
+!!! warning "Company memory is shared with everyone"
+    Every colleague's agents read it, so never put personal or confidential
+    details in it. **Clear all memory** cannot be undone.
 
 ---
 

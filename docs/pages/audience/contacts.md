@@ -1,6 +1,6 @@
 # Contacts
 
-The people you market to — how to add them, keep their details current, and group
+The people you market to: how to add them, keep their details current, and group
 them into segments.
 
 ## What it's for
@@ -9,7 +9,14 @@ Every email you send and every form someone fills in comes back to a contact.
 Contacts are the centre of the platform: get them right and the rest of your
 marketing has something to work with.
 
-## Adding contacts
+!!! abstract "In short"
+    In the sidebar, choose **Audience → Contacts**. **Home** summarises your
+    database, **Details List** lists every contact, **Segments** groups them by
+    rule, and **Mailing Lists**, **Card Scanner**, **Custom Fields**, **Custom
+    Lists** and **Import Jobs** cover the rest. Only **Subscribed** contacts
+    receive marketing email.
+
+## How to add contacts
 
 There is more than one way, depending on how many you have:
 
@@ -21,17 +28,14 @@ There is more than one way, depending on how many you have:
 | **Forms** | Someone signs up themselves. See [Forms](../marketing/forms.md). |
 
 !!! note "Adding and importing need the Access sensitive data permission"
-    A contact is mostly an email address and a phone number, so only colleagues
-    allowed to see them can add or import contacts. Without the *Access
-    sensitive data* permission, **Add Contact** and **Bulk Add Contacts** are
-    greyed out; hover them to see why. Importing also requires being an
-    administrator. See
+    Without it, **Add Contact** and **Bulk Add Contacts** are greyed out (hover
+    them to see why). Importing also requires being an administrator. See
     [Additional permissions](../settings/users-roles.md#additional-permissions).
 
-## Reading the Contacts home
+## How to read the Contacts home
 
-**Audience → Contacts** opens on the **Home** tab, which summarises your database
-rather than listing individuals.
+In the sidebar, choose **Audience → Contacts**. The page opens on the **Home**
+tab, which summarises your database rather than listing individuals.
 
 ![The Contacts home tab: 2,917 contacts out of 20,000 allowed, the Data quality tiles (no company, missing info, no owner, possible duplicates), and the Database Health cards graded D, ending with the Status Distribution](../../img/screenshots/contacts.png)
 
@@ -39,13 +43,13 @@ rather than listing individuals.
 as you approach your plan's limit and turns orange, then red, near it. On a plan
 without a limit, it shows the number alone.
 
-The **Status distribution** card, under **Database Health**, shows how those
+The **Status Distribution** card, under **Database Health**, shows how those
 contacts split between statuses:
 
-- **Subscribed** — contacts who have agreed to hear from you.
-- **Regular** — contacts with no marketing consent yet: you can work with them,
+- **Subscribed**: contacts who have agreed to hear from you.
+- **Regular**: contacts with no marketing consent yet. You can work with them,
   but not email them marketing.
-- **Unsubscribed**, **Bounced** and **Do not contact** — people you must not
+- **Unsubscribed**, **Bounced** and **Do not contact**: people you must not
   email.
 
 !!! warning "Subscribed is the number that matters"
@@ -55,25 +59,24 @@ contacts split between statuses:
     for how each status is set and what you can do about the quiet ones.
 
 !!! info "Bounced and Do not contact are set for you"
-    When a marketing email cannot be delivered, GoodBards reads the reply from
-    the recipient's mail server. An address that does not exist, or whose server
-    rejects the message outright, becomes **Bounced** at once. A temporary
-    problem (full mailbox, message too large, content refused) only adds a note
-    to the contact; after three sends that bounce this way, the contact becomes
-    **Bounced** too. A recipient who reports your email as spam becomes
-    **Do not contact**. Both statuses stop every further send, and the reason
-    stays in the contact's engagement timeline and notes.
+    An address that does not exist, or whose server rejects the email outright,
+    becomes **Bounced** at once; a temporary problem (full mailbox, message too
+    large) does so after three sends. A recipient who reports your email as
+    spam becomes **Do not contact**. Both stop every further send.
+
+The reason for a bounce or a complaint stays in the contact's engagement
+timeline and notes. A temporary bounce only adds a note until the third one.
 
 **Data quality**, next to it, is your clean-up list. Each tile counts the
 contacts that need attention, with their share of your database. Hover a tile to
 read exactly what it checks:
 
-- **No company** — people you cannot count towards an account.
-- **Missing info** — contacts missing an email, phone or country: records you
+- **No company**: people you cannot count towards an account.
+- **Missing info**: contacts missing an email, phone or country, so records you
   cannot reach or segment. Email and phone are only checked when your role can
   see them.
-- **No owner** — nobody is responsible for them.
-- **Possible duplicates** — pairs of records with the same first and last name.
+- **No owner**: nobody is responsible for them.
+- **Possible duplicates**: pairs of records with the same first and last name.
   Review them before merging anything.
 
 Choose a tile to open the list filtered to exactly those rows; a chip above the
@@ -99,7 +102,7 @@ It builds up day by day.
 
 ![Contact Readiness graded D: the database count growing to 2,917, new contacts and growth per month, profile completeness by field (company 9%, job title 41%), and the status distribution with 83% mailable](../../img/screenshots/contacts-readiness.png)
 
-![The Readiness Grade Formula: profile completeness 50 points, volume 25 points, growth momentum 25 points, and the letter mapping](../../img/screenshots/contacts-grade-formula.png)
+![The Readiness Grade Formula: profile completeness 50 points, volume 25 points, growth momentum 25 points, and the letter mapping](../../img/screenshots/contacts-grade-formula.png){ width="50%" }
 
 | Grade | Made of |
 | --- | --- |
@@ -114,7 +117,7 @@ engagement, send your contacts something worth opening. See
 Companies have the same two grades, built from company data. See
 [Companies](companies.md).
 
-## Finding individual contacts
+## How to find a contact
 
 The **Details List** tab lists every contact: their code, name, owner, email,
 status and last update.
@@ -129,7 +132,7 @@ status and last update.
   owner, or select contacts and choose **Assign Owners**. Depending on their role,
   a colleague may only see the contacts they own.
 - **Export As CSV** downloads the list; **Add Contact** creates one.
-- Click a contact's code to open their record: details, custom fields, mailing
+- Choose a contact's code to open their record: details, custom fields, mailing
   lists, and the history of every email, form and event.
 
 ### Asking the assistant
@@ -143,19 +146,21 @@ questions about your audience, in plain words:
 - *Who went cold in the last six months?*
 - *Top 10 companies by clicks in the last 30 days.*
 
-It reads the same data as the screens, under the same rules: it only sees the
-contacts you can see, it never shows an email or phone your role cannot see, and
-it does not edit anything. When you open a contact's record, "this contact" in
-your question means that person. Each answer states the rule it applied (for
-example *contacts with no positive engagement in the last 180 days*), so you can
-check it before acting.
+When you open a contact's record, "this contact" in your question means that
+person. Each answer states the rule it applied (for example *contacts with no
+positive engagement in the last 180 days*), so you can check it before acting.
+
+!!! info "The assistant sees what you see, and edits nothing"
+    It reads the same data as the screens, under the same rules: only the
+    contacts you can see, never an email or phone your role cannot see. It does
+    not change anything.
 
 ## A contact's page
 
 Choose a contact's code in the list to open their page: everything GoodBards
 knows about them, in one place.
 
-![A contact's page: the name with the engagement and decay scores and the status Subscribed, the contact summary, the timeline and the engagement distribution](../../img/screenshots/contact-record.png)
+![A contact's page: the name with the engagement and decay scores and the status Subscribed, the contact summary, the timeline and the engagement distribution](../../img/screenshots/contact-record.png){ width="80%" }
 
 | Section | What it shows |
 | --- | --- |
@@ -170,46 +175,49 @@ knows about them, in one place.
 | **Social Links**, **Referral Info**, **Tags** | Their social profiles, where they came from, and your tags. |
 | **Engagement Over Time** and **Engagement Timeline** | Every open, click, form, registration and subscription, day by day and in order. |
 
-![Custom fields on a contact: orders, home store, loyalty tier, member since and lifetime spend](../../img/screenshots/contact-custom-fields.png)
+![Custom fields on a contact: orders, home store, loyalty tier, member since and lifetime spend](../../img/screenshots/contact-custom-fields.png){ width="65%" }
 
-![The Policies table with the privacy statement accepted (Opt In, through a form) and the contact's mailing lists, both subscribed](../../img/screenshots/contact-consent-lists.png)
+![The Policies table with the privacy statement accepted (Opt In, through a form) and the contact's mailing lists, both subscribed](../../img/screenshots/contact-consent-lists.png){ width="65%" }
 
 ![Engagement Over Time by category, and the Engagement Timeline: subscribed to a mailing list](../../img/screenshots/contact-timeline.png)
 
-### Editing a contact
+### How to edit a contact
 
-Choose **Edit Contact** at the top right. The form has the personal details,
-address and timezone, job and companies, subscription status, social handles,
-referral source, preferred contact method, customer type, privacy statement,
-mailing lists, tags and **Contact Notes**. Choose **Save Contact** when done.
+1. On the contact's page, choose **Edit Contact** at the top right.
+2. Change what you need: personal details, address and timezone, job and
+   companies, subscription status, social handles, referral source, preferred
+   contact method, customer type, privacy statement, mailing lists, tags and
+   **Contact Notes**.
+3. Choose **Save Contact**.
+
+!!! warning "Adding a mailing list here subscribes the contact at once"
+    Only do it for people who agreed to receive that list.
 
 - **Notes** keep what your team knows that fits no field: *met at the Mid Valley
   styling clinic*. Choose **Add Note**.
-- **Adding a mailing list here subscribes the contact straight away.** Only do it
-  for people who agreed.
 - **Owners** can be changed here by an administrator. See
   [Users, roles & permissions](../settings/users-roles.md#contact-ownership).
 
 ## Segments
 
-A **segment** is a saved filter — a rule that decides who belongs, evaluated when
+A **segment** is a saved filter: a rule that decides who belongs, evaluated when
 you use it, so it stays current as contacts change.
 
-![The Segments tab: saved segments such as Singapore members, Malaysia members, Corporate buyers and Bangkok launch list, each with a description](../../img/screenshots/segments.png)
+![The Segments tab: saved segments such as Singapore members, Malaysia members, Corporate buyers and Bangkok launch list, each with a description](../../img/screenshots/segments.png){ width="80%" }
 
 To create one, open the **Segments** tab and choose **Add Segment**, then set
-the rule. Anyone with write access to the Audience module (the Marketer and
-Sales roles, and administrators) can add, edit and delete segments. A rule is
-made of up to three blocks. Each block is optional, and a contact must match
-every block you fill in:
+the rule. Anyone who can edit contacts (the Marketer and Sales roles, and
+administrators) can add, edit and delete segments. A rule is made of up to
+three blocks. Each block is optional, and a contact must match every block you
+fill in:
 
-- **Contact Profile Block** — a detail of the contact: status, country, job
-  title, tags, a custom field.
-- **Behavior Block** — what the contact did: an engagement (email opened, email
-  clicked, form filled, event attended…), how many times (**Min Count**,
-  **Max Count**) and when (**Relative Days** with **Last n Days**, or a
-  **Specific Range** of dates).
-- **Alert & KPI Block** — the contact's **Engagement Score** or **Decay
+- **Contact Profile Block**: a detail of the contact, such as status, country,
+  job title, tags or a custom field.
+- **Behavior Block**: what the contact did (email opened, email clicked, form
+  filled, event attended…), how many times (**Min Count**, **Max Count**) and
+  when (**Relative Days** with **Last n Days**, or a **Specific Range** of
+  dates).
+- **Alert & KPI Block**: the contact's **Engagement Score** or **Decay
   Score** compared with a number. See [Lead scoring](lead-scoring.md).
 
 Inside a block, **Add Condition** adds a line.
@@ -224,17 +232,17 @@ Choose a segment's name to open it: its description, its filters, a summary of
 which kinds of filter are applied, and the list of contacts it holds right now.
 **Edit Segment** changes the rule.
 
-![A segment's page: Singapore members, its description, its contact filter on the country Singapore, and the filter summary](../../img/screenshots/segment-detail.png)
+![A segment's page: Singapore members, its description, its contact filter on the country Singapore, and the filter summary](../../img/screenshots/segment-detail.png){ width="80%" }
 
 Useful segments look like:
 
-- *Singapore members* — everyone in one market
-- *Corporate buyers* — one type of customer
-- *Bangkok launch list* — the people from one event
+- *Singapore members*: everyone in one market
+- *Corporate buyers*: one type of customer
+- *Bangkok launch list*: the people from one event
 
 !!! tip "Segments beat one-off filters"
     If you find yourself applying the same filter repeatedly, save it as a
-    segment. Give it a description too — in six months you will not remember
+    segment. Give it a description too: in six months you will not remember
     what the rule was.
 
 ## Unsubscribed and unengaged contacts
@@ -263,7 +271,7 @@ A contact stops being **Subscribed** in one of three ways.
 link. It opens the contact's **Email Preferences** page, which lists your
 mailing lists with a switch for each:
 
-![The Email Preferences page a contact sees: a switch for each mailing list, Save Preferences, and Unsubscribe From All Emails](../../img/screenshots/email-preferences-page.png){ width="420" }
+![The Email Preferences page a contact sees: a switch for each mailing list, Save Preferences, and Unsubscribe From All Emails](../../img/screenshots/email-preferences-page.png){ width="40%" }
 
 | The contact does this | What changes |
 | --- | --- |
@@ -284,7 +292,7 @@ mailing lists with a switch for each:
 
 **2. Their mail provider says so.** A recipient who reports your email as spam
 becomes **Do not contact**. An address that cannot be delivered becomes
-**Bounced**. See [Reading the Contacts home](#reading-the-contacts-home) for
+**Bounced**. See [How to read the Contacts home](#how-to-read-the-contacts-home) for
 the exact bounce rule.
 
 **3. Your team sets it.** For an opt-out received by phone, by email or in a
@@ -292,7 +300,7 @@ store: open the contact, choose **Edit Contact**, and change **Status** under
 **Subscription Detail**. For many contacts at once, use the `status` column of
 an [import](#accepted-values) with the **Overwrite** conflict action.
 
-![The Subscription Detail card of the contact form, with the Status list open: Do not contact, Bounced, Regular, Subscribed and Unsubscribed](../../img/screenshots/contact-edit-status.png){ width="420" }
+![The Subscription Detail card of the contact form, with the Status list open: Do not contact, Bounced, Regular, Subscribed and Unsubscribed](../../img/screenshots/contact-edit-status.png){ width="40%" }
 
 #### How you identify them
 
@@ -491,7 +499,7 @@ Lists people subscribe to, for example from a sign-up form. See
 
 Photograph a business card, or upload a picture of one: GoodBards reads it and
 fills in a new contact for you to check and save. See
-[Adding contacts](adding-contacts.md#scan-a-business-card).
+[Adding contacts](adding-contacts.md#how-to-scan-a-business-card).
 
 ## Custom Fields
 
@@ -509,13 +517,13 @@ loyalty tier, a preferred store, a renewal date.
     | **Boolean** | Yes or no. |
     | **Select** | A value from a list you define under **Custom Lists**. |
 
-    Tick **Allow multiple values** when a contact can have several, for example
+    Tick **Allow multiple values (array)** when a contact can have several, for example
     several preferred stores.
 
 3. Choose whether it applies to **Contact**, **Company** or both, under
    **Entity**, then **Create Field**.
 
-![The Add Custom Field dialog: Entity, Field Name, Field Type and Allow multiple values](../../img/screenshots/contacts-custom-field.png)
+![The Add Custom Field dialog: Entity, Field Name, Field Type and Allow multiple values](../../img/screenshots/contacts-custom-field.png){ width="40%" }
 
 The field then appears on every contact's page and in the contact form, and can
 be shown as a column in the **Details List** with **View**.
@@ -536,7 +544,7 @@ types. Example: a *Store* list with *Jurong Point*, *Mid Valley* and
 3. Add the entries with **Add Entry**, each with a code and a label. Drag them to
    reorder, or sort them alphabetically.
 
-![The Reference List Details dialog: technical list identifier, list name, and entries with a code and a label](../../img/screenshots/contacts-custom-list.png)
+![The Reference List Details dialog: technical list identifier, list name, and entries with a code and a label](../../img/screenshots/contacts-custom-list.png){ width="65%" }
 
 Write names and labels in English: GoodBards translates them automatically into
 the other languages of the app.
@@ -546,7 +554,7 @@ the other languages of the app.
 Every spreadsheet import, with its status and how many rows were processed, so
 you can check that an import went through. Start a new one with **Bulk Add
 Contacts**, which requires the *Access sensitive data* permission and an
-administrator role. See [Adding contacts](adding-contacts.md#import-a-spreadsheet).
+administrator role. See [Adding contacts](adding-contacts.md#how-to-import-a-spreadsheet).
 
 ### An import happens in two steps
 
@@ -558,10 +566,11 @@ then you start it:
    the list as **READY TO START**. No contact has been created or changed.
 2. **Start the job.** In the job's row, choose **Start**, then **Start import**
    to confirm. GoodBards reads the file row by row and creates or updates the
-   contacts. Once started, an import cannot be stopped.
+   contacts.
 
-Until you start it, you can still **Delete** the job, for example if you picked
-the wrong file or the wrong **Default Status**, and create a new one.
+!!! warning "Once started, an import cannot be stopped"
+    Until you start it, you can still **Delete** the job, for example if you
+    picked the wrong file or the wrong **Default Status**, and create a new one.
 
 ### Job statuses
 
@@ -691,14 +700,15 @@ A row whose `email` is already in your audience is handled by the job's
   still added, and the contact still receives the job's tags, source and
   privacy statement.
 - **Overwrite**: every cell you filled in replaces the contact's current value.
-  Empty cells leave the current value unchanged, so an import never erases
-  data.
+
+!!! info "An import never erases data"
+    With **Overwrite**, empty cells leave the current value unchanged.
 
 ## Good to know
 
 - **Segments update themselves; mailing lists do not.** A segment re-evaluates its
   rule each time; a mailing list stays as you built it.
-- **Watch your plan limit.** The Total Contacts gauge shows how close you are.
+- **Watch your plan limit.** The **Total Contacts** gauge shows how close you are.
 - **Respect unsubscribes.** Under Singapore's PDPA and equivalent rules elsewhere,
   contacts who opt out must not receive marketing email. GoodBards excludes them,
   but do not work around it by re-importing them.

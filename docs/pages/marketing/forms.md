@@ -23,7 +23,7 @@ a separate survey tool.
 1. In the sidebar, choose **Marketing → Forms**, then **Create Form**.
 2. Choose how to start:
 
-    ![The Create a form dialog with four choices: Form Gallery, Import, Reuse a form and Start blank](../../img/screenshots/forms-create.png)
+    ![The Create a form dialog with four choices: Form Gallery, Import, Reuse a form and Start blank](../../img/screenshots/forms-create.png){ width="80%" }
 
     - **Form Gallery** (recommended): ready-made forms grouped by what they
       measure, such as *Contact / demo request*, *Net Promoter Score (NPS)*,
@@ -57,13 +57,13 @@ editor (**File**, **Edit**, **AI**, **View**), with **Desktop**, **Tablet** and
 **Radio buttons** asks one question with one answer allowed; **Checkboxes** lets
 people tick several. To change the answers of either, or of a **Dropdown**:
 
-1. Click the question on the form. The whole group is selected.
+1. Choose the question on the form. The whole group is selected.
 2. In **Settings**, edit the **Options** box: one option per line. Add a line to
    add an answer, delete a line to remove one.
-3. Click outside the box. The answers on the form update.
+3. Select anywhere outside the box. The answers on the form update.
 
-A choice question needs at least one option: if you empty the box, the previous
-answers come back.
+!!! note "A choice question needs at least one option"
+    If you empty the **Options** box, the previous answers come back.
 
 ### Turn responses into contacts
 
@@ -80,6 +80,11 @@ In the **Customer Data Platform** block:
 
 ![The contact mapping table: Email from the email field, Last name from the full name field, and every contact tagged product-feedback](../../img/screenshots/forms-contact-mapping.png)
 
+!!! info "Responses fill in, never overwrite"
+    A submission with an email address you already hold fills in that contact's
+    empty fields; it never overwrites what is there. Renaming a form field is
+    safe: the mapping follows the new name.
+
 ### Use a form to register for an event
 
 Open the event, then **Registration → Registration form**. Pick your form, or
@@ -87,7 +92,7 @@ choose **Create new** to start from the event registration template. The event
 then manages the form's confirmation email and thank-you page, under
 **Registration → Confirmation**. See [Event Management](event-management.md).
 
-## Sharing a form
+## How to share a form
 
 From a form's menu in the list:
 
@@ -108,7 +113,7 @@ From a form's menu in the list:
 
 A form is a **Draft** while you build it and **Open** when it accepts responses.
 
-## Reading the answers
+## How to read the answers
 
 In a form's menu, choose **View Analytics** to open its results: views
 and submissions over time, then every submission with its answers and date.
@@ -121,18 +126,18 @@ A view is one display of the form, whether people come from its link, an email
 button or your website. Your own clicks on **Open Form** and visits by robots
 are not counted.
 
-Many views and few submissions usually means the form asks too much.
+!!! tip "Many views, few submissions?"
+    That usually means the form asks too much. Remove the fields you can live
+    without.
 
 ## Good to know
 
-- **Consent is only recorded when the box is ticked.** A form records a person's
-  acceptance of your privacy statement only if it has a **Consent** field and they
-  tick it. Without one, the editor warns you: drag the **Consent** block in.
+!!! warning "Consent is only recorded when the box is ticked"
+    A form records a person's acceptance of your privacy statement only if it
+    has a **Consent** field and they tick it. Without one, the editor warns
+    you: drag the **Consent** block in.
+
 - **A form must be Open to collect anything**, even if you have shared the link.
-- **Responses update existing contacts.** A submission with an email address you
-  already hold fills in that contact's empty fields; it never overwrites what is
-  there.
-- **Renaming a field is safe.** The contact mapping follows the new name.
 - **One form, one event.** Picking a form already used by another event links a
   copy, so the two events never share answers.
 

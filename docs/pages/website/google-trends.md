@@ -12,8 +12,10 @@ settle an argument about which of two product names people actually search for.
 
 ## Before you start
 
-Google Trends must be connected. If the page says you are not connected, go to
-[Connections](../settings/connections.md).
+- **Your plan.** Google Trends is included in the **Pro** and **Full** plans.
+- **The Google Trends connector** set up under **Connectors**. If the page says
+  you are not connected, see
+  [Google Trends connector](../settings/connectors/google-trends.md).
 
 ## How to compare search interest
 
@@ -33,7 +35,7 @@ the **×** on its card.
 the figures for that day.
 
 !!! note "One term and two terms are measured differently"
-    With a single term, the numbers are *relative* — 100 is that term's own peak
+    With a single term, the numbers are *relative*: 100 is that term's own peak
     for the period, not an absolute count. Add a second term and the chart shows
     *estimated search volume* instead, which is what makes comparison meaningful.
 
@@ -45,24 +47,27 @@ worth being early on; a sharp spike that falls away is a moment that has passed.
 Below the chart, **Breakdown by location** shows where your terms were most
 popular, sorted by whichever term you choose.
 
-!!! warning "No sub-region data for Singapore"
+!!! note "No sub-region data for Singapore"
     Google does not provide a sub-region breakdown for every location. For
-    Singapore it returns nothing — the section tells you to pick another location
-    or Worldwide. This is a limitation of Google's data, not a fault in GoodBards.
+    Singapore it returns nothing, and the section tells you to pick another
+    location or Worldwide. This is a limit of Google's data, not a fault in
+    GoodBards.
 
 ## Choosing a location
 
 **Location** sets the market you are looking at, and it changes the answer
-completely. A term that is rising in Singapore may be flat in Indonesia. If you
-market across Southeast Asia, check each market separately rather than assuming
-one stands for the others.
+completely. A term that is rising in Singapore may be flat in Indonesia.
+
+!!! tip "Check each market separately"
+    If you market across Southeast Asia, set each country in turn rather than
+    assuming one stands for the others.
 
 ## Good to know
 
 - **Compare like with like.** Two terms on one chart is more useful than one term
   in isolation, because it gives you a sense of scale.
 - **Interest is not intent.** People searching a term are not necessarily ready to
-  buy — pair this with your own [analytics](google-analytics.md).
+  buy: pair this with your own [analytics](google-analytics.md).
 - **Watch for seasonality.** Widen the time period before concluding a rise is
   new; it may be the same peak that happens every year.
 - **Recent days may be incomplete.** Google's most recent figures are still

@@ -7,6 +7,11 @@ This guide follows one loop: see where you stand, fix the pages that matter,
 write what your market searches for, and measure. Count about an hour to set up,
 then a regular hour a week.
 
+## Before you start
+
+- Access to your website's **Google Search Console** property and **Google
+  Analytics** account, to connect them in step 1.
+
 ## 1. Connect your site
 
 Under **Settings → Connections**, connect **Google Search Console** for your
@@ -22,7 +27,8 @@ See [Connections](../settings/connections.md).
 
 ## 2. See where you stand
 
-Open **Organic Visibility → Performance & Report**. Note four numbers for the
+In the sidebar, choose **Organic Visibility → Performance & Report**. Note four
+numbers for the
 last 28 days: clicks, impressions, average position and click rate, and whether
 the trend goes up or down.
 
@@ -35,7 +41,7 @@ See [Performance & Report](../website/performance-report.md).
 
 ## 3. Fix the pages that matter most
 
-Open **Organic Visibility → Page Fixes**. The pages are ranked by the clicks a
+In the sidebar, choose **Organic Visibility → Page Fixes**. The pages are ranked by the clicks a
 fix could bring. Start with **Low CTR**: pages people see but do not click. A
 better title and description take minutes.
 
@@ -48,7 +54,7 @@ See [Page Fixes](../website/page-fixes.md) and [Actions](../workspace/actions.md
 
 ## 4. Write what your market searches for
 
-Open **Content Hub → Research & Plan**. The topics are ranked from your own data:
+In the sidebar, choose **Content Hub → Research & Plan**. The topics are ranked from your own data:
 searches you could win, questions people ask, gaps against your competitors.
 Pick one with steady searches and low competition.
 
@@ -61,7 +67,8 @@ See [Research & Plan](../content-hub/research-plan.md) and
 
 ## 5. Make sure AI assistants can quote you
 
-Open **Organic Visibility → AI Readiness & Authority**. The score shows whether
+In the sidebar, choose **Organic Visibility → AI Readiness & Authority**. The
+score shows whether
 assistants such as ChatGPT or Gemini can read and trust your pages. The lowest
 pillar is usually **Answers & FAQ**: add the questions your customers really ask,
 with short answers.
@@ -72,8 +79,11 @@ See [AI Readiness & Authority](../website/ai-readiness.md).
 
 ## 6. Measure, a few weeks later
 
-Search results take two to six weeks to react. Come back to **Performance &
-Report**:
+!!! note "Search results take two to six weeks to react"
+    Search Console data is also two to three days behind. Do not judge a change
+    after a few days.
+
+Come back to **Performance & Report**:
 
 - **Impact** shows what your shipped work actually changed.
 - **Content Hub → Momentum** shows the pages rising right now: give them a push
@@ -92,7 +102,10 @@ See [Momentum](../website/momentum.md).
 ## Good to know
 
 - **Position going down is good.** Position 1 is the top of the results.
-- **Do not judge a change after a few days.** Search Console data is two to three
-  days behind, and rankings move slowly.
-- **One good page beats five thin ones.** Write fewer pieces, each answering a
-  real search fully.
+
+!!! tip "One good page beats five thin ones"
+    Write fewer pieces, each answering a real search fully.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

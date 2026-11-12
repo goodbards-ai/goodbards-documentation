@@ -23,6 +23,9 @@ The **Google Drive** connector lets you bring Drive files into GoodBards:
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Storage** tab, find **Google Drive** and choose **Connect**.
+
+    ![The Google Drive card on the Storage tab, with its Connect button](../../../img/screenshots/connectors/google-drive.png){ width="30%" }
+
 3. Pick your Google account and accept the permissions.
 4. You are taken back to GoodBards. The card shows the account name.
 
@@ -30,8 +33,8 @@ Until it is connected, the agent chat shows **Google Drive (Not connected)**.
 
 ## How to sync a Drive folder
 
-1. Open the [Scheduler](../../tool-box/scheduler.md) and create a task of type
-   **Drive sync**.
+1. In the sidebar, choose **Tool Box → Scheduler** and create a task of type
+   **Drive sync**. See [Scheduler](../../tool-box/scheduler.md).
 2. Fill in:
     - **Google Drive folder ID**: the last part of the folder's address in Drive.
     - **Google Drive folder name** (optional).
@@ -48,12 +51,14 @@ Until it is connected, the agent chat shows **Google Drive (Not connected)**.
 
 ## Good to know
 
-- **Folders cannot be picked** in the agent chat — pick the files inside.
-- **GoodBards only sees what you give it through Google's file picker.** If a
-  synced folder seems to miss files, open the picker and select those files
-  once: Google then lets GoodBards read them.
+- **Folders cannot be picked** in the agent chat: pick the files inside.
 - **Imported files are copies.** Changing the file in Drive later does not change
   the copy in GoodBards, unless a Drive sync task brings it in again.
+
+!!! note "A synced folder missing files?"
+    GoodBards only sees what you give it through Google's file picker. Open the
+    picker in the agent chat and select those files once: Google then lets
+    GoodBards read them.
 
 ## How to disconnect
 

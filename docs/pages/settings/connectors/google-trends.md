@@ -23,6 +23,9 @@ uses it in:
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Web Analytics** tab, find **Google Trends** and choose **Connect**.
+
+    ![The Google Trends card on the Web Analytics tab, with its Connect button](../../../img/screenshots/connectors/google-trends.png){ width="30%" }
+
 3. Pick your Google account and accept the permissions, including access to
    search trends.
 4. You are taken back to GoodBards. The card shows the account name.
@@ -39,6 +42,11 @@ uses it in:
 - **Not every place has a sub-region breakdown.** Google does not provide one for
   every location.
 - **Recent days may be incomplete.** Google's latest figures are still settling.
+
+!!! info "Interest, not search volumes"
+    Google Trends gives relative interest on a 0 to 100 scale, not the number
+    of searches. For monthly search volumes, use the Keyword Planner of the
+    [Google Ads](google-ads.md) connector.
 
 ## How to disconnect
 

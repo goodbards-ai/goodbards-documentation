@@ -12,7 +12,9 @@ for the Monday meeting or for a client.
 
 ## Before you start
 
-- The social account connected under **Connections**. See
+- **Your plan.** Social reports and the Scheduler are included in the **Pro**
+  and **Full** plans.
+- **The social account connected** under **Connectors**. See
   [Connections](../settings/connections.md).
 
 ## How to read past reports
@@ -22,18 +24,19 @@ for the Monday meeting or for a client.
 2. Choose **History** at the top right. Each line is one report, with its date,
    status and what it covers.
 
-    ![The report history of the Tropika Home LinkedIn page: weekly reports, all Completed, with a view button on each](../../img/screenshots/social-report-history.png)
+    ![The report history of the Tropika Home LinkedIn page: weekly reports, all Completed, with a view button on each](../../img/screenshots/social-report-history.png){ width="50%" }
 
 3. Choose the eye icon to open a report. The **Analysis** screen then shows that
    period.
 
-To make a report now, for example after a big campaign week, choose **Generate
-New Report**. It takes about a minute.
+!!! tip "Need figures now?"
+    After a big campaign week, choose **Generate New Report** instead of waiting
+    for the next one. It takes about a minute.
 
 ## How to receive reports automatically
 
-1. Choose **Tool Box → Scheduler**, then **New Task**.
-2. Pick **Social report** as the task type, then the account.
+1. In the sidebar, choose **Tool Box → Scheduler**, then **New Task**.
+2. Pick **Social report** as the **Task type**, then the account.
 3. Set how often, for example every Monday at 9:00, and who receives it.
 
 See [Scheduler](../tool-box/scheduler.md).
@@ -44,8 +47,9 @@ See [Scheduler](../tool-box/scheduler.md).
   account gets two reports.
 - **Channel-level figures are for the whole account.** Tag filters on the
   Analysis screen apply to posts, not to those account-wide totals.
-- **Deleting a report only removes it from the history.** The posts and the
-  network's own figures are not affected.
+
+!!! info "Deleting a report only removes it from the history"
+    The posts and the network's own figures are not affected.
 
 ---
 

@@ -24,14 +24,17 @@ stores your Chartbeat key and the sites you want GoodBards to read.
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Web Analytics** tab, find **Chartbeat** and choose **Connect**.
+
+    ![The Chartbeat card on the Web Analytics tab, with its Connect button](../../../img/screenshots/connectors/chartbeat.png){ width="30%" }
+
 3. Fill in the form:
     - **API Key**: your Chartbeat API key.
-    - **Hosts**: the site to read. Use **Add host** to add more.
+    - **Hosts**: the site to read. Use **Add Host** to add more.
 4. Choose **Save Settings**. GoodBards checks each host with Chartbeat before
    saving.
 
-To change the key or the hosts later, choose **Edit Configuration** on the card.
-**Test this host** checks a saved host again.
+To change the key or the hosts later, choose **Settings** on the card.
+**Test this host** checks a host again.
 
 ## What GoodBards does with it
 
@@ -40,9 +43,15 @@ To change the key or the hosts later, choose **Edit Configuration** on the card.
 | **Reads** | Real-time and historical figures for your hosts: top pages, quick stats, referrers, locations, headline tests and conversions. |
 | **Does not** | Change anything in Chartbeat. |
 
+## Good to know
+
+- **One host per site.** Add each site Chartbeat tracks for you with **Add
+  Host**, and use **Test this host** if a figure looks missing.
+- **Keep the API key private.** It gives access to your Chartbeat figures.
+
 ## How to disconnect
 
-1. On the Chartbeat card, choose **Edit Configuration**.
+1. On the Chartbeat card, choose **Settings**.
 2. Choose **Disconnect**.
 
 ---

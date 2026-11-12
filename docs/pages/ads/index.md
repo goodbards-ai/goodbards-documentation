@@ -6,6 +6,12 @@ sits under **Marketing** in the sidebar.
 **Who sees it:** everyone your administrator gives the **Digital ads** access
 to.
 
+## Before you start
+
+Digital Ads is included in the **Pro** and **Full** plans. Connect your Google
+Ads account under **Connectors** first: see
+[Connections](../settings/connections.md).
+
 ## The screens
 
 ### Digital Ads
@@ -14,7 +20,7 @@ Your ad campaigns and their results, next to the rest of your marketing.
 
 See [Digital Ads](../marketing/digital-ads.md).
 
-### Keyword planner
+### Keyword Planner
 
 Research the keywords your market searches for, with volumes and costs, when your
 Google Ads account is connected.

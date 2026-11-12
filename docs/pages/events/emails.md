@@ -19,6 +19,14 @@ with an email you built yourself.
     | A completely different email | Choose **Use one of my emails instead** under its card. |
     | To see it before your guests do | Choose **Send Test Email** under its card. |
 
+## Before you start
+
+- An **email design** with your logo and colours, if you want the event emails
+  to look like your other emails. See
+  [Email designs](../marketing/email-designs.md).
+- The event's **Definition** tab filled in: the event name, date, place and
+  description in every email come from there.
+
 ## The emails of an event
 
 | Email | Who receives it | When | Where to find it |
@@ -38,14 +46,6 @@ Every email is shown as a card: a preview of what guests receive, with **Edit**
 on it, and its buttons underneath.
 
 ![The Invitation email card: the preview in the Tropika Home design with Edit, the link Use one of my emails instead, Send Test Email, Re-Send Invitations with the last send to 1,180 contacts, and Email Metrics](../../img/screenshots/event-email-card.png)
-
-## Before you start
-
-- An **email design** with your logo and colours, if you want the event emails
-  to look like your other emails. See
-  [Email designs](../marketing/email-designs.md).
-- The event's **Definition** tab filled in: the event name, date, place and
-  description in every email come from there.
 
 ## How to put your brand on every email
 
@@ -76,7 +76,7 @@ emails use your workspace's usual sender.
 
 ## How to reword an email
 
-1. On the email's card, click the preview or **Edit**. The editor opens.
+1. On the email's card, choose the preview or **Edit**. The editor opens.
 
     ![The editor on the Confirmed email: the Subject line, the email in the Tropika Home design with purple chips such as Event name and Attendee name, purple dashed boxes titled Shown when…, and the blocks on the right](../../img/screenshots/event-email-editor.png)
 
@@ -88,10 +88,10 @@ emails use your workspace's usual sender.
 Two things in the editor are special to event emails.
 
 **Purple chips** are filled in for each guest when the email is sent: **Event
-name**, **Attendee name**, **Event date and time**. To add one, click into a
-text and pick it from **Insert field…** in the small toolbar.
+name**, **Attendee name**, **Event date and time**. To add one, place your
+cursor in a text and pick it from **Insert field…** in the small toolbar.
 
-![A text being edited: the toolbar with bold, italic, underline, strikethrough and Insert field…, above Hi Contact name, Event description, When: Event date and time, Where: Event location and the Register now button](../../img/screenshots/event-email-fields.png)
+![A text being edited: the toolbar with bold, italic, underline, strikethrough and Insert field…, above Hi Contact name, Event description, When: Event date and time, Where: Event location and the Register now button](../../img/screenshots/event-email-fields.png){ width="80%" }
 
 | Field | Becomes |
 | --- | --- |
@@ -155,7 +155,7 @@ Changed your mind before picking? Choose **Cancel, keep the current email**.
     best for the **invitation** and the **follow-up**, where the design
     matters most.
 
-## Reminders
+## How to schedule reminders
 
 On **Communications**, there are two kinds, each with its own emails.
 
@@ -194,9 +194,9 @@ The **Follow-up** tab has one email for each group, once the event is over:
 
 ![The Registered but absent follow-up: the preview We missed you at Your event with a Take our survey button, Schedule the send switched off, Send Test Email and Send Now](../../img/screenshots/event-follow-up.png)
 
-Nothing is sent on its own. For each group, either switch on **Schedule the
-send**, or choose **Send Now**, which becomes available once the event has
-ended.
+!!! info "Follow-ups are never sent on their own"
+    For each group, either switch on **Schedule the send**, or choose **Send
+    Now**, which becomes available once the event has ended.
 
 !!! tip "Ask for feedback while it is fresh"
     Under **Post-event survey**, at the top of the tab, attach a form (or
@@ -212,21 +212,24 @@ the event is a draft.
    to send the test to a colleague.
 2. Choose **Send Test**, and read the email in that inbox, on a phone too.
 
-![The Send a test of the Invitation email dialog: a Send to address, Cancel and Send Test](../../img/screenshots/event-email-test.png){ width="420" }
+![The Send a test of the Invitation email dialog: a Send to address, Cancel and Send Test](../../img/screenshots/event-email-test.png){ width="40%" }
 
 The test is the email as it is saved right now, with your name in place of the
 guest's. Its subject starts with **[TEST]**, and it does not count in the
-email metrics. Its check-in, QR and cancel links belong to a sample
-registration. The registration link of a test invitation is the real one: if
-you fill in the form, you are registered.
+email metrics.
 
-## Seeing what was sent
+!!! note "The registration link in a test is real"
+    Check-in, QR and cancel links in a test belong to a sample registration.
+    The registration link of a test invitation is the real one: if you fill in
+    the form, you are registered.
+
+## How to see what was sent
 
 At the bottom of **Communications**, **Sent emails** lists every email the
 event has sent, with the time, the number of recipients and who sent it.
 **Recipients** shows who received a send, **Metrics** its opens and clicks.
 
-![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png)
+![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png){ width="80%" }
 
 ## Good to know
 

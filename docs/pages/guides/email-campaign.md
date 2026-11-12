@@ -16,14 +16,15 @@ the campaign report.
   [Mailing lists](../audience/mailing-lists.md) and
   [Contacts](../audience/contacts.md#segments).
 - An **email design** with your brand, so you only write the content. See
-  [Emails](../marketing/emails.md).
+  [Email designs](../marketing/email-designs.md).
 - Your email sending set up under **Connections**. Until it is, the tactic shows
-  *You need to setup your email provider*.
+  *You need to setup your email provider*. See
+  [Email sending](../settings/connectors/email-sending.md).
 
 ## 1. Set up the campaign
 
-1. Choose **Marketing → Campaigns**, then **Create New Campaign** (or open an
-   existing one).
+1. In the sidebar, choose **Marketing → Campaigns**, then **Create New
+   Campaign** (or open an existing one).
 2. Fill in the objective, dates, audience and description. The description is
    what the AI reads when it writes for this campaign, so say who you target and
    what you offer.
@@ -47,14 +48,15 @@ See [Campaigns](../marketing/campaigns.md).
 3. Under **Subject & sender**, set the subject and who it comes from for this
    send. Leave a field blank to use the email's own value or your default.
 
-    ![Subject & sender: the subject, from name, from email and reply-to email for this send](../../img/screenshots/email-tactic-sender.png)
+    ![Subject & sender: the subject, from name, from email and reply-to email for this send](../../img/screenshots/email-tactic-sender.png){ width="50%" }
 
 4. Under **Recipients**, choose the mailing list or segment.
 
 ## 4. Test, then send or schedule
 
-1. Send yourself a test and check it on your phone and in Gmail or Outlook.
-2. Send now, or let it go at the send date. The email shows **Published** with
+1. Choose **Send Test Email** to send yourself a test, and check it on your
+   phone and in Gmail or Outlook.
+2. Choose **Send Now**, or let it go at the send date. The email shows **Published** with
    the date once it is out.
 3. To reach more people later, for example contacts who joined the list since,
    use **Send To More People**.
@@ -70,9 +72,10 @@ The tactic's **Performance** panel shows how the email did:
 - **Activity Over Time**: opens and clicks day by day after the send.
 - **Email Funnel**: from sent to clicked, where people dropped off.
 
-Opens by mail-provider robots and security scanners are left out, so the open
-rate reflects people. Turn on **Include machine & bot activity** to see
-everything.
+!!! info "Robot opens are left out"
+    Opens by mail-provider robots and security scanners are not counted, so the
+    open rate reflects people. Turn on **Include machine & bot activity** to
+    see everything.
 
 Below the funnel:
 
@@ -86,13 +89,13 @@ Below the funnel:
   opened and clicked. Search by email or name, and **Export CSV** for your own
   analysis.
 
-    ![The Recipients tab: 2,373 recipients with sent, delivered, opened and clicked for each, a search box and Export CSV](../../img/screenshots/email-recipients.png)
+    ![The Recipients tab: 2,373 recipients with sent, delivered, opened and clicked for each, a search box and Export CSV](../../img/screenshots/email-recipients.png){ width="80%" }
 
 - **Link Performance**: each link with its total clicks, clicks by known
   contacts, unique clickers and anonymous clicks. **Clickers** lists who
   clicked a link: a ready-made list of interested people.
 
-    ![Link Performance: two links with total, contact, unique and anonymous clicks, and a Clickers button for each](../../img/screenshots/email-links.png)
+    ![Link Performance: two links with total, contact, unique and anonymous clicks, and a Clickers button for each](../../img/screenshots/email-links.png){ width="80%" }
 
 - **Details**: every count in one table: sent, delivered, opens, clicks,
   bounces, errors and unsubscribes.
@@ -102,9 +105,16 @@ tactics. See [The campaign report](../marketing/campaigns.md#the-campaign-report
 
 ## Good to know
 
-- **Only subscribed contacts are emailed.** Contacts who unsubscribed, or never
-  gave consent, are left out of the send automatically.
+!!! info "Only subscribed contacts are emailed"
+    Contacts who unsubscribed, bounced, or never gave consent are left out of
+    the send automatically. See
+    [Unsubscribed contacts](../audience/contacts.md#unsubscribed-contacts).
+
 - **A tactic sends one email.** For a reminder or a follow-up, add another email
   tactic to the same campaign; each keeps its own results.
 - **Compare like with like.** Open rates vary with the list and the day; compare
   this email with earlier sends to the same list.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

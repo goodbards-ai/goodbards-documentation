@@ -21,8 +21,15 @@ What it can do depends on the permissions (scopes) you grant when you connect:
 | **reports:write** | Start a new social report. |
 | **content:write** | Save a new piece of content, and schedule a post. |
 
-Grant only what you need. With **agents:invoke** alone, the assistant can talk to
-your agents but cannot read reports or create content.
+!!! tip "Grant only what you need"
+    With **agents:invoke** alone, the assistant can talk to your agents but
+    cannot read reports or create content.
+
+## Before you start
+
+- **An administrator.** Only a company administrator can create the API key
+  and OAuth app in step 1.
+- **An assistant that accepts custom connectors**, such as Claude.
 
 ## 1. Prepare the connection in GoodBards
 
@@ -32,8 +39,11 @@ A company administrator does this once.
    assistant. See [Use the GoodBards API](use-the-api.md).
 2. On that key, choose **OAuth Apps**, then **Create OAuth App**. Give it a name,
    for example *Claude AI Connector*.
-3. Copy the **Client ID** and the **Client Secret**. The secret is shown only
-   once.
+3. Copy the **Client ID** and the **Client Secret**.
+
+!!! warning "The secret is shown only once"
+    Copy the **Client Secret** before you close the window. If you lose it,
+    create a new OAuth app.
 
 ## 2. Connect your assistant
 
@@ -67,8 +77,10 @@ the assistant reuses the session.
 
 ## 4. Stay in control
 
-- **Everything happens in your company.** The connection belongs to one company
-  and acts as the administrator who created the OAuth app.
+!!! info "Everything happens in your company"
+    The connection belongs to one company and acts as the administrator who
+    created the OAuth app.
+
 - **Check before anything is saved or scheduled.** With **content:write**, ask
   the assistant to show you the content before it saves it or schedules a post.
 - **Disconnect at any time:** delete the OAuth app, or revoke the API key, on the
@@ -80,3 +92,7 @@ the assistant reuses the session.
   that, allow the access again.
 - **Your agents work as in GoodBards**, with your brand voice and knowledge, and
   their usage counts toward your plan.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

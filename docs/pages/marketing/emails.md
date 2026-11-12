@@ -83,8 +83,7 @@ and the body as recipients will see it, with an **Edit** button on each, and
 **Edit** on the body opens the editor. The design (header and footer) is locked:
 you edit only your content inside it.
 
-![The email editor: Visual, Code and AI on the left, Desktop, Email width and Mobile previews, the email in the middle, and blocks to drag in on the right](../../img/screenshots/email-editor.png)
-<!-- screenshot stale: the left rail (Visual / Code / AI) and the Apply / Cancel footer are gone; the editor now has a top bar with File / Edit / AI / View menus on the left and the width switcher, Save and ✕ on the right -->
+![The email editor: the File, Edit, AI and View menus at the top left; the Desktop, Email width and Mobile buttons, Design locked, Save and ✕ at the top right; the email in the middle; and the blocks to drag in on the right](../../img/screenshots/email-editor.png)
 
 Across the top of the editor are the menus **File**, **Edit**, **AI** and
 **View**. On the right are the width buttons, **Save** and **✕**.
@@ -102,6 +101,58 @@ The **View** menu switches between three ways of working:
   "Read more" link to each. The pages are read before the AI writes, and the
   panel tells you which ones it could read; a page whose owner blocks automated
   access is named, not guessed at. **AI → Improve with AI** (or ⌘J) opens it too.
+
+### Building your email with blocks
+
+An email is built from blocks stacked one under the other. The panel on the
+right lists them in three groups. Drag a block onto the email where you want it,
+then click into it to change the text, or select it to change its settings.
+
+| Group | Blocks | Use them for |
+| --- | --- | --- |
+| **Layout** | **Header**, **Divider**, **Spacer**, **Two columns** | The structure: your logo at the top, side-by-side content, space between parts. |
+| **Components** | **Heading**, **Text**, **Button**, **Image**, **Image + text**, **Text + image**, **Image + caption**, **Form button**, **QR code**, **Form QR code**, **Telegram invite** | The message itself. **Form button** and **Form QR code** ask you which of your forms to open. |
+| **Footer** | **View in browser**, **Unsubscribe link**, **Privacy policy link**, **Footer** | The links every marketing email needs, ready to drop in. |
+
+![The blocks panel: the Components group (Heading, Text, Button, Image, Image + text, Text + image, Image + caption, Form button, QR code, Form QR code, Telegram invite) and the Footer group (View in browser, Unsubscribe link, Privacy policy link, Footer)](../../img/screenshots/email-editor-blocks.png){ width="25%" }
+
+!!! info "Your brand is applied for you"
+    Blocks take the colours, fonts and logo of your [Brand Kit](../settings/brand-kit.md)
+    as you drop them. You can still change any of them in the block's settings.
+
+### The footer: unsubscribe and privacy links
+
+The **Footer** block is the quickest way to end an email properly. It holds, in
+one block:
+
+- your company name and address, taken from your Brand Kit;
+- an **Unsubscribe** link, personal to each recipient;
+- a **Privacy policy** link to your default privacy statement.
+
+![The footer of a Tropika Home email: the company name and address, why the reader receives the email, and the Unsubscribe and Privacy links](../../img/screenshots/email-footer.png){ width="60%" }
+
+When your email uses a design, its footer is part of the design and is locked
+(**Design locked** at the top of the editor): it already has these links.
+
+Building your own footer instead? Drop the **Unsubscribe link** and
+**Privacy policy link** blocks into it one by one. **View in browser** goes at
+the very top of the email, for recipients whose email app does not display it
+well.
+
+!!! warning "Never send without an unsubscribe link"
+    People must always be able to stop your emails (PDPA in Singapore, and
+    Gmail and Yahoo require it from bulk senders). If an email has no
+    unsubscribe link, its page warns you: add the **Footer** or the
+    **Unsubscribe link** block before sending.
+
+!!! note "The links are filled in when the email is sent"
+    In the editor the links are placeholders. Each recipient gets their own
+    unsubscribe link when the email goes out. **View in browser** works only in
+    emails sent from a campaign tactic, and without a default privacy statement
+    the **Privacy policy** link is left out.
+
+Opens are tracked automatically: there is nothing to add to your email for
+that.
 
 In the visual editor, **Desktop**, **Email width** and **Mobile** show the email
 at each size. In the other two views, a **Visual editor** button takes you back
@@ -191,7 +242,7 @@ between grid and list view.
 
 ![The Email Gallery in grid view: each email as a preview inside the Tropika Home design, with its name and a menu](../../img/screenshots/emails-gallery.png)
 
-![The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated](../../img/screenshots/emails-list.png)
+![The Email Gallery in list view: newsletters and sale emails with who created them and when they were created and last updated](../../img/screenshots/emails-list.png){ width="80%" }
 
 The **Email Designs** tab holds the reusable looks — headers, footers and
 branding — rather than individual messages.

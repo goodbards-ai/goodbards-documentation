@@ -6,6 +6,10 @@ connects to.
 **Who sees it:** your own **Personal Settings** are open to everyone. Everything
 else needs the **Settings** access.
 
+Every settings screen opens from your account menu (your picture, top right):
+**Personal Settings**, **Brand & Context**, **Tenant Settings**, **AI Settings**,
+**Connections** and **Tenant Usage**.
+
 ## The screens
 
 ### Personal Settings
@@ -17,10 +21,12 @@ See [Personal Settings](personal-settings.md).
 ### Brand & Context
 
 What the AI knows about your company: general information, privacy statements,
-your marketing campaign defaults, competitors and website.
+your marketing campaign defaults, competitors and website. Its **Brand Check**
+tab checks a text or an email against your brand guidelines.
 
-See [Brand & Context](company-settings.md) and
-[How the AI knows your brand](brand-voice-memory.md).
+See [Brand & Context](company-settings.md),
+[How the AI knows your brand](brand-voice-memory.md) and
+[Brand Check](brand-check.md).
 
 ### Brand Kit
 
@@ -35,12 +41,13 @@ Writing styles learned from real samples, such as your founder's posts.
 
 See [How the AI knows your brand](brand-voice-memory.md).
 
-### Connectors
+### Connections
 
-Link the outside services you use: social networks, Google Analytics and Search
-Console, Google Ads, your CRM.
+Link the outside services you use: social networks, messaging, Google Analytics
+and Search Console, Google Ads and Meta Ads, your CRM, your website and your
+email server.
 
-See [Connections](connections.md).
+See [Connections](connections.md) and [All connectors](connectors/index.md).
 
 ### AI Settings
 
@@ -62,19 +69,22 @@ See [Users, roles & permissions](users-roles.md).
 
 ### Sub-workspaces
 
-Separate workspaces under your own, one per client, brand or business unit.
+Separate workspaces under your own, one per client, brand or business unit, and
+your workspace's own preferences (name, timezone, badge format).
 
 See [Sub-Workspaces](users-access.md).
 
 ### Usage & Billing
 
-What your team has used against your plan.
+What your team has used against your plan, and how close you are to each limit.
 
 See [Usage & Billing](tenant-usage.md).
 
 ## Setting up for the first time
 
 In this order: [Brand & Context](company-settings.md), then
-[Brand Kit](brand-kit.md), then [Connections](connections.md). The brand kit
-shapes everything the AI produces, so it is worth doing before generating
-content.
+[Brand Kit](brand-kit.md), then [Connections](connections.md).
+
+!!! tip "Brand first, content second"
+    The brand kit and Brand & Context shape everything the AI produces. Set them
+    up before generating content: drafts written earlier do not improve later.

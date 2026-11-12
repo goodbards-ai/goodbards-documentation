@@ -6,13 +6,13 @@ articles into GoodBards.
 ## What it's for
 
 Use this connector if your website runs on WordPress that you or your agency host
-(not on WordPress.com — for that, see [WordPress.com](wordpress-com.md)). With it
-you can:
+(not on WordPress.com: for that, see [WordPress.com](wordpress-com.md)). With
+it you can:
 
 - **Send blog posts to WordPress** from a campaign's **Blog Post** tactic. See
   [Launch a tactic](../../marketing/launch-tactic.md).
-- **Import your existing articles** into the Content Repository with **+ New →
-  Import WordPress**, so the AI can learn from what you already published. See
+- **Import your existing articles** into the Content Repository with **Upload →
+  Document**, then **Import WordPress**, so the AI can learn from what you already published. See
   [Content Repository](../../workspace/drive.md).
 
 ## Before you start
@@ -22,14 +22,20 @@ you can:
 - You need a WordPress user that can write posts and upload media.
 - Create an **Application Password** for that user in WordPress: in your
   WordPress admin, open **Users → Profile**, then **Application Passwords**.
-  It is not your normal login password.
 - Your site's WordPress REST API must be reachable (at
   `https://yoursite.com/wp-json`). Some security plugins switch it off.
+
+!!! warning "Never use your normal WordPress password"
+    Use an application password only. You can revoke it in WordPress at any
+    time without changing your own login.
 
 ## How to connect
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **CMS** tab, find **Wordpress (Self Hosted)** and choose **Connect**.
+
+    ![The Wordpress (Self Hosted) card on the CMS tab, with its Connect button](../../../img/screenshots/connectors/wordpress.png){ width="30%" }
+
 3. Fill in:
     - **Website URL**: your site's address, for example `https://yoursite.com`.
     - **Username**: the WordPress user name.
@@ -46,7 +52,10 @@ you can:
 
 ## Good to know
 
-- **Posts arrive as drafts.** Review them in WordPress and publish from there.
+!!! info "Posts arrive as drafts"
+    GoodBards never publishes on your site. Review the drafts in WordPress and
+    publish from there.
+
 - **Pick the post type as destination.** When you publish, GoodBards lists the
   post types your site offers.
 

@@ -32,7 +32,7 @@ it, who clicked and who replied.
 At the end, GoodBards asks for four details. Here is what each one is, in plain
 words, and where it comes from. The steps below collect them one by one.
 
-![The Connect WhatsApp form in GoodBards](../../../img/screenshots/whatsapp/16-goodbards-form.png)
+![The Connect WhatsApp form in GoodBards](../../../img/screenshots/whatsapp/16-goodbards-form.png){ width="40%" }
 
 | Field in GoodBards | What it is | Where Meta shows it | Looks like |
 | --- | --- | --- | --- |
@@ -114,12 +114,12 @@ generate its key.
 1. Go to **business.facebook.com → Settings → Users → System users** and choose
    **Add**. The first time, Meta asks you to accept its non-discrimination policy.
 
-    ![Meta's non-discrimination policy, shown before the first system user](../../../img/screenshots/whatsapp/09-system-user-policy.png)
+    ![Meta's non-discrimination policy, shown before the first system user](../../../img/screenshots/whatsapp/09-system-user-policy.png){ width="65%" }
 
 2. Name it, for example *GoodBards Sender*, keep the role **Employee**, and choose
    **Create system user**.
 
-    ![Creating the system user](../../../img/screenshots/whatsapp/10-create-system-user.png)
+    ![Creating the system user](../../../img/screenshots/whatsapp/10-create-system-user.png){ width="40%" }
 
 3. With the system user selected, choose **Assign assets → Apps**, tick your new
    app, turn on **Develop app**, and choose **Assign assets**.
@@ -131,7 +131,7 @@ generate its key.
 2. Choose **Assign people**, tick your system user, turn on **Everything** (full
    access), and choose **Assign**.
 
-    ![Assign people: the system user with full access to the messaging account](../../../img/screenshots/whatsapp/17-messaging-account-assign.png)
+    ![Assign people: the system user with full access to the messaging account](../../../img/screenshots/whatsapp/17-messaging-account-assign.png){ width="65%" }
 
 3. On the account's **People** tab, check that your system user is listed under
    **People with full access**.
@@ -149,17 +149,17 @@ generate its key.
 1. Back in **System users**, select your system user and choose **Generate token**.
 2. Pick your app.
 
-    ![Generate token: choosing the app](../../../img/screenshots/whatsapp/12-token-app.png)
+    ![Generate token: choosing the app](../../../img/screenshots/whatsapp/12-token-app.png){ width="65%" }
 
 3. Set the expiry to **Never**. With 60 days, your WhatsApp sending would stop
    until you create a new token.
 
-    ![Token expiry set to Never](../../../img/screenshots/whatsapp/13-token-never.png)
+    ![Token expiry set to Never](../../../img/screenshots/whatsapp/13-token-never.png){ width="65%" }
 
 4. Tick **whatsapp_business_management** and **whatsapp_business_messaging**, then
    choose **Generate token**.
 
-    ![The two WhatsApp permissions ticked](../../../img/screenshots/whatsapp/14-token-permissions.png)
+    ![The two WhatsApp permissions ticked](../../../img/screenshots/whatsapp/14-token-permissions.png){ width="65%" }
 
 5. **Copy the token right away** → GoodBards' **Permanent access token**. Meta
    shows it only once; if you lose it, generate a new one.
@@ -173,6 +173,8 @@ generate its key.
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Messaging** tab, find **WhatsApp** and choose **Connect**.
 
+    ![The WhatsApp card on the Messaging tab, with its Connect button](../../../img/screenshots/connectors/whatsapp.png){ width="30%" }
+
     ![The Messaging tab with the WhatsApp card](../../../img/screenshots/whatsapp/15-goodbards-tile.png)
 
 3. Paste the four details (see the table above) and choose **Connect WhatsApp**.
@@ -183,7 +185,7 @@ below. Once connected, the card shows your business name, your number and your
 WhatsApp profile picture (or your initials when you have none); **Number &
 webhook** shows Meta's quality rating.
 
-![The connected WhatsApp card: business name, number, Number & webhook](../../../img/screenshots/whatsapp/19-goodbards-connected.png)
+![The connected WhatsApp card: business name, number, Number & webhook](../../../img/screenshots/whatsapp/19-goodbards-connected.png){ width="30%" }
 
 ## How to receive delivery updates and replies
 
@@ -197,8 +199,9 @@ or asks to stop, through a **webhook**. You set it once:
 3. Under **Webhook fields**, subscribe to **messages** and
    **message_template_status_update**.
 
-Without this step messages are still sent, but GoodBards only knows they were
-sent: not delivered, read or answered.
+!!! note "Without the webhook, you see only Sent"
+    Messages are still sent, but GoodBards never learns whether they were
+    delivered, read or answered, and "STOP" replies are not recorded.
 
 ## How to prepare a message template
 
@@ -288,7 +291,7 @@ clicked, replied, stopped.
   conversation, pick up the phone. The box shows until when you can answer; it
   is not offered for a contact who asked to stop.
 
-    ![Answer on WhatsApp on the contact page: when the contact last wrote, the answer box, and until when a free answer is possible](../../../img/screenshots/whatsapp/23-answer-on-whatsapp.png)
+    ![Answer on WhatsApp on the contact page: when the contact last wrote, the answer box, and until when a free answer is possible](../../../img/screenshots/whatsapp/23-answer-on-whatsapp.png){ width="80%" }
 
 - **"STOP"**, or the **Stop promotions** button, withdraws the contact's WhatsApp
   consent at once. They are left out of your next messages.
@@ -304,7 +307,7 @@ clicked, replied, stopped.
 In the campaign's **Analytics** tab, WhatsApp tactics are listed under
 **Messaging**. Choose a line to open its detail:
 
-![Report detail of a WhatsApp tactic: sent, delivered, read, clicks, replies, opt-outs, failed](../../../img/screenshots/whatsapp/24-report-detail.png)
+![Report detail of a WhatsApp tactic: sent, delivered, read, clicks, replies, opt-outs, failed](../../../img/screenshots/whatsapp/24-report-detail.png){ width="50%" }
 
 The report is refreshed every night.
 
@@ -317,6 +320,15 @@ The report is refreshed every night.
 | **Opt-outs** | Contacts who asked to stop |
 | **Failed** | Messages that could not be delivered |
 | **Billed by Meta** | Delivered messages Meta charges you for. GoodBards shows the count, not the amount: Meta's price depends on each recipient's country, and your invoice is in WhatsApp Manager |
+
+## What GoodBards does with it
+
+| GoodBards… | Details |
+| --- | --- |
+| **Sends** | Your approved templates to contacts with WhatsApp consent, from your number, and your answers within 24 hours of a contact's last message. |
+| **Submits** | New message templates to Meta for approval. |
+| **Receives** | Delivery and read updates, replies and "STOP" requests, through the webhook. |
+| **Does not** | Message contacts without WhatsApp consent, pay Meta for you, or see your Meta bill. |
 
 ## If it does not work
 
@@ -348,15 +360,18 @@ GoodBards shows Meta's refusal in plain words, with Meta's own text in brackets.
 - **Quality rating.** Meta rates your number from how people react to your
   messages. A low rating lowers how many people you can message per day: only
   message contacts who agreed.
-- **Consent.** GoodBards only sends to contacts with WhatsApp consent, and a
-  "STOP" reply withdraws it.
 - **Monthly limit.** Your plan includes a number of WhatsApp messages per month
   (2,000 on Pro, 10,000 on Full, unless agreed otherwise). It protects your
-  number's quality rating. You see what you have used in **Settings → Usage**
-  and on each WhatsApp tactic; a send that would go over is refused before
-  anything leaves.
+  number's quality rating. You see what you have used in **Tenant Usage →
+  Guardrails** (account menu) and on each WhatsApp tactic; a send that would go
+  over is refused before anything leaves.
 - To use a new token or number, choose **Connect** again with the new details:
   your webhook keeps working.
+
+!!! warning "Only message contacts who agreed"
+    GoodBards only sends to contacts with WhatsApp consent, and a "STOP" reply
+    withdraws it. Recording consent you do not have breaks PDPA and similar
+    laws, and lowers your number's quality rating.
 
 ## How to disconnect
 

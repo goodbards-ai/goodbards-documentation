@@ -17,7 +17,8 @@ and the next emails use it.
    HTML.
 3. Edit the header and footer. The middle part, shown as `$content` in the
    preview, is where each email's text goes.
-4. Save. The design appears in the list, ready to pick when you write an email.
+4. Choose **Save**. The design appears in the list, ready to pick when you write
+   an email.
 
 ![The Email Designs tab: two designs, Communications and The Bards Chronicle, each with a header, the content area and a footer with unsubscribe and privacy links](../../img/screenshots/email-designs.png)
 
@@ -31,8 +32,11 @@ and the next emails use it.
 
 ## Good to know
 
-- **Keep the unsubscribe link.** The footer's unsubscribe and privacy links are
-  required for marketing emails; they are filled in for each recipient.
+!!! warning "Keep the unsubscribe link"
+    The footer's unsubscribe and privacy links are required for marketing
+    emails under PDPA and similar laws. GoodBards fills them in for each
+    recipient.
+
 - **Use your Brand Kit.** Colours and fonts from your
   [Brand Kit](../settings/brand-kit.md) keep every email on brand.
 - **Editing a design does not change emails already sent.**

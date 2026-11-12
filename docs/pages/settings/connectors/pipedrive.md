@@ -13,9 +13,11 @@ your Pipedrive people, then your organisations, into
 ## Before you start
 
 - You must be an **administrator** or the **owner** of your GoodBards company
-  account.
+  account. To run the import, you also need the *Access sensitive data*
+  permission. See
+  [Additional permissions](../users-roles.md#additional-permissions).
 - You need two things from Pipedrive:
-    - your **company name** as it appears in your Pipedrive address — the
+    - your **company name** as it appears in your Pipedrive address: the
       `yourcompany` in `yourcompany.pipedrive.com`;
     - your personal **API token**, from your Pipedrive personal preferences.
 - Decide which **privacy statement** and **status** imported contacts should get.
@@ -25,6 +27,9 @@ your Pipedrive people, then your organisations, into
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **CRM** tab, find **Pipedrive** and choose **Connect**.
+
+    ![The Pipedrive card on the CRM tab, with its Connect button](../../../img/screenshots/connectors/pipedrive.png){ width="30%" }
+
 3. Fill in:
     - **Tenant Name**: your Pipedrive company name.
     - **Access Token**: your Pipedrive API token.
@@ -57,7 +62,11 @@ Choose **Upload** to start. Every imported contact gets the referral source
 ## Good to know
 
 - **It is a one-off import, not a live sync.** Run it again to pick up new people.
-- **Import only people who agreed to hear from you.** Choose the status with care.
+
+!!! warning "Import only people who agreed to hear from you"
+    Contacts imported as *subscribed* receive your emails. Under Singapore's
+    PDPA and similar laws, give that status only to people who gave consent,
+    and pick the privacy statement they actually agreed to.
 
 ## How to disconnect
 

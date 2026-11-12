@@ -6,9 +6,13 @@ pull campaigns and results into your own reports.
 This guide is for the developer who writes the connection. It takes about an
 hour for a first call.
 
-## 1. Create an API key
+## Before you start
 
-Only a company administrator can create keys.
+- **An administrator.** Only a company administrator can create keys.
+- **Your company ID.** Every call includes it (written `{tenant-id}` below). Ask
+  support for it if you do not have it.
+
+## 1. Create an API key
 
 1. Open **Tenant Settings** from your account menu, then the **Security** tab.
 2. Under **API Keys**, choose **Create API Key**.
@@ -21,7 +25,7 @@ Only a company administrator can create keys.
     | **Restrict to a specific origin** | For a key used from a web page: the only website allowed to use it. |
     | **Expires at** | When the key stops working. Without a date, it lasts five years. |
 
-4. Choose **Generate key** and copy it into your tool's secret store.
+4. Choose **Generate Key** and copy it into your tool's secret store.
 
 The number of keys your plan allows is shown above the list.
 
@@ -40,8 +44,7 @@ GET https://api.goodbards.ai/v1/{tenant-id}/campaigns
 Authorization: Bearer <your API key>
 ```
 
-Every path starts with `/v1/` and your company's **tenant ID**. Ask support for
-it if you do not have it.
+Every path starts with `/v1/` and your company ID.
 
 ## 3. Common jobs
 
@@ -54,10 +57,11 @@ Content-Type: application/json
 ```
 
 Update an existing contact with `PUT /v1/{tenant-id}/cdp/contacts/{contact-id}`.
-A contact sent without a status is added as **subscribed**: always send a status
-for people who did not agree to receive marketing emails. Only contacts with
-marketing consent should be **subscribed**; see
-[Adding contacts](../audience/adding-contacts.md).
+
+!!! warning "A contact without a status is added as subscribed"
+    Always send a status for people who did not agree to receive marketing
+    emails. Only contacts with marketing consent should be **subscribed**; see
+    [Adding contacts](../audience/adding-contacts.md).
 
 ### List your campaigns
 
@@ -103,4 +107,8 @@ key fail with `401` straight away.
 
 - **One key per integration.** A leaked key is then one key to revoke.
 - **Set an expiry date** and put a reminder in your calendar to renew it.
-- **The full reference of endpoints** is available on request from support.
+- **The full API reference** is available on request from support.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

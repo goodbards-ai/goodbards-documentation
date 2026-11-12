@@ -31,22 +31,35 @@ re-engagement of quiet contacts, or a monthly touchpoint for a segment.
 
 ## How to build a flow
 
-1. In the sidebar, choose **Marketing → Automations**, then **New flow**.
+1. In the sidebar, choose **Marketing → Automations**, then **New Flow**.
+
+    ![The Automations screen before any flow exists: Build your first sequence, with Show archived, Import JSON and New Flow](../../img/screenshots/automations.png)
+
 2. Give it a **Name** and, if you like, a **Description**, then choose
    **Create**. The designer opens.
 
-    <!-- screenshot: the flow designer with a trigger card, a Send email, a Wait and a Yes / No branch, palette on the left and side panel on the right -->
+    ![The New flow dialog: Name, Description, Cancel and Create](../../img/screenshots/automations-new-flow.png){ width="40%" }
 
 3. Select the **Trigger** card at the top and pick what enrols a contact under
    **Starts when** (see [Triggers](#triggers)). Fill in the form, tag or segment
    it asks for.
-4. Add steps. From the palette on the left, click a step to add it after the
-   selected card, or drag it onto a **+** between two cards. You can also use
+4. Add steps. Choose the **+** under a card: **Add a step** lists every step
+   with what it does, and the one you pick goes where you clicked. You can also
+   drag a step from the palette on the left onto a **+**, or use
    **Edit → Add step**.
+
+    ![The Add a step dialog: Send email, Wait, Wait for open / click, Add tag, Remove tag, Set field, Ask an agent, Task for the owner and Send drafted email, then the Structure steps Yes / No branch, Routing, AI decides and Exit flow](../../img/screenshots/automations-add-step.png){ width="65%" }
+
 5. Select each card and fill in its settings in the side panel on the right:
    the email to send, how long to wait, the tag to add.
+
+    ![The flow designer: the palette on the left; a Manual enrollment trigger, a Send email, Wait 1 day and a second Send email in the middle; and the selected email's settings on the right, with Draft, Save and Activate at the top](../../img/screenshots/automations-designer.png)
+
 6. Open **File → Flow settings** to choose the re-entry rule, a goal and any
    **Stop early when…** rules (see [Flow settings](#flow-settings)).
+
+    ![The File menu of the designer: Save, Activate, Pause, Rename, Flow settings, Export as JSON, Import JSON, Archive and Close](../../img/screenshots/automations-file-menu.png){ width="20%" }
+
 7. Choose **Save**. An unfinished flow can be saved; the cards still missing
    something are highlighted.
 8. When every card is complete, choose **Activate**. New contacts enrol from
@@ -70,8 +83,12 @@ re-engagement of quiet contacts, or a monthly touchpoint for a segment.
 
 ## Triggers
 
-The trigger decides who enters the flow. Only events after you activate the
-flow count: earlier form submissions, tags or contacts are never picked up.
+The trigger decides who enters the flow.
+
+!!! note "Nothing is backfilled"
+    Only events after you activate the flow count: earlier form submissions,
+    tags or contacts are never picked up. To include people who filled in the
+    form last week, enrol them yourself.
 
 | Trigger | Who enters |
 | --- | --- |
@@ -120,6 +137,8 @@ colleagues. Contacts never see it.
 
 In the designer, choose **File → Flow settings**.
 
+![Flow settings: Send emails with, Re-entry set to Once per contact, AI budget per month, Goal with Set A Goal, and Stop early when with Add Rule](../../img/screenshots/automations-flow-settings.png){ width="50%" }
+
 | Setting | What it decides |
 | --- | --- |
 | **Send emails with** | Which email server sends, when you have more than one connected. |
@@ -139,9 +158,10 @@ A flow's status shows in the list:
 | **Paused** | Contacts hold where they are, and nobody new enrols until you choose **Resume**. |
 | **Archived** | Finished for good. Everyone still in it leaves. It can be viewed but not edited. |
 
-**Changing an active flow.** Edits go into a draft; the flow keeps running as
-it was. Choose **Activate changes** to publish them. Contacts already in the
-flow finish on the version they started; new contacts get the new one.
+!!! info "Changing an active flow"
+    Edits go into a draft; the flow keeps running as it was. Choose **Activate
+    changes** to publish them. Contacts already in the flow finish on the
+    version they started; new contacts get the new one.
 
 ## Following the results
 
@@ -173,15 +193,15 @@ it completes the tactic. See [Campaigns](campaigns.md).
 
 ## Good to know
 
-- **Only subscribed contacts stay in a flow.** A contact who is not
-  **Subscribed** (regular, unsubscribed, bounced, do not contact) leaves every
-  flow within a minute, wherever they are, even if the flow sends no email. An
-  unsubscribe from any email therefore ends their flows.
+!!! info "Only subscribed contacts stay in a flow"
+    A contact who is not **Subscribed** (regular, unsubscribed, bounced, do not
+    contact) leaves every flow within a minute, wherever they are, even if the
+    flow sends no email. An unsubscribe from any email therefore ends their
+    flows.
+
 - **One flow at a time.** A contact already in a flow is skipped by any other
   flow's trigger. The skip is listed on that flow's **Contacts** tab under
   **Skipped**, so you can see who missed out.
-- **Nothing is backfilled.** Activating a form-triggered flow does not enrol
-  people who filled in the form last week. Enrol them yourself if you need to.
 - **Goals and exit rules are checked before each step,** not during a wait. A
   contact on a three-day wait who books a demo on day one leaves when the wait
   ends, before the next email goes out.
@@ -191,12 +211,15 @@ it completes the tactic. See [Campaigns](campaigns.md).
   with no email server connected, the contact is marked **Failed** and leaves.
   The same happens to **Ask an agent** and **AI decides** steps once the flow's
   monthly AI budget is spent.
-- **Review AI-drafted emails.** Put a **Task for the owner** before a **Send
-  drafted email** step so a colleague approves or edits the draft in
-  **Actions** before it goes out.
-- **Delete only what never ran.** You can delete a draft, or an archived flow
-  that never had a contact. Otherwise, archive it: archiving cannot be undone.
 - **A flow has at most 50 steps.**
+
+!!! tip "Review AI-drafted emails"
+    Put a **Task for the owner** before a **Send drafted email** step, so a
+    colleague approves or edits the draft in **Actions** before it goes out.
+
+!!! warning "Archiving cannot be undone"
+    You can only delete a draft, or an archived flow that never had a contact.
+    Otherwise, archive it. Everyone still in an archived flow leaves it.
 
 ---
 

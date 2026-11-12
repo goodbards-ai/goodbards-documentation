@@ -9,9 +9,10 @@ A list of 3,000 contacts does not tell you who to call first. The score does.
 Every engagement adds points, the strongest signals add the most, and points
 fade over time, so the people at the top are the ones engaging **now**.
 
-## Where you see it
+## How to see a contact's score
 
-Open a contact in **Audience → Contacts**. Next to their name:
+In the sidebar, choose **Audience → Contacts**, then open a contact. Next to
+their name:
 
 - **Engagement Score**: all the points they have earned.
 - **Decay Score**: the same points, faded with time. Recent activity counts
@@ -36,12 +37,16 @@ event and came. Everything else is measured against that.
 | Unsubscribing, or asking not to be contacted | A large number of points taken off. |
 | A hard bounce (invalid email) | The score drops to zero. |
 
-Sending or delivering an email gives no points: the contact did nothing yet.
+!!! info "Only what the contact does counts"
+    Sending or delivering an email gives no points: the contact did nothing yet.
+    Scores update once a day, so today's activity shows tomorrow.
 
 ## Good to know
 
-- **Use the decay score to prioritise.** Two contacts with the same engagement
-  score are not equal if one engaged last week and the other last year.
+!!! tip "Use the decay score to prioritise"
+    Two contacts with the same engagement score are not equal if one engaged
+    last week and the other last year.
+
 - **You choose how fast points fade.** An administrator sets the **Engagement
   Decay Velocity** in **Tenant Settings → Preferences**: 4 weeks (fast), 8
   weeks (normal), 12 weeks (slow), or no decay. Points fade evenly to zero over
@@ -50,7 +55,6 @@ Sending or delivering an email gives no points: the contact did nothing yet.
   (100 and more), **Medium** (40 to 99), **Low** (1 to 39) and **Inactive** (0,
   or never engaged). A segment on the score finds the quiet ones. See
   [Unengaged contacts](contacts.md#unengaged-contacts).
-- **Scores update every day.** Today's activity shows tomorrow.
 - **Companies are scored too**, from the engagement of their contacts. See
   [Companies](companies.md).
 

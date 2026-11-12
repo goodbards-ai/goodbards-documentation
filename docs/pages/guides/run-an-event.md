@@ -25,15 +25,23 @@ becomes a contact you can market to afterwards.
 
     ![The Event Management list: four events as cards, one published with 31 of 40 seats taken and three ended, with Scan Attendee and New Event at the top](../../img/screenshots/event-management.png)
 
-2. Choose **New Event**, then give it a name, a date and time, and a place.
+2. Choose **New Event**. Pick the campaign it belongs to (**Use existing
+   campaign**) or **Create new campaign**, then choose **Launch**. Give the
+   event a name, a date and time, and a place.
+
+    ![The Launch Event Tactic dialog: Use existing campaign or Create new campaign, Select a campaign, Cancel and Launch](../../img/screenshots/event-new-event.png){ width="40%" }
+
 3. Open the event. It starts on the **Overview**: registrations against capacity,
    invitations sent, days to go, and quick actions such as **Copy Registration
    Link**. The tabs follow the life of the event, from left to right.
 
 ![An event's Overview: 31 of 40 registered, 1,180 invitations sent, 12 days to the event, registration open, next steps and quick actions](../../img/screenshots/event-overview.png)
 
-The dots on a tab show it is set up. Everything saves on its own: there is no
-Save button on the event page.
+The dots on a tab show it is set up.
+
+!!! info "Everything saves on its own"
+    There is no Save button on the event page: each change is kept as you make
+    it.
 
 ## 2. Describe the event
 
@@ -42,18 +50,19 @@ On the **Definition** tab:
 1. Set the **Event Type**, the **Format** (in person, online or hybrid) and the
    **Visibility**.
 
-    ![The Format and visibility block: Workshop, In Person, Public](../../img/screenshots/event-format.png)
+    ![The Format and visibility block: Workshop, In Person, Public](../../img/screenshots/event-format.png){ width="80%" }
 
 2. Under **About the event**, write a **Short Description**, the **Address**, and
    choose a **Cover Image**. These appear on the landing page and in every email.
 
-    ![The About the event block: a short description of a gift-wrapping workshop, the store address, and an empty cover image with Choose](../../img/screenshots/event-about.png)
+    ![The About the event block: a short description of a gift-wrapping workshop, the store address, and an empty cover image with Choose](../../img/screenshots/event-about.png){ width="80%" }
 
 3. For an online or hybrid event, add the **Join link**. Only confirmed guests
    receive it.
 
-The event's name, date and place in every email come from this tab. To change
-them, change them here, never inside an email.
+!!! note "Change event details here, never inside an email"
+    The event's name, date and place in every email come from this tab, so the
+    emails stay right when the event moves.
 
 The **Landing page** tab shows the page guests register on, built from what you
 just wrote. To change its layout, choose **Duplicate to customize**.
@@ -72,9 +81,9 @@ On the **Registration** tab:
 
     ![The registration Settings: overall capacity 40 with 31 registered, Waitlist on in Automatic mode, Require Approval off, and the registration dates](../../img/screenshots/event-registration-settings.png)
 
-3. The blocks below are folded; click a title to open one.
+3. The blocks below are folded; choose a title to open one.
 
-    ![The folded Registration form, Contact registration, Registration emails and Confirmation message blocks](../../img/screenshots/event-registration-blocks.png)
+    ![The folded Registration form, Contact registration, Registration emails and Confirmation message blocks](../../img/screenshots/event-registration-blocks.png){ width="65%" }
 
 4. Under **Registration form**, keep the default form (name, email, company, job
    title) or choose one of your own. See [Forms](../marketing/forms.md).
@@ -103,8 +112,9 @@ To change one:
 The invitation and the reminders work the same way, on the **Communications**
 tab. See [Editing an email](../marketing/event-management.md#editing-an-email).
 
-Before anything goes out, choose **Send test email** under an email to receive it
-in your own inbox. See [Testing an email](../marketing/event-management.md#testing-an-email).
+!!! tip "Test before anything goes out"
+    Choose **Send Test Email** under an email to receive it in your own inbox.
+    See [Testing an email](../marketing/event-management.md#testing-an-email).
 
 ## 5. Invite your audience
 
@@ -117,7 +127,7 @@ in your own inbox. See [Testing an email](../marketing/event-management.md#testi
 At the bottom of the tab, **Sent emails** lists every email the event has sent,
 with the number of recipients.
 
-![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png)
+![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png){ width="80%" }
 
 ### Promote it on social media
 
@@ -127,13 +137,18 @@ from the event's own facts and with its cover image, for the social channels of
 the campaign.
 
 The posts arrive as **drafts** on the campaign's social tactics, each with a
-suggested date counted back from the event. Nothing is published until you
-schedule it. The button is not available for private events or events without a
-date. See also [Social Post](../social-media/social-post.md).
+suggested date counted back from the event.
+
+!!! info "Nothing is published until you schedule it"
+    The drafts wait for you. The button is not available for private events or
+    events without a date.
+
+See also [Social Post](../social-media/social-post.md).
 
 ### Show your events on your website
 
-In **Marketing → Event Management**, the menu at the top right offers **Open
+In the sidebar, choose **Marketing → Event Management**. The menu at the top
+right offers **Open
 public page** (the page listing all your public events) and **Embed form**. The
 embed gives you a code to paste into your website, with a light, dark or
 automatic theme and a list or grid layout, so visitors see and register for
@@ -144,7 +159,7 @@ your events without leaving your site.
 The **Attendance** tab lists every guest, their status and the last email they
 received.
 
-![The attendance list of a past event: guests with their email, status Absent and their latest email, a follow-up](../../img/screenshots/event-attendance.png)
+![The attendance list of a past event: guests with their email, status Absent and their latest email, a follow-up](../../img/screenshots/event-attendance.png){ width="80%" }
 
 - **Approve** or decline requests when approval is on.
 - **↑ Promote** a waiting guest when the waitlist is in **Manual** mode.
@@ -153,7 +168,7 @@ received.
   delivered, opened and clicked. Useful when a guest says they never got their
   confirmation.
 
-![A guest's history with the event: registered, confirmation sent, delivered and opened, then the invitation sent, delivered, opened and a link clicked](../../img/screenshots/event-attendee-history.png)
+![A guest's history with the event: registered, confirmation sent, delivered and opened, then the invitation sent, delivered, opened and a link clicked](../../img/screenshots/event-attendee-history.png){ width="50%" }
 
 ## 7. On the day
 
@@ -167,7 +182,7 @@ Every confirmed guest has a QR code in their confirmation and reminder emails.
 
     ![The Badge block: label format, Print Test Badge, and the two lines printed on each badge](../../img/screenshots/event-badge.png)
 
-![The event Actions menu: Open public page and Unpublish, Close registration and Send invitations, Scan attendee, Kiosk mode and Export attendees, End event and Cancel event](../../img/screenshots/event-actions-menu.png)
+![The event Actions menu: Open public page and Unpublish, Close registration and Send invitations, Scan attendee, Kiosk mode and Export attendees, End event and Cancel event](../../img/screenshots/event-actions-menu.png){ width="25%" }
 
 See [Check-in and badges](../events/check-in.md) for the details.
 
@@ -188,17 +203,24 @@ See [Check-in and badges](../events/check-in.md) for the details.
 
 ### Cancelling an event
 
-**Actions → Cancel event** cancels it. Every registered guest is emailed that the
-event is cancelled, and it cannot be undone. To stop new registrations but keep
-the event, use **Close registration** instead.
+!!! warning "Cancelling an event cannot be undone"
+    **Actions → Cancel event** emails every registered guest that the event is
+    cancelled. To stop new registrations but keep the event, use **Close
+    registration** instead.
 
 ## Good to know
 
-- **Publish before you share the link.** A draft event does not accept
-  registrations.
+!!! note "Publish before you share the link"
+    A draft event does not accept registrations.
+
 - **Cancel a registration with ⊘, not with the status menu.** ⊘ emails the guest
   and offers the seat to the waitlist; the status menu only corrects the list.
 - **Every guest becomes a contact.** After the event, find them in your audience
   and follow up with a normal email or campaign.
-- **Next time, duplicate.** Duplicating an event copies its settings, emails and
-  form, so only the date and details change.
+- **Next time, duplicate.** Duplicate the event's tactic on its campaign: the
+  settings, emails and form come with it, so only the date and details change.
+  See [Duplicating a tactic](../marketing/campaigns.md#duplicating-a-tactic).
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

@@ -4,7 +4,10 @@ Check any piece of content against your brand guidelines before it goes out:
 every place that goes against a rule is listed with the exact words, the rule it
 breaks and a suggested fix.
 
-## What it checks
+## What it's for
+
+A second pair of eyes on your brand rules, before a post or an email goes out.
+It checks:
 
 - **Wording.** Every rule and every "do not" from the brand guidelines imported
   into your [brand kit](brand-kit.md) that can be judged from text: voice,
@@ -14,19 +17,21 @@ breaks and a suggested fix.
   different red, for example) is shown with the brand colour to use instead.
   White, black and greys are always accepted.
 
-## What it does not check
+!!! note "Images are not checked"
+    Logo use, photo style and colours inside pictures are left out. The report
+    says how many of your brand book's visual rules (logo, images, layout) were
+    not checked, so it never looks like it covered more than it did.
 
-- **Images**: logo use, photo style, colours inside pictures. The report says how
-  many of your brand book's visual rules (logo, images, layout) were not checked,
-  so it never looks like it covered more than it did.
-- It never changes your content and never blocks sending or publishing. It is
-  advice: you decide.
+!!! info "Advice only"
+    Brand Check never changes your content and never blocks sending or
+    publishing. You decide what to fix.
 
 ## Before you start
 
-Import your brand guidelines into the brand kit (Brand & Context → **Brand Kit** →
-add a kit from your guidelines document). The check uses the rules found there.
-Without them, only the tone of voice, colours and fonts can be checked.
+- Import your brand guidelines into the brand kit (**Brand & Context → Brand
+  Kit**, then add a kit from your guidelines document). The check uses the rules
+  found there. Without them, only the tone of voice, colours and fonts can be
+  checked.
 
 ## How to check a text
 
@@ -34,7 +39,8 @@ Without them, only the tone of voice, colours and fonts can be checked.
 2. Open the **Brand Check** tab.
 3. Paste your text, or switch to **Email HTML** and paste the HTML of an email.
 4. Optionally say what it is (LinkedIn post, newsletter…): it helps the review.
-5. Choose the brand kit (your primary kit is selected) and select **Check against brand**.
+5. Choose the brand kit (your primary kit is selected), then choose **Check
+   Against Brand**.
 
 The report appears in a few seconds:
 
@@ -45,7 +51,7 @@ The report appears in a few seconds:
 - What was covered: the brand kit, the number of rules checked, and the visual
   rules not checked.
 
-## Checking from the editors
+## How to check from an editor
 
 You don't need to copy and paste content you are already editing in GoodBards:
 
@@ -55,13 +61,12 @@ You don't need to copy and paste content you are already editing in GoodBards:
 - **Social posts and articles**: in the asset editor, open the **AI** menu and
   choose **Check against brand**. Unsaved changes are included.
 
-## When AI writes for you
+!!! info "AI drafts are checked automatically"
+    Content written with **Write with AI** is checked against your brand rules
+    too. "Follows the brand guidelines" appears in its list of checks, and a
+    piece that breaks a rule is revised once automatically.
 
-Content written with **Write with AI** is now also checked against your brand
-rules. "Follows the brand guidelines" appears in its list of checks, and a piece
-that breaks a rule is revised once automatically, like the other quality checks.
-
-## From the assistant and external AI tools
+## How to check from the assistant or another AI tool
 
 - Give an agent the **Brand Check** tool (agent screen → Tools), then ask it, for
   example, "Check this LinkedIn post against our brand: …".

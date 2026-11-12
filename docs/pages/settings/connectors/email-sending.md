@@ -38,15 +38,16 @@ The **Email** tab of **Connections** offers four:
 
 ### Goodbards
 
-- **Email Domain**: your domain only, for example `mycompany.com` — not an email
+- **Email Domain**: your domain only, for example `mycompany.com`, not an email
   address.
 - Choose **Show DNS Records** and add every record listed to your domain's DNS:
     - a TXT record that proves you own the domain;
     - three CNAME records (DKIM) that sign your emails;
     - a TXT record for DMARC.
 
-Until those records are in place, mail from your domain cannot be delivered
-reliably. DNS changes can take a few hours to take effect.
+!!! warning "No DNS records, no reliable delivery"
+    Until those records are in place, mail from your domain lands in spam or is
+    refused. DNS changes can take a few hours to take effect.
 
 ### Amazon-ses
 
@@ -58,7 +59,7 @@ reliably. DNS changes can take a few hours to take effect.
 ### Gmail
 
 - **Gmail Address**: the address you send from.
-- **App Password**: a Google *app password*, not your normal password. The
+- **App Password**: a Google *app password*, never your normal password. The
   settings panel links to Google's help on creating one.
 - **SMTP Host** and **SMTP Port**: for Gmail, `smtp.gmail.com`.
 
@@ -66,10 +67,21 @@ reliably. DNS changes can take a few hours to take effect.
 
 - **API Key**: a SendGrid API key that can send mail.
 
-## Test before you send
+## How to test the server
 
 In the server's settings, choose **Test Config**, enter an **Email Address**, then
-**Send Test Email**. Check that it arrives — and not in spam.
+**Send Test Email**. Check that it arrives, and not in spam.
+
+!!! tip "Test before every new setup"
+    Send yourself a test after connecting and after any DNS change, before the
+    first campaign goes out.
+
+## What GoodBards does with it
+
+| GoodBards… | Details |
+| --- | --- |
+| **Sends** | Your email campaigns and test emails, through the server you connected, from your sender address. |
+| **Does not** | Read your mailbox. |
 
 ## Good to know
 
@@ -85,7 +97,9 @@ In the server's settings, choose **Test Config**, enter an **Email Address**, th
 1. On the **Email** tab, open the connected server's settings.
 2. Choose **Disconnect**.
 
-Emails can no longer be sent through that server until you connect one again.
+!!! warning "Sending stops"
+    Emails can no longer be sent through that server until you connect one
+    again, including campaigns already scheduled.
 
 ---
 

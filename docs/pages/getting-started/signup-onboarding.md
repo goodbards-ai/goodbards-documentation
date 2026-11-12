@@ -25,26 +25,25 @@ The login screen also carries three controls worth knowing about, along the top:
 | **EN** | Interface language. |
 | Sun / moon | Switches between light and dark appearance. |
 
-You can change all three later from inside the app — see
+You can change all three later from inside the app. See
 [Personal Settings](../settings/personal-settings.md).
 
 ## What to set up first
 
-A new workspace is empty. Four things make everything else work better, roughly
+A new workspace is empty. Five things make everything else work better, roughly
 in this order:
 
-1. **[Brand & Context](../settings/company-settings.md)** — tell GoodBards what
-   your company does. Everything the AI writes draws on this, so it is worth doing
-   before generating any content.
-2. **[Brand Kit](../settings/brand-kit.md)** — your colours, fonts and logo, so
+1. **[Brand & Context](../settings/company-settings.md)**: tell GoodBards what
+   your company does. Everything the AI writes draws on this.
+2. **[Brand Kit](../settings/brand-kit.md)**: your colours, fonts and logo, so
    emails and images come out on-brand automatically.
-3. **[Connections](../settings/connections.md)** — link your social accounts and
+3. **[Connections](../settings/connections.md)**: link your social accounts and
    analytics. Most "why is there no data?" questions trace back to a missing
    connector.
-4. **[Contacts](../audience/contacts.md)** — import the people you market to.
+4. **[Contacts](../audience/contacts.md)**: import the people you market to.
    Without contacts there is nobody to send to.
-5. **Your team** — invite your colleagues and choose what each one can see and
-   change. See [Settings](../settings/index.md).
+5. **Your team**: invite your colleagues and choose what each one can see and
+   change. See [Users, roles & permissions](../settings/users-roles.md).
 
 !!! tip "Do the brand setup before generating content"
     Agents use whatever is in Brand & Context at the moment they write. Filling it
@@ -54,9 +53,9 @@ in this order:
 
 Once the above is in place:
 
-- **[Launch a Tactic](../marketing/launch-tactic.md)** — one post on one channel,
+- **[Launch a Tactic](../marketing/launch-tactic.md)**: one post on one channel,
   the quickest way to see the platform work end to end.
-- **[Send an email](../marketing/emails.md)** — design, preview and send to your
+- **[Send an email](../marketing/emails.md)**: design, preview and send to your
   contacts.
 
 ## Finding your way around
@@ -67,4 +66,4 @@ the vocabulary it uses.
 
 ---
 
-*Stuck signing in? [Contact support](../contact.md).*
+*Still stuck? [Contact support](../contact.md).*

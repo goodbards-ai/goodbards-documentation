@@ -20,14 +20,23 @@ afterwards does not mean re-typing a list.
 ## How to set up an event
 
 1. In the sidebar, choose **Marketing → Event Management**.
-2. Choose **New Event** and fill in the name, type, date, time and venue.
+2. Choose **New Event**. An event is a campaign tactic, so GoodBards first asks
+   for its campaign: choose **Use existing campaign** and pick one, or
+   **Create new campaign**, then choose **Launch**. Fill in the name, type,
+   date, time and venue.
+
+    ![The Launch Event Tactic dialog: Use existing campaign or Create new campaign, Select a campaign, Cancel and Launch](../../img/screenshots/event-new-event.png){ width="40%" }
+
 3. Open the event. Its tabs follow the life of the event, left to right:
    **Overview**, **Definition**, **Landing page**, **Registration**,
    **Communications**, **Attendance**, **Analytics**, **Follow-up**.
-4. Work through them in that order. Everything saves on its own; there is no
-   Save button on the event page.
+4. Work through them in that order.
 
 ![The Event Management screen, showing events as cards with their status, date, time, venue and registration count](../../img/screenshots/event-management.png)
+
+!!! info "Everything saves on its own"
+    There is no Save button on the event page: each change is kept as you make
+    it.
 
 ### Definition: what guests see
 
@@ -66,7 +75,7 @@ see [The event page](../events/landing-page.md).
   below).
 - **Confirmation message**: the text shown on the page after registering.
 
-The last four blocks are folded; click a title to open it.
+The last four blocks are folded; choose a title to open it.
 
 ### Registration emails
 
@@ -95,7 +104,7 @@ email as guests receive it, inside your event design.
 
 ![The editor on the Confirmed email: the Subject line, the email in the Tropika Home design with purple chips such as Event name and Attendee name, purple dashed boxes titled Shown when…, and the blocks on the right](../../img/screenshots/event-email-editor.png)
 
-1. Click the preview, or **Edit**. The editor opens, with the **Subject** under
+1. Choose the preview, or **Edit**. The editor opens, with the **Subject** under
    the menu bar. The **View** menu switches between **Visual editor**, **HTML
    code** and **AI assistant**; see [Editing an email](emails.md#editing-an-email).
 2. Change the text, then choose **Save**. The card now says *Your own version of
@@ -109,31 +118,34 @@ In the **Visual editor**:
   inside; the box itself cannot be moved or deleted, so the email keeps working
   for every guest.
 - **Purple chips**, such as **Attendee name** or **Event location**, are filled in
-  for each guest when the email is sent. To add one, click into a text and pick
-  it from **Insert field…** in the text toolbar. Do not type them by hand.
+  for each guest when the email is sent. To add one, place your cursor in a text
+  and pick it from **Insert field…** in the text toolbar. Do not type them by
+  hand.
 
 To send an email you built under **Emails** instead, choose **Use one of my
 emails instead** under the card.
 
 ### Testing an email
 
-Every event email has a **Send test email** button under its card: the invitation,
+Every event email has a **Send Test Email** button under its card: the invitation,
 the reminders, the registration emails and the follow-ups. It works at any time,
 even while the event is a draft.
 
-1. Choose **Send test email**. The address is filled in with yours; change it to
+1. Choose **Send Test Email**. The address is filled in with yours; change it to
    send the test to a colleague.
-2. Choose **Send test**, and check the email in that inbox.
+2. Choose **Send Test**, and check the email in that inbox.
 
-![The Send a test of the Invitation email dialog: a Send to address, Cancel and Send Test](../../img/screenshots/event-email-test.png){ width="420" }
+![The Send a test of the Invitation email dialog: a Send to address, Cancel and Send Test](../../img/screenshots/event-email-test.png){ width="40%" }
 
 The test is the email as it is saved right now, with your name in place of the
 guest's. Its subject starts with **[TEST]**, and it does not appear in **Sent
 emails** or in the email metrics.
 
-The check-in, cancel and calendar links in a test belong to a sample registration,
-so they do not open a real one. The registration link in a test invitation is the
-real one: if you complete the form, you are registered.
+!!! note "The registration link in a test is real"
+    The check-in, cancel and calendar links in a test belong to a sample
+    registration, so they do not open a real one. The registration link in a
+    test invitation is the real one: if you complete the form, you are
+    registered.
 
 ## How to send, and see what happened
 
@@ -143,7 +155,7 @@ real one: if you complete the form, you are registered.
    with the time, the number of recipients and who sent it. Confirmations and
    other one-by-one emails are grouped per day.
 
-    ![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png)
+    ![The Sent emails list: daily lines of confirmation emails sent automatically, and the invitation sent to 1,180 people by a team member, each with Recipients and Metrics](../../img/screenshots/event-sent-emails.png){ width="80%" }
 
 3. Choose **Recipients** on a line to see who received it, search them, or show the
    failed ones only. Choose **Metrics** for opens and clicks.
@@ -151,12 +163,12 @@ real one: if you complete the form, you are registered.
    received. The eye icon opens the guest's **History with this event**: what was
    sent, delivered, opened and clicked.
 
-    ![A guest's history with the event: registered, confirmation sent, delivered and opened, then the invitation sent, delivered, opened and a link clicked](../../img/screenshots/event-attendee-history.png)
+    ![A guest's history with the event: registered, confirmation sent, delivered and opened, then the invitation sent, delivered, opened and a link clicked](../../img/screenshots/event-attendee-history.png){ width="50%" }
 
 5. On **Analytics**, **Email Performance** shows all the event's emails together
    or one type at a time, and **Export CSV** downloads the list.
 
-## The waitlist
+## How to use the waitlist
 
 Turn on **Waitlist** under **Registration › Settings**. When the event is full,
 new registrations join a queue. Choose how a freed seat is given:
@@ -165,7 +177,7 @@ new registrations join a queue. Choose how a freed seat is given:
 - **Manual**: you choose. On **Attendance**, use **↑ Promote** on a waiting guest.
   It only works when a seat is free.
 
-## Checking people in
+## How to check people in
 
 On the day, use **Scan attendee** to check people in. Each guest's confirmation and
 reminder emails carry a QR code; scanning it records them as attended.
@@ -181,7 +193,11 @@ reminder emails carry a QR code; scanning it records them as attended.
 | **Scan attendee** / **Kiosk mode** | Checks guests in. See [Check-in and badges](../events/check-in.md). |
 | **Export attendees** | Downloads the guest list as a spreadsheet. |
 | **End event** | Ends it now; guests not checked in become absent. Ended events reopen with **Reopen** if you ended one too early. GoodBards also ends an event on its own when its end date passes. |
-| **Cancel event** | Cancels it and emails every registered guest. Cannot be undone. |
+| **Cancel event** | Cancels it and emails every registered guest. |
+
+!!! warning "Cancelling an event cannot be undone"
+    **Cancel event** emails every registered guest at once. To stop new
+    registrations only, use **Close registration** instead.
 
 To run an event again, duplicate its tactic on the campaign page: the event
 comes with it. See [Duplicating a tactic](campaigns.md#duplicating-a-tactic).
@@ -191,8 +207,9 @@ Registration Link** and **Preview Invitation Email**.
 
 ## Good to know
 
-- **Publish before you share the link.** A draft event does not accept
-  registrations.
+!!! note "Publish before you share the link"
+    A draft event does not accept registrations.
+
 - **Declined guests can stay unaware.** Turn off the **Declined** email and
   nobody you decline is emailed, even when you change a status by hand.
 - **Cancel with ⊘, not with the status menu.** **Cancel registration** (the ⊘ icon

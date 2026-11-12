@@ -1,6 +1,6 @@
 # Brand & Context
 
-Everything GoodBards knows about your business — and what the AI is allowed to
+Everything GoodBards knows about your business, and what the AI is allowed to
 use when it writes for you.
 
 ## What it's for
@@ -29,11 +29,15 @@ get generic copy.
 1. Open your account menu (your picture, top right), then choose **Brand & Context**.
 2. On **General Information**, fill in each field. Grey example text under each
    one shows the kind of answer expected.
-3. Changes save as you go.
+3. Choose **Save** next to the field you changed. A saved field shows **Visible
+   to AI**.
 
-![The Brand & Context screen on the General Information tab, showing company name, tagline and website fields with Visible to AI badges](../../img/screenshots/brand-context.png)
+![The Brand & Context screen on the General Information tab, showing company name, tagline and website fields with Visible to AI badges](../../img/screenshots/brand-context.png){ width="80%" }
 
-**Populate With AI** fills the fields from your website; check what it wrote.
+!!! tip "Let the AI fill it in first"
+    **Populate With AI**, at the top right, reads your website and fills these
+    fields in as drafts. It is a fast start, but read what it wrote before
+    choosing **Show To AI**: everything the AI writes later builds on it.
 
 ### The General Information blocks
 
@@ -56,6 +60,8 @@ campaign duration. The fields marked **Visible to AI** prefill new campaigns, so
 **Create New Campaign** opens already filled in. See
 [Campaigns](../marketing/campaigns.md).
 
+![Campaign Defaults: marketing objective Customer Loyalty and Retention (Churn), budget 25000, customer type B2C and audience, each with Visible to AI and Hide From AI](../../img/screenshots/brand-campaign-defaults.png)
+
 ## Website: what GoodBards knows about your site
 
 - **Search Console property**: which site the Organic Visibility screens read;
@@ -68,11 +74,16 @@ campaign duration. The fields marked **Visible to AI** prefill new campaigns, so
   and Page Fixes, and the language content is written in. **Reset To Detected**
   goes back to the scan's values.
 
+![The Website tab: the Search Console property, what the site scan found (Online store, English, Singapore, high confidence) with Scan Again, and the site type, language and target market with Apply](../../img/screenshots/brand-website.png)
+
 ## Competitors
 
 List the companies you compete with, and GoodBards analyses their websites.
 
 1. On the **Competitors** tab, choose **Add Competitor** and give its website.
+
+    ![The Competitors tab: four active competitors with their website, tags and last scan, and Add Competitor](../../img/screenshots/brand-competitors.png)
+
 2. GoodBards scans the site. Open a competitor's **Details** for:
     - **Overview**: an AI summary, estimated domain authority, an SEO score
       and estimated monthly traffic, with their key strengths and weaknesses;
@@ -89,16 +100,15 @@ List the companies you compete with, and GoodBards analyses their websites.
 
 Every field carries a badge showing whether the AI can use it:
 
-- **Visible to AI** — the agent may use this when writing.
-- **Hide From AI** — choose this to keep a field out of AI-generated content.
+- **Visible to AI**: agents may use this when writing. Choose **Hide From AI**
+  to keep it out of AI-generated content.
+- **Hidden from AI**: agents never see it. AI drafts you have not reviewed stay
+  hidden until you choose **Show To AI**.
 
-Most details are safe and useful to share. Hide anything commercially sensitive
-that you would not want appearing in a draft.
-
-!!! tip "Populate With AI"
-    **Populate With AI**, at the top right, fills these fields in by reading your
-    website. It is a fast way to start — but read what it produces before
-    accepting it, since everything the AI writes later builds on it.
+!!! warning "Hide what must not appear in a draft"
+    Most details are safe and useful to share. Hide anything commercially
+    sensitive, such as unannounced prices or client names, before agents write
+    with it.
 
 ## Good to know
 
@@ -106,8 +116,8 @@ that you would not want appearing in a draft.
   they write. Filling it in afterwards does not improve drafts already produced.
 - **Be specific.** "We help companies grow" tells the AI nothing. What you sell,
   to whom, and what makes you different is what gets used.
-- **Revisit it.** When your positioning changes, update this — otherwise the AI
-  keeps writing last year's message.
+- **Revisit it.** When your positioning changes, update this, or the AI keeps
+  writing last year's message.
 
 ---
 

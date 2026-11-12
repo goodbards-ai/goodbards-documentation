@@ -16,7 +16,8 @@ keeps the next people in line instead of turning them away.
 
 ## How to set up ticket types
 
-1. Open the event, then the **Registration** tab.
+1. In the sidebar, choose **Marketing → Event Management**, open the event, then
+   the **Registration** tab.
 2. Under **Settings**, set the **Max Capacity** for the whole event.
 3. Under **Ticket types**, turn on **Use ticket types / time slots**, then choose
    **Add Ticket Type** for each one: its name, its number of seats, and, for a
@@ -37,8 +38,9 @@ and badge show their own slot and time.
 
 ![The registration Settings: overall capacity 40, Waitlist on in Automatic mode, Require Approval off, and the registration dates](../../img/screenshots/event-registration-settings.png)
 
-With ticket types, each type has its own waitlist: a seat freed in one slot goes
-to someone waiting for that slot.
+!!! info "One waitlist per ticket type"
+    With ticket types, each type has its own waitlist: a seat freed in one slot
+    goes to someone waiting for that slot.
 
 Guests on the waitlist receive the **On the waitlist** email; when they get a
 seat, the **Spot opened** email. See
@@ -46,9 +48,10 @@ seat, the **Spot opened** email. See
 
 ## Good to know
 
-- **The overall capacity still applies.** If the ticket types add up to more seats
-  than the event's capacity, the event fills before every type does. The screen
-  warns you when that happens.
+!!! note "The overall capacity still applies"
+    If the ticket types add up to more seats than the event's capacity, the
+    event fills before every type does. The screen warns you when that happens.
+
 - **Raising the capacity seats people.** In Automatic mode, raising the capacity
   or a ticket type's seats moves the first people in line onto the list, and
   emails them.

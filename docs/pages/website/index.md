@@ -8,8 +8,9 @@ access to.
 
 ## Before you start
 
-These screens read your Google Search Console and Google Analytics data. If a
-screen says you are not connected, start at
+Organic Visibility is included in the **Pro** and **Full** plans. Its screens
+read your Google Search Console and Google Analytics data: connect them under
+**Connectors** first. If a screen says you are not connected, start at
 [Connections](../settings/connections.md).
 
 ## The screens

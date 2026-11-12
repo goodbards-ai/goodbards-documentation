@@ -12,7 +12,8 @@ them beside the rest of your marketing:
   [Social Media Analysis](../../social-media/analysis.md).
 - **Feed the daily summary** on your home page.
 
-It is **read-only**: GoodBards does not upload or publish videos to YouTube.
+!!! info "Read-only"
+    GoodBards does not upload or publish videos to YouTube.
 
 ## Before you start
 
@@ -30,6 +31,9 @@ It is **read-only**: GoodBards does not upload or publish videos to YouTube.
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Social Media** tab, find **Google Youtube** and choose **Connect**.
+
+    ![The Google Youtube card on the Social Media tab, with its Connect button](../../../img/screenshots/connectors/youtube.png){ width="30%" }
+
 3. Pick your Google account. If Google asks, choose the **channel or Brand
    Account** you want to connect.
 4. Accept the permissions: view your YouTube account and view its analytics
@@ -48,9 +52,11 @@ It is **read-only**: GoodBards does not upload or publish videos to YouTube.
   videos.
 - **Figures lag about two days.** Until YouTube's analytics catch up, GoodBards
   shows the public counters.
-- **Impressions take a few days to appear.** The first time you connect, YouTube
-  starts preparing impression reports for your channel. They start arriving
-  after about two days, then fill in up to 30 days back.
+
+!!! note "Impressions take a few days to appear"
+    The first time you connect, YouTube starts preparing impression reports for
+    your channel. They start arriving after about two days, then fill in up to
+    30 days back.
 
 ## How to disconnect
 

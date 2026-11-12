@@ -5,7 +5,7 @@ the clock.
 
 ## What it's for
 
-Visitors ask the same questions at all hours — opening times, pricing, whether
+Visitors ask the same questions at all hours: opening times, pricing, whether
 you serve their industry. The external chatbot puts one of your
 [chat agents](../agentic-ai/chat-agents.md) on your website to answer them, styled
 to match your brand.
@@ -20,6 +20,8 @@ scripted FAQ.
 
 ## Before you start
 
+- **Your plan.** External Chatbot is included in the **Lite**, **Pro** and
+  **Full** plans.
 - A chat agent to put on the site. See
   [Chat Agents](../agentic-ai/chat-agents.md).
 - A company administrator, to create the key in step 2.
@@ -31,7 +33,7 @@ scripted FAQ.
 1. In the sidebar, choose **Tool Box → External Chatbot**.
 2. On the **Settings** tab, choose which **Agent** answers visitors.
 3. Write the **Welcome message** shown when the chat opens.
-4. Set the branding — icon, title, colours and sizes.
+4. Set the branding: icon, title, colours and sizes.
 5. Watch the **Preview** on the right update as you go.
 
 ![The External Chatbot Settings tab: the agent that answers, the welcome message, language and theme, the icon, title, sizes, colours and bubble message, and a live preview on the right](../../img/screenshots/external-chatbot.png)
@@ -48,11 +50,11 @@ scripted FAQ.
 | **Title Label** | The name at the top of the window. |
 | **Font Size** / **Icon Size** | How large the widget appears. |
 | **User / System Message Colours** | Colours for visitor and bot messages. |
-| **Bubble Message** | The prompt on the closed bubble — for example *Hi there! Need help?* |
+| **Bubble Message** | The prompt on the closed bubble, for example *Hi there! Need help?* |
 
 !!! tip "The preview is live"
     The panel on the right shows exactly what visitors will see. Check it in both
-    light and dark themes before publishing — colour choices that work in one can
+    light and dark themes before publishing: colour choices that work in one can
     be unreadable in the other.
 
 ## How to create a key for your website
@@ -75,9 +77,9 @@ the chat belongs to. Create one for the chatbot only, and tie it to your website
     | **Restrict to a specific origin** | Tick it, then type your website's address under **Allowed Origin**. |
     | **Expires at** | When the key stops working. It is set five years ahead. |
 
-    ![The Generate New API Key window: description Website chatbot, scope CHATBOT, Restrict to a specific origin ticked, the allowed origin https://www.example.com and the expiry date](../../img/screenshots/external-chatbot-create-key.png){ width="420" }
+    ![The Generate New API Key window: description Website chatbot, scope CHATBOT, Restrict to a specific origin ticked, the allowed origin https://www.example.com and the expiry date](../../img/screenshots/external-chatbot-create-key.png){ width="40%" }
 
-4. Choose **Generate key**. The key appears in the list, with its scope and its
+4. Choose **Generate Key**. The key appears in the list, with its scope and its
    website under **Origin**.
 
 !!! warning "Type the address exactly"
@@ -124,7 +126,7 @@ No key in the list? It means none of your keys is tied to a website. Choose
 **Create API Key** at the bottom of the list: the same window opens, with the
 scope already set to **CHATBOT**.
 
-![The Select API key list when empty: No API key restricted to a website. Create one with your website address, and the Create API Key button](../../img/screenshots/external-chatbot-embed-no-key.png){ width="560" }
+![The Select API key list when empty: No API key restricted to a website. Create one with your website address, and the Create API Key button](../../img/screenshots/external-chatbot-embed-no-key.png){ width="65%" }
 
 !!! note "The chat only shows on the key's website"
     Inside a page, the chat appears only on the website the key is tied to. On
@@ -162,6 +164,11 @@ an agent is chosen on the **Settings** tab and visitors start chatting.
 
 ## Good to know
 
+!!! warning "Revoked or expired keys turn the chat off"
+    Revoking a key stops the chat at once on every page that uses it. When a key
+    reaches its expiry date, the chat stops answering too: note the date and
+    replace the key before it.
+
 - **Test it before launch.** Ask the questions your customers actually ask and
   check the answers are right.
 - **Your agent's knowledge is the bot's knowledge.** If it cannot answer, improve
@@ -169,14 +176,11 @@ an agent is chosen on the **Settings** tab and visitors start chatting.
   the widget.
 - **Say it is a bot.** Visitors dislike discovering late that they were not
   talking to a person.
-- **Keep a route to a human.** Some questions need one — make sure the bot does not
-  become a dead end.
+- **Keep a route to a human.** Some questions need one: make sure the bot does
+  not become a dead end.
 - **A key cannot be edited.** If the website address is wrong, revoke the key
   under **Tenant Settings → Security** and create a new one, then paste the new
   code into your site.
-- **Revoking a key turns the chat off** on every page that uses it, at once.
-- **Keys expire.** When the date is reached the chat stops answering. Note the
-  date, and replace the key before it.
 - **Visitors on a computer can enlarge the chat.** The floating button's window
   has an expand button at the top. It is not shown on phones, or inside a page.
 - **Changes on the Settings tab apply without touching your website.** The code

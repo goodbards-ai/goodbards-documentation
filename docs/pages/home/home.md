@@ -29,30 +29,33 @@ opening ten screens.
 ![Home, lower part: Web Analytics, Social Media and Search Performance, then Audience, Engagement and CX Scores, each with its trend](../../img/screenshots/home-performance.png)
 
 Each card shows the change against the previous period, with a small trend
-chart. Click a card to open the screen behind it; **suggested action** links take
-you straight to the matching item in [Actions](../workspace/actions.md).
+chart. Choose a card to open the screen behind it; **suggested action** links
+take you straight to the matching item in [Actions](../workspace/actions.md).
 
-## Ask an agent
+!!! tip "Refresh it now"
+    The pulse runs once a day. Choose **Re-Run Report** to refresh it straight
+    away, for example after connecting a new service.
+
+## How to ask an agent
 
 The **Agent** tab, next to **Marketing OS**, opens a chat with your AI agents.
 Ask anything, add **Sources** or **Attachments**, or pick one of the suggested
 agents. See [Chat Agents](../agentic-ai/chat-agents.md).
 
-![The Agent tab: an Ask anything box with Sources, Attachments, Tools and the model, and four suggested agents](../../img/screenshots/home-agent.png)
+![The Agent tab: an Ask anything box with Sources, Attachments, Tools and the model, and four suggested agents](../../img/screenshots/home-agent.png){ width="65%" }
 
 ## Good to know
 
-- **The pulse runs once a day.** Choose **Re-Run Report** to refresh it now, for
-  example after connecting a new service.
 - **Cards appear when there is something to show.** A card for a service you have
   not connected stays empty; connect it under
   [Connections](../settings/connections.md).
 - **Dates on each card say how fresh it is**: *Today*, *Yesterday*, or the date of
   the latest report.
-- **The pulse can come to you by email.** It is sent each morning to the
-  colleagues who have the *Recipient for daily report emails* permission, and to
-  nobody else. See
-  [Additional permissions](../settings/users-roles.md#additional-permissions).
+
+!!! info "The pulse can come to you by email"
+    It is sent each morning to the colleagues who have the *Recipient for daily
+    report emails* permission, and to nobody else. See
+    [Additional permissions](../settings/users-roles.md#additional-permissions).
 
 ---
 

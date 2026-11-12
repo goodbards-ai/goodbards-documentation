@@ -33,13 +33,18 @@ The **Google Analytics** connector reads your GA4 property. GoodBards uses it in
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Web Analytics** tab, find **Google Analytics** and choose **Connect**.
+
+    ![The Google Analytics card once connected: the Google account, the property Tropika Home, Web (GA4), and Settings](../../../img/screenshots/connectors/google-analytics.png){ width="30%" }
+
 3. Pick your Google account and allow GoodBards to **see your Google Analytics
    data**.
-4. Back in GoodBards, choose **Manage Configuration** on the card.
+4. Back in GoodBards, choose **Choose Property** on the card.
 5. Under **GA4 Property**, pick the property for your website, then choose **Save
    Settings**.
 
-Until a property is chosen, the Google Analytics screens have nothing to show.
+!!! note "Pick a property, or nothing shows"
+    Until a property is chosen, the Google Analytics screens have nothing to
+    show. To change it later, choose **Settings** on the card.
 
 ## What GoodBards does with it
 
@@ -57,7 +62,7 @@ Until a property is chosen, the Google Analytics screens have nothing to show.
 
 ## How to disconnect
 
-1. On the Google Analytics card, choose **Manage Configuration**.
+1. On the Google Analytics card, choose **Settings**.
 2. Choose **Disconnect**.
 
 GoodBards forgets the access and the chosen property. To remove access on

@@ -21,15 +21,24 @@ consent and where they came from recorded.
   Information → Privacy Statements**. Every import is linked to the statement the
   people agreed to.
 
-## Add one contact
+## How to add one contact
 
-In **Audience → Contacts**, on the **Details List** tab, choose **Add Contact**
-and fill in the form.
+1. In the sidebar, choose **Audience → Contacts**.
+2. On the **Details List** tab, choose **Add Contact** and fill in the form.
+   Only the **Email Address** is required; the **Customer Code** is filled in
+   for you.
 
-## Import a spreadsheet
+    ![The Create Contact form, Personal Details: Customer Code, first and last name, date of birth, email addresses, phone numbers, country, state, city, street, postal code and timezone](../../img/screenshots/contact-create.png)
 
-1. In **Audience → Contacts**, open the **Import Jobs** tab, then **Bulk Add
-   Contacts → From a CSV file**.
+## How to import a spreadsheet
+
+!!! warning "Only import people who agreed to hear from you"
+    Set the **Default Status** to match what they agreed to: choose
+    **Subscribed** only for people who gave marketing consent. Under
+    Singapore's PDPA and similar laws, consent cannot be assumed.
+
+1. In the sidebar, choose **Audience → Contacts**, open the **Import Jobs**
+   tab, then choose **Bulk Add Contacts → From a CSV file**.
 2. Choose **Download Template** and put your contacts in it, one per row. The
    columns and the values they accept are explained in
    [Contacts → Prepare your CSV file](contacts.md#prepare-your-csv-file).
@@ -43,15 +52,18 @@ and fill in the form.
 4. Under **Additional Details**, say where the contacts come from (a campaign and
    tactic, or another source), add **Tags** and **Owners**, and pick the
    **Privacy Statement** they agreed to. Choose **Upload**.
-5. The job appears on the **Import Jobs** tab as **READY TO START**. Nothing is
-   imported yet: check the job, then choose **Start** and confirm with **Start
-   import**.
+5. The job appears on the **Import Jobs** tab as **READY TO START**. Check the
+   job, then choose **Start** and confirm with **Start import**.
 6. When the job shows **COMPLETED**, your contacts are in. If it shows
    **INCOMPLETE**, open it with **View** and choose **Download logs** to see
    which rows were rejected and why. See
    [Import Jobs](contacts.md#import-jobs).
 
-## Import from Pipedrive
+!!! info "Nothing is imported until you choose Start"
+    Uploading only creates the job, so you can check it before any contact is
+    added.
+
+## How to import from Pipedrive
 
 Once Pipedrive is connected (see [Pipedrive](../settings/connectors/pipedrive.md)),
 **Bulk Add Contacts → From Pipedrive** imports your Pipedrive contacts directly,
@@ -59,9 +71,9 @@ with the same choices as a spreadsheet: conflict action, default status, tags
 and privacy statement. Until Pipedrive is connected, the option shows as **Not
 connected**.
 
-## Scan a business card
+## How to scan a business card
 
-1. In **Audience → Contacts**, open the **Card Scanner** tab.
+1. In the sidebar, choose **Audience → Contacts**, then the **Card Scanner** tab.
 2. Choose **Take Photo**, or **Choose File** for a picture you already have.
 3. GoodBards reads the card and fills in the **Contact Information**. Check it,
    correct anything misread, and save.
@@ -70,14 +82,12 @@ connected**.
 
 ## Good to know
 
-- **Only import people who agreed to hear from you.** Set the **Default Status**
-  to match what they agreed to: choose **Subscribed** only for people who gave
-  marketing consent. Under Singapore's PDPA and similar laws, consent cannot be
-  assumed.
 - **The conflict action handles existing contacts.** It decides what happens to a
   row whose contact is already in your audience.
-- **Tag every import.** A tag such as `trade-show-2026` lets you find, segment
-  and follow up that group later.
+
+!!! tip "Tag every import"
+    A tag such as `trade-show-2026` lets you find, segment and follow up that
+    group later.
 
 ---
 

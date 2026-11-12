@@ -28,7 +28,7 @@ count with the rest.
    **Instagram Reel (video)** or **Facebook Post**. Use **Filter by Tactic** to
    show one network only.
 
-    ![The Create New Asset window: Family set to Social Media, Filter by Tactic chips, and the grid of asset types with LinkedIn Post selected](../../img/screenshots/create-post-asset-type.png)
+    ![The Create New Asset window: Family set to Social Media, Filter by Tactic chips, and the grid of asset types with LinkedIn Post selected](../../img/screenshots/create-post-asset-type.png){ width="50%" }
 
 3. Choose **Next**.
 4. Under **Creation Method**, keep **New Empty**. *(**Write with AI** drafts the
@@ -38,7 +38,7 @@ count with the rest.
    post. Leave **Marketing Stage** and **Folder** as they are unless you sort
    your assets.
 
-    ![Configure your asset: Creation Method set to New Empty, the Title filled in, Marketing Stage, Folder and the Create button](../../img/screenshots/create-post-configure.png)
+    ![Configure your asset: Creation Method set to New Empty, the Title filled in, Marketing Stage, Folder and the Create button](../../img/screenshots/create-post-configure.png){ width="65%" }
 
 6. Choose **Create**. The post editor opens.
 
@@ -63,7 +63,7 @@ count with the rest.
 4. Choose **Save** at the top right. In **Save Document**, check the title and
    choose **Save** again.
 
-    ![The Save Document window with the document title and the save mode Update current version](../../img/screenshots/create-post-save.png)
+    ![The Save Document window with the document title and the save mode Update current version](../../img/screenshots/create-post-save.png){ width="40%" }
 
 The message **Asset created** confirms it. Back on **Social Post**, your post
 is a card with **View Tactics 0**: it exists, but it is not attached to any
@@ -78,7 +78,7 @@ campaign yet.
    then the tactic under **Select tactic**. Only tactics for the post's network
    are offered.
 
-    ![The Add to Tactic window: Existing campaign selected, the Festive Gifting Guide campaign and its LinkedIn tactic chosen](../../img/screenshots/create-post-add-to-tactic.png)
+    ![The Add to Tactic window: Existing campaign selected, the Festive Gifting Guide campaign and its LinkedIn tactic chosen](../../img/screenshots/create-post-add-to-tactic.png){ width="50%" }
 
     *No campaign for it yet?* Choose **New campaign** instead, give it a name
     and a marketing objective, and choose **Create & Launch**.
@@ -97,21 +97,25 @@ campaign yet.
   Recommendations** for the best slots for your audience, then the
   **Destination**, then **Confirm Schedule**.
 
-    ![The Schedule Post window: the post being scheduled, the AI Recommendations panel, Date & Time, Destination and Confirm Schedule](../../img/screenshots/create-post-schedule.png)
+    ![The Schedule Post window: the post being scheduled, the AI Recommendations panel, Date & Time, Destination and Confirm Schedule](../../img/screenshots/create-post-schedule.png){ width="50%" }
 
 For Instagram, **Publish as** sets whether it goes out as a **Post** or a
 24-hour **Story**.
 
 The band on the post's card then reads **Scheduled** or **Published** with the
 date. A post with a video or a document shows **Sending** for a few minutes
-first, while the network processes the file. You can also do both from the campaign: open the tactic, and under
-**Asset Management** use the post's **⋮** menu.
+first, while the network processes the file.
+
+!!! tip "Publish from the campaign"
+    You can also publish or schedule from the campaign: open the tactic, and
+    under **Asset Management** use the post's **⋮** menu.
 
 ## Good to know
 
-- **Save before you leave the editor.** The editor does not save on its own
-  unless you switch **Autosave** on at the top. Leaving with **Unsaved** on the
-  title loses the post.
+!!! warning "Save before you leave the editor"
+    The editor does not save on its own unless you switch **Autosave** on at
+    the top. Leaving with **Unsaved** on the title loses the post.
+
 - **One asset, one network.** A LinkedIn post can only go to a LinkedIn tactic.
   For the same message on several networks, create one asset per network, or
   write them in one go with **Write with AI** or from an article: see
@@ -120,8 +124,9 @@ first, while the network processes the file. You can also do both from the campa
   Instagram and TikTok. The counter turns red past the limit.
 - **Instagram needs a picture or a video.** A text-only Instagram post cannot
   be published.
-- **Published posts are locked.** You cannot edit or delete them from
-  GoodBards once they are out.
+
+!!! note "Published posts are locked"
+    You cannot edit or delete them from GoodBards once they are out.
 
 ---
 

@@ -11,7 +11,7 @@ waitlist, check-in and results. In the app, **Event Management** sits under
 ### Event Management
 
 Your events as cards, with their status, date and registrations. Open one to work
-through its tabs: Definition, Landing page, Registration, Communications,
+through its tabs: Overview, Definition, Landing page, Registration, Communications,
 Attendance, Analytics and Follow-up.
 
 See [Event Management](../marketing/event-management.md).

@@ -18,9 +18,10 @@ follow-up.
 
 ## How to check guests in
 
-Open the event and its **Actions** menu.
+In the sidebar, choose **Marketing → Event Management**, open the event, then
+its **Actions** menu.
 
-![The event Actions menu: Open public page and Unpublish, Close registration and Send invitations, then Scan attendee, Kiosk mode and Export attendees, and End event and Cancel event](../../img/screenshots/event-actions-menu.png)
+![The event Actions menu: Open public page and Unpublish, Close registration and Send invitations, then Scan attendee, Kiosk mode and Export attendees, and End event and Cancel event](../../img/screenshots/event-actions-menu.png){ width="25%" }
 
 - **Scan attendee**: for a host at the door. Point the camera at the guest's QR
   code and the guest is checked in.
@@ -29,8 +30,9 @@ Open the event and its **Actions** menu.
 
 ![Kiosk mode: the event name, Self check-in, Scan your QR code, the camera area, and Need help? Please see a host](../../img/screenshots/event-kiosk.png)
 
-A guest who lost their email can be found on the **Attendance** tab: search for
-their name and set their status to **Attended**.
+!!! tip "A guest lost their email?"
+    Find them on the **Attendance** tab: search for their name and set their
+    status to **Attended**.
 
 ## How to print badges
 
@@ -48,16 +50,19 @@ their name and set their status to **Attended**.
 
 ![The Badge block: the label format 100 × 62 mm, Print Test Badge, line 1 the attendee's name and line 2 a form field](../../img/screenshots/event-badge.png)
 
-## After the event
+## How to end the event
 
-Choose **Actions → End event**. Guests who were not checked in are marked
-**Absent**, so the **Follow-up** tab can thank those who came and reach those who
-missed it. **Export attendees** downloads the list.
+1. Choose **Actions → End event**.
+2. Guests who were not checked in are marked **Absent**, so the **Follow-up** tab
+   can thank those who came and reach those who missed it.
+3. To keep the list, choose **Actions → Export attendees**.
 
 ## Good to know
 
-- **The QR code is personal.** It checks in that one registration; a screenshot
-  forwarded to a friend still checks in the original guest.
+!!! info "The QR code is personal"
+    It checks in that one registration: a screenshot forwarded to a friend still
+    checks in the original guest.
+
 - **Pending and waitlisted guests have no QR code.** They get one in the email
   that confirms their seat.
 - **Check the camera before doors open.** The browser asks for permission to use

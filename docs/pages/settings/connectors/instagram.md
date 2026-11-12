@@ -31,6 +31,9 @@ can:
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Social Media** tab, find **Instagram** and choose **Connect**.
+
+    ![The Instagram card once connected: the tropikahome account, how long access is valid, and Settings](../../../img/screenshots/connectors/instagram.png){ width="30%" }
+
 3. Sign in to Instagram with the account you want to publish to, and accept the
    permissions it asks for: your profile, publishing, comments, messages and
    statistics.
@@ -46,23 +49,28 @@ can:
 
 ## Good to know
 
-- **Every Instagram post needs a picture or a video.** A text-only post fails.
+!!! note "Every Instagram post needs a picture or a video"
+    A text-only post fails. Add at least one picture or one video before you
+    publish or schedule it.
+
 - **Videos are published as Reels**: MP4 or MOV, up to 300 MB, 3 seconds to 15
   minutes. A video story: up to 100 MB and 60 seconds. See
   [Videos, documents, Reels and stories](../../social-media/social-post.md#videos-documents-reels-and-stories).
 - **Pictures are sent as JPEG**, whatever their original format.
 - **2,200 characters per caption.**
-- **Media become reachable by link.** Instagram fetches pictures and videos
-  itself, so GoodBards gives it a link to each one: pictures stay publicly
-  reachable, videos through a link that expires after an hour.
 - **Instagram limits how many posts you can publish per day** (about 50 per
   account).
 - **Access is renewed automatically** a week before it expires. If Instagram
   refuses, the connector switches off and the card asks you to reconnect.
 
+!!! info "Media are handed to Instagram by link"
+    Instagram fetches pictures and videos itself, so GoodBards gives it a link
+    to each one. Pictures stay publicly reachable by that link; videos use a
+    link that expires after an hour.
+
 ## How to disconnect
 
-1. On the Instagram card, choose **Manage configuration**.
+1. On the Instagram card, choose **Settings**.
 2. Choose **Disconnect**, then confirm.
 
 GoodBards forgets the access. Posts already published stay on Instagram. To remove

@@ -7,15 +7,16 @@ to.
 
 ## Before you start
 
-Social publishing needs the channel connected first. See
-[Connections](../settings/connections.md): without it, there is nowhere for a
+Social Media is included in the **Pro** and **Full** plans. Publishing and
+reports need the channel connected first, under **Connectors**: see
+[Connections](../settings/connections.md). Without it, there is nowhere for a
 post to go.
 
 ## The screens
 
 ### Social Post
 
-Write a post for LinkedIn, Instagram, Facebook or X, with the AI's help for the
+Write a post for LinkedIn, Instagram, Facebook, X or TikTok, with the AI's help for the
 text and hashtags, then publish it now or schedule it. You can also turn an
 article into a series of posts.
 
@@ -30,7 +31,7 @@ See [Analysis](analysis.md).
 
 ### Social reports
 
-Period reports per network (LinkedIn, Instagram, YouTube), sent to you on a
-schedule if you want.
+A report per social account and period, kept in a history and sent to you on
+a schedule if you want.
 
 See [Social reports](reports.md).

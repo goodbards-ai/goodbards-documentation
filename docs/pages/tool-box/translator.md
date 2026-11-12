@@ -6,16 +6,20 @@ formatting intact.
 ## What it's for
 
 Southeast Asia is not one audience. The same campaign may need English in
-Singapore, Bahasa in Indonesia and Chinese in Taiwan — and a translation that
+Singapore, Bahasa in Indonesia and Chinese in Taiwan, and a translation that
 reads naturally in each.
 
 The Translator works on formatted text, so headings, bold, lists and links
 survive. You can paste copy in or import a file.
 
+## Before you start
+
+- **Your plan.** The Translator is included in the **Pro** and **Full** plans.
+
 ## How to translate content
 
 1. In the sidebar, choose **Content Hub → Translator**.
-2. Put your copy into **Source Text** — type it, paste it, or use **Import File**.
+2. Put your copy into **Source Text**: type it, paste it, or use **Import File**.
 3. Set **Source Language** and **Source Region**.
 4. Set **Target Language** and **Destination Region**.
 5. Choose **TRANSLATE**.
@@ -43,13 +47,14 @@ rather than a literal translation.
 
 ## Good to know
 
-- **Have a native speaker check anything important.** AI translation is strong on
-  fluency but can miss tone, idiom and cultural nuance — exactly the things that
-  matter in marketing copy.
+!!! note "Have a native speaker check anything important"
+    AI translation is strong on fluency but can miss tone, idiom and cultural
+    nuance: exactly the things that matter in marketing copy.
+
 - **Translate the finished copy.** Translating a draft you go on to edit means
   doing the work twice.
 - **Watch length.** Translated text often runs longer or shorter than the
-  original, which can break a layout — check email and ad designs after
+  original, which can break a layout: check email and ad designs after
   translating.
 
 ---

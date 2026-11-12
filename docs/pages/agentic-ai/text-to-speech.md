@@ -5,10 +5,17 @@ Turn written copy into spoken audio, in a voice you choose.
 ## What it's for
 
 Some audiences listen rather than read. Text to Speech produces audio from your
-written copy — useful for video voiceovers, social clips, accessible versions of
-written content, and audio ads.
+written copy: video voiceovers, social clips, accessible versions of written
+content, and audio ads.
 
-You write the script; the platform reads it aloud.
+You write the script; GoodBards reads it aloud.
+
+## Before you start
+
+- **Your plan.** Text to Speech is included in the **Lite**, **Pro** and
+  **Full** plans.
+- **Credits.** Each clip counts against your monthly AI credits. See
+  [Usage & Billing](../settings/tenant-usage.md).
 
 ## How to generate audio
 
@@ -47,17 +54,19 @@ Match the voice to the content. *Energetic* suits a product launch; *warm* or
 Copy that reads well on a page often sounds wrong aloud. Shorter sentences work
 better, and it is worth reading your script out before generating it.
 
-**AI Assist**, above the text box, can help adapt written copy into something that
-sounds natural spoken.
+!!! tip "Let AI Assist adapt your copy"
+    **AI Assist**, above the text box, turns written copy into something that
+    sounds natural spoken.
 
 ## Good to know
 
+!!! warning "Say if the audio is synthetic"
+    Where your audience would reasonably expect a real person, tell them the
+    voice is generated.
+
 - **5,000 characters is roughly five minutes.** Longer scripts need splitting.
-- **Listen before you publish.** Check names, acronyms and any local place names —
-  these are where pronunciation goes wrong.
-- **Generation uses credits.** See [Usage & Billing](../settings/tenant-usage.md).
-- **Say if audio is synthetic** where your audience would reasonably expect a real
-  person.
+- **Listen before you publish.** Check names, acronyms and any local place
+  names: these are where pronunciation goes wrong.
 
 ---
 

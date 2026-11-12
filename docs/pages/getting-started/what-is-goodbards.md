@@ -1,6 +1,6 @@
 # What is GoodBards?
 
-GoodBards is an **Agentic AI Marketing OS** — a single platform where AI agents
+GoodBards is an **Agentic AI Marketing OS**: a single platform where AI agents
 plan, create and execute marketing campaigns, while remembering your brand's
 voice, data and history.
 
@@ -15,7 +15,7 @@ GoodBards offers and why, see [goodbards.com](https://www.goodbards.com).
 
 If you arrived from the GoodBards website, you will have seen the platform
 described as a set of solutions. Inside the app those are grouped slightly
-differently — by the job you are doing rather than by what was sold. Here is how
+differently: by the job you are doing rather than by what was sold. Here is how
 they line up.
 
 | On the website | In the app | Documentation |
@@ -34,18 +34,20 @@ they line up.
 
 ## The two words to know
 
-**Tactic** — one piece of marketing on one channel: a single LinkedIn post, one
-email. The smallest thing you can publish.
-
-**Campaign** — several tactics working towards one goal over a period of time.
-
-If you only want to publish one post, you want a tactic, not a campaign. See
+**Tactic**: one piece of marketing on one channel, such as a single LinkedIn
+post or one email. The smallest thing you can publish. See
 [Launch a Tactic](../marketing/launch-tactic.md).
+
+**Campaign**: several tactics working towards one goal over a period of time.
+See [Campaigns](../marketing/campaigns.md).
+
+!!! tip "One post? Use a tactic"
+    If you only want to publish one post, you want a tactic, not a campaign.
 
 ## Where to start
 
 1. Set up [Brand & Context](../settings/company-settings.md) and your
-   [Brand Kit](../settings/brand-kit.md) — everything the AI writes draws on them.
+   [Brand Kit](../settings/brand-kit.md): everything the AI writes draws on them.
 2. Connect the services you use, in [Connections](../settings/connections.md).
 3. Add your [contacts](../audience/contacts.md).
 4. Then publish something: [Launch a Tactic](../marketing/launch-tactic.md) or
@@ -53,3 +55,7 @@ If you only want to publish one post, you want a tactic, not a campaign. See
 
 New to the interface? [Finding Your Way Around](navigating.md) is a tour of the
 sidebar, screen by screen.
+
+---
+
+*Still stuck? [Contact support](../contact.md).*

@@ -38,11 +38,11 @@ Along the top:
   [Calendar](../workspace/calendar.md)). Pick your own, up to six, in
   [Personal Settings → Shortcuts](../settings/personal-settings.md#shortcuts):
   for example **Scan Business Card** if you meet customers on the road.
-- **Search**, the magnifying glass — or press ++cmd+k++ (++ctrl+k++ on Windows)
+- **Search**, the magnifying glass, or press ++cmd+k++ (++ctrl+k++ on Windows)
   from anywhere.
 - **Notifications**, the bell: what happened while you were away. Switch
-  between **All**, **Unread** and
-  **Read**, and mark one as unread to come back to it.
+  between **All**, **Unread** and **Read**, and mark one as unread to come back
+  to it.
 - **The AI assistant**, the sparkle button.
 - **Language**, shown as a two-letter code such as **EN**.
 - **Theme**, the sun or moon, switching between light and dark.
@@ -69,14 +69,15 @@ you through a screen step by step, for example creating a chat agent.
 
 ## Two words worth knowing
 
-**Tactic** — one piece of marketing on one channel: a single LinkedIn post, one
-email. The smallest thing you can publish. See
+**Tactic**: one piece of marketing on one channel, such as a single LinkedIn
+post or one email. The smallest thing you can publish. See
 [Launch a Tactic](../marketing/launch-tactic.md).
 
-**Campaign** — several tactics working towards one goal over a period of time.
+**Campaign**: several tactics working towards one goal over a period of time.
 See [Campaigns](../marketing/campaigns.md).
 
-If you only want to publish one post, you want a tactic, not a campaign.
+!!! tip "One post? Use a tactic"
+    If you only want to publish one post, you want a tactic, not a campaign.
 
 ---
 

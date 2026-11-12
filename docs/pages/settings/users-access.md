@@ -1,11 +1,11 @@
 # Sub-Workspaces
 
-Run separate workspaces underneath your own — one per client, brand or business
+Run separate workspaces underneath your own: one per client, brand or business
 unit.
 
 !!! note "The app calls these sub tenants"
     You will see the word **tenant** on this screen. A *tenant* is simply a
-    workspace — a self-contained account with its own data. This page uses
+    workspace: a self-contained account with its own data. This page says
     "workspace", but the buttons say "tenant".
 
 ## What it's for
@@ -17,7 +17,18 @@ campaigns and content, sitting under your main account.
 Each has its own plan tier and its own credit allowance, so one client's heavy
 month does not consume another's.
 
+!!! info "Data never crosses between workspaces"
+    Contacts and campaigns in one workspace are invisible to another. That is
+    what makes the separation safe for client work.
+
 If you run marketing for a single business, you will not need this.
+
+## Before you start
+
+- Your plan must include sub-workspaces. If not, the **Sub Tenants** tab shows a
+  crown.
+- Open it from your main workspace: a sub-workspace cannot have sub-workspaces
+  of its own.
 
 ## How to create a sub-workspace
 
@@ -33,22 +44,23 @@ Each row shows:
 | Column | What it tells you |
 | --- | --- |
 | **Name** | The sub-workspace. Choose it to open. |
-| **Tier** | Its plan — for example **Pro**. |
+| **Tier** | Its plan, for example **Pro**. |
 | **Users** | Who has access. |
 | **Credit Usage** | Consumption against that workspace's own allowance. |
 
 The bar at the top right shows how many sub-workspaces you have against your
-limit — for example *1 / 5 tenants*.
+limit, for example *1 / 5 tenants*.
 
-## Switching between workspaces
+## How to switch between workspaces
 
-Use the workspace name at the top of the screen. Anything you then do — creating
-a campaign, adding contacts — happens inside the workspace you have selected.
+Use the workspace name at the top of the screen. Anything you then do, such as
+creating a campaign or adding contacts, happens inside the workspace you have
+selected.
 
 !!! warning "Check which workspace you are in"
     The name at the top is the only thing distinguishing one from another.
     Before sending an email or publishing a post, confirm you are in the right
-    workspace — content sent from the wrong one goes to the wrong audience.
+    workspace: content sent from the wrong one goes to the wrong audience.
 
 ## The other tabs
 
@@ -60,7 +72,7 @@ a campaign, adding contacts — happens inside the workspace you have selected.
 
 ### Preferences
 
-![Tenant Settings › Preferences: the organisation name, the timezone and the engagement decay velocity](../../img/screenshots/tenant-preferences.png)
+![Tenant Settings › Preferences: the organisation name, the timezone and the engagement decay velocity](../../img/screenshots/tenant-preferences.png){ width="80%" }
 
 - **Organisation Name:** the workspace name everyone sees in the top bar.
 - **Timezone:** the workspace's timezone, used for schedules and reports.
@@ -74,9 +86,6 @@ a campaign, adding contacts — happens inside the workspace you have selected.
 
 ## Good to know
 
-- **Data does not leak between workspaces.** Contacts and campaigns in one are
-  invisible to another. This is deliberate — it is what makes the separation
-  safe for client work.
 - **Each has its own credits.** Check usage per workspace rather than assuming a
   shared pool.
 - **Your limit depends on your plan.** The counter at the top right shows how many

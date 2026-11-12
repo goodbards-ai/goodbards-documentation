@@ -26,24 +26,27 @@ copies nothing.
     2. Give it **BigQuery Data Viewer** on each dataset GoodBards may read, and
        **BigQuery Job User** on the project.
     3. Create a **JSON key** for that service account and send you the file.
-- Queries are billed to that Google Cloud project, at BigQuery's usual rates.
-  A cap limits what one query may scan (1 GB unless you change it).
+!!! info "Google bills the queries, not GoodBards"
+    Queries are billed to that Google Cloud project, at BigQuery's usual rates.
+    A cap limits what one query may scan (1 GB unless you change it).
 
 ## How to connect
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Web Analytics** tab, find **Google BigQuery** and choose **Connect**.
+
+    ![The Google BigQuery card on the Web Analytics tab, with its Connect button](../../../img/screenshots/connectors/google-bigquery.png){ width="30%" }
+
 3. Choose **Choose file** and pick the key file, or paste its content in the
    box below. GoodBards shows the account it found in the file.
 4. **GCP project** is filled in from the file. Change it only if your data team
    told you to.
-5. Choose **Save & connect**. GoodBards checks the key with Google and lists
+5. Choose **Save & Connect**. GoodBards checks the key with Google and lists
    the datasets it can see before saving. If Google refuses, nothing is saved
    and the message tells you why.
 
-The card then shows the service account and the project. **Manage
-configuration** opens the same form; **Test connection** lists the datasets
-again at any time.
+The card then shows the service account and the project. **Settings** opens the
+same form; **Test Connection** lists the datasets again at any time.
 
 ## What GoodBards does with it
 
@@ -57,14 +60,18 @@ again at any time.
 
 - **Under Advanced**, you can raise or lower the per-query cost cap. Leave it
   unless your data team asks for more.
-- To rotate the key, open **Manage configuration**, choose **Replace key**,
-  pick the new file and save. The old key stops being used immediately.
-- Some companies block the creation of service-account keys by policy. If your
-  data team cannot create one, contact support before going further.
+- **To rotate the key**, open **Settings**, choose **Replace Key**, pick the new
+  file and save. The old key stops being used immediately.
+- **Some companies block service-account keys** by policy. If your data team
+  cannot create one, contact support before going further.
+
+!!! warning "Treat the key file like a password"
+    Anyone with the file can read the datasets it was granted. Once GoodBards
+    has it, delete the copies left in email or chat.
 
 ## How to disconnect
 
-1. On the Google BigQuery card, choose **Manage configuration**.
+1. On the Google BigQuery card, choose **Settings**.
 2. Choose **Disconnect**. The stored key is deleted.
 
 ---

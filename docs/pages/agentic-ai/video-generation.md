@@ -5,11 +5,18 @@ Create short video clips from a written description.
 ## What it's for
 
 Short video performs well on social, and producing it normally means a camera, an
-editor and a week. This generates a clip from a description instead — useful for
+editor and a week. This generates a clip from a description instead, for
 social posts, ad creative and background footage.
 
 Clips are short by design: a few seconds, suited to social rather than long-form
 storytelling.
+
+## Before you start
+
+- **Your plan.** Video Generation is included in the **Lite**, **Pro** and
+  **Full** plans.
+- **Credits.** Video uses more credits than images. See
+  [Usage & Billing](../settings/tenant-usage.md).
 
 ## How to generate a video
 
@@ -30,7 +37,7 @@ Your clip appears under **Video Preview** on the left.
 | Ratio | Use it for |
 | --- | --- |
 | **16:9 Landscape** | YouTube, website embeds, presentations. |
-| **9:16 Portrait** | Stories, Reels, TikTok — anything watched on a phone held upright. |
+| **9:16 Portrait** | Stories, Reels, TikTok: anything watched on a phone held upright. |
 
 Choose before generating. Cropping landscape footage into portrait afterwards cuts
 the sides off your subject.
@@ -47,8 +54,11 @@ from that picture and brings it to life. GoodBards switches the aspect ratio
 to the one closest to your picture.
 
 This is how you get your logo into the scene, for example on a flag, a shop
-sign or a product. Video models never see your logo file, so a prompt like
-*"use our logo"* on its own produces a video without it.
+sign or a product.
+
+!!! info "Video models never see your logo file"
+    A prompt like *"use our logo"* on its own produces a video without it.
+    Start from an image that already shows the logo, as below.
 
 1. In [Image Generation](image-generation.md), create the opening shot with
    **Blend logo into the scene** on. Use the aspect ratio you want for the
@@ -73,9 +83,11 @@ Choose **None** to generate without it.
 Turn on **Add logo** to stamp your real logo file in a corner, as in Image
 Generation: pick the logo, the variant, the position and the size. The preview
 shows it straight away. **Download** and **Save to Drive** then record the clip
-again with the logo on every frame. This takes as long as the clip itself, so
-keep the tab open. You get an MP4 in Chrome, Edge and Brave, and a WebM file
-in some other browsers.
+again with the logo on every frame.
+
+!!! note "Keep the tab open while it records"
+    Recording takes as long as the clip itself. You get an MP4 in Chrome, Edge
+    and Brave, and a WebM file in some other browsers.
 
 ## Style options
 
@@ -87,7 +99,7 @@ prompt alone, or choose **Reset Style Options** to clear them.
 
 ## Writing a good prompt
 
-Describe the shot the way you would brief a videographer — subject, movement,
+Describe the shot the way you would brief a videographer: subject, movement,
 setting, light. The placeholder on screen is a good model: *a cinematic drone shot
 flying over misty mountains at sunrise*.
 
@@ -95,8 +107,7 @@ flying over misty mountains at sunrise*.
 
 ## Good to know
 
-- **Video costs more than images.** Generation is slower and uses more credits —
-  see [Usage & Billing](../settings/tenant-usage.md).
+- **Video is slower than images.** A clip takes longer to generate.
 - **Expect several attempts.** Getting the motion right usually takes a few tries,
   so allow time before a deadline.
 - **Watch for artefacts.** Faces, hands and text are where AI video still fails.

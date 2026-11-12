@@ -1,6 +1,6 @@
 # Brand Kit
 
-Your colours, fonts and logos, in one place — so everything GoodBards produces
+Your colours, fonts and logos, in one place, so everything GoodBards produces
 looks like it came from you.
 
 ## What it's for
@@ -19,18 +19,20 @@ a generic template.
 2. Open the **Brand Kit** tab.
 3. Choose **+ Add Brand Kit**.
 4. Add your colours, fonts and logo.
-5. Mark one kit as **primary**.
+5. To make it your main kit, open the kit's menu and choose **Promote to
+   primary**.
 
 ![The Brand Kit tab: Apply brand to app interface with the primary, secondary, background and text colour roles, and the Tropika Home kit marked Primary with its palette of six colours and two fonts](../../img/screenshots/brand-kit.png)
 
 ## Colour roles matter more than colour names
 
-When you add a colour, you give it a **role** — what the colour is *for*, not what
+When you add a colour, you give it a **role**: what the colour is *for*, not what
 it is called. A colour named "Ocean Blue" means nothing to the platform; a colour
 assigned the role of *primary* or *accent* can be applied correctly everywhere.
 
-If your generated designs use your colours in odd places, check the roles rather
-than the colours themselves.
+!!! tip "Colours in odd places?"
+    If your generated designs use your colours in the wrong places, check the
+    roles rather than the colours themselves.
 
 ## Applying your brand to the platform itself
 
@@ -38,13 +40,14 @@ than the colours themselves.
 Useful if your team should see their own branding rather than the GoodBards
 default.
 
-This requires a **primary** brand kit. Until you mark one, the toggle explains
-that there is no primary kit yet.
+!!! note "Needs a primary kit"
+    This requires a **primary** brand kit. Until you mark one, the toggle
+    explains that there is no primary kit yet.
 
 ## More than one kit
 
-You can hold several — useful for sub-brands or for an agency running different
-clients. The **primary** kit is the one used by default and the one that drives
+You can hold several, which is useful for sub-brands or for an agency running
+different clients. The **primary** kit is the one used by default and the one that drives
 the interface.
 
 ## Good to know

@@ -5,7 +5,7 @@ back.
 
 ## What it's for
 
-Some questions need more than a quick answer — *what are the main loyalty
+Some questions need more than a quick answer, such as *what are the main loyalty
 programmes among Singapore F&B chains, and how do they differ?* The Research
 Assistant works through questions like that properly rather than replying off the
 top of its head.
@@ -13,13 +13,20 @@ top of its head.
 Use it for market scans, competitor comparisons and background before a campaign.
 For quick drafting, a [chat agent](chat-agents.md) is faster.
 
+## Before you start
+
+- **Your plan.** Research Assistant is included in the **Pro** and **Full**
+  plans.
+- **Credits.** Research uses more credits than a simple chat, because it runs
+  several searches. See [Usage & Billing](../settings/tenant-usage.md).
+
 ## How to request research
 
 1. In the sidebar, choose **Agentic AI → Research Assistant**.
 2. Type your question in the box at the bottom.
-3. Send it, and wait — this takes longer than an ordinary chat reply.
+3. Send it, and wait: this takes longer than an ordinary chat reply.
 
-![The Research Assistant explaining its four stages: Ask Your Question, Break It Down, Research in Depth, Get Your Results](../../img/screenshots/research-assistant.png)
+![The Research Assistant explaining its four stages: Ask Your Question, Break It Down, Research in Depth, Get Your Results](../../img/screenshots/research-assistant.png){ width="80%" }
 
 ## How it works
 
@@ -40,19 +47,17 @@ single answer:
 
 ## Chat History
 
-**Chat History**, at the top right, holds your previous research. Worth checking
-before asking again — someone may already have researched the same ground.
+**Chat History**, at the top right, holds your previous research. Check it
+before asking again: you may already have researched the same ground.
 
 ## Good to know
 
+!!! warning "Check facts before you publish them"
+    Prices, statistics and competitor claims especially. The research is a
+    starting point for your judgement, not a source to quote as it is.
+
 - **Responses take a while.** The screen says so, and that is the trade-off for
   depth. Ask, then come back to it.
-- **Research costs credits.** More than a simple chat, because it runs several
-  searches. See [Usage & Billing](../settings/tenant-usage.md).
-- **Verify anything load-bearing.** Check facts you plan to publish — prices,
-  statistics and competitor claims especially.
-- **It is a starting point.** Use the research to inform your own judgement, not
-  to replace it.
 
 ---
 

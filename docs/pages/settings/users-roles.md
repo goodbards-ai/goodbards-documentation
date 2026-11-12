@@ -40,16 +40,18 @@ Settings** are always open to them.
 
 ## How to invite a user
 
-1. Open **Tenant Settings** from your account menu, then the **Security** tab.
+1. Open your account menu (your picture, top right), choose **Tenant
+   Settings**, then open the **Security** tab.
 2. Under **Users**, choose **Invite User**, enter their email and pick their role.
 3. They receive an invitation by email. The number of users your plan allows is
    shown above the list.
 
-The invitation link stays valid for 7 days. Pending invitations are listed under
-**Users** until they are accepted, where you can extend or cancel them. If the
-email did not arrive, invite the same address again: the same link is sent again
-and its validity restarts. Someone who is already a member cannot be invited;
-change their role instead.
+!!! note "Invitations last 7 days"
+    Pending invitations are listed under **Users** until accepted, where you can
+    extend or cancel them. If the email did not arrive, invite the same address
+    again: the same link is sent and its validity restarts.
+
+Someone who is already a member cannot be invited; change their role instead.
 
 To change someone's role later, use the pencil next to their roles.
 
@@ -109,7 +111,8 @@ you tick them.
 
 To give one of them:
 
-1. Open **Tenant Settings** from your account menu, then the **Security** tab.
+1. Open your account menu (your picture, top right), choose **Tenant
+   Settings**, then open the **Security** tab.
 2. Under **Users**, choose the pencil in the person's **Permissions** column
    (**Edit permissions**).
 3. Under **Additional permissions**, tick the ones they need, then choose
@@ -117,13 +120,13 @@ To give one of them:
 
 The change applies at their next login, or when they switch workspace.
 
-!!! warning "Nobody receives the emails until you choose who"
+!!! info "Nobody receives the emails until you choose who"
     If no one in your company has *Recipient for daily report emails*, the Daily
     Pulse email is not sent. If no one has *Recipient for lead capture alert
     emails*, new chatbot leads are still saved as contacts, but nobody is told.
     Give each to at least one person.
 
-!!! tip "Keep sensitive data to the people who need it"
+!!! warning "Keep sensitive data to the people who need it"
     *Access sensitive data* is what lets someone read and download personal
     details. Under Singapore's PDPA and similar laws, give it only to colleagues
     who work with contacts directly.

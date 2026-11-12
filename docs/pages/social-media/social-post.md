@@ -12,6 +12,7 @@ campaign it belongs to, so its results show up in the campaign report.
 
 ## Before you start
 
+- **Your plan.** Social Media is included in the **Pro** and **Full** plans.
 - **A connected account.** Connect LinkedIn, Facebook, Instagram, X or TikTok
   under **Connectors** (in the menu behind your avatar), and choose the page to
   publish to in **Destination**. Without it, **Publish** and **Schedule** stay
@@ -29,11 +30,12 @@ Turn one article into a series of posts for several channels at once.
    missed it**. Each one shows when it is suggested to go out. Tick the channels.
 5. Check **Link to the article**. Add anything to emphasise under **Anything to
    stress? (optional)**.
-6. Choose **Write the brief**, check it, then choose **Generate**.
-7. Click a post to review it, change its picture or plan it. You can close the
+6. Choose **Write The Brief**, check it, then choose **Generate**.
+7. Choose a post to review it, change its picture or plan it. You can close the
    window while the posts are written.
 
-Nothing is published: every post waits on its channel as a draft for you to review.
+!!! info "Nothing is published"
+    Every post waits on its channel as a draft for you to review.
 
 ## How to write a post yourself
 
@@ -63,10 +65,10 @@ walkthrough, with screenshots, is in
         **Instructions** say *how* to write the post; the AI follows them.
         **Notes & facts** say *what* is true; the AI only uses them as facts
         to cite, and never takes orders from them.
-5. Choose **Write it**. The AI writes a brief, drafts the post, reviews it and
+5. Choose **Write It**. The AI writes a brief, drafts the post, reviews it and
    revises it once.
 6. Read the score and the checks. Apply the suggestions you agree with, or use
-   **Ask for a change**. Then choose **Save as asset**.
+   **Ask for a change**. Then choose **Save As Asset**.
 
 In the post editor, **Improve With AI** opens a small chat with the AI: ask for
 a change (*more punchy, add three hashtags*) and the post is rewritten within
@@ -85,9 +87,10 @@ your [Content Repository](../workspace/drive.md): upload it there first, with
 **+ New → Video** or **Upload**. Videos up to 2 GB are accepted, and a progress
 bar shows the upload.
 
-A post holds **one kind of media**: pictures, one video, or one document. Adding
-one removes the other, and with a video or a document attached, no link preview
-card is shown.
+!!! note "One kind of media per post"
+    A post holds pictures, one video, or one document. Adding one removes the
+    other, and with a video or a document attached, no link preview card is
+    shown.
 
 ### A video on LinkedIn
 
@@ -140,7 +143,6 @@ or **Schedule** window, set **Publish as** to **Story**.
   live, and appear on the **Stories** card of your Instagram report. See
   [Social Media Analysis](analysis.md).
 
-
 ## How to publish or schedule a post
 
 **Social Media → Social Post** lists your posts as cards. The band on top shows
@@ -164,6 +166,10 @@ which then processes it. The post shows **Sending** in the tactic, then
 If the network refuses the file, the post shows **Error**: hover it to read the
 network's reason, fix the file, and publish again.
 
+!!! warning "Published posts are locked"
+    Once a post is published, you cannot edit or delete it from GoodBards. Check
+    the text, the picture and the destination before you confirm.
+
 ## Good to know
 
 - **Character limits are per channel**: 3,000 on LinkedIn, 280 on X, 2,200 on
@@ -173,8 +179,7 @@ network's reason, fix the file, and publish again.
   one, the preview card shows, but Instagram still needs a picture or a video.
 - **Videos and documents are for LinkedIn and Instagram.** Documents are for
   LinkedIn only. Instagram carousels hold pictures only, not videos.
-- **Published posts are locked.** You cannot edit or delete them from GoodBards.
-- **Posted outside GoodBards?** In the tactic, choose **Link published post** and
+- **Posted outside GoodBards?** In the tactic, choose **Link Published Post** and
   paste its link: its results then count in the campaign report.
 - **LinkedIn personal profiles** do not give analytics; publish to a company page
   if you want results.

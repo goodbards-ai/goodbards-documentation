@@ -21,6 +21,9 @@ campaign's **Blog Post** tactic. See [Launch a tactic](../../marketing/launch-ta
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **CMS** tab, find **WordPress.com** and choose **Connect**.
+
+    ![The WordPress.com card on the CMS tab, with its Connect button](../../../img/screenshots/connectors/wordpress-com.png){ width="30%" }
+
 3. Sign in to WordPress.com and approve GoodBards.
 4. You are taken back to GoodBards. The card shows your site's name.
 
@@ -29,12 +32,16 @@ campaign's **Blog Post** tactic. See [Launch a tactic](../../marketing/launch-ta
 | GoodBards… | Details |
 | --- | --- |
 | **Creates** | A **draft** post with your title and content, with your picture as the featured image. |
-| **Does not** | Publish the post for you — review and publish it in WordPress.com. |
+| **Does not** | Publish the post for you: review and publish it in WordPress.com. |
 
 ## Good to know
 
-- **Import WordPress** in the Content Repository works with self-hosted WordPress
-  only.
+- **Posts arrive as drafts.** Review them in WordPress.com and publish from
+  there.
+
+!!! note "No article import from WordPress.com"
+    **Import WordPress** in the Content Repository works with self-hosted
+    WordPress only.
 
 ## How to disconnect
 

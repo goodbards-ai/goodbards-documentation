@@ -5,7 +5,7 @@ when they arrive.
 
 ## What it's for
 
-Your website is usually where marketing ends up — the click from an email, the
+Your website is usually where marketing ends up: the click from an email, the
 link in a social post, the QR code on a flyer. Google Analytics tells you whether
 any of it worked.
 
@@ -14,14 +14,16 @@ rather than switching to a separate tool.
 
 ## Before you start
 
-You need Google Analytics connected, and a **GA4 property** chosen. If this page
-tells you that you are not connected, start at
-[Connections](../settings/connections.md).
+- **Your plan.** Google Analytics is included in the **Pro** and **Full**
+  plans.
+- **Google Analytics** connected under **Connectors**, with a **GA4 property**
+  chosen. If this page says you are not connected, start at
+  [Connections](../settings/connections.md).
 
 ## How to read your traffic report
 
 1. In the sidebar, choose **Organic Visibility → Google Analytics**.
-2. Check the **GA4 Property** shown — this is the website being reported on.
+2. Check the **GA4 Property** shown: this is the website being reported on.
 3. Pick a **Time Period**, such as *Last 7 days*.
 
 ![The Google Analytics Traffic tab, showing total visits, unique visitors, average session duration and bounce rate above traffic charts](../../img/screenshots/google-analytics.png)
@@ -42,7 +44,7 @@ tells you that you are not connected, start at
 ## The charts
 
 **Website Visits by Day** plots visits and unique visitors over time. Use it to
-check whether a campaign moved the numbers — look for the lift on the days you
+check whether a campaign moved the numbers: look for the lift on the days you
 published.
 
 **Traffic Sources** breaks visits down by where they came from: search, social,
@@ -60,8 +62,8 @@ delivering.
 | **Friction Finder** | Where visitors get stuck or drop out. |
 | **ROI Tracker** | Return on your marketing spend. |
 
-**Friction Finder** and **Journey Mapper** are the two worth returning to. Traffic
-tells you how many arrived; these tell you why they left.
+!!! tip "Return to Friction Finder and Journey Mapper"
+    Traffic tells you how many arrived; these two tabs tell you why they left.
 
 ### Friction Finder
 
@@ -84,7 +86,7 @@ the **AI Marketing Advisor** what to do about what it sees.
 ## Good to know
 
 - **Check the property.** If the figures look wrong, confirm the **GA4 Property**
-  is the site you meant — an account can hold several.
+  is the site you meant: an account can hold several.
 - **Compare like with like.** Traffic has weekly rhythms, so compare a week with a
   week rather than a weekend with a Tuesday.
 - **Analytics data lags slightly.** Today's numbers may still be settling; judge

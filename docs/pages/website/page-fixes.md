@@ -11,7 +11,9 @@ Fixes finds them in your Search Console data and puts the biggest ones first.
 
 ## Before you start
 
-- **Google Search Console** connected under **Connections**.
+- **Your plan.** Page Fixes is included in the **Pro** and **Full** plans.
+- **Google Search Console** connected under **Connectors**. See
+  [Connections](../settings/connections.md).
 
 ## How to use it
 
@@ -32,6 +34,10 @@ Fixes finds them in your Search Console data and puts the biggest ones first.
 4. Open **How to fix** for the steps, then choose **Add To Queue** to put the work
    in [Actions](../workspace/actions.md), or **Not Now** to set it aside.
 
+!!! tip "Start with Low CTR"
+    A better title and description take minutes and need no new content. The
+    page is already seen; the fix makes people click it.
+
 ## Three ways to look
 
 The three icons at the top right switch the view:
@@ -40,7 +46,7 @@ The three icons at the top right switch the view:
 - **Chart**: every page with an open finding, by position (further right is
   better) and click rate. Bubble size is how often the page was seen, colour is
   its main issue. Pages well below the dashed line are seen but not clicked.
-  Click a bubble to open its card.
+  Choose a bubble to open its card.
 
     ![Position vs click-through: pages as bubbles by position and click rate, coloured as quick wins, declining or low CTR, with the expected click rate as a dashed line](../../img/screenshots/seo-page-fixes-chart.png)
 
@@ -54,8 +60,6 @@ The three icons at the top right switch the view:
 
 - **The ranking is tuned to your business.** The line at the top right, such as
   *SaaS / Software product*, shows the site type used to judge what is normal.
-- **Low CTR fixes are cheap.** A better title and description take minutes and
-  need no new content.
 - **Check the result after a few weeks.** Search Console needs time to show the
   effect; **Performance & Report → Impact** shows it.
 

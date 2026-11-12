@@ -17,22 +17,27 @@ The **TikTok** connector lets GoodBards prepare TikTok posts for you:
 
 - You must be an **administrator** or the **owner** of your GoodBards company
   account.
-- Have your **video in the Drive** (Drive → New → Video), in portrait (9:16)
-  format, or your **photos** in the Drive.
+- Have your **video in the Content Repository** (**Upload → Video**), in
+  portrait (9:16) format, or your **photos** there. See
+  [Content Repository](../../workspace/drive.md).
 
 ## How to connect
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Social Media** tab, find **TikTok** and choose **Connect**.
+
+    ![The TikTok card on the Social Media tab: a crown when your plan does not include it, and the Connect button](../../../img/screenshots/connectors/tiktok.png){ width="30%" }
+
 3. Sign in to TikTok and accept the permissions it asks for: your profile and
    statistics, your videos, sending videos to your TikTok inbox, and publishing
-   videos. **Keep every box ticked.**
+   videos. Keep every box ticked.
 4. You are taken back to GoodBards. The card shows your TikTok name and picture,
    a **View profile** link, and until when the access is valid.
 
-If you unticked a permission, the card shows **Permissions missing — reconnect**
-in amber. Hover it to see which ones, then choose **Reconnect** and keep all the
-boxes ticked.
+!!! warning "Keep every permission ticked"
+    If you untick one, the card shows **Permissions missing — reconnect** in
+    amber. Hover it to see which ones, then choose **Reconnect** and keep all
+    the boxes ticked.
 
 ## Two kinds of TikTok post
 
@@ -40,8 +45,8 @@ When you create the asset, choose its type:
 
 | Type | What it holds |
 | --- | --- |
-| **TikTok Video** | One video from the Drive: MP4, MOV or WebM, up to 10 minutes and 4 GB, at least 360 pixels. The text is the caption. |
-| **TikTok Photos (carousel)** | Up to 35 photos from the Drive. The main photo is the cover, the asset title is the post title (90 characters) and the text is the description (4,000 characters). |
+| **TikTok Video** | One video from the Content Repository: MP4, MOV or WebM, up to 10 minutes and 4 GB, at least 360 pixels. The text is the caption. |
+| **TikTok Photos (carousel)** | Up to 35 photos from the Content Repository. The main photo is the cover, the asset title is the post title (90 characters) and the text is the description (4,000 characters). |
 
 ## How a post reaches TikTok
 
@@ -85,13 +90,13 @@ use **Check TikTok post**. Scheduled posts always go to the inbox.
 
 ## Good to know
 
-- **A video draft arrives without its caption.** TikTok does not take the text
-  with a video draft. In the editor, choose **Copy caption** and paste it in
-  TikTok when you post. Photo posts keep their title and description.
+!!! note "A video draft arrives without its caption"
+    TikTok does not take the text with a video draft. In the editor, choose
+    **Copy caption** and paste it in TikTok when you post. Photo posts keep
+    their title and description.
+
 - **5 drafts at a time.** TikTok keeps at most 5 drafts waiting in your inbox
   over 24 hours. Post or delete the waiting ones before you send more.
-- **Scheduled posts arrive as drafts too.** At the scheduled time the draft
-  lands in your inbox; someone still has to post it.
 - **You can link a video you posted yourself.** Use **Link published post** on
   the TikTok tactic and paste the video's link
   (`tiktok.com/@your-account/video/…`) or pick it in the list.
@@ -100,6 +105,10 @@ use **Check TikTok post**. Scheduled posts always go to the inbox.
   the connector switches off and you need to connect again.
 - **Connect from your own session.** The TikTok sign-in must be finished within
   10 minutes, by the same person, in the same company account that started it.
+
+!!! info "Scheduled posts arrive as drafts too"
+    At the scheduled time the draft lands in your TikTok inbox. Someone still
+    has to open the app and post it.
 
 ## How to disconnect
 

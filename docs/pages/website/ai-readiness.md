@@ -10,28 +10,40 @@ quotes pages that answer clearly, show who wrote them, use structured data and
 stay up to date. This screen scores your pages on those points and tells you
 what to fix first.
 
+## Before you start
+
+- **Your plan.** AI Readiness & Authority is included in the **Pro** and
+  **Full** plans.
+- **Google Search Console** connected under **Connectors**, with your site
+  chosen. See [Connections](../settings/connections.md). Without it, the screen
+  shows *Search Console is not connected*.
+
 ## How to read it
 
 1. In the sidebar, choose **Organic Visibility → AI Readiness & Authority**.
 2. The **Page Readiness** tab gives the overall score out of 100 and one score
    per pillar.
 
-![AI readiness 40 out of 100, with the pillars Answers & FAQ 0, Structured data 70, Content structure 50, Content trust signals 47, Quotability 1 and Freshness 48, and 5 pages scanned](../../img/screenshots/seo-ai-readiness.png)
+    ![AI readiness 40 out of 100, with the pillars Answers & FAQ 0, Structured data 70, Content structure 50, Content trust signals 47, Quotability 1 and Freshness 48, and 5 pages scanned](../../img/screenshots/seo-ai-readiness.png)
 
-| Pillar | What it checks |
-| --- | --- |
-| **Answers & FAQ** | Questions answered plainly on the page. |
-| **Structured data** | Schema markup that tells machines what the page is. |
-| **Content structure** | Clear headings, lists and short sections. |
-| **Content trust signals** | Author, sources, dates, contact details. |
-| **Quotability** | Sentences an assistant can quote as they are. |
-| **Freshness** | How recently the page was updated. |
+    | Pillar | What it checks |
+    | --- | --- |
+    | **Answers & FAQ** | Questions answered plainly on the page. |
+    | **Structured data** | Schema markup that tells machines what the page is. |
+    | **Content structure** | Clear headings, lists and short sections. |
+    | **Content trust signals** | Author, sources, dates, contact details. |
+    | **Quotability** | Sentences an assistant can quote as they are. |
+    | **Freshness** | How recently the page was updated. |
 
 3. Under **Recommendations**, work through the items in order; each one can go
    to the Action Queue.
 
 **Scan More Pages** adds pages to the scan; **Rescan Pages** updates the scores
 after you changed them.
+
+!!! tip "Start with Answers & FAQ"
+    It is usually the lowest score and the fastest to raise: add the questions
+    your customers really ask, with short answers.
 
 ## The tabs
 
@@ -47,8 +59,6 @@ after you changed them.
 
 - **A pillar that does not apply is left out**, not counted as zero. A contact
   page is not expected to have an FAQ.
-- **Start with Answers & FAQ.** It is usually the lowest score and the fastest to
-  raise: add the questions your customers really ask, with short answers.
 
 ---
 

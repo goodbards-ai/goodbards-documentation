@@ -36,8 +36,11 @@ You do this once, in Telegram. It takes two minutes.
 4. Send a username for the bot. It must end in `bot`, for example
    `yourbrand_news_bot`.
 5. BotFather answers with a **token**, a long code such as
-   `123456789:AAH…`. Copy it. Keep it private: anyone with it can send
-   messages as your bot.
+   `123456789:AAH…`. Copy it.
+
+!!! warning "Keep the token secret"
+    Anyone with the token can send messages as your bot. Paste it only in
+    GoodBards, never in an email or a chat.
 
 To give the bot your logo and a description, send `/setuserpic` and
 `/setdescription` to BotFather.
@@ -46,8 +49,12 @@ To give the bot your logo and a description, send `/setuserpic` and
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Messaging** tab, find **Telegram** and choose **Connect**.
-3. Paste the token from BotFather and confirm. GoodBards checks it with
-   Telegram before saving. If Telegram refuses it, nothing is saved.
+
+    ![The Telegram card on the Messaging tab, with its Connect button](../../../img/screenshots/connectors/telegram.png){ width="30%" }
+
+3. Paste the token from BotFather in **Bot token**, then choose **Connect Bot**.
+   GoodBards checks it with Telegram before saving. If Telegram refuses it,
+   nothing is saved.
 
 The card then shows your bot's name, and a line counting your Telegram contacts
 (see below).
@@ -56,7 +63,7 @@ The card then shows your bot's name, and a line counting your Telegram contacts
 
 1. In Telegram, open your channel, then **Administrators → Add Admin**, and add
    your bot. Give it the right to post messages.
-2. Back in GoodBards, on the Telegram card, choose **Channels**. The channel
+2. Back in GoodBards, on the Telegram card, choose **Channels (…)**. The channel
    appears with **Can post**. If it does not, type its `@name` in the box and
    choose **Add**.
 3. In a campaign, add a **Telegram** tactic, keep **Post to a channel**, write
@@ -115,11 +122,22 @@ appears on the contact's timeline.
 Telegram does not tell bots who **read** a message or how many people
 **viewed** a channel post, so those show "—".
 
+## What GoodBards does with it
+
+| GoodBards… | Details |
+| --- | --- |
+| **Publishes** | Posts in the channels and groups where your bot can post. |
+| **Sends** | Personal messages from your bot to contacts who tapped **Start**. |
+| **Reads** | The channels your bot belongs to, clicks on your links, reactions on channel posts, and who blocked your bot or sent `/stop`. |
+| **Does not** | Read your own chats, or write to anyone who did not start a chat with your bot. |
+
 ## Good to know
 
-- **Stopping is always possible.** A contact who sends `/stop` to your bot, or
-  blocks it, stops receiving messages: their Telegram consent is withdrawn
-  automatically. Sending `/start` again subscribes them back.
+!!! info "Stopping is always possible"
+    A contact who sends `/stop` to your bot, or blocks it, stops receiving
+    messages: their Telegram consent is withdrawn automatically. Sending
+    `/start` again subscribes them back.
+
 - **Consent is per channel.** Telegram consent is separate from email
   consent; you see both on the contact page under **Messaging consent**.
 - **Personalize in channel posts.** First name and the other fields are only

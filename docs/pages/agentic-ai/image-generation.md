@@ -5,12 +5,19 @@ Create images for campaigns, posts and emails by describing what you want.
 ## What it's for
 
 Marketing needs images constantly, and stock photography rarely fits. Describe
-the image you need and GoodBards creates it — no design software, no photo
+the image you need and GoodBards creates it: no design software, no photo
 shoot.
 
 Generated images are useful for social posts, email headers and campaign
 visuals. They are less suited to anything needing your actual products or
 people.
+
+## Before you start
+
+- **Your plan.** Image Generation is included in the **Lite**, **Pro** and
+  **Full** plans.
+- **Credits.** Each image counts against your monthly AI credits. See
+  [Usage & Billing](../settings/tenant-usage.md).
 
 ## How to generate an image
 
@@ -32,9 +39,10 @@ Your images appear under **Generated Images** on the left.
 primary kit is selected when you open the screen. Choose **None** to generate
 without it.
 
-With a brand kit selected, GoodBards adds the kit's colours and its imagery
-guidelines to your prompt, so the result leans towards your palette and style.
-AI follows colours closely but not exactly, so check important brand colours by eye.
+!!! info "What the brand kit adds"
+    GoodBards adds the kit's colours and its imagery guidelines to your prompt,
+    so the result leans towards your palette and style. AI follows colours
+    closely but not exactly: check important brand colours by eye.
 
 ### Adding your logo
 
@@ -69,9 +77,10 @@ the scene**.
 The AI then draws your logo into the picture itself: printed on a cup, a bag, a
 shop sign. Pick the logo and variant as above.
 
-The AI redraws the logo, so it may not reproduce it perfectly. Check its shape,
-colours and lettering before you use the image. For an exact logo, use
-**Add logo** instead. You can only use one of the two at a time.
+!!! warning "The AI redraws a blended logo"
+    It may not reproduce it perfectly. Check its shape, colours and lettering
+    before you use the image. For an exact logo, use **Add logo** instead; you
+    can only use one of the two at a time.
 
 The same **Brand kit** choice appears when you generate an image for a campaign
 tactic. That screen adds your colours and guidelines, but not the logo.
@@ -80,10 +89,13 @@ tactic. That screen adds your colours and guidelines, but not the logo.
 
 | Ratio | Shape | Good for |
 | --- | --- | --- |
-| **1024x1024** | Square | Instagram posts, profile images. |
-| **1536x1024** | Landscape | Email headers, website banners, LinkedIn. |
-| **1024x1536** | Portrait | Stories, vertical mobile formats. |
-| **auto** | Chosen for you | When you are not sure. |
+| **1:1** | Square | Instagram posts, profile images. |
+| **16:9** | Wide | Email headers, website banners, LinkedIn. |
+| **9:16** | Portrait | Stories, vertical mobile formats. |
+
+!!! note "The choices depend on the model"
+    Some models offer more ratios, such as **4:5** or **3:2**. If you switch
+    model, the ratio changes to one the new model supports.
 
 Pick the ratio for where the image will be used. Cropping a square image into a
 banner afterwards usually spoils the composition.
@@ -106,8 +118,6 @@ a different one for this image.
 
 ## Good to know
 
-- **Generation uses credits.** Each image counts against your allowance — see
-  [Usage & Billing](../settings/tenant-usage.md).
 - **Expect to iterate.** The first result is rarely the one you use. Adjust the
   prompt and generate again.
 - **Check faces, hands and text.** AI images still get these wrong, and mistakes

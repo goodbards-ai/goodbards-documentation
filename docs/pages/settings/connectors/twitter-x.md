@@ -4,7 +4,8 @@ Publish posts to your X account and get reports on how they perform.
 
 ## What it's for
 
-The **Twitter (X)** connector links GoodBards to your X account. With it you can:
+The **X** connector (formerly Twitter) links GoodBards to your X account. With
+it you can:
 
 - **Publish and schedule posts** from a campaign's social tactic. See
   [Launch a tactic](../../marketing/launch-tactic.md) and
@@ -23,11 +24,14 @@ The **Twitter (X)** connector links GoodBards to your X account. With it you can
 ## How to connect
 
 1. Open your account menu (your picture, top right), then choose **Connections**.
-2. On the **Social Media** tab, find **Twitter (X)** and choose **Connect**.
+2. On the **Social Media** tab, find **X** and choose **Connect**.
+
+    ![The X card on the Social Media tab, with its Connect button](../../../img/screenshots/connectors/twitter-x.png){ width="30%" }
+
 3. Sign in to X and authorise GoodBards.
-4. Back in GoodBards, choose **Manage configuration** on the card.
+4. Back in GoodBards, choose **Settings** on the card.
 5. Under **Select accounts to use**, tick the account, then choose **Save
-   configuration**.
+   Configuration**.
 
 ## What GoodBards does with it
 
@@ -42,13 +46,17 @@ The **Twitter (X)** connector links GoodBards to your X account. With it you can
 
 - **280 characters per post**, counted after links are shortened. Up to 4
   pictures.
-- **Links are checked.** A post with a link that cannot be reached is refused.
+- **No videos.** Posts carry text and pictures only.
+
+!!! note "Links are checked"
+    A post with a link that cannot be reached is refused. Test your links
+    before you schedule.
 - **Detailed statistics are for recent posts.** Figures such as profile clicks
   are only available for posts less than 30 days old.
 
 ## How to disconnect
 
-1. On the Twitter (X) card, choose **Manage configuration**.
+1. On the X card, choose **Settings**.
 2. Choose **Disconnect**, then confirm.
 
 GoodBards forgets the access. Posts already published stay on X. To remove

@@ -1,6 +1,6 @@
 # Analysis
 
-See how your social content performed — reach, engagement, and how people
+See how your social content performed: reach, engagement, and how people
 reacted to it.
 
 ## What it's for
@@ -14,19 +14,20 @@ engagement.
 
 ## Before you start
 
-Your social account must be connected — see
-[Connections](../settings/connections.md).
+- **Your plan.** Social Media is included in the **Pro** and **Full** plans.
+- **A connected account** for each network you want to report on, under
+  **Connectors**. See [Connections](../settings/connections.md).
 
-!!! warning "LinkedIn organisation pages only"
-    Report generation and analysis currently support **LinkedIn organisation
-    pages**. Personal LinkedIn accounts are not supported, and the other channel
-    tabs may have no report available yet.
+!!! note "LinkedIn: company pages only"
+    LinkedIn gives figures for **company pages**, not for personal profiles. A
+    tab whose network is not connected has no report.
 
 ## How to review social performance
 
 1. In the sidebar, choose **Social Media → Analysis**.
-2. Pick a channel from the tabs across the top.
-3. Choose which organisation page to report on.
+2. Pick a channel from the tabs across the top: **LinkedIn**, **X**,
+   **Facebook**, **Instagram**, **TikTok** or **YouTube**.
+3. Choose which page or account to report on.
 4. Use the arrows beside the date to move between reporting days.
 
 ![The Social Media Analysis screen, showing impressions, engagement rate, likes, comments, shares and clicks beside a content sentiment breakdown](../../img/screenshots/social-analysis.png)
@@ -38,14 +39,15 @@ Choose **Change** beside the organisation name to switch to a different page.
 | Metric | What it counts | What to read into it |
 | --- | --- | --- |
 | **Impressions** | How many times your content was shown. | Reach. Low impressions mean a distribution problem, not a content problem. |
-| **Engagement Rate** | The share of people who interacted. | The single most useful number here — it is reach-independent. |
+| **Engagement Rate** | The share of people who interacted. | The single most useful number here: it does not depend on reach. |
 | **Likes** | Straightforward approval. | Easy to earn, weak signal. |
 | **Comments** | People who wrote something. | Far stronger than a like: it costs effort. |
 | **Shares** | People who passed it on. | The strongest signal of all. |
 | **Clicks** | People who followed your link. | The one that matters when the post has a destination. |
 
-Judge posts on **engagement rate** rather than raw likes. A post seen by 500
-people with 50 interactions is doing better than one seen by 30,000 with 100.
+!!! tip "Judge posts on engagement rate"
+    Not on raw likes. A post seen by 500 people with 50 interactions is doing
+    better than one seen by 30,000 with 100.
 
 !!! note "Facebook pages"
     Impressions, clicks and the **Channel Engagements** chart come from
@@ -60,7 +62,7 @@ Beside the metrics, sentiment splits engagement into **Positive**, **Neutral** a
 **Negative**.
 
 This is worth watching over time rather than per post. A shift towards negative
-sentiment is worth investigating early — it is easier to address a small
+sentiment is worth investigating early: it is easier to address a small
 complaint than a pattern.
 
 ## Who your audience is (LinkedIn)
@@ -70,7 +72,7 @@ by **Role**, **Seniority**, **Industry** and **Company Size**. Check that it
 matches who you sell to: a B2B brand followed mostly by students has a reach
 problem, not a content problem.
 
-![Audience Demographics on the Role tab: followers by job function, with Marketing the largest group](../../img/screenshots/social-demographics.png)
+![Audience Demographics on the Role tab: followers by job function, with Marketing the largest group](../../img/screenshots/social-demographics.png){ width="50%" }
 
 Next to it, **Channel Engagements** shows the account's daily activity over the
 period, straight from the network: engagement (split by type on LinkedIn) and
@@ -80,7 +82,8 @@ impressions.
 
 Below the summary, your best-performing content is listed with its engagement
 figures. This is the fastest route to understanding what your audience responds
-to: look for what the top posts have in common — format, topic, tone, time of day.
+to: look for what the top posts have in common, such as format, topic, tone or
+time of day.
 
 ## Stories (Instagram)
 
@@ -90,8 +93,9 @@ still showing on Instagram is marked **Live**, with a link to open it; its
 numbers are refreshed every 2 hours. After 24 hours the story disappears from
 Instagram, its numbers are captured one last time and marked **Final**.
 
-Stories posted directly in the Instagram app are not listed: Instagram does not
-let GoodBards read them.
+!!! note "Only stories published from GoodBards"
+    Stories posted directly in the Instagram app are not listed: Instagram does
+    not let GoodBards read them.
 
 ## TikTok
 
@@ -111,8 +115,8 @@ account every night and works out what changed:
   starting point, so the first days of a new connection show no gains.
 - **Engagement rate** on TikTok is likes, comments and shares per view.
 
-If you unticked the statistics permission when connecting, the follower and
-likes counters are missing: reconnect TikTok and keep every box ticked.
+Follower and likes counters missing? The statistics permission was unticked when
+TikTok was connected: reconnect TikTok and keep every box ticked.
 
 ## History
 

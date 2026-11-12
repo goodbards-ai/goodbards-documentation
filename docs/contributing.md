@@ -56,8 +56,25 @@ Rules:
   talks about, and for every step where the reader has to find something.
   Place it right under the sentence or step it shows. When in doubt, add one.
 - A small crop of one card or one dialog is often better than a full screen:
-  the reader sees at once what to look for. Limit its width when it would
-  render too large: `![…](…){ width="420" }`.
+  the reader sees at once what to look for.
+- **Keep the text inside screenshots the same size from one picture to the
+  next.** A crop is stretched to the full column unless you give it a width,
+  which makes a small dialog look huge. Set the width as a share of the column,
+  from how wide the part you captured is in the app (in browser pixels, not
+  the file's pixels, which are doubled on a Retina screen):
+
+    | Captured width in the app | Width to set |
+    | --- | --- |
+    | 960 px or more (a full screen or wide card) | none (full column) |
+    | 800–960 px | `{ width="80%" }` |
+    | 660–800 px | `{ width="65%" }` |
+    | 540–660 px | `{ width="50%" }` |
+    | 420–540 px (a dialog) | `{ width="40%" }` |
+    | 300–420 px (a card, a small menu) | `{ width="30%" }` |
+    | under 300 px | `{ width="25%" }` |
+
+    Always a percentage, never pixels: on a phone every screenshot takes the
+    full width anyway.
 - Capture the relevant panel, not the whole desktop. Crop out the top bar: it
   shows the signed-in person's name and photo.
 - Always write real alt text: `![The Contacts list with a segment applied](...)`.

@@ -1,6 +1,6 @@
 # Google Search Console
 
-Bring your Google search results — clicks, impressions, positions and queries —
+Bring your Google search results (clicks, impressions, positions and queries)
 into GoodBards.
 
 ## What it's for
@@ -34,9 +34,12 @@ screens:
 1. Open your account menu (your picture, top right), then choose **Connections**.
 2. On the **Web Analytics** tab, find **Google Search Console** and choose
    **Connect**.
+
+    ![The Google Search Console card once connected: the Google account, the site https://www.tropikahome.com/, and Settings](../../../img/screenshots/connectors/google-search-console.png){ width="30%" }
+
 3. Pick your Google account and allow GoodBards to **view your Search Console
    data**.
-4. Back in GoodBards, choose **Manage Configuration** on the card.
+4. Back in GoodBards, choose **Choose Site** on the card.
 5. Under **Search Console Site**, pick your website, then choose **Save
    Settings**.
 
@@ -47,17 +50,18 @@ screens:
 | **Reads** | Your sites, search results by date, query, page, device and country, page inspection results and your sitemaps. |
 | **Does not** | Change anything in Search Console. |
 
-## Changing the site
+## How to change the site
 
-Picking a different site is not a simple switch. GoodBards asks you to confirm
-first (**Change your Search Console site?**), because:
+1. On the Google Search Console card, choose **Settings**.
+2. Pick the other site under **Search Console Site**, then choose **Save
+   Settings**.
+3. GoodBards asks you to confirm (**Change your Search Console site?**). Choose
+   **Change site**, or **Keep current site** if you are not sure.
 
-- unfinished actions queued for the old site are closed, and the dialog tells you
-  how many;
-- what GoodBards learned from the old site — its content plans, Momentum moves,
-  reports and its detected site type — no longer applies.
-
-Choose **Keep current site** if you are not sure.
+!!! warning "Changing the site resets what GoodBards learned"
+    Unfinished actions queued for the old site are closed (the dialog says how
+    many). Its content plans, Momentum moves, reports and detected site type no
+    longer apply.
 
 ## Good to know
 
@@ -67,7 +71,7 @@ Choose **Keep current site** if you are not sure.
 
 ## How to disconnect
 
-1. On the Google Search Console card, choose **Manage Configuration**.
+1. On the Google Search Console card, choose **Settings**.
 2. Choose **Disconnect**.
 
 GoodBards forgets the access and the chosen site. To remove access on Google's

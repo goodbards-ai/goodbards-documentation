@@ -9,12 +9,12 @@ Password?**. You will receive an email with a reset link.
 
 ### How do I change my name, language or profile picture?
 
-In **Personal Settings**, reached from your profile picture at the top right. See
+In **Personal Settings**, from your account menu (your picture, top right). See
 [Personal Settings](settings/personal-settings.md).
 
 ### Can I turn on two-factor authentication?
 
-Yes — under **Personal Settings → Password & Security**. Worth doing: a marketing
+Yes, under **Personal Settings → Password & Security**. Worth doing: a marketing
 account can usually email your entire contact database.
 
 ### Why can I not see a section other people mention?
@@ -73,8 +73,11 @@ administrators. A Marketer sees the button greyed out with the reason.
 
 You do not have *Access sensitive data*. Without it, personal details are
 hidden everywhere: lists, contact pages, segments, exports and the assistant's
-answers. It is deliberate — under Singapore's PDPA and similar laws, give it
-only to people who work with contacts directly.
+answers.
+
+!!! warning "Deliberate, for PDPA"
+    Under Singapore's PDPA and similar laws, give *Access sensitive data* only
+    to people who work with contacts directly.
 
 ### I was given a permission but nothing changed
 
@@ -105,9 +108,15 @@ Brand & Context, then your Brand Kit, then Connections, then contacts. See
 ### Why is there no data on my analytics pages?
 
 Almost always a missing connector. Check
-[Connections](settings/connections.md) — pages such as Google Analytics and
+[Connections](settings/connections.md): pages such as Google Analytics and
 Google Trends read from your own accounts and show nothing until those are
 linked.
+
+### Where is the LinkedIn Community connector?
+
+It is now part of the **LinkedIn** connector. Connect LinkedIn once, and
+**Mention…** appears in the post editor's **Insert** menu. See
+[LinkedIn](settings/connectors/linkedin.md).
 
 ### I switched workspace in one tab, but my other tabs did not follow
 
@@ -125,7 +134,7 @@ chart usually means it is still loading rather than that there is no data.
 ### Does the AI know about my business?
 
 It knows what you tell it in
-[Brand & Context](settings/company-settings.md) — what your company does, how it
+[Brand & Context](settings/company-settings.md): what your company does, how it
 sounds, who it competes with. Filling that in properly is the single biggest
 improvement you can make to AI output.
 
@@ -143,7 +152,7 @@ need and paste it in instead.
 
 ### Which AI model is used?
 
-Set per generation type — text, image, video and audio — in
+Set per generation type (text, image, video and audio) in
 [AI Settings](settings/ai-settings.md). The defaults work well; change them only
 if you have a specific reason.
 
@@ -157,7 +166,7 @@ which cost more than text. Track it in
 
 ### What is the difference between a tactic and a campaign?
 
-A **tactic** is one piece of marketing on one channel — a single post, one email.
+A **tactic** is one piece of marketing on one channel, such as a single post or one email.
 A **campaign** groups several tactics towards one goal over a period of time. If
 you just want to publish one post, you want a tactic. See
 [Launch a Tactic](marketing/launch-tactic.md).
@@ -169,7 +178,7 @@ New campaigns start **paused**, and need at least one enabled ad. See
 
 ### Can I recall an email after sending it?
 
-No. Check your recipient list and send yourself a test first — see
+No. Check your recipient list and send yourself a test first. See
 [Emails](marketing/emails.md).
 
 ## Audience & data
@@ -178,7 +187,7 @@ No. Check your recipient list and send yourself a test first — see
 
 They move to the unsubscribed group and stop receiving marketing email, whether
 you send to chosen contacts, a segment or a mailing list. Do not work around
-this by re-importing them — under Singapore's PDPA and equivalent rules
+this by re-importing them: under Singapore's PDPA and equivalent rules
 elsewhere, opt-outs must be respected. See
 [Unsubscribed contacts](audience/contacts.md#unsubscribed-contacts).
 

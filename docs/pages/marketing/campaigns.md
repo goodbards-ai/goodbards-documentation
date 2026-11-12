@@ -5,16 +5,17 @@ start and end date.
 
 ## What it's for
 
-A campaign is a container for everything you are doing towards one goal — a
+A campaign is a container for everything you are doing towards one goal: a
 product launch, an event, a seasonal push. Instead of tracking a dozen separate
 posts and emails, you see them together and track whether the goal is being met.
 
-If you only want to publish one post or one email, you do not need a campaign.
-Use [Launch a Tactic](launch-tactic.md) instead.
+!!! tip "One post or one email? Skip the campaign"
+    If you only want to publish one thing, you do not need a campaign. Use
+    [Launch a Tactic](launch-tactic.md) instead.
 
 ## Before you start
 
-- Know your **objective** — for example Product Launch, Brand Awareness, or
+- Know your **objective**, for example Product Launch, Brand Awareness, or
   Networking With Industry Professionals. You choose one when you create the
   campaign.
 - Know roughly when the campaign should start and finish.
@@ -24,7 +25,7 @@ Use [Launch a Tactic](launch-tactic.md) instead.
 1. In the sidebar, choose **Marketing → Campaigns**.
 2. Choose **+ Create New Campaign**.
 3. Give it a name, pick an objective, and set the start and end dates.
-4. Add the tactics that belong to it — the posts, emails and events that work
+4. Add the tactics that belong to it: the posts, emails and events that work
    towards the objective.
 
 ![The Campaigns screen: 7 campaigns, 2 active, 1 pending, 4 completed, above the table of campaigns with their objective, status, dates and Start button](../../img/screenshots/campaigns.png)
@@ -45,14 +46,14 @@ it runs between. Sort by any column using the arrows beside the heading.
 
 ## Inside a campaign
 
-Click a campaign's name to open it. Its tabs are **Overview**, **Budget**,
+Choose a campaign's name to open it. Its tabs are **Overview**, **Budget**,
 **Calendar** and **Analytics**.
 
 **Overview** shows the **Campaign Details**: objective, budget, target industry,
 audience, regions, and a description the AI uses as context whenever it writes
 for this campaign. Choose the pencil to change them.
 
-![Campaign Details: the objective Lead Generation and Conversion, the campaign code, a budget of 45,000, the target industry, the audience, Singapore and Malaysia, and the description](../../img/screenshots/campaign-details.png)
+![Campaign Details: the objective Lead Generation and Conversion, the campaign code, a budget of 45,000, the target industry, the audience, Singapore and Malaysia, and the description](../../img/screenshots/campaign-details.png){ width="80%" }
 
 Below, **Tactics** lists everything the campaign runs: ads, blog posts, social
 posts, emails and events, each with its status and end date.
@@ -72,9 +73,12 @@ and figures are reset; budget, description and audience are kept.
 
 For its emails and content, choose:
 
-- **Reuse existing assets**: the copy uses the same emails and posts. Editing
-  them later changes both tactics.
+- **Reuse existing assets**: the copy uses the same emails and posts.
 - **Create new copies**: fresh copies, so the original is never touched.
+
+!!! note "Reused assets are shared"
+    With **Reuse existing assets**, editing an email or post later changes it in
+    both tactics. Choose **Create new copies** if the two must differ.
 
 For an event, its settings are copied too, and its registration form is always
 duplicated so the two events keep their registrations apart.
@@ -95,7 +99,7 @@ every chart:
 Reach and engagement are the network's figures, collected by the daily report:
 running totals since publication, so a post appears the day after it is
 published. Pick **Since publish**, **7**, **30** or **90 days** above the charts,
-and click a post's name to open its analytics. The same card appears when you
+and choose a post's name to open its analytics. The same card appears when you
 open the tactic from the campaign's **Analytics** tab, where the campaign charts
 keep one colour per tactic.
 
@@ -106,11 +110,10 @@ keep one colour per tactic.
 - The network's own figures for the post (impressions, reactions, comments,
   shares…), from the latest daily report. They appear the day after publishing.
 
-Good to know:
+!!! note "\"Clicks on LinkedIn\" is a different number"
+    The network counts every click on the post (image, "see more", profile);
+    link clicks count only the people who opened your links.
 
-- **"Clicks on LinkedIn" is a different number.** The network counts every click
-  on the post (image, "see more", profile); link clicks count only the people who
-  opened your links.
 - **Bots are left out.** When a post is published, the network fetches its links to
   build the preview card; those visits are not counted. Switch on **Include bots**
   to see them.
@@ -137,8 +140,10 @@ UTM tags, so its visits show up in your Google Analytics reports:
   campaign code is unique in your workspace, a tactic code within its campaign.
 - **Source and medium can't be edited**, so every campaign is named the same way
   in your reports. The tactic form shows the tags its links get.
-- **Your own tags win.** A link that already contains `utm_` tags is left as you
-  wrote it.
+
+!!! info "Your own tags win"
+    A link that already contains `utm_` tags is left as you wrote it.
+
 - Ads and blog posts get no tags: Google Ads tags its own clicks, and tags on
   links to your own website would overwrite your visitors' real source.
 
@@ -177,8 +182,8 @@ The **Start / Stop** column controls whether a campaign is running:
 - **▶ Start** begins a pending campaign.
 - **⏸ Pause** stops an active one.
 
-Pausing does not delete anything — it stops further activity until you start it
-again.
+!!! info "Pausing deletes nothing"
+    It stops further activity until you start the campaign again.
 
 ## Good to know
 
