@@ -65,6 +65,7 @@ Under **Roles**, the **Platform** roles are ready to use:
 | **Tenant Administrator** | Everything, plus users and company settings. |
 | **Marketer** | Every module in read and write, and every contact, including creating and editing segments. The usual role for your marketing team. Contacts' emails and phones stay hidden until you give them [*Access sensitive data*](#additional-permissions). |
 | **Sales** | Home and the Audience only, with *Access sensitive data*. With contact ownership on, they see only the contacts they own. |
+| **Event host** | Only the events they are assigned to, on a simple screen: guest list, check-in, walk-ins and the event reminder. Assign them on each event; see [Event hosts](../events/hosts.md). |
 
 ![The Roles section: Tenant Administrator, which bypasses permissions, and Marketer, with write access to every module and every contact](../../img/screenshots/roles.png)
 

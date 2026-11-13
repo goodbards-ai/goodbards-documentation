@@ -57,9 +57,11 @@ nav:
           - Event emails: pages/events/emails.md
           - Ticket types and waitlist: pages/events/tickets-waitlist.md
           - Check-in and badges: pages/events/check-in.md
+          - Event hosts: pages/events/hosts.md
       - Social Media:
           - pages/social-media/index.md
           - Social Post: pages/social-media/social-post.md
+          - Conversation Compass: pages/social-media/conversation-compass.md
           - Analysis: pages/social-media/analysis.md
           - Social reports: pages/social-media/reports.md
       - Digital Ads:

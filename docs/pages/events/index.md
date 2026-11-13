@@ -37,6 +37,13 @@ a kiosk, and print name badges.
 
 See [Check-in and badges](check-in.md).
 
+### Event hosts
+
+Give a helper at the door access to one event only: the guest list, check-in,
+walk-ins and the event reminder, and nothing else in your account.
+
+See [Event hosts](hosts.md).
+
 ### Ticket types and waitlist
 
 Offer several ticket types or time slots, each with its own capacity, and decide

@@ -24,7 +24,9 @@ engagement.
 
 ## How to review social performance
 
-1. In the sidebar, choose **Social Media → Analysis**.
+1. In the sidebar, choose **Social Media → Analysis**. It opens on the
+   **Conversation Compass**, all your networks together: see
+   [Conversation Compass](conversation-compass.md).
 2. Pick a channel from the tabs across the top: **LinkedIn**, **X**,
    **Facebook**, **Instagram**, **TikTok** or **YouTube**.
 3. Choose which page or account to report on.

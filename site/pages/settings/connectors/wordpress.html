@@ -1696,6 +1696,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1771,6 +1777,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/landing-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The event page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/emails.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event emails
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/tickets-waitlist.html" class="md-nav__link">
         
   
@@ -1810,6 +1862,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/hosts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Event hosts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1829,6 +1904,8 @@
       
         
           
+        
+      
         
       
         
@@ -1895,6 +1972,29 @@
   
   <span class="md-ellipsis">
     Social Post
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social-media/conversation-compass.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conversation Compass
     
   </span>
   
@@ -3261,6 +3361,8 @@
       
         
       
+        
+      
     
     
     
@@ -3644,6 +3746,29 @@
   
   <span class="md-ellipsis">
     Google Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="meta-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meta Ads
     
   </span>
   
@@ -4073,13 +4198,13 @@
 articles into GoodBards.</p>
 <h2 id="what-its-for">What it's for<a class="headerlink" href="#what-its-for" title="Permanent link">¶</a></h2>
 <p>Use this connector if your website runs on WordPress that you or your agency host
-(not on WordPress.com — for that, see <a href="wordpress-com.html">WordPress.com</a>). With it
-you can:</p>
+(not on WordPress.com: for that, see <a href="wordpress-com.html">WordPress.com</a>). With
+it you can:</p>
 <ul>
 <li><strong>Send blog posts to WordPress</strong> from a campaign's <strong>Blog Post</strong> tactic. See
   <a href="../../marketing/launch-tactic.html">Launch a tactic</a>.</li>
-<li><strong>Import your existing articles</strong> into the Content Repository with <strong>+ New →
-  Import WordPress</strong>, so the AI can learn from what you already published. See
+<li><strong>Import your existing articles</strong> into the Content Repository with <strong>Upload →
+  Document</strong>, then <strong>Import WordPress</strong>, so the AI can learn from what you already published. See
   <a href="../../workspace/drive.html">Content Repository</a>.</li>
 </ul>
 <h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">¶</a></h2>
@@ -4088,16 +4213,25 @@ you can:</p>
   account.</li>
 <li>You need a WordPress user that can write posts and upload media.</li>
 <li>Create an <strong>Application Password</strong> for that user in WordPress: in your
-  WordPress admin, open <strong>Users → Profile</strong>, then <strong>Application Passwords</strong>.
-  It is not your normal login password.</li>
+  WordPress admin, open <strong>Users → Profile</strong>, then <strong>Application Passwords</strong>.</li>
 <li>Your site's WordPress REST API must be reachable (at
   <code>https://yoursite.com/wp-json</code>). Some security plugins switch it off.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Never use your normal WordPress password</p>
+<p>Use an application password only. You can revoke it in WordPress at any
+time without changing your own login.</p>
+</div>
 <h2 id="how-to-connect">How to connect<a class="headerlink" href="#how-to-connect" title="Permanent link">¶</a></h2>
 <ol>
 <li>Open your account menu (your picture, top right), then choose <strong>Connections</strong>.</li>
-<li>On the <strong>CMS</strong> tab, find <strong>Wordpress (Self Hosted)</strong> and choose <strong>Connect</strong>.</li>
-<li>Fill in:<ul>
+<li>
+<p>On the <strong>CMS</strong> tab, find <strong>Wordpress (Self Hosted)</strong> and choose <strong>Connect</strong>.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/screenshots/connectors/wordpress.png" data-desc-position="bottom"><img alt="The Wordpress (Self Hosted) card on the CMS tab, with its Connect button" src="../../../img/screenshots/connectors/wordpress.png" width="30%"></a></p>
+</li>
+<li>
+<p>Fill in:</p>
+<ul>
 <li><strong>Website URL</strong>: your site's address, for example <code>https://yoursite.com</code>.</li>
 <li><strong>Username</strong>: the WordPress user name.</li>
 <li><strong>Application Password</strong>: the application password you created.</li>
@@ -4129,8 +4263,12 @@ you can:</p>
 </tbody>
 </table>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Posts arrive as drafts</p>
+<p>GoodBards never publishes on your site. Review the drafts in WordPress and
+publish from there.</p>
+</div>
 <ul>
-<li><strong>Posts arrive as drafts.</strong> Review them in WordPress and publish from there.</li>
 <li><strong>Pick the post type as destination.</strong> When you publish, GoodBards lists the
   post types your site offers.</li>
 </ul>
@@ -4163,7 +4301,7 @@ password in WordPress.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-10-11
+    2026-11-12
   </span>
 
     

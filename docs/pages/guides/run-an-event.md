@@ -186,6 +186,11 @@ Every confirmed guest has a QR code in their confirmation and reminder emails.
 
 See [Check-in and badges](../events/check-in.md) for the details.
 
+!!! tip "Extra hands at the door"
+    Invite helpers with the **Event host** role and tick them under
+    **Registration → Hosts**: they see this event's guest list and check-in,
+    and nothing else. See [Event hosts](../events/hosts.md).
+
 ## 8. Follow up
 
 1. When the event is over, choose **Actions → End event**. Guests who were not

@@ -22,9 +22,17 @@ article into a series of posts.
 
 See [Social Post](social-post.md).
 
+### Conversation Compass
+
+All your networks on one page, mostly charts: followers, engagement, the best
+time to post, where to invest and what works, with AI advice on request. It is
+the first tab of **Analysis**.
+
+See [Conversation Compass](conversation-compass.md).
+
 ### Analysis
 
-How your social content performs across channels: reach, engagement and
+How your social content performs on each channel: reach, engagement and
 followers, post by post.
 
 See [Analysis](analysis.md).
