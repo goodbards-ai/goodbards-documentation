@@ -83,9 +83,10 @@ impressions.
 ## Top Posts Performance
 
 Below the summary, your best-performing content is listed with its engagement
-figures. This is the fastest route to understanding what your audience responds
-to: look for what the top posts have in common, such as format, topic, tone or
-time of day.
+figures, ranked by **engagement rate**. Use **Sort by** to rank them by
+**Impressions**, **Engagements**, **Clicks**, **Likes** or **Shares** instead.
+This is the fastest route to understanding what your audience responds to: look
+for what the top posts have in common, such as format, topic, tone or time of day.
 
 ## Stories (Instagram)
 

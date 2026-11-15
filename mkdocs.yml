@@ -44,7 +44,19 @@ nav:
           - pages/marketing/index.md
           - Launch a Tactic: pages/marketing/launch-tactic.md
           - Campaigns: pages/marketing/campaigns.md
-          - Automations: pages/marketing/automations.md
+      - Automations:
+          - pages/marketing/automations.md
+          - "Tutorial: your first flow": pages/automations/hello-world.md
+          - Triggers: pages/automations/triggers.md
+          - Steps: pages/automations/steps.md
+          - Branches and conditions: pages/automations/branches.md
+          - AI and human steps: pages/automations/ai-steps.md
+          - Segments and schedules: pages/automations/segments.md
+          - Flow settings: pages/automations/settings.md
+          - Results and analytics: pages/automations/results.md
+          - Flows in a campaign: pages/automations/campaigns.md
+          - The AI assistant: pages/automations/ai-assistant.md
+          - Sample flows: pages/automations/samples.md
       - Emails & Forms:
           - pages/emails/index.md
           - Emails: pages/marketing/emails.md

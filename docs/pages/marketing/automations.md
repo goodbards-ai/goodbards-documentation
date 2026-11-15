@@ -1,17 +1,26 @@
 # Automations
 
-Send each contact a sequence of emails, waits and follow-ups that runs on its
-own once you switch it on.
+Take each contact through emails, waits, branches, AI steps and tasks for your
+team, on their own, at their own pace.
 
 ## What it's for
 
 A flow is a path one contact walks through: a welcome email, a wait of three
-days, a second email only for those who opened the first, a tag at the end.
-You design it once; GoodBards then runs it separately for every contact who
-enters, at their own pace.
+days, a second email only for those who clicked the first, a task for their
+owner, a tag at the end. You design it once; GoodBards then runs it separately
+for every contact who enters.
 
-Use it for welcome sequences after a sign-up form, nurture series for new leads,
-re-engagement of quiet contacts, or a monthly touchpoint for a segment.
+Use it for welcome series after a sign-up form, nurture tracks for new leads,
+win-back emails for quiet contacts, a monthly check-in with a segment, or an
+AI-assisted follow-up that a colleague approves before it goes out.
+
+![The Automations list with the nine tutorial flows: name, status, trigger, in flow, completed and last update, with Import JSON and New Flow at the top](../../img/screenshots/automations/list.png)
+
+!!! abstract "New here? Start with the tutorial"
+    [Your first flow: Hello world](../automations/hello-world.md) builds a
+    three-step flow in ten minutes and runs it on you. Then browse the
+    [Sample flows](../automations/samples.md): nine ready-made flows, each
+    teaching a few building blocks.
 
 ## Before you start
 
@@ -24,132 +33,53 @@ re-engagement of quiet contacts, or a monthly touchpoint for a segment.
 - **An email server.** Flows send through the server connected under
   **Connections**. See [Email sending](../settings/connectors/email-sending.md).
 - **The emails themselves.** Each email in a flow is one of your
-  [Emails](emails.md). Create them first, or add the flow's steps and pick the
-  emails afterwards.
+  [Emails](emails.md). Create them first, or add the steps and pick the emails
+  afterwards.
 - **Subscribed contacts.** Only contacts whose status is **Subscribed** stay in
   a flow (see [Good to know](#good-to-know)).
 
-## How to build a flow
+## The guide, page by page
 
-1. In the sidebar, choose **Marketing → Automations**, then **New Flow**.
-
-    ![The Automations screen before any flow exists: Build your first sequence, with Show archived, Import JSON and New Flow](../../img/screenshots/automations.png)
-
-2. Give it a **Name** and, if you like, a **Description**, then choose
-   **Create**. The designer opens.
-
-    ![The New flow dialog: Name, Description, Cancel and Create](../../img/screenshots/automations-new-flow.png){ width="40%" }
-
-3. Select the **Trigger** card at the top and pick what enrols a contact under
-   **Starts when** (see [Triggers](#triggers)). Fill in the form, tag or segment
-   it asks for.
-4. Add steps. Choose the **+** under a card: **Add a step** lists every step
-   with what it does, and the one you pick goes where you clicked. You can also
-   drag a step from the palette on the left onto a **+**, or use
-   **Edit → Add step**.
-
-    ![The Add a step dialog: Send email, Wait, Wait for open / click, Add tag, Remove tag, Set field, Ask an agent, Task for the owner and Send drafted email, then the Structure steps Yes / No branch, Routing, AI decides and Exit flow](../../img/screenshots/automations-add-step.png){ width="65%" }
-
-5. Select each card and fill in its settings in the side panel on the right:
-   the email to send, how long to wait, the tag to add.
-
-    ![The flow designer: the palette on the left; a Manual enrollment trigger, a Send email, Wait 1 day and a second Send email in the middle; and the selected email's settings on the right, with Draft, Save and Activate at the top](../../img/screenshots/automations-designer.png)
-
-6. Open **File → Flow settings** to choose the re-entry rule, a goal and any
-   **Stop early when…** rules (see [Flow settings](#flow-settings)).
-
-    ![The File menu of the designer: Save, Activate, Pause, Rename, Flow settings, Export as JSON, Import JSON, Archive and Close](../../img/screenshots/automations-file-menu.png){ width="20%" }
-
-7. Choose **Save**. An unfinished flow can be saved; the cards still missing
-   something are highlighted.
-8. When every card is complete, choose **Activate**. New contacts enrol from
-   that moment.
-
-!!! tip "Test it on a few people first"
-    Once the flow is active, open its **Contacts** tab and choose **Enroll
-    contacts** to run it on yourself or a couple of colleagues before the real
-    audience arrives. (On a **Manual** flow, the same button sits on the
-    **Trigger** card in the designer.)
-
-### Other ways to start
-
-- **Duplicate** an existing flow from its menu in the list.
-- **AI assistant**: in the designer, switch the view to **AI assistant**, paste
-  a brief or describe the flow in your own words. It asks up to five questions,
-  then proposes a flow. Choose **Apply to the canvas**, review it, then
-  **Save**. It also lists the emails you still need to create.
-- **Import JSON…**: load a flow someone exported with **Export as JSON**, for
-  example from another workspace.
-
-## Triggers
-
-The trigger decides who enters the flow.
-
-!!! note "Nothing is backfilled"
-    Only events after you activate the flow count: earlier form submissions,
-    tags or contacts are never picked up. To include people who filled in the
-    form last week, enrol them yourself.
-
-| Trigger | Who enters |
+| Page | What you learn |
 | --- | --- |
-| **Manual** | Only the contacts you enrol yourself, by hand, from a segment or from a mailing list. |
-| **Form submitted** | The contact of every new submission of the chosen form, within a minute. |
-| **Contact created** | Every contact added after activation, within a minute. |
-| **Tag added** | A contact who gets the chosen tag, within a minute, whoever adds it. |
-| **Segment (daily)** | Every day at 03:00 UTC, members of the segment who are not in the flow yet. |
-| **On a schedule** | Members of the segment, each time the schedule runs: every day, week or month at a time and timezone you choose. |
+| [Your first flow: Hello world](../automations/hello-world.md) | Build, save, activate and test a flow, step by step. |
+| [Triggers](../automations/triggers.md) | The six ways contacts enter a flow. |
+| [Steps](../automations/steps.md) | Every step of the palette and its settings. |
+| [Branches and conditions](../automations/branches.md) | Yes / No branches, routing, AI decides, and the conditions they check. |
+| [AI and human steps](../automations/ai-steps.md) | Ask an agent, Task for the owner, Send drafted email, and the AI budget. |
+| [Segments and schedules](../automations/segments.md) | Flows that run on a segment every day, week or month. |
+| [Flow settings](../automations/settings.md) | Re-entry, goals, stop rules and handing a contact to another flow. |
+| [Results and analytics](../automations/results.md) | Who is where, each contact's path, and the report on the canvas. |
+| [Flows in a campaign](../automations/campaigns.md) | A flow as a campaign tactic. |
+| [The AI assistant](../automations/ai-assistant.md) | Describe a flow, or a change to one, in your own words. |
+| [Sample flows](../automations/samples.md) | Nine tutorial flows and what each one teaches. |
 
-Whatever the trigger, you can also enrol contacts yourself while the flow is
-active: on the flow's **Contacts** tab, choose **Enroll contacts** and pick
-**Contacts**, a **Segment** or a **Mailing list** (up to 2,000 at a time).
+## The designer at a glance
 
-## Steps
+Open a flow from the list (its menu, then **Open designer**). The designer has
+three columns:
 
-| Step | What it does |
-| --- | --- |
-| **Send email** | Sends one of your emails, as it is at send time, with the contact's details, tracking and the unsubscribe link. |
-| **Wait** | Pauses for a number of minutes, hours or days (up to 365 days). |
-| **Wait for open / click** | Pauses until the contact opens or clicks an earlier email of the flow, or a time limit passes. |
-| **Add tag** | Puts a tag on the contact. |
-| **Remove tag** | Takes a tag off the contact. |
-| **Set field** | Writes a value into one of the contact's custom fields. |
-| **Ask an agent** | Asks one of your AI agents about the contact. Its answer, free text or a drafted email, is kept for the next steps. |
-| **Task for the owner** | Puts a task in **Actions** for the contact's owner or a named colleague. The flow waits until it is done, dismissed or past its deadline. |
-| **Send drafted email** | Sends the email an **Ask an agent** step drafted, inside one of your email designs. |
+![The flow designer: the step palette on the left, the Welcome series flow in the middle with sticky notes beside its cards, and the trigger's settings on the right](../../img/screenshots/automations/tutorial-welcome-series-canvas.png)
 
-The palette's **Structure** group splits contacts into lanes:
+- **The palette** (left) lists every step. Drag one onto a **+** of the canvas,
+  or choose the **+** itself.
+- **The canvas** (middle) draws the flow from top to bottom. Lanes of a branch
+  sit side by side and join again below. Select a card to edit it.
+- **The side panel** (right) shows the settings of the selected card.
 
-| Step | What it does |
-| --- | --- |
-| **Yes / No branch** | Two lanes: contacts who match a condition, and everyone else. |
-| **Routing** | Several lanes, one per rule, checked in order, plus a lane for everyone else. |
-| **AI decides** | The AI answers one question about the contact (for example *Is this lead hot, warm or cold?*) and sends them down the matching lane. When it is not sure enough, they take the last lane. |
-| **Exit flow** | The contact leaves the flow here. |
+The menus at the top hold the rest: **File** (save, activate, pause,
+[Flow settings](../automations/settings.md), export and import as JSON,
+archive), **Edit**, and **View**, which switches between the **Visual** canvas,
+the **JSON** of the flow and the [AI assistant](../automations/ai-assistant.md).
 
-Conditions in branches, routes, goals and exit rules can check a tag, a field
-value, membership of a segment, whether the contact opened or clicked an
-earlier email, the outcome of a task, or what an earlier step wrote.
+![The View menu: Visual, JSON, AI assistant, Palette, Side panel and Tidy up the layout](../../img/screenshots/automations/view-menu.png){ width="25%" }
 
-Under **Decoration**, **Add note** puts a sticky note on the canvas for your
-colleagues. Contacts never see it.
+Each flow in the list has a menu with **Open designer**, **Contacts & report**,
+**Rename…**, **Duplicate**, **Export as JSON**, **Archive** and **Delete**.
 
-## Flow settings
+![The menu of a flow in the list](../../img/screenshots/automations/list-row-menu.png){ width="25%" }
 
-In the designer, choose **File → Flow settings**.
-
-![Flow settings: Send emails with, Re-entry set to Once per contact, AI budget per month, Goal with Set A Goal, and Stop early when with Add Rule](../../img/screenshots/automations-flow-settings.png){ width="50%" }
-
-| Setting | What it decides |
-| --- | --- |
-| **Send emails with** | Which email server sends, when you have more than one connected. |
-| **Re-entry** | **Once per contact** (the default); **Every time the trigger fires again (after finishing)**; or **After a cooldown**, with the number of days before the same contact can enter again. |
-| **AI budget per month** | The most credits this flow may spend on **Ask an agent** and **AI decides** steps each calendar month. Empty means no cap. |
-| **Goal** | What the flow is for, for example *Booked a demo*. A contact who meets it leaves the flow and counts as a conversion in the report. |
-| **Stop early when…** | Rules that take a contact out as soon as something becomes true, such as a purchase. A rule can also move them into another flow. |
-
-## Running a flow
-
-A flow's status shows in the list:
+## A flow's status
 
 | Status | What it means |
 | --- | --- |
@@ -163,34 +93,6 @@ A flow's status shows in the list:
     changes** to publish them. Contacts already in the flow finish on the
     version they started; new contacts get the new one.
 
-## Following the results
-
-From the list, choose a flow's menu, then **Contacts & report**.
-
-<!-- screenshot: a flow's page on the Report tab, the canvas with reached counts and opens/clicks on each email card -->
-
-- **Contacts** lists everyone who entered, with their status, the step they are
-  on and why they left. Filter by **In flow**, **Completed**, **Exited**,
-  **Skipped** or **Failed**. **Path** shows the cards a contact went through,
-  with the time of each. **Wake now** ends a contact's current wait early;
-  **Remove** takes them out of the flow.
-- **Report** draws the flow with how many contacts reached each card, the
-  sent, opened and clicked figures of each email, and how lanes split. With a
-  goal, it also shows **Goal reached** and the **Conversion** rate.
-
-A contact's own page also lists the flows they have been in, under
-**Automation flows**.
-
-## Using a flow in a campaign
-
-In a campaign, add a **Marketing Automation** tactic. In the tactic, choose
-**Create the flow**, or pick one you already have and choose **Link**. The
-tactic then shows how many contacts are **In the flow**, **Completed** and
-**Exited**, and the flow's emails reach the campaign report.
-
-The tactic follows the flow: activating the flow starts the tactic, archiving
-it completes the tactic. See [Campaigns](campaigns.md).
-
 ## Good to know
 
 !!! info "Only subscribed contacts stay in a flow"
@@ -202,20 +104,13 @@ it completes the tactic. See [Campaigns](campaigns.md).
 - **One flow at a time.** A contact already in a flow is skipped by any other
   flow's trigger. The skip is listed on that flow's **Contacts** tab under
   **Skipped**, so you can see who missed out.
-- **Goals and exit rules are checked before each step,** not during a wait. A
-  contact on a three-day wait who books a demo on day one leaves when the wait
-  ends, before the next email goes out.
+- **Nothing is backfilled.** Only events after you activate the flow count.
+  To include people from before, enrol them yourself.
 - **Emails are sent as they are at send time.** Editing an email changes what
   the next contacts receive, even mid-flow.
 - **A failing step is retried twice.** After the third failure, for example
   with no email server connected, the contact is marked **Failed** and leaves.
-  The same happens to **Ask an agent** and **AI decides** steps once the flow's
-  monthly AI budget is spent.
 - **A flow has at most 50 steps.**
-
-!!! tip "Review AI-drafted emails"
-    Put a **Task for the owner** before a **Send drafted email** step, so a
-    colleague approves or edits the draft in **Actions** before it goes out.
 
 !!! warning "Archiving cannot be undone"
     You can only delete a draft, or an archived flow that never had a contact.

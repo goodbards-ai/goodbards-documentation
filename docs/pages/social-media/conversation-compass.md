@@ -139,7 +139,9 @@ does better than usual.
 
 ## What works
 
-**Top posts across networks** shows your 5 best posts, each compared with the usual
+**Top posts across networks** shows your 5 best posts, ranked by **engagement rate**.
+Use **Sort by** to rank them by **Impressions**, **Engagements**, **Clicks**, **Likes**
+or **Shares** instead, or by **Vs usual**: each post compared with the usual
 engagement of its own network, so a strong LinkedIn post can rank above an Instagram
 post that simply has more likes. Click a post to open it on its network.
 
