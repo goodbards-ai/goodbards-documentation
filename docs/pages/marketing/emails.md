@@ -201,11 +201,12 @@ The fields you can use:
 
 Good to know:
 
-- **A field the recipient has no value for is left blank.** *Hi
-  {{contact_firstname}},* becomes *Hi ,* for a contact without a first name.
-  Keep names for lists you know are complete, or write the greeting so it reads
-  well without one: *Hello {{contact_firstname}}* rather than *Dear
-  {{contact_firstname}},*.
+- **Add a default for empty fields.** `{{contact_firstname | default: "there"}}`
+  gives *Hi there,* to a contact without a first name, and their name to the
+  others. It works for every field, custom fields included
+  (`{{custom_field_quiz_archetype | default: "your archetype"}}`), in the
+  subject, the body and links. Without a default, an empty field is left blank:
+  *Hi ,*.
 - **Test emails use your own contact record.** The field is filled only when
   the address you send the test to exists in **Audience → Contacts**. Otherwise
   it shows blank in the test, and works for real recipients.

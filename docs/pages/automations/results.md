@@ -27,21 +27,26 @@ when they entered and, for those who left, why.
 - **Path** shows the contact's journey (see below).
 - **Wake now** ends the contact's current wait early, to test the next steps
   without waiting days.
+- **Send now** appears when an email is held. **Reason** says why: **Held by
+  the sending hours**, **Held by the email limit**, or **No longer held** once
+  you raised the limit. The limit and the hours are checked again: if one still
+  applies, the email stays held.
 - **Remove** takes the contact out of the flow.
 
 | Status | Meaning |
 | --- | --- |
-| **In flow** | On a step or waiting. |
+| **In flow** | On a step or waiting. **Next** shows when they move on, for example an email held until the [sending hours](settings.md#sending-hours) open or the [email limit](settings.md#email-limit-per-contact) has room. |
 | **Completed** | Reached the end. |
-| **Exited** | Left early: an **Exit flow** step, a stop rule, the goal, an unsubscribe. The reason is shown. |
-| **Skipped** | The trigger fired but they could not enter (already in another flow, or already went through this one). |
+| **Exited** | Left early: an **Exit flow** step, a stop rule, the goal, an unsubscribe, or a **Wait until…** that ran out with **Leave the flow** (reason `wait_timeout`). The reason is shown. |
+| **Skipped** | The trigger fired but they could not enter (already in this flow, or already went through it). A contact can be in several flows at once. |
 | **Failed** | A step failed three times, for example no email server. |
 
 ## A contact's path
 
 **Path** draws the flow with the cards this contact went through and the time
 of each, and what each step did: the email sent, the lane taken, what the agent
-wrote, what the AI chose and how sure it was, the task outcome.
+wrote, what the AI chose and how sure it was, the task outcome, and how a wait
+ended (**condition**, **timeout**, **date passed**, **no date**).
 
 ![A contact's path: the flow with the cards this contact reached highlighted, each with its time](../../img/screenshots/automations/run-journey.png)
 

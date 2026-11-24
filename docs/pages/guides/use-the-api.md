@@ -56,12 +56,61 @@ Authorization: Bearer <your API key>
 Content-Type: application/json
 ```
 
-Update an existing contact with `PUT /v1/{tenant-id}/cdp/contacts/{contact-id}`.
-
 !!! warning "A contact without a status is added as subscribed"
     Always send a status for people who did not agree to receive marketing
     emails. Only contacts with marketing consent should be **subscribed**; see
     [Adding contacts](../audience/adding-contacts.md).
+
+To change some fields of a contact, use the call below
+(**create or update by email**): only the fields you send change.
+
+!!! warning "`PUT /cdp/contacts/{contact-id}` replaces the whole contact"
+    It is the call the app's own edit form uses. Every field you leave out is
+    emptied: names, phone, address, job title. Only the email, tags, status,
+    `customFields`, `policies` and `companyIds` keep their value when you leave
+    them out. Use it only after reading the full contact
+    (`GET /v1/{tenant-id}/cdp/contacts/{contact-id}`) and sending it back with
+    your changes.
+
+### Sync contacts from your backend (create or update by email)
+
+One call creates the contact, or updates it when the email is already there:
+
+```http
+PUT https://api.goodbards.ai/v1/{tenant-id}/cdp/contacts/by-email/{email}
+Authorization: Bearer <your API key>
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "status": "regular",
+  "customFields": { "quiz_archetype": "Titan" },
+  "tagsAdd": ["status: customer"],
+  "tagsRemove": ["path: A"]
+}
+```
+
+- `201` = created, `200` = updated; the answer holds `created` and the contact.
+- **Only what you send changes.** Tags are added and removed, never replaced;
+  custom fields are merged (`null` clears one).
+- **Tags start automations.** An added tag starts the **Tag added** automations
+  and the stop rules within a minute, as a tag added in the app does. Adding
+  `status: customer` stops a nurture flow with that stop rule before its next
+  email.
+- A new contact without a status is **subscribed**: send `regular` for people
+  who did not agree to marketing emails.
+- `GET .../cdp/contacts/by-email/{email}` reads a contact.
+- A `400` lists every field it refused:
+
+```json
+{
+  "message": "Some fields were not accepted",
+  "errors": [
+    { "field": "customFields.quiz_sid", "message": "not a contact custom field of this workspace" },
+    { "field": "status", "message": "one of [do-not-contact, invalid-email, regular, subscribed, unsubscribed]" }
+  ]
+}
+```
 
 ### List your campaigns
 

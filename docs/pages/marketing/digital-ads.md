@@ -20,6 +20,8 @@ everything else you are doing.
     **Meta Ads** is read-only: its tab shows your ad account's results and each
     campaign, once [Meta Ads](../settings/connectors/meta-ads.md) is connected.
     **LinkedIn Ads** appears marked *Soon* and cannot be used yet.
+    The **Competitor ads** tab needs no connection: see
+    [Competitor ads](competitor-ads.md).
 
 ## Getting your first campaign live
 

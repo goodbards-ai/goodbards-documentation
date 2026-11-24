@@ -118,6 +118,26 @@ rule (or by hand).
 - **Mock copy.** The sample emails say they are samples: replace the copy before
   using a flow with real contacts.
 
+## Ready-made: CSAT low score alert
+
+A flow for real use, not a tutorial. Ask your GoodBards contact to add it: you
+get the form **CSAT survey** and the flow **CSAT · Low score alert**, both as
+drafts.
+
+- **Score 1 or 2:** the contact gets the tag `csat: unhappy`, a note with the
+  score and the comment, and their owner gets a task to call back within 3 days.
+- **Score 3 to 5:** the contact gets the tag `csat: happy`.
+- No email is sent. Every answer counts, and the tags always show the latest one.
+
+To use it:
+
+1. **Forms →** ⋮ on **CSAT survey** **→ Make public**. Set a **default owner**
+   (for example your support lead) so the tasks reach them.
+2. **Automations → CSAT · Low score alert → Activate**.
+3. Share the form link after a support case.
+4. Keep unhappy customers out of promotions: exclude the tag `csat: unhappy` in
+   your promotional segments.
+
 ---
 
 *Still stuck? [Contact support](../contact.md).*

@@ -2533,6 +2533,8 @@
       
         
       
+        
+      
     
     
     
@@ -2594,6 +2596,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4643,6 +4668,10 @@ rules</a>:</p>
 <td>A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. Works on custom fields and on status, email, first name, last name and job title.</td>
 </tr>
 <tr>
+<td><strong>Score</strong></td>
+<td>Under <strong>Field value</strong>: <code>engagementScore</code> (the contact's engagement score) or <code>decayedScore</code> (the same, faded with time: "engaged lately"), for example <code>decayedScore</code> greater than <code>50</code>. They are the two scores of the contact page.</td>
+</tr>
+<tr>
 <td><strong>In segment</strong></td>
 <td>The contact is a member of the segment right now.</td>
 </tr>
@@ -4658,8 +4687,18 @@ rules</a>:</p>
 <td><strong>What an earlier step wrote</strong></td>
 <td>A value an agent, a task or an AI decision stored for this contact.</td>
 </tr>
+<tr>
+<td><strong>An answer in the form</strong></td>
+<td>Flows started by a form: an answer in the submission that started the flow, for example <code>form.rating</code> less than <code>3</code>. Pick it under <strong>What an earlier step wrote</strong>.</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Survey answers</p>
+<p>Use <strong>An answer in the form</strong> rather than a custom field to branch on a
+survey score. A form fills a custom field only when it is empty, so a
+contact's second survey would still show the first score.</p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-branch-task-outcome.png" data-desc-position="bottom"><img alt="A branch on the outcome of a task: lane Approved, condition Outcome of a task, task Review the email, counts when Done" src="../../img/screenshots/automations/panel-branch-task-outcome.png" width="30%"></a></p>
 <h2 id="exit-lanes-and-empty-lanes">Exit lanes and empty lanes<a class="headerlink" href="#exit-lanes-and-empty-lanes" title="Permanent link">¶</a></h2>
 <ul>

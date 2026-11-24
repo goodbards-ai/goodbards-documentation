@@ -5,8 +5,9 @@ settings.
 
 ## What it's for
 
-Steps are what the flow does to each contact: send an email, wait, tag them,
-write a field, ask an AI agent, hand them to a colleague. The structure steps
+Steps are what the flow does to each contact: send an email, wait (a time, an
+open or click, a condition, a date), tag them, write a field or a note, ask an
+AI agent, hand them to a colleague. The structure steps
 (branches) are covered in [Branches and conditions](branches.md), the AI and
 human steps in [AI and human steps](ai-steps.md).
 
@@ -30,6 +31,13 @@ with the contact's details filled in, tracking and the unsubscribe link.
 
 **Open the email** opens it in a new tab so you can check the copy.
 
+- **Custom fields:** `{{custom_field_<key>}}` in the email shows the contact's
+  value, for example `Your result: {{custom_field_archetype}}`. A contact
+  without a value gets an empty text.
+- **Email limit:** a contact who already had the workspace's maximum of
+  marketing emails waits on this step until there is room again. See
+  [Email limit per contact](settings.md#email-limit-per-contact).
+
 ## Wait
 
 Pauses for a number of minutes, hours or days (from one minute to 365 days).
@@ -45,6 +53,47 @@ flow, or until **At most** passes, whichever comes first.
 
 Follow it with a [Yes / No branch](branches.md#yes-no-branch) on **Opened or
 clicked an email** to treat the two groups differently.
+
+## Wait until…
+
+Holds the contact until something is true: they have a tag, a field has a
+value, they are in a segment, their score is high enough, or a form answer.
+It uses the same conditions as a [branch](branches.md#the-conditions).
+
+- **At most** caps the wait, for example 14 days.
+- **If it never happens:** continue to the next step, or leave the flow.
+- If the condition is already true, the contact goes straight on.
+- The condition is checked again every 15 minutes, so a contact can move on
+  up to 15 minutes after it becomes true.
+
+*Example:* after the webinar invitation, **Wait until** the contact has the
+tag `registered`, at most 14 days; then send the thank-you email.
+
+## Wait for a date
+
+Waits for a date: a fixed one (`24 Dec 2026`), the contact's **birthday**, or
+a **date field** of the contact (renewal date, event date, interview day).
+
+- **Days before (−) or after (+)**, for example `-1` for the day before.
+- **At** sets the time, in the contact's timezone (else your workspace's).
+- The birthday means the next one.
+- A date already passed, or missing on the contact, moves the contact on at once.
+
+*Example:* **Wait for a date** on the field `renewal_date`, `-30` days, at
+`09:00`; then send the renewal reminder.
+
+## Wait until a time of day
+
+Holds the contact until the next time it is, say, **17:00** in the contact's
+timezone (else your workspace's).
+
+- Reached at 10:00: moves on at 17:00 the same day. Reached at 19:00: at
+  17:00 the next day. Reached exactly at 17:00: moves on at once.
+- **Only on**: pick days (for example Monday to Friday) to skip the others. No
+  day picked = every day.
+
+*Example:* a wake-up email that should land after work: **Wait until a time of
+day** `17:00`, then **Send email**.
 
 ## Add tag and Remove tag
 
@@ -63,6 +112,26 @@ Writes a value into one of the contact's custom fields, for example
 
 Built-in fields (status, email, name) cannot be set by a flow.
 
+**Copy a form answer onto the contact.** In a flow started by a form, type
+`{{context.form.<field>}}` as the value, for example
+`{{context.form.archetype}}`. The contact's custom field gets the answer of
+the submission that started this run, and it is overwritten on each new
+submission (a form alone only fills an empty field). Branches and emails later
+in the flow then read the latest answer.
+
+## Note on contact
+
+Writes a note on the contact's record, signed with the flow's name. Your team
+sees it in the contact's **Notes**, next to the notes people write.
+
+The note can use the contact's details and the answers of the form that
+started the flow; the panel lists the form's fields for you. For example:
+`Unhappy on the survey: rated {{context.form.csat_score}}/5. Comment: {{context.form.csat_comment}}`.
+
+- An answer left blank on the form becomes an empty text, never a `{{…}}` left in the note.
+- Not to be confused with **Add note** under **Decoration** (a sticky note on
+  the canvas, see below): **Note on contact** writes on the contact's record.
+
 ## Exit flow
 
 The contact leaves the flow here, with the reason you type. The reason shows
@@ -77,7 +146,7 @@ Exit is always the last step of its lane: nothing can follow it.
 The three steps that bring AI and your team into a flow. See
 [AI and human steps](ai-steps.md).
 
-## Add note
+## Sticky notes on the canvas
 
 Under **Decoration** in the palette, **Add note** puts a sticky note on the
 canvas for your colleagues: what a card is for, what to check before
@@ -87,9 +156,14 @@ every card.
 
 ## Good to know
 
-- **Merge fields.** Email subjects and task titles can use
-  `{{contact_firstname}}`; agent and task instructions also accept
-  `{{custom_field_<key>}}` and `{{context.<key>}}` (what earlier steps wrote).
+- **Merge fields.** Email subjects and bodies can use `{{contact_firstname}}`
+  and `{{custom_field_<key>}}`; task titles, notes and agent instructions also
+  accept `{{context.<key>}}` (what earlier steps wrote, and `form.<field>` for
+  the form that started the flow).
+- **Emails can wait.** An email step waits outside the flow's
+  [sending hours](settings.md#sending-hours) or when the contact reached the
+  [email limit](settings.md#email-limit-per-contact). Tags, notes, tasks and
+  waits never do.
 - **Steps run in order, without delay** unless a wait holds them: an email,
   a tag and a field in a row all happen within the same minute.
 

@@ -1768,6 +1768,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wait-until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wait until…
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-for-a-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wait for a date
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-tag-and-remove-tag" class="md-nav__link">
     <span class="md-ellipsis">
       Add tag and Remove tag
@@ -1780,6 +1798,15 @@
   <a href="#set-field" class="md-nav__link">
     <span class="md-ellipsis">
       Set field
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-on-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note on contact
     </span>
   </a>
   
@@ -1804,9 +1831,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-note" class="md-nav__link">
+  <a href="#sticky-notes-on-the-canvas" class="md-nav__link">
     <span class="md-ellipsis">
-      Add note
+      Sticky notes on the canvas
     </span>
   </a>
   
@@ -2569,6 +2596,8 @@
       
         
       
+        
+      
     
     
     
@@ -2630,6 +2659,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4561,6 +4613,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wait-until" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wait until…
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wait-for-a-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wait for a date
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-tag-and-remove-tag" class="md-nav__link">
     <span class="md-ellipsis">
       Add tag and Remove tag
@@ -4573,6 +4643,15 @@
   <a href="#set-field" class="md-nav__link">
     <span class="md-ellipsis">
       Set field
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-on-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note on contact
     </span>
   </a>
   
@@ -4597,9 +4676,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-note" class="md-nav__link">
+  <a href="#sticky-notes-on-the-canvas" class="md-nav__link">
     <span class="md-ellipsis">
-      Add note
+      Sticky notes on the canvas
     </span>
   </a>
   
@@ -4634,8 +4713,9 @@
 <p>Every card under the trigger is a step. This page shows each one and its
 settings.</p>
 <h2 id="what-its-for">What it's for<a class="headerlink" href="#what-its-for" title="Permanent link">¶</a></h2>
-<p>Steps are what the flow does to each contact: send an email, wait, tag them,
-write a field, ask an AI agent, hand them to a colleague. The structure steps
+<p>Steps are what the flow does to each contact: send an email, wait (a time, an
+open or click, a condition, a date), tag them, write a field or a note, ask an
+AI agent, hand them to a colleague. The structure steps
 (branches) are covered in <a href="branches.html">Branches and conditions</a>, the AI and
 human steps in <a href="ai-steps.html">AI and human steps</a>.</p>
 <h2 id="how-to-add-move-and-remove-a-step">How to add, move and remove a step<a class="headerlink" href="#how-to-add-move-and-remove-a-step" title="Permanent link">¶</a></h2>
@@ -4653,6 +4733,14 @@ human steps in <a href="ai-steps.html">AI and human steps</a>.</p>
 with the contact's details filled in, tracking and the unsubscribe link.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-send-email.png" data-desc-position="bottom"><img alt="The Send email panel with the email Tutorial · Hello world and Open the email" src="../../img/screenshots/automations/panel-send-email.png" width="30%"></a></p>
 <p><strong>Open the email</strong> opens it in a new tab so you can check the copy.</p>
+<ul>
+<li><strong>Custom fields:</strong> <code>{{custom_field_&lt;key&gt;}}</code> in the email shows the contact's
+  value, for example <code>Your result: {{custom_field_archetype}}</code>. A contact
+  without a value gets an empty text.</li>
+<li><strong>Email limit:</strong> a contact who already had the workspace's maximum of
+  marketing emails waits on this step until there is room again. See
+  <a href="settings.html#email-limit-per-contact">Email limit per contact</a>.</li>
+</ul>
 <h2 id="wait">Wait<a class="headerlink" href="#wait" title="Permanent link">¶</a></h2>
 <p>Pauses for a number of minutes, hours or days (from one minute to 365 days).</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-wait.png" data-desc-position="bottom"><img alt="The Wait panel: Wait for 5 minutes" src="../../img/screenshots/automations/panel-wait.png" width="30%"></a></p>
@@ -4662,6 +4750,30 @@ flow, or until <strong>At most</strong> passes, whichever comes first.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-wait-for-event.png" data-desc-position="bottom"><img alt="The Wait for open / click panel: Wait until clicked, on the email sent by Tutorial · Getting started, at most 3 days" src="../../img/screenshots/automations/panel-wait-for-event.png" width="30%"></a></p>
 <p>Follow it with a <a href="branches.html#yes-no-branch">Yes / No branch</a> on <strong>Opened or
 clicked an email</strong> to treat the two groups differently.</p>
+<h2 id="wait-until">Wait until…<a class="headerlink" href="#wait-until" title="Permanent link">¶</a></h2>
+<p>Holds the contact until something is true: they have a tag, a field has a
+value, they are in a segment, their score is high enough, or a form answer.
+It uses the same conditions as a <a href="branches.html#the-conditions">branch</a>.</p>
+<ul>
+<li><strong>At most</strong> caps the wait, for example 14 days.</li>
+<li><strong>If it never happens:</strong> continue to the next step, or leave the flow.</li>
+<li>If the condition is already true, the contact goes straight on.</li>
+<li>The condition is checked again every 15 minutes, so a contact can move on
+  up to 15 minutes after it becomes true.</li>
+</ul>
+<p><em>Example:</em> after the webinar invitation, <strong>Wait until</strong> the contact has the
+tag <code>registered</code>, at most 14 days; then send the thank-you email.</p>
+<h2 id="wait-for-a-date">Wait for a date<a class="headerlink" href="#wait-for-a-date" title="Permanent link">¶</a></h2>
+<p>Waits for a date: a fixed one (<code>24 Dec 2026</code>), the contact's <strong>birthday</strong>, or
+a <strong>date field</strong> of the contact (renewal date, event date, interview day).</p>
+<ul>
+<li><strong>Days before (−) or after (+)</strong>, for example <code>-1</code> for the day before.</li>
+<li><strong>At</strong> sets the time, in the contact's timezone (else your workspace's).</li>
+<li>The birthday means the next one.</li>
+<li>A date already passed, or missing on the contact, moves the contact on at once.</li>
+</ul>
+<p><em>Example:</em> <strong>Wait for a date</strong> on the field <code>renewal_date</code>, <code>-30</code> days, at
+<code>09:00</code>; then send the renewal reminder.</p>
 <h2 id="add-tag-and-remove-tag">Add tag and Remove tag<a class="headerlink" href="#add-tag-and-remove-tag" title="Permanent link">¶</a></h2>
 <p>Puts a tag on the contact, or takes one off. Tags are how flows talk to each
 other and to your segments.</p>
@@ -4672,6 +4784,17 @@ other and to your segments.</p>
 <code>onboarding_stage = welcomed</code>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-set-field.png" data-desc-position="bottom"><img alt="The Set field panel: custom field onboarding_stage, value welcomed" src="../../img/screenshots/automations/panel-set-field.png" width="30%"></a></p>
 <p>Built-in fields (status, email, name) cannot be set by a flow.</p>
+<h2 id="note-on-contact">Note on contact<a class="headerlink" href="#note-on-contact" title="Permanent link">¶</a></h2>
+<p>Writes a note on the contact's record, signed with the flow's name. Your team
+sees it in the contact's <strong>Notes</strong>, next to the notes people write.</p>
+<p>The note can use the contact's details and the answers of the form that
+started the flow; the panel lists the form's fields for you. For example:
+<code>Unhappy on the survey: rated {{context.form.csat_score}}/5. Comment: {{context.form.csat_comment}}</code>.</p>
+<ul>
+<li>An answer left blank on the form becomes an empty text, never a <code>{{…}}</code> left in the note.</li>
+<li>Not to be confused with <strong>Add note</strong> under <strong>Decoration</strong> (a sticky note on
+  the canvas, see below): <strong>Note on contact</strong> writes on the contact's record.</li>
+</ul>
 <h2 id="exit-flow">Exit flow<a class="headerlink" href="#exit-flow" title="Permanent link">¶</a></h2>
 <p>The contact leaves the flow here, with the reason you type. The reason shows
 on the <strong>Contacts</strong> tab.</p>
@@ -4680,7 +4803,7 @@ on the <strong>Contacts</strong> tab.</p>
 <h2 id="ask-an-agent-task-for-the-owner-send-drafted-email">Ask an agent, Task for the owner, Send drafted email<a class="headerlink" href="#ask-an-agent-task-for-the-owner-send-drafted-email" title="Permanent link">¶</a></h2>
 <p>The three steps that bring AI and your team into a flow. See
 <a href="ai-steps.html">AI and human steps</a>.</p>
-<h2 id="add-note">Add note<a class="headerlink" href="#add-note" title="Permanent link">¶</a></h2>
+<h2 id="sticky-notes-on-the-canvas">Sticky notes on the canvas<a class="headerlink" href="#sticky-notes-on-the-canvas" title="Permanent link">¶</a></h2>
 <p>Under <strong>Decoration</strong> in the palette, <strong>Add note</strong> puts a sticky note on the
 canvas for your colleagues: what a card is for, what to check before
 activating. Contacts never see it. Drag a note's corner to resize it and pick
@@ -4688,9 +4811,14 @@ its colour in the side panel. The <a href="samples.html">Sample flows</a> use th
 every card.</p>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>Merge fields.</strong> Email subjects and task titles can use
-  <code>{{contact_firstname}}</code>; agent and task instructions also accept
-  <code>{{custom_field_&lt;key&gt;}}</code> and <code>{{context.&lt;key&gt;}}</code> (what earlier steps wrote).</li>
+<li><strong>Merge fields.</strong> Email subjects and bodies can use <code>{{contact_firstname}}</code>
+  and <code>{{custom_field_&lt;key&gt;}}</code>; task titles, notes and agent instructions also
+  accept <code>{{context.&lt;key&gt;}}</code> (what earlier steps wrote, and <code>form.&lt;field&gt;</code> for
+  the form that started the flow).</li>
+<li><strong>Emails can wait.</strong> An email step waits outside the flow's
+  <a href="settings.html#sending-hours">sending hours</a> or when the contact reached the
+  <a href="settings.html#email-limit-per-contact">email limit</a>. Tags, notes, tasks and
+  waits never do.</li>
 <li><strong>Steps run in order, without delay</strong> unless a wait holds them: an email,
   a tag and a field in a row all happen within the same minute.</li>
 </ul>

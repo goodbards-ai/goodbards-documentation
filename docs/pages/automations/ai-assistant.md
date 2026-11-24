@@ -55,8 +55,12 @@ updated flow.
 - **Emails to create.** When no existing email fits, the proposal keeps an empty
   **Send email** card named and briefed for it. Create the email, then pick it
   on the card.
-- **What it cannot do** is listed, never silently dropped: for example "wait
-  until a condition becomes true" or sending SMS.
+- **What it cannot do** is listed, never silently dropped: for example sending
+  an SMS or a Slack message.
+- **It knows every step**, including **Wait until…**, **Wait for a date**,
+  **Note on contact**, the score conditions and the sending hours: "wait until
+  they register, at most 14 days", "the day before the renewal date" or "stop
+  once they are engaged" become the right cards.
 - **Start over** clears the conversation and the proposal.
 - **It uses AI credits** for each answer.
 

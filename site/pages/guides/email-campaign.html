@@ -2526,6 +2526,8 @@
       
         
       
+        
+      
     
     
     
@@ -2584,6 +2586,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4612,10 +4637,29 @@ the campaign report.</p>
 <ol>
 <li>Choose <strong>Send Test Email</strong> to send yourself a test, and check it on your
    phone and in Gmail or Outlook.</li>
-<li>Choose <strong>Send Now</strong>, or let it go at the send date. The email shows <strong>Published</strong> with
-   the date once it is out.</li>
+<li>
+<p>Choose <strong>Send Now</strong>, or let it go at the send date. The email shows <strong>Published</strong> with
+   the date once it is out.</p>
+<div class="admonition note">
+<p class="admonition-title">Contacts at the email limit</p>
+<p>If some contacts already received your workspace's maximum of marketing
+emails this week (3 in 7 days by default), the send window says how
+many, for example <em>"1 contact of 2 already received 3 marketing emails
+in the last 7 days"</em>. The campaign email still goes to them: it is never
+held back. Their next <strong>flow</strong> emails wait until there is room. See
+<a href="../automations/settings.html#email-limit-per-contact">Email limit per contact</a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Personalise with custom fields</p>
+<p><code>{{custom_field_&lt;key&gt;}}</code> in the email shows each contact's value, for
+example <code>Your result: {{custom_field_archetype}}</code>. A contact without a
+value gets an empty text.</p>
+</div>
+<ol>
 <li>To reach more people later, for example contacts who joined the list since,
    use <strong>Send To More People</strong>.</li>
+</ol>
+</li>
 </ol>
 <h2 id="5-read-the-results">5. Read the results<a class="headerlink" href="#5-read-the-results" title="Permanent link">¶</a></h2>
 <p>The tactic's <strong>Performance</strong> panel shows how the email did:</p>

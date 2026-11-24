@@ -32,6 +32,25 @@ contacts, a segment or a mailing list, up to 2,000 at a time.
 Use it to test any flow on yourself, and for one-off sends to a hand-picked
 group. *Sample: [Tutorial 1 · Hello world](samples.md#1-hello-world).*
 
+### Start a flow from the assistant
+
+An agent with the **Marketing Automation** tool can do the same from a
+conversation: *"Launch Hello world for anna@acme.com and ben@acme.com."* It
+works with any active flow, whatever its trigger, for up to 50 emails at a
+time.
+
+- Only existing, subscribed contacts enter. The assistant lists every address
+  it left out; it never creates a contact.
+- A contact already in a flow, or who already went through this one, is
+  skipped, as in **Enroll Contacts…**.
+- If two flows match the name you gave, the assistant asks which one.
+
+!!! note "Signed-in users only"
+    The tool answers the members of your workspace. The public chatbot on your
+    website cannot start a flow, even if the tool is ticked on its agent. To
+    start a flow for chatbot visitors, use **Tag added** with the tag
+    `chatbot`, which the chatbot puts on every lead it captures.
+
 ## Form submitted
 
 Every new submission of the chosen form enrols its contact, within a minute.
@@ -55,6 +74,12 @@ added: by hand, an import, a form, the card scanner, an integration.
 
 A contact who gets the chosen tag enrols within a minute, whoever adds it: you,
 an import, a form, another flow's **Add tag** step, an integration.
+
+Only the moment the tag arrives counts. Editing a contact who already carries
+the tag, or giving them another tag, does not bring them in again. To send
+someone through again, remove the tag and add it back (with **Re-entry** set
+to let them return, see [Flow settings](settings.md)). Tags that were on your
+contacts before you activated the flow never start it.
 
 ![Starts when Tag added, with the tag tutorial: onboarding](../../img/screenshots/automations/panel-trigger-tag.png){ width="30%" }
 
@@ -86,12 +111,31 @@ Combine it with **Re-entry: after a cooldown** in
 [Flow settings](settings.md), or each contact only runs once. *Sample:
 [Tutorial 5 · Monthly check-in](samples.md#5-monthly-check-in).*
 
+## Several ways in
+
+A flow that starts on a **form**, a **tag** or a **new contact** can have up
+to five more ways in. In the trigger panel, under **Also starts when**, choose
+**Add another way in** and pick a form, a tag or new contacts. A contact
+enters when any of them happens.
+
+For example, an enquiry flow can start when the enquiry form is submitted *and*
+when the website chatbot captures a lead (it tags every lead `chatbot`).
+
+- The trigger card shows **+ 1 more way in**; the **Contacts** tab says which
+  one brought each contact.
+- A contact who does two of them in the same minute enters once.
+- **Manual**, **Segment (daily)** and **On a schedule** flows have a single
+  trigger. You can still enrol contacts by hand in any active flow.
+
 ## Good to know
 
-- **One trigger per flow.** For two entry points (a form *and* a tag), build
-  the flow on a tag and let the form add that tag.
-- **One flow at a time.** A contact already in another flow is skipped and
-  listed under **Skipped** on this flow's **Contacts** tab.
+- **Several flows at once.** A contact in another flow still enters this one.
+  A contact already in *this* flow is skipped and listed under **Skipped** on
+  its **Contacts** tab.
+- **Form answers.** With **Form submitted**, the answers of the submission
+  that started the flow can be read by a branch or a **Wait until…** (as
+  `form.<field name>`, for example `form.csat_score`) and written into a
+  **Note on contact**. See [Branches and conditions](branches.md#the-conditions).
 - **Re-entry.** By default a contact goes through a flow once. See
   [Flow settings](settings.md) to let them come back.
 

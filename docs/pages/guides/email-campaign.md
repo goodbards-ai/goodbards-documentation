@@ -58,6 +58,19 @@ See [Campaigns](../marketing/campaigns.md).
    phone and in Gmail or Outlook.
 2. Choose **Send Now**, or let it go at the send date. The email shows **Published** with
    the date once it is out.
+
+    !!! note "Contacts at the email limit"
+        If some contacts already received your workspace's maximum of marketing
+        emails this week (3 in 7 days by default), the send window says how
+        many, for example *"1 contact of 2 already received 3 marketing emails
+        in the last 7 days"*. The campaign email still goes to them: it is never
+        held back. Their next **flow** emails wait until there is room. See
+        [Email limit per contact](../automations/settings.md#email-limit-per-contact).
+
+    !!! tip "Personalise with custom fields"
+        `{{custom_field_<key>}}` in the email shows each contact's value, for
+        example `Your result: {{custom_field_archetype}}`. A contact without a
+        value gets an empty text.
 3. To reach more people later, for example contacts who joined the list since,
    use **Send To More People**.
 

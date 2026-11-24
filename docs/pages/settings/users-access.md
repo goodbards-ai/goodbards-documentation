@@ -66,7 +66,7 @@ selected.
 
 | Tab | What it holds |
 | --- | --- |
-| **Preferences** | The workspace's name, timezone, engagement decay and badge format (below). |
+| **Preferences** | The workspace's name, timezone, engagement decay, badge format and email limit per contact (below; the limit is explained in [Flow settings](../automations/settings.md#email-limit-per-contact)). |
 | **Security** | Users, roles, contact ownership and API keys. See [Users, roles & permissions](users-roles.md). |
 | **Sub Tenants** | The sub-workspaces described on this page. |
 
@@ -83,6 +83,11 @@ selected.
   preview and **Print Test Badge**. Badges under 80 mm wide print a compact
   layout. Each event can override it. See
   [Check-in and badges](../events/check-in.md).
+- **Email limit per contact:** at most N marketing emails per contact in D
+  days (3 in 7 by default), campaigns and automation flows together. Switch it
+  off, or change the numbers and choose **Save**. Administrators only; others
+  see it read-only. See
+  [Email limit per contact](../automations/settings.md#email-limit-per-contact).
 
 ## Good to know
 

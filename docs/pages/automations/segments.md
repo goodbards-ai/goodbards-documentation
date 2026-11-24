@@ -74,8 +74,8 @@ tab), then **Segment**, and pick it. Up to 2,000 contacts at a time.
 - **The first run is the next scheduled one.** Activating a monthly flow on the
   2nd means nothing happens until the 1st of next month. Enrol the segment by
   hand to start now.
-- **Large segments.** Every member who is subscribed and not in another flow
-  enters. Try the flow on a small test segment first.
+- **Large segments.** Every member who is subscribed and not already in this
+  flow enters. Try the flow on a small test segment first.
 
 ---
 

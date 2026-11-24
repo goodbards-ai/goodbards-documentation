@@ -2524,6 +2524,8 @@
       
         
       
+        
+      
     
     
     
@@ -2585,6 +2587,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4573,7 +4598,7 @@ when they entered and, for those who left, why.</p>
 <tbody>
 <tr>
 <td><strong>In flow</strong></td>
-<td>On a step or waiting.</td>
+<td>On a step or waiting. <strong>Next</strong> shows when they move on, for example an email held until the <a href="settings.html#sending-hours">sending hours</a> open or the <a href="settings.html#email-limit-per-contact">email limit</a> has room.</td>
 </tr>
 <tr>
 <td><strong>Completed</strong></td>
@@ -4581,11 +4606,11 @@ when they entered and, for those who left, why.</p>
 </tr>
 <tr>
 <td><strong>Exited</strong></td>
-<td>Left early: an <strong>Exit flow</strong> step, a stop rule, the goal, an unsubscribe. The reason is shown.</td>
+<td>Left early: an <strong>Exit flow</strong> step, a stop rule, the goal, an unsubscribe, or a <strong>Wait until…</strong> that ran out with <strong>Leave the flow</strong> (reason <code>wait_timeout</code>). The reason is shown.</td>
 </tr>
 <tr>
 <td><strong>Skipped</strong></td>
-<td>The trigger fired but they could not enter (already in another flow, or already went through this one).</td>
+<td>The trigger fired but they could not enter (already in this flow, or already went through it). A contact can be in several flows at once.</td>
 </tr>
 <tr>
 <td><strong>Failed</strong></td>
@@ -4596,7 +4621,8 @@ when they entered and, for those who left, why.</p>
 <h2 id="a-contacts-path">A contact's path<a class="headerlink" href="#a-contacts-path" title="Permanent link">¶</a></h2>
 <p><strong>Path</strong> draws the flow with the cards this contact went through and the time
 of each, and what each step did: the email sent, the lane taken, what the agent
-wrote, what the AI chose and how sure it was, the task outcome.</p>
+wrote, what the AI chose and how sure it was, the task outcome, and how a wait
+ended (<strong>condition</strong>, <strong>timeout</strong>, <strong>date passed</strong>, <strong>no date</strong>).</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/run-journey.png" data-desc-position="bottom"><img alt="A contact's path: the flow with the cards this contact reached highlighted, each with its time" src="../../img/screenshots/automations/run-journey.png"></a></p>
 <p>A contact's own page lists every flow they have been in under <strong>Automation
 flows</strong>, with a <strong>Path</strong> button for each.</p>

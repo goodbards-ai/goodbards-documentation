@@ -88,6 +88,12 @@ figures, ranked by **engagement rate**. Use **Sort by** to rank them by
 This is the fastest route to understanding what your audience responds to: look
 for what the top posts have in common, such as format, topic, tone or time of day.
 
+!!! warning "Post images are kept for one year"
+    GoodBards keeps the picture of each Instagram, Facebook, LinkedIn and TikTok
+    post for one year after it was published. Older posts keep all their figures,
+    but reports in **History** show them without their picture. Open the post on
+    its network to see it.
+
 ## Stories (Instagram)
 
 Instagram reports have a **Stories** card for the stories published from

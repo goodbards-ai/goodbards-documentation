@@ -205,6 +205,58 @@ comes with it. See [Duplicating a tactic](campaigns.md#duplicating-a-tactic).
 The **Overview** tab also has quick actions: **Open Public Page**, **Copy
 Registration Link** and **Preview Invitation Email**.
 
+## Asking the assistant
+
+While an event is open, the assistant in the top bar works on **that event**. It
+knows which tab you are on. Its label reads **Event**.
+
+<!-- SCREENSHOT TO ADD: the assistant panel open on an event, label "Event", with a question and its answer -->
+
+**Ask about the event**
+
+- *How many attendees do I have so far?*
+- *How many seats are left on each ticket type?*
+- *Is anna@acme.com registered?*
+- *Is the event ready to be published? What is missing?*
+- *What is this tab for?*
+
+**Tell it what to change**
+
+- *Publish the event.* *Close registrations.*
+- *Change the short description to …*
+- *Move the event to 14 March, 2pm to 5pm.*
+- *Set the capacity to 80 and turn on the waitlist.*
+- *Create 3 ticket types: Monday, Tuesday and Wednesday, 09:00 to 10:00, capacity 3.*
+- *Create slots of 30 minutes with 4 seats on 20 and 21 November, 9 to 12 and 2 to 5pm.*
+- *Take me to the Registration tab.*
+
+!!! tip "Many time slots in one sentence"
+    Give the dates, the hours and the length of a slot: the assistant creates
+    every slot for you. If you announce a number that does not match (12 when
+    the hours give 24), it tells you and asks before creating anything.
+
+After a change, the assistant tells you the value before and the value after, and
+the page refreshes by itself.
+
+<!-- SCREENSHOT TO ADD: the answer after "Create 3 ticket types…", with the Tickets list showing the three new types -->
+
+!!! info "It never sends an email"
+    Cancelling the event, sending invitations, reminders or follow-ups, and
+    approving or declining guests all write to real people. The assistant
+    does not do them: it tells you which tab does, and can take you there.
+
+!!! note "One event at a time"
+    The assistant works on the event that is open. For another event, open it
+    and ask again. Questions about contacts, campaigns or content belong to the
+    assistant of those screens.
+
+!!! tip "A clear order is carried out at once"
+    *Publish the event* is done straight away. A looser sentence, such as *I think
+    we are ready*, gets a question back before anything changes.
+
+**Who can do what:** the assistant follows your access. With view-only access to
+Events it answers questions and changes nothing.
+
 ## Good to know
 
 !!! note "Publish before you share the link"

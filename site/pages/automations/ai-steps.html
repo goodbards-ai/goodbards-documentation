@@ -1811,6 +1811,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="AI decides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-ai-sees" class="md-nav__link">
+    <span class="md-ellipsis">
+      What the AI sees
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2524,6 +2539,8 @@
       
         
       
+        
+      
     
     
     
@@ -2585,6 +2602,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4513,6 +4553,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="AI decides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-ai-sees" class="md-nav__link">
+    <span class="md-ellipsis">
+      What the AI sees
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4634,8 +4689,27 @@ per choice, and a last lane for when the AI is not sure enough.</p>
    where a colleague can decide.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-ai-decides.png" data-desc-position="bottom"><img alt="The AI decides panel: the question, three choices hot, warm and cold with their descriptions, Add Choice, and the confidence floor at 60 %" src="../../img/screenshots/automations/panel-ai-decides.png" width="30%"></a></p>
-<p>The AI sees the contact's name, job title, email domain, tags, fields and what
-earlier steps wrote. <em>Sample: <a href="samples.html#7-ai-lead-qualification">Tutorial 7</a>.</em></p>
+<p><em>Sample: <a href="samples.html#7-ai-lead-qualification">Tutorial 7</a>.</em></p>
+<h3 id="what-the-ai-sees">What the AI sees<a class="headerlink" href="#what-the-ai-sees" title="Permanent link">¶</a></h3>
+<p>The panel lists it under <strong>What the AI sees</strong>. It is always the same set, read
+from the contact at the moment they reach the step:</p>
+<ul>
+<li>first name, last name, job title, the email domain (not the address) and
+  the subscription status;</li>
+<li>all the contact's tags;</li>
+<li>all your custom fields, each with its name and the contact's value;</li>
+<li>what earlier steps of this flow wrote: an agent's answer, a task outcome, a
+  previous decision.</li>
+</ul>
+<p>It does not see notes, opens and clicks, or company data.</p>
+<div class="admonition warning">
+<p class="admonition-title">Form answers must be mapped</p>
+<p>The AI does not read a form submission. If your question depends on what
+the visitor answered (budget, timeline, the product they asked about), map
+those form fields to contact fields or tags in the form's <strong>Contact
+mapping</strong>. Give your custom fields clear names: the AI reads the name to
+understand the value.</p>
+</div>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>AI budget.</strong> <strong>Ask an agent</strong> and <strong>AI decides</strong> use AI credits. Cap them

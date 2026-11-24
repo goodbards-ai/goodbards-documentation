@@ -63,11 +63,27 @@ rules](settings.md):
 | Condition | True when |
 | --- | --- |
 | **Has tag** | The contact has the tag. Several tags: **any** or **all** of them. |
-| **Field value** | A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. Works on custom fields and on status, email, first name, last name and job title. |
+| **Field value** | A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. You pick the field from the same list as in segments: contact fields (city, country, Customer Type, preferred language, timezone, created on, birth date…) and your custom fields. Pick-list fields offer their values. Dates compare as `YYYY-MM-DD`, for example created on greater than `2026-01-01`. |
+| **Score** | Under **Field value**, group **Scores**: **Engagement Score** or **Decay Score** (the same, faded with time: "engaged lately"), for example Decay Score greater than `50`. They are the two scores of the contact page. |
 | **In segment** | The contact is a member of the segment right now. |
 | **Opened or clicked an email** | The contact opened (or clicked) an email sent earlier in this flow. |
 | **Outcome of a task** | A **Task for the owner** earlier in the flow was done, dismissed or timed out. |
 | **What an earlier step wrote** | A value an agent, a task or an AI decision stored for this contact. |
+| **An answer in the form** | Flows started by a form: an answer in the submission that started the flow, for example `form.rating` less than `3`. Pick it under **What an earlier step wrote**. |
+
+!!! note "Owner, mailing list, consent, tags"
+    These are not in the field list. Use **Has tag**, or build a segment
+    (owner, mailing list, "can be messaged on") and use **In segment**.
+
+!!! note "Customer Type"
+    **Customer Type** is the B2B / B2C choice of the contact page. It does not
+    say whether the contact bought. For that, use a tag (for example
+    `status: customer`) or a pick-list custom field.
+
+!!! tip "Survey answers"
+    Use **An answer in the form** rather than a custom field to branch on a
+    survey score. A form fills a custom field only when it is empty, so a
+    contact's second survey would still show the first score.
 
 ![A branch on the outcome of a task: lane Approved, condition Outcome of a task, task Review the email, counts when Done](../../img/screenshots/automations/panel-branch-task-outcome.png){ width="30%" }
 

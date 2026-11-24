@@ -1724,6 +1724,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Manual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-flow-from-the-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start a flow from the assistant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1766,6 +1781,15 @@
   <a href="#on-a-schedule" class="md-nav__link">
     <span class="md-ellipsis">
       On a schedule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#several-ways-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Several ways in
     </span>
   </a>
   
@@ -2551,6 +2575,8 @@
       
         
       
+        
+      
     
     
     
@@ -2612,6 +2638,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4522,6 +4571,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Manual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-a-flow-from-the-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start a flow from the assistant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4564,6 +4628,15 @@
   <a href="#on-a-schedule" class="md-nav__link">
     <span class="md-ellipsis">
       On a schedule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#several-ways-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Several ways in
     </span>
   </a>
   
@@ -4620,6 +4693,25 @@ contacts, a segment or a mailing list, up to 2,000 at a time.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-trigger-manual-active.png" data-desc-position="bottom"><img alt="Starts when Manual, with the Enroll Contacts button once the flow is active" src="../../img/screenshots/automations/panel-trigger-manual-active.png" width="30%"></a></p>
 <p>Use it to test any flow on yourself, and for one-off sends to a hand-picked
 group. <em>Sample: <a href="samples.html#1-hello-world">Tutorial 1 · Hello world</a>.</em></p>
+<h3 id="start-a-flow-from-the-assistant">Start a flow from the assistant<a class="headerlink" href="#start-a-flow-from-the-assistant" title="Permanent link">¶</a></h3>
+<p>An agent with the <strong>Marketing Automation</strong> tool can do the same from a
+conversation: <em>"Launch Hello world for anna@acme.com and ben@acme.com."</em> It
+works with any active flow, whatever its trigger, for up to 50 emails at a
+time.</p>
+<ul>
+<li>Only existing, subscribed contacts enter. The assistant lists every address
+  it left out; it never creates a contact.</li>
+<li>A contact already in a flow, or who already went through this one, is
+  skipped, as in <strong>Enroll Contacts…</strong>.</li>
+<li>If two flows match the name you gave, the assistant asks which one.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Signed-in users only</p>
+<p>The tool answers the members of your workspace. The public chatbot on your
+website cannot start a flow, even if the tool is ticked on its agent. To
+start a flow for chatbot visitors, use <strong>Tag added</strong> with the tag
+<code>chatbot</code>, which the chatbot puts on every lead it captures.</p>
+</div>
 <h2 id="form-submitted">Form submitted<a class="headerlink" href="#form-submitted" title="Permanent link">¶</a></h2>
 <p>Every new submission of the chosen form enrols its contact, within a minute.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-trigger-form.png" data-desc-position="bottom"><img alt="Starts when Form submitted, with the form Tutorial · Newsletter sign-up" src="../../img/screenshots/automations/panel-trigger-form.png" width="30%"></a></p>
@@ -4637,6 +4729,11 @@ the trigger with an <strong>Exit flow</strong> lane.</p>
 <h2 id="tag-added">Tag added<a class="headerlink" href="#tag-added" title="Permanent link">¶</a></h2>
 <p>A contact who gets the chosen tag enrols within a minute, whoever adds it: you,
 an import, a form, another flow's <strong>Add tag</strong> step, an integration.</p>
+<p>Only the moment the tag arrives counts. Editing a contact who already carries
+the tag, or giving them another tag, does not bring them in again. To send
+someone through again, remove the tag and add it back (with <strong>Re-entry</strong> set
+to let them return, see <a href="settings.html">Flow settings</a>). Tags that were on your
+contacts before you activated the flow never start it.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-trigger-tag.png" data-desc-position="bottom"><img alt="Starts when Tag added, with the tag tutorial: onboarding" src="../../img/screenshots/automations/panel-trigger-tag.png" width="30%"></a></p>
 <p>Tags are the easiest way to connect a flow to the rest of your tools.
 <em>Samples: <a href="samples.html#3-route-by-interest">Tutorial 3</a>,
@@ -4657,12 +4754,29 @@ choose.</p>
 <p>Combine it with <strong>Re-entry: after a cooldown</strong> in
 <a href="settings.html">Flow settings</a>, or each contact only runs once. <em>Sample:
 <a href="samples.html#5-monthly-check-in">Tutorial 5 · Monthly check-in</a>.</em></p>
+<h2 id="several-ways-in">Several ways in<a class="headerlink" href="#several-ways-in" title="Permanent link">¶</a></h2>
+<p>A flow that starts on a <strong>form</strong>, a <strong>tag</strong> or a <strong>new contact</strong> can have up
+to five more ways in. In the trigger panel, under <strong>Also starts when</strong>, choose
+<strong>Add another way in</strong> and pick a form, a tag or new contacts. A contact
+enters when any of them happens.</p>
+<p>For example, an enquiry flow can start when the enquiry form is submitted <em>and</em>
+when the website chatbot captures a lead (it tags every lead <code>chatbot</code>).</p>
+<ul>
+<li>The trigger card shows <strong>+ 1 more way in</strong>; the <strong>Contacts</strong> tab says which
+  one brought each contact.</li>
+<li>A contact who does two of them in the same minute enters once.</li>
+<li><strong>Manual</strong>, <strong>Segment (daily)</strong> and <strong>On a schedule</strong> flows have a single
+  trigger. You can still enrol contacts by hand in any active flow.</li>
+</ul>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>One trigger per flow.</strong> For two entry points (a form <em>and</em> a tag), build
-  the flow on a tag and let the form add that tag.</li>
-<li><strong>One flow at a time.</strong> A contact already in another flow is skipped and
-  listed under <strong>Skipped</strong> on this flow's <strong>Contacts</strong> tab.</li>
+<li><strong>Several flows at once.</strong> A contact in another flow still enters this one.
+  A contact already in <em>this</em> flow is skipped and listed under <strong>Skipped</strong> on
+  its <strong>Contacts</strong> tab.</li>
+<li><strong>Form answers.</strong> With <strong>Form submitted</strong>, the answers of the submission
+  that started the flow can be read by a branch or a <strong>Wait until…</strong> (as
+  <code>form.&lt;field name&gt;</code>, for example <code>form.csat_score</code>) and written into a
+  <strong>Note on contact</strong>. See <a href="branches.html#the-conditions">Branches and conditions</a>.</li>
 <li><strong>Re-entry.</strong> By default a contact goes through a flow once. See
   <a href="settings.html">Flow settings</a> to let them come back.</li>
 </ul>

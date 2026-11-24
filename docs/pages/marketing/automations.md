@@ -101,9 +101,15 @@ Each flow in the list has a menu with **Open designer**, **Contacts & report**,
     flow sends no email. An unsubscribe from any email therefore ends their
     flows.
 
-- **One flow at a time.** A contact already in a flow is skipped by any other
-  flow's trigger. The skip is listed on that flow's **Contacts** tab under
-  **Skipped**, so you can see who missed out.
+- **Several flows at once.** A contact can be in a nurture flow and an alert
+  flow at the same time. They are never twice in the *same* flow at once: that
+  skip is listed on the flow's **Contacts** tab under **Skipped**.
+- **An email limit protects inboxes.** By default a contact gets at most 3
+  marketing emails in 7 days, campaigns and flows together. A flow email over
+  the limit waits; it is never lost. See
+  [Email limit per contact](../automations/settings.md#email-limit-per-contact).
+- **Sending hours.** New flows send Monday to Friday, 9:00 to 18:00, in each
+  contact's timezone. See [Sending hours](../automations/settings.md#sending-hours).
 - **Nothing is backfilled.** Only events after you activate the flow count.
   To include people from before, enrol them yourself.
 - **Emails are sent as they are at send time.** Editing an email changes what

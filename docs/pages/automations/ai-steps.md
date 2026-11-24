@@ -84,8 +84,28 @@ per choice, and a last lane for when the AI is not sure enough.
 
 ![The AI decides panel: the question, three choices hot, warm and cold with their descriptions, Add Choice, and the confidence floor at 60 %](../../img/screenshots/automations/panel-ai-decides.png){ width="30%" }
 
-The AI sees the contact's name, job title, email domain, tags, fields and what
-earlier steps wrote. *Sample: [Tutorial 7](samples.md#7-ai-lead-qualification).*
+*Sample: [Tutorial 7](samples.md#7-ai-lead-qualification).*
+
+### What the AI sees
+
+The panel lists it under **What the AI sees**. It is always the same set, read
+from the contact at the moment they reach the step:
+
+- first name, last name, job title, the email domain (not the address) and
+  the subscription status;
+- all the contact's tags;
+- all your custom fields, each with its name and the contact's value;
+- what earlier steps of this flow wrote: an agent's answer, a task outcome, a
+  previous decision.
+
+It does not see notes, opens and clicks, or company data.
+
+!!! warning "Form answers must be mapped"
+    The AI does not read a form submission. If your question depends on what
+    the visitor answered (budget, timeline, the product they asked about), map
+    those form fields to contact fields or tags in the form's **Contact
+    mapping**. Give your custom fields clear names: the AI reads the name to
+    understand the value.
 
 ## Good to know
 

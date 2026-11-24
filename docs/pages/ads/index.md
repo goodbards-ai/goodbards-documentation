@@ -26,3 +26,10 @@ Research the keywords your market searches for, with volumes and costs, when you
 Google Ads account is connected.
 
 See [Choosing keywords](../marketing/digital-ads.md#choosing-keywords).
+
+### Competitor ads
+
+The ads your competitors run on Google today, how long each has run and what they
+have just launched. No account to connect.
+
+See [Competitor ads](../marketing/competitor-ads.md).

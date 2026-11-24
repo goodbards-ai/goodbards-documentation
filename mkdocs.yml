@@ -79,6 +79,7 @@ nav:
       - Digital Ads:
           - pages/ads/index.md
           - Digital Ads: pages/marketing/digital-ads.md
+          - Competitor ads: pages/marketing/competitor-ads.md
   - Content & SEO:
       - Content Hub:
           - pages/content-hub/index.md

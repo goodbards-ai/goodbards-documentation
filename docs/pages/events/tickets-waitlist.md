@@ -28,6 +28,34 @@ keeps the next people in line instead of turning them away.
 On the registration form, each guest picks one ticket type. The guest's emails
 and badge show their own slot and time.
 
+### Many time slots at once
+
+For interviews, visits or sessions that repeat through the day, do not add the
+slots one by one.
+
+1. Under **Ticket types**, choose **Generate time slots**.
+2. Give the **Days**, the **Hours** (add a second range to skip lunch), the
+   **Slot length** in minutes and the **Seats per slot**.
+3. Read the summary at the bottom: the number of slots, the first and the last.
+4. Choose **Create slots**.
+
+<!-- SCREENSHOT TO ADD: the Generate time slots dialog filled with 2 days, 09:00-12:00 and 14:00-17:00, 30 minutes, 4 seats, showing "24 slots over 2 days (12 per day)" -->
+
+!!! tip "Example"
+    Two days, 09:00 to 12:00 and 14:00 to 17:00, slots of 30 minutes with 4
+    seats: 24 slots, 12 per day, named by their day and time.
+
+!!! note "Good to know about generated slots"
+    - Times are in the event's time zone, shown at the top of the window.
+    - Hours that do not fill a whole slot are left out, and the summary says so.
+    - Generating the same slots twice is refused. To add a second series on the
+      same hours, give it a **Name prefix**, such as *Interview*.
+    - Each slot is an ordinary ticket type afterwards: rename it, change its
+      seats or switch it off in the list.
+
+You can also ask the assistant, in one sentence. See
+[Asking the assistant](../marketing/event-management.md#asking-the-assistant).
+
 ## How the waitlist works
 
 1. Under **Settings**, turn on **Waitlist**.

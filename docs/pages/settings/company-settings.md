@@ -62,6 +62,35 @@ campaign duration. The fields marked **Visible to AI** prefill new campaigns, so
 
 ![Campaign Defaults: marketing objective Customer Loyalty and Retention (Churn), budget 25000, customer type B2C and audience, each with Visible to AI and Hide From AI](../../img/screenshots/brand-campaign-defaults.png)
 
+### Custom audiences
+
+The audience lists come with 20 standard audiences, 10 for B2B and 10 for B2C.
+When the people you want to reach are not among them, add your own under
+**Custom audiences**, below the campaign defaults.
+
+1. Click **Add audience**.
+2. Give it a **name**, choose **B2B** or **B2C**, and describe it: who they are,
+   what they care about, where to reach them.
+3. Click **Save**.
+
+The audience now appears in every audience list, after the standard ones: the
+campaign form, the default audience above, Write with AI and the hashtag
+recommendations.
+
+!!! tip
+    Write a real description. The AI reads the name and the description when it
+    recommends tactics for a campaign and when it writes content, so "Admission
+    officers of private schools in Singapore, reached on LinkedIn and at
+    education fairs" gives better results than "Schools".
+
+!!! info "Good to know"
+    - Anyone who can edit campaigns can add, rename or remove an audience.
+    - The type (B2B or B2C) cannot change once the audience exists.
+    - Removing an audience takes it out of the lists. Campaigns that already use
+      it keep its name.
+    - Custom audiences belong to this workspace only. Sub-workspaces do not
+      inherit them.
+
 ## Website: what GoodBards knows about your site
 
 - **Search Console property**: which site the Organic Visibility screens read;

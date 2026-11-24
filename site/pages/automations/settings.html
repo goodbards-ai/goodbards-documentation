@@ -1868,6 +1868,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending hours
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-limit-per-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email limit per contact
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2524,6 +2542,8 @@
       
         
       
+        
+      
     
     
     
@@ -2585,6 +2605,29 @@
   
   <span class="md-ellipsis">
     Digital Ads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Competitor ads
     
   </span>
   
@@ -4524,6 +4567,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending hours
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-limit-per-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email limit per contact
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4569,6 +4630,10 @@ a monthly flow picks the same people again next month.</p>
 <tr>
 <td><strong>AI budget per month</strong></td>
 <td>The most credits this flow may spend on <strong>Ask an agent</strong> and <strong>AI decides</strong> steps each calendar month. Empty means no cap.</td>
+</tr>
+<tr>
+<td><strong>Sending hours</strong></td>
+<td>The days and hours the flow may send emails, in each contact's timezone. See <a href="#sending-hours">Sending hours</a>.</td>
 </tr>
 <tr>
 <td><strong>Goal</strong></td>
@@ -4640,6 +4705,33 @@ onboarding</strong> straight away.</p>
 <li><strong>The trigger card shows it.</strong> A flow with stop rules says <strong>Stops early
   when: N rules</strong> on its trigger card.</li>
 </ul>
+<h2 id="sending-hours">Sending hours<a class="headerlink" href="#sending-hours" title="Permanent link">¶</a></h2>
+<p>When the flow may send emails, for example Monday to Friday, 9:00 to 18:00.
+They are read in each contact's timezone (else your workspace's). An email that
+comes due outside these hours waits for the next opening: a form filled in at
+23:00 gets its welcome email at 9:00 the next working day.</p>
+<ul>
+<li>New flows start with <strong>Monday–Friday, 9:00–18:00</strong>. Flows made before
+  November 2026 have no sending hours (emails go out at any time) until you
+  switch them on.</li>
+<li>Only emails wait. Tags, notes, tasks and waits are never held.</li>
+<li><em>Stop nurturing once engaged:</em> add a stop rule on <code>decayedScore</code> greater
+  than a threshold (see <a href="branches.html#the-conditions">Score</a>).</li>
+</ul>
+<h2 id="email-limit-per-contact">Email limit per contact<a class="headerlink" href="#email-limit-per-contact" title="Permanent link">¶</a></h2>
+<p>A contact can be in several flows at the same time. What protects their inbox
+is the workspace's <strong>email limit</strong>: by default, at most <strong>3 marketing emails in
+7 days</strong>. Campaign emails and flow emails count; event emails and confirmations
+do not.</p>
+<ul>
+<li>A <strong>flow email</strong> over the limit waits until there is room again, then goes.
+  It is never lost. The contact shows as <strong>In flow</strong> meanwhile.</li>
+<li>A <strong>campaign email</strong> is never held back. Before you send, the send window
+  warns how many contacts are already at the limit.</li>
+<li>Tags, notes and tasks are never held.</li>
+</ul>
+<p>Administrators change the limit in <strong>Tenant Settings → Preferences → Email
+limit per contact</strong>, or switch it off.</p>
 <hr>
 <p><em>Still stuck? <a href="../contact.html">Contact support</a>.</em></p></div>
 

@@ -5,10 +5,35 @@ work.
 
 ## Creating your account
 
-1. Go to [live.goodbards.ai](https://live.goodbards.ai).
-2. Choose **Sign Up**.
-3. Sign up either with **Google**, or with your work email and a password.
-4. Verify your email address using the link sent to your inbox.
+Your free workspace is ready as soon as your email is confirmed. There are two
+ways to get there.
+
+### With Google (fastest)
+
+1. Go to [live.goodbards.ai](https://live.goodbards.ai) and choose **Sign Up**.
+2. Choose **Sign up with Google** and pick your Google account.
+3. Check your first and last name, add your job title and company name.
+4. Choose **Create my workspace**. You land on your Home page, already signed in.
+
+!!! info "No confirmation email"
+    Google has already confirmed your address, so there is no link to click.
+    Next time, use **Sign in with Google** on the login page. If you also want a
+    password, use **Forgot password?** on the login page to set one.
+
+!!! tip "Already invited by a colleague?"
+    Accept the invitation from your email first. You then join their workspace
+    instead of getting a new one of your own.
+
+### With your email
+
+1. Go to [live.goodbards.ai](https://live.goodbards.ai) and choose **Sign Up**.
+2. Fill in your name, job title, company name and email address.
+3. Open the email we send you and confirm your address.
+4. We then email you a temporary password to log in with.
+
+!!! warning "Disposable email addresses"
+    Throwaway mailboxes (mailinator and the like) are not accepted, whichever way
+    you sign up.
 
 !!! note "Already have an account?"
     Go straight to the [login page](https://live.goodbards.ai/login). If you have

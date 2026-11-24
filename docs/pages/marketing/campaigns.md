@@ -185,6 +185,73 @@ The **Start / Stop** column controls whether a campaign is running:
 !!! info "Pausing deletes nothing"
     It stops further activity until you start the campaign again.
 
+## Asking the assistant
+
+On the campaign screens (the list, the creation form and the page of a
+campaign), the assistant in the top bar is the **Campaign** assistant. It knows
+which screen, which campaign, which tab and which tactic you are looking at.
+
+<!-- SCREENSHOT TO ADD: the assistant panel open on a campaign, label "Campaign", with a request and its answer -->
+
+**Describe a new campaign and it fills the form**
+
+- *Let us start a campaign to improve the visibility of our product in Asia.*
+- *B2B, HR directors in banking, from 1 to 31 March, budget 5000.*
+- *Set the countries to the 3 main countries in Asia.*
+
+From any campaign screen, the first sentence opens the creation form with what
+you said already filled in. Each new sentence fills more fields and leaves the
+others as you typed them. The fields it has just set are highlighted for a
+moment. When the form looks right, **you** click **Create**: the assistant
+never creates the campaign itself.
+
+<!-- SCREENSHOT TO ADD: the creation form with fields just filled by the assistant (highlighted) next to the chat -->
+
+**On an open campaign, tell it what to change, in one sentence**
+
+- *The audience should be marketing managers.*
+- *Set the countries to the 3 main countries in Asia.*
+- *B2B, HR directors in banking, from 1 to 31 March, budget 5000.*
+- *Move the end date one month later.*
+- *Add a twitter tactic with a budget of 500.*
+- *Rename the LinkedIn tactic to "Launch posts" and set its budget to 800.*
+- *Take me to the Budget tab.*
+
+After a change, the assistant tells you the value before and the value after, and
+the page refreshes by itself.
+
+<!-- SCREENSHOT TO ADD: the answer after "Add a twitter tactic with a budget of 500", with the new tactic in the tactics list -->
+
+!!! tip "Say several things at once"
+    You do not have to answer questions one by one. Give everything you know
+    in one sentence: the assistant changes all of it and tells you what it
+    chose, so you can correct it.
+
+!!! info "Audiences come from your list"
+    The assistant picks the audience from the list you see in the campaign
+    form, your own audiences included. When nothing fits, it proposes the
+    closest ones and lets you choose. To add an audience of your own, go to
+    **Brand & Context**.
+
+!!! info "It sends and publishes nothing"
+    A tactic added by the assistant is an empty draft: its posts, its emails
+    or its event are made in the tactic's own page. Starting or stopping the
+    campaign, choosing the recipients of an email and removing a tactic that
+    already holds content stay on the screen: the assistant tells you where,
+    and can take you there.
+
+!!! tip "Answer with a click"
+    When the assistant asks you to choose or to confirm, it shows the answers
+    as buttons: click one instead of typing. When something is done on another
+    screen, it gives you a button that takes you there.
+
+<!-- SCREENSHOT TO ADD: a question of the assistant with its answer buttons (for example the confirmation before removing a tactic) -->
+
+!!! note "One campaign at a time"
+    The assistant changes the campaign that is open. On the list you can ask
+    which campaigns are running or ask it to open one. On the page of an event tactic, the
+    [event assistant](event-management.md#asking-the-assistant) takes over.
+
 ## Good to know
 
 - **A campaign is a plan, not a channel.** Publishing still happens through the
