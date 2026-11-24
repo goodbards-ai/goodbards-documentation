@@ -2123,6 +2123,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sending hours
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-limit-per-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email limit per contact
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2891,6 +2913,8 @@
       
         
       
+        
+      
     
     
     
@@ -2963,6 +2987,34 @@
     
   
     Digital Ads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Competitor ads
   
 
     
@@ -5254,6 +5306,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sending-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sending hours
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#email-limit-per-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email limit per contact
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -5295,11 +5369,15 @@ a monthly flow picks the same people again next month.</p>
 </tr>
 <tr>
 <td><strong>Re-entry</strong></td>
-<td><strong>Once per contact</strong> (the default); <strong>Every time the trigger fires again (after finishing)</strong>; or <strong>After a cooldown</strong>, with the number of days before the same contact can enter again.</td>
+<td><strong>Once per contact</strong> (the default); <strong>Every time the trigger fires again (after finishing)</strong>; <strong>Every time, even while the contact is still in the flow</strong> (a second run starts next to the first, for example a contact who retakes a quiz while still getting the first quiz's emails); or <strong>After a cooldown</strong>, with the number of days before the same contact can enter again.</td>
 </tr>
 <tr>
 <td><strong>AI budget per month</strong></td>
 <td>The most credits this flow may spend on <strong>Ask an agent</strong> and <strong>AI decides</strong> steps each calendar month. Empty means no cap.</td>
+</tr>
+<tr>
+<td><strong>Sending hours</strong></td>
+<td>The days and hours the flow may send emails, in each contact's timezone. See <a href="#sending-hours">Sending hours</a>.</td>
 </tr>
 <tr>
 <td><strong>Goal</strong></td>
@@ -5328,6 +5406,11 @@ a monthly flow picks the same people again next month.</p>
    <strong>Reason</strong> (shown on the Contacts tab).</li>
 <li>Under <strong>Then</strong>, keep <strong>Just leave the flow</strong>, or pick another flow the
    contact should enter.</li>
+<li>Optional: tick <strong>Only when it becomes true after the contact enters</strong>. A
+   contact who already matches when entering walks the flow anyway; the rule
+   stops them only if it becomes true later. Example: a flow for customers
+   that should stop when they buy again, not on the first step. The goal has
+   the same option.</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/settings-stop-then-enroll.png" data-desc-position="bottom"><img alt="A stop rule: Has tag status: customer, reason became a customer, then Tutorial 9 · Customer onboarding" src="../../img/screenshots/automations/settings-stop-then-enroll.png" width="40%"></a></p>
 <p><a href="samples.html#8-trial-with-a-stop-rule">Tutorial 8</a> uses this: a trial contact who
@@ -5371,6 +5454,37 @@ onboarding</strong> straight away.</p>
 <li><strong>The trigger card shows it.</strong> A flow with stop rules says <strong>Stops early
   when: N rules</strong> on its trigger card.</li>
 </ul>
+<h2 id="sending-hours">Sending hours<a class="headerlink" href="#sending-hours" title="Permanent link">¶</a></h2>
+<p>When the flow may send emails, for example Monday to Friday, 9:00 to 18:00.
+They are read in each contact's timezone (else your workspace's). An email that
+comes due outside these hours waits for the next opening: a form filled in at
+23:00 gets its welcome email at 9:00 the next working day.</p>
+<ul>
+<li>New flows start with <strong>Monday–Friday, 9:00–18:00</strong>. Flows made before
+  November 2026 have no sending hours (emails go out at any time) until you
+  switch them on.</li>
+<li>Only emails wait. Tags, notes, tasks and waits are never held.</li>
+<li>A held email shows <strong>Held by the sending hours</strong> on the flow's
+  <a href="results.html#the-contacts-tab">Contacts tab</a>, with <strong>Send now</strong> to release it.</li>
+<li><em>Stop nurturing once engaged:</em> add a stop rule on <code>decayedScore</code> greater
+  than a threshold (see <a href="branches.html#the-conditions">Score</a>).</li>
+</ul>
+<h2 id="email-limit-per-contact">Email limit per contact<a class="headerlink" href="#email-limit-per-contact" title="Permanent link">¶</a></h2>
+<p>A contact can be in several flows at the same time. What protects their inbox
+is the workspace's <strong>email limit</strong>: by default, at most <strong>3 marketing emails in
+7 days</strong>. Campaign emails and flow emails count; event emails and confirmations
+do not.</p>
+<ul>
+<li>A <strong>flow email</strong> over the limit waits until there is room again, then goes.
+  It is never lost. The contact shows as <strong>In flow</strong> meanwhile, with <strong>Held by
+  the email limit</strong> on the flow's <a href="results.html#the-contacts-tab">Contacts tab</a>. After
+  you raise the limit, <strong>Send now</strong> releases it.</li>
+<li>A <strong>campaign email</strong> is never held back. Before you send, the send window
+  warns how many contacts are already at the limit.</li>
+<li>Tags, notes and tasks are never held.</li>
+</ul>
+<p>Administrators change the limit in <strong>Tenant Settings → Preferences → Email
+limit per contact</strong>, or switch it off.</p>
 <hr>
 <p><em>Still stuck? <a href="../contact.html">Contact support</a>.</em></p></div>
 
@@ -5393,7 +5507,7 @@ onboarding</strong> straight away.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-15
+    2026-11-24
   </span>
 
     

@@ -2902,6 +2902,8 @@
       
         
       
+        
+      
     
     
     
@@ -2974,6 +2976,34 @@
     
   
     Digital Ads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Competitor ads
   
 
     
@@ -5375,7 +5405,11 @@ rules</a>:</p>
 </tr>
 <tr>
 <td><strong>Field value</strong></td>
-<td>A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. Works on custom fields and on status, email, first name, last name and job title.</td>
+<td>A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. You pick the field from the same list as in segments: contact fields (city, country, Customer Type, preferred language, timezone, created on, birth date…) and your custom fields. Pick-list fields offer their values. Dates compare as <code>YYYY-MM-DD</code>, for example created on greater than <code>2026-01-01</code>.</td>
+</tr>
+<tr>
+<td><strong>Score</strong></td>
+<td>Under <strong>Field value</strong>, group <strong>Scores</strong>: <strong>Engagement Score</strong> or <strong>Decay Score</strong> (the same, faded with time: "engaged lately"), for example Decay Score greater than <code>50</code>. They are the two scores of the contact page.</td>
 </tr>
 <tr>
 <td><strong>In segment</strong></td>
@@ -5393,8 +5427,29 @@ rules</a>:</p>
 <td><strong>What an earlier step wrote</strong></td>
 <td>A value an agent, a task or an AI decision stored for this contact.</td>
 </tr>
+<tr>
+<td><strong>An answer in the form</strong></td>
+<td>Flows started by a form: an answer in the submission that started the flow, for example <code>form.rating</code> less than <code>3</code>. Pick it under <strong>What an earlier step wrote</strong>.</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Owner, mailing list, consent, tags</p>
+<p>These are not in the field list. Use <strong>Has tag</strong>, or build a segment
+(owner, mailing list, "can be messaged on") and use <strong>In segment</strong>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Customer Type</p>
+<p><strong>Customer Type</strong> is the B2B / B2C choice of the contact page. It does not
+say whether the contact bought. For that, use a tag (for example
+<code>status: customer</code>) or a pick-list custom field.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Survey answers</p>
+<p>Use <strong>An answer in the form</strong> rather than a custom field to branch on a
+survey score. A form fills a custom field only when it is empty, so a
+contact's second survey would still show the first score.</p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-branch-task-outcome.png" data-desc-position="bottom"><img alt="A branch on the outcome of a task: lane Approved, condition Outcome of a task, task Review the email, counts when Done" src="../../img/screenshots/automations/panel-branch-task-outcome.png" width="30%"></a></p>
 <h2 id="exit-lanes-and-empty-lanes">Exit lanes and empty lanes<a class="headerlink" href="#exit-lanes-and-empty-lanes" title="Permanent link">¶</a></h2>
 <ul>
@@ -5439,7 +5494,7 @@ rules</a>:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-15
+    2026-11-24
   </span>
 
     

@@ -2891,6 +2891,8 @@
       
         
       
+        
+      
     
     
     
@@ -2963,6 +2965,34 @@
     
   
     Digital Ads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/competitor-ads.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Competitor ads
   
 
     
@@ -5292,6 +5322,10 @@ when they entered and, for those who left, why.</p>
 <li><strong>Path</strong> shows the contact's journey (see below).</li>
 <li><strong>Wake now</strong> ends the contact's current wait early, to test the next steps
   without waiting days.</li>
+<li><strong>Send now</strong> appears when an email is held. <strong>Reason</strong> says why: <strong>Held by
+  the sending hours</strong>, <strong>Held by the email limit</strong>, or <strong>No longer held</strong> once
+  you raised the limit. The limit and the hours are checked again: if one still
+  applies, the email stays held.</li>
 <li><strong>Remove</strong> takes the contact out of the flow.</li>
 </ul>
 <table>
@@ -5304,7 +5338,7 @@ when they entered and, for those who left, why.</p>
 <tbody>
 <tr>
 <td><strong>In flow</strong></td>
-<td>On a step or waiting.</td>
+<td>On a step or waiting. <strong>Next</strong> shows when they move on, for example an email held until the <a href="settings.html#sending-hours">sending hours</a> open or the <a href="settings.html#email-limit-per-contact">email limit</a> has room.</td>
 </tr>
 <tr>
 <td><strong>Completed</strong></td>
@@ -5312,11 +5346,11 @@ when they entered and, for those who left, why.</p>
 </tr>
 <tr>
 <td><strong>Exited</strong></td>
-<td>Left early: an <strong>Exit flow</strong> step, a stop rule, the goal, an unsubscribe. The reason is shown.</td>
+<td>Left early: an <strong>Exit flow</strong> step, a stop rule, the goal, an unsubscribe, or a <strong>Wait until…</strong> that ran out with <strong>Leave the flow</strong> (reason <code>wait_timeout</code>). The reason is shown.</td>
 </tr>
 <tr>
 <td><strong>Skipped</strong></td>
-<td>The trigger fired but they could not enter (already in another flow, or already went through this one).</td>
+<td>The trigger fired but they could not enter (already in this flow, or already went through it). A contact can be in several flows at once.</td>
 </tr>
 <tr>
 <td><strong>Failed</strong></td>
@@ -5327,7 +5361,8 @@ when they entered and, for those who left, why.</p>
 <h2 id="a-contacts-path">A contact's path<a class="headerlink" href="#a-contacts-path" title="Permanent link">¶</a></h2>
 <p><strong>Path</strong> draws the flow with the cards this contact went through and the time
 of each, and what each step did: the email sent, the lane taken, what the agent
-wrote, what the AI chose and how sure it was, the task outcome.</p>
+wrote, what the AI chose and how sure it was, the task outcome, and how a wait
+ended (<strong>condition</strong>, <strong>timeout</strong>, <strong>date passed</strong>, <strong>no date</strong>).</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/run-journey.png" data-desc-position="bottom"><img alt="A contact's path: the flow with the cards this contact reached highlighted, each with its time" src="../../img/screenshots/automations/run-journey.png"></a></p>
 <p>A contact's own page lists every flow they have been in under <strong>Automation
 flows</strong>, with a <strong>Path</strong> button for each.</p>
@@ -5374,7 +5409,7 @@ credits spent this month against the budget.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-15
+    2026-11-24
   </span>
 
     
