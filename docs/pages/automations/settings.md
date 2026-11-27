@@ -71,7 +71,9 @@ onboarding** straight away.
   wait who books a demo on day one leaves when the wait ends, before the next
   email goes out.
 - **Unsubscribe always stops.** Whatever the rules, a contact who is no longer
-  subscribed leaves within a minute.
+  subscribed leaves within a minute. One exception: a **Regular** contact
+  stays in a flow that has a [transactional email](steps.md#transactional-email),
+  until its first marketing email.
 - **The trigger card shows it.** A flow with stop rules says **Stops early
   when: N rules** on its trigger card.
 
@@ -86,6 +88,8 @@ comes due outside these hours waits for the next opening: a form filled in at
   November 2026 have no sending hours (emails go out at any time) until you
   switch them on.
 - Only emails wait. Tags, notes, tasks and waits are never held.
+- A [transactional email](steps.md#transactional-email) never waits: it goes
+  out at once.
 - A held email shows **Held by the sending hours** on the flow's
   [Contacts tab](results.md#the-contacts-tab), with **Send now** to release it.
 - *Stop nurturing once engaged:* add a stop rule on `decayedScore` greater
@@ -104,6 +108,9 @@ do not.
   you raise the limit, **Send now** releases it.
 - A **campaign email** is never held back. Before you send, the send window
   warns how many contacts are already at the limit.
+- A [transactional email](steps.md#transactional-email) is never held back
+  either. It still counts toward the limit, so it can delay the contact's next
+  marketing email.
 - Tags, notes and tasks are never held.
 
 Administrators change the limit in **Tenant Settings → Preferences → Email

@@ -71,6 +71,8 @@ Good to know:
   example), the report names it and the font they'll see instead.
 - SVG images are not imported: Gmail and Outlook don't display them. Export
   them from Canva as PNG instead.
+- An imported email's hidden preview line (the "preheader") becomes its
+  [preview text](#preview-text).
 
 ## Editing an email
 
@@ -82,6 +84,20 @@ and the body as recipients will see it, with an **Edit** button on each, and
 
 **Edit** on the body opens the editor. The design (header and footer) is locked:
 you edit only your content inside it.
+
+### Preview text
+
+The preview text is the grey line inbox lists show after the subject. Without
+one, inboxes show the first words of the email, often "View in browser".
+
+1. On the email's page, choose **Edit** on the **Subject** card.
+2. Type the line under **Preview text**, then choose **Save**.
+
+![The Subject card in edit mode: the Subject field, the Preview text field holding a conditional line, the help text, and Cancel and Save](../../img/screenshots/email-preview-text.png){ width="40%" }
+
+It is optional. Personal fields and
+[conditional content](#showing-content-to-some-contacts-only) work in it, as
+in the subject.
 
 ![The email editor: the File, Edit, AI and View menus at the top left; the Desktop, Email width and Mobile buttons, Design locked, Save and ✕ at the top right; the email in the middle; and the blocks to drag in on the right](../../img/screenshots/email-editor.png)
 
@@ -207,13 +223,136 @@ Good to know:
   (`{{custom_field_quiz_archetype | default: "your archetype"}}`), in the
   subject, the body and links. Without a default, an empty field is left blank:
   *Hi ,*.
+- **Custom fields work too:** `{{custom_field_<key>}}`, for example
+  `{{custom_field_quiz_archetype}}`. The key is the field's key on the
+  [Custom Fields](../audience/contacts.md#custom-fields) tab of
+  **Audience → Contacts**.
 - **Test emails use your own contact record.** The field is filled only when
   the address you send the test to exists in **Audience → Contacts**. Otherwise
-  it shows blank in the test, and works for real recipients.
+  it shows blank in the test, and works for real recipients. To see what one
+  contact will get, choose them under **Test as contact** (see
+  [Testing as a contact](#testing-as-a-contact)).
 - **Spell fields exactly as above.** `{{first_name}}` or `{{FirstName}}`, which
   other tools use, are not recognised and show as `???` in the sent email. If
   you import an email from Canva or another tool, replace its fields with the
   ones in the table.
+
+## Showing content to some contacts only
+
+One email can say something different to each kind of contact: a paragraph
+for quiz *Titans*, another for *Sages*, a default for everyone else. Each
+contact receives only the first version whose condition is true for them.
+
+1. Open the email and choose **Edit** on the body.
+2. From **Components**, drag **Show if…** where the content goes.
+3. Choose who sees it: a **Field** (your custom fields, or first name, last
+   name, email, phone, job title), a **Condition** and, for *is* and *is not*,
+   a **Value**. Choose **Apply**.
+
+    ![The Show this content to… dialog: Field Quiz archetype, Condition is, Value titan, with Cancel and Apply](../../img/screenshots/email-show-if-dialog.png){ width="40%" }
+
+4. Write the version's content in the framed block. Drop any block into it:
+   text, images, buttons.
+5. To add the next version, select the block's title. In **Settings**:
+    - **Add another version** asks for its condition and adds it below.
+    - **Add "everyone else"** adds the version for all the others. Without
+      it, they get nothing in that place.
+    - **Edit condition** changes who sees this version.
+    - **Remove this version** deletes it with its content.
+6. Choose **Save**, then [test it as a contact](#testing-as-a-contact) of each
+   kind.
+
+![The editor showing four versions, each in a dashed frame titled with its condition (Shown when Quiz archetype is "titan", "sage", "rebel", Shown to everyone else), and the Settings of the selected version: Edit condition, Add another version, Remove this version](../../img/screenshots/email-show-if-versions.png)
+
+### Writing conditions by hand
+
+The editor saves each block as text, which you can also type yourself: in the
+subject, the [preview text](#preview-text), the **HTML code** view, or inside a
+sentence or a link, where the visual block cannot go.
+
+```
+{{#if custom_field_archetype == "titan"}}
+  Titans like you go straight for results…
+{{#elseif custom_field_archetype == "sage"}}
+  Sages like you want to understand first…
+{{#else}}
+  Here is what your results say…
+{{/if}}
+```
+
+A block typed on its own lines shows as framed versions the next time the
+visual editor opens.
+
+The conditions you can write:
+
+| Condition | True when |
+| --- | --- |
+| `field == "value"` (or `field is "value"`) | The field is that value |
+| `field != "value"` (or `field is not "value"`) | The field is anything else, empty included |
+| `field is empty` | The contact has no value |
+| `field is not empty` | The contact has a value |
+
+The field is a custom field (`custom_field_<key>`) or a contact field
+(`contact_firstname`, `contact_lastname`, `contact_email`, `contact_phone`,
+`contact_job_title`, `contact_code`).
+
+Good to know:
+
+- **Capitals and spaces don't matter.** `"titan"` matches *Titan* and
+  *TITAN*.
+- **As many versions as you need:** add an `{{#elseif …}}` per version. A block
+  can also sit inside another one.
+- **It works everywhere in the email:** the subject, the
+  [preview text](#preview-text), the body, and inside links. A button can take
+  each archetype to its own page:
+  `https://example.com/{{#if custom_field_archetype == "titan"}}titan{{#else}}kits{{/if}}`.
+- **Personal fields work inside a version:**
+  `{{#if contact_firstname is not empty}}Hi {{contact_firstname}},{{#else}}Hi there,{{/if}}`.
+- **Mistakes are caught when you save.** A block without its `{{/if}}`, a value
+  without quotes or an unknown field stops the save, and the message says what
+  to fix.
+
+## Naming a link and tagging on click
+
+Every link in an email is tracked per recipient: a click is counted and shows
+in the contact's history. Name a link to use it in automations, and give it
+tags to set on click.
+
+1. Open the email and choose **Edit** on the body.
+2. Select the link or button, then open **Settings** (the gear on the right).
+3. Fill in what you need:
+    - **Link name:** a short name, for example `kit`. Flows can then start on
+      a click on this link, or branch and wait on it (see
+      [Triggers](../automations/triggers.md#link-clicked)).
+    - **Add tag on click:** the tag the contact gets when they click it, for
+      example `clicked: kit`.
+    - **Remove tag on click:** a tag taken off when they click it.
+4. Choose **Save**.
+
+Good to know:
+
+- **Only people count.** Clicks by link scanners, by Apple Mail opening the
+  email on its own, or by suspected bots never add or remove a tag. A click
+  waits about 30 seconds before its tags are applied, long enough to tell a
+  scanner from a person.
+- **A tag on click can start a flow.** It counts as any other tag, so a flow
+  that starts on **Tag added** with `clicked: kit` takes that contact in.
+- **Two links to the same page can have different names**, for example the
+  *kit* button in the body and a *kit* link in the footer named `footer-kit`.
+  Each counts on its own.
+- **Names and tags apply to emails sent from now on.** Emails already sent keep
+  the links they went out with.
+
+## Testing as a contact
+
+**Send Test Email** has an optional **Test as contact**. Choose a contact and
+the test is written as they would receive it: their name, their custom fields,
+and the versions of [conditional content](#showing-content-to-some-contacts-only)
+they get. The test still goes only to the recipients you entered, never to the
+contact.
+
+To check every version, send one test per kind of contact: a Titan, a Sage,
+and a contact with the field empty.
 
 ## Attaching an email to a tactic
 
@@ -234,6 +373,9 @@ email to one, in three ways:
   both are created with the email attached.
 
 Each option opens the tactic page, where you set the recipients and send.
+
+To send two to four versions of the email and keep the best, see
+[A/B testing an email](ab-testing.md).
 
 ## Finding your emails
 

@@ -31,6 +31,7 @@ in your Content Repository.
     | **Social report** | Builds the period report of one of your social accounts. |
     | **Web scrape** | Scrapes a page, crawls a website or reads a feed into your Content Repository, for example a competitor's pricing page. |
     | **Drive sync** | Keeps a Google Drive folder in sync with your Content Repository. |
+    | **Email a report** | Emails the results of chosen campaigns and automation flows, with a CSV attached. See [Email a report](#email-a-report). |
 
 3. Choose **Next**, then fill in the **Details**: which agent and what to ask,
    which social account, which page. For an agent run, choose where the answer
@@ -45,6 +46,33 @@ its past runs, and **Edit** or **Delete** change or remove it.
 !!! warning "Deleting a task also deletes its history"
     The task and its run history are removed, and this cannot be undone. To
     pause a task instead, turn off **Enabled**.
+
+## Email a report
+
+A weekly results email, for you, your team or a client, with every figure in an
+attached CSV: for example every Monday at 08:00.
+
+1. Create a task of type **Email a report**.
+2. Under **Details**, tick the **Campaigns** and **Automation flows** to report
+   on (up to 30), and choose **Emails to include**:
+    - **Sent in the last 7 days**: the emails sent in the week before the run,
+      with what their recipients did since;
+    - **Every email, figures to date**: every email of the campaigns and flows.
+3. Under **Send the report to**, pick members of your workspace, and add up to
+   5 addresses outside it (a client's manager, for example).
+4. Set the **Schedule**, for example **Weekly**, **Monday**, **08:00**, your
+   timezone.
+
+The email shows a short table of the emails; the attached CSV has one row per
+email: the campaign or flow, the tactic or step, the split lane, the email, when
+it was first sent, then sent, delivered, opened and clicked by real people (with
+rates), opened and clicked by machines, unsubscribed, spam complaints and
+bounced. An [A/B test](../marketing/ab-testing.md) gives one row per version.
+
+!!! info "Totals only"
+    The report never lists contacts: it can be forwarded without sharing anyone's
+    personal data. To see who opened or clicked, use the email's or the flow's
+    **Recipients**, or the API.
 
 ## Good to know
 

@@ -125,6 +125,21 @@ GET https://api.goodbards.ai/v1/{tenant-id}/campaigns
 | `GET /v1/{tenant-id}/campaigns/{campaign-id}/analytics/reports` | Lists the campaign's reports. |
 | `GET /v1/{tenant-id}/campaigns/{campaign-id}/analytics/reports/{report-id}` | Reads one report. |
 | `POST /v1/{tenant-id}/campaigns/{campaign-id}/analytics/reports` | Starts a new report. It answers `202` at once; read it a little later. |
+| `GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/emails/{email-id}/analytics` | One email's totals: sent, delivered, opened, clicked, unsubscribed, bounced, spam complaints, and the rates. Opens and clicks count real people; add `?traffic=all` to include machines. |
+| `GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/emails/{email-id}/recipients-status` | One row per recipient: when it was sent, delivered, opened and clicked (real people), opened and clicked by machines, bounced, unsubscribed, spam complaint. `/export` gives the CSV. |
+| `GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/ab-test` | An email tactic's [A/B test](../marketing/ab-testing.md): settings, state, each version's figures, the verdict and the hourly series. |
+
+### Read an automation's results
+
+| Call | What it does |
+| --- | --- |
+| `GET /v1/{tenant-id}/marketing/automation/flows` | Lists your automation flows (find the id). |
+| `GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/report` | The flow's report: contacts per status, then per step how many reached it; for an email step sent, delivered, opened and clicked by real people, opened and clicked by machines, bounced, unsubscribed and spam complaints; per [random split](../automations/branches.md#random-split) the lanes compared. |
+| `GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/recipients?page=0&size=50` | One row per contact and email step: sent, delivered, opened, machine opened, clicked, machine clicked, bounced, unsubscribed, spam complaint, and the split lane. Add `stepId=` for one email. Times in UTC. |
+| `GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/recipients/export` | The same rows as a CSV, times in your workspace's timezone. |
+
+For a weekly file by email instead, set up a scheduled task
+[Email a report](../tool-box/scheduler.md#email-a-report).
 
 ## 4. Errors
 

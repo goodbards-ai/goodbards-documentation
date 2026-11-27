@@ -15,6 +15,7 @@ below**, so the steps after the branch run for everyone, unless a lane ends with
     | --- | --- |
     | Two lanes: yes or no | **Yes / No branch** |
     | Three or more lanes, checked in order | **Routing** |
+    | To compare two paths on a random share, for example 50/50 | **Random split** |
     | The AI to judge, for example hot / warm / cold | **AI decides** |
     | Some contacts to stop here | A lane that ends with **Exit flow** |
     | Some contacts to skip a step | An empty lane |
@@ -50,6 +51,52 @@ arrows: order matters when a contact could match two rules.
 
 *Sample: [Tutorial 3 · Route by interest](samples.md#3-route-by-interest).*
 
+## Random split
+
+Share the contacts at random between 2 to 4 lanes, to compare two paths: a
+designed email against a plain one, a discount against free shipping, a 2-day
+wait against a 5-day one.
+
+1. Drag **Random split** from the palette onto the canvas. It starts with two
+   lanes, **A · 50%** and **B · 50%**.
+2. In the panel, give each lane a name and a **share**. Each share is at least
+   5% and the shares add up to 100%; **Even split** fills in 50/50, 34/33/33
+   or 25 each. **Add a lane** goes up to four.
+3. Each lane starts with an **Add tag** step, `split: A` and `split: B`, so you
+   can find the contacts of a lane later, in a segment or a report. Rename the
+   tag (for example `ab: w0-design`) or delete the step.
+4. Put the steps you want to compare in each lane, for example a different
+   email.
+
+![A Random split on the canvas, Split 50 / 50, with lanes A · 50% and B · 50% each starting with an Add tag step; the panel shows the lane names, the shares, Add a lane and Even split](../../img/screenshots/automations/split-designer.png)
+
+Good to know:
+
+- **The draw is random, but it sticks.** A contact keeps their lane: a retry,
+  or entering the flow again, lands them in the same one.
+- **Shares are close, not exact, on small numbers.** With 1,000 contacts a
+  50/50 split lands between 45% and 55% per lane; with 20 contacts it can be
+  13 and 7.
+- **Two splits in one flow draw separately.** Being in lane A of the first says
+  nothing about the second.
+- **Nothing is picked for you.** The split never moves contacts to the better
+  lane; you read the result and decide.
+
+**Reading the result:** on the flow's **Report** tab (see
+[Results and analytics](results.md)), each split has its own table: per lane, the contacts, how many were emailed, opened and clicked (real
+people only, a contact counted once), and a line per measure:
+
+- *"Clicks: A is ahead (15% against 7.5% for B), 95% sure"*: the gap is too
+  large to be luck;
+- *"… but it is too close to call"*: the gap could be luck, wait for more
+  contacts;
+- with fewer than 100 contacts emailed, a note says to treat it as a hint.
+
+![The split on the Report tab: lanes A and B with contacts, emailed, opened, clicked and bounced, and the lines "Clicks: A is ahead … 95% sure" and "Opens: … too close to call"](../../img/screenshots/automations/split-report.png)
+
+A lane needs an email step for its figures; a split with fewer than two such
+lanes shows contacts only.
+
 ## AI decides
 
 The AI answers one question about the contact and picks a lane. See
@@ -66,7 +113,7 @@ rules](settings.md):
 | **Field value** | A contact field is equal to, not equal to, contains, is one of, is empty, is not empty, greater or less than a value. You pick the field from the same list as in segments: contact fields (city, country, Customer Type, preferred language, timezone, created on, birth date…) and your custom fields. Pick-list fields offer their values. Dates compare as `YYYY-MM-DD`, for example created on greater than `2026-01-01`. |
 | **Score** | Under **Field value**, group **Scores**: **Engagement Score** or **Decay Score** (the same, faded with time: "engaged lately"), for example Decay Score greater than `50`. They are the two scores of the contact page. |
 | **In segment** | The contact is a member of the segment right now. |
-| **Opened or clicked an email** | The contact opened (or clicked) an email sent earlier in this flow. |
+| **Opened or clicked an email** | The contact opened (or clicked) an email sent earlier in this flow. With **Clicked** ticked, **Link** narrows it to one named link: "clicked the *kit* button" rather than any link. See [Naming a link](../marketing/emails.md#naming-a-link-and-tagging-on-click). |
 | **Outcome of a task** | A **Task for the owner** earlier in the flow was done, dismissed or timed out. |
 | **What an earlier step wrote** | A value an agent, a task or an AI decision stored for this contact. |
 | **An answer in the form** | Flows started by a form: an answer in the submission that started the flow, for example `form.rating` less than `3`. Pick it under **What an earlier step wrote**. |

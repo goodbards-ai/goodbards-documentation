@@ -23,10 +23,10 @@ is not even shown to the assistant.
 | Permission | What the assistant can do |
 | --- | --- |
 | **agents:invoke** (always) | List your GoodBards agents and ask one to write, research or analyse; check a text, an email or a page against your brand guidelines. |
-| **reports:read** | Read your social and Google Analytics reports, campaigns and their results, sent emails and their engagement, events and registrations, Organic Visibility (SEO) results and the Daily Pulse. |
+| **reports:read** | Read your social and Google Analytics reports, campaigns and their results, sent emails and their engagement (spam complaints included), the A/B tests of your email tactics, the report of an automation flow, events and registrations, Organic Visibility (SEO) results and the Daily Pulse. |
 | **reports:write** | Start a new social report. |
 | **content:write** | Save a new piece of content, plan a campaign from a brief, schedule a post, create a tracked short link. |
-| **audience:read** | Find, count and rank your contacts and companies; read engagement. |
+| **audience:read** | Find, count and rank your contacts and companies; read engagement; list who got which email of an automation flow and what they did. |
 | **audience:write** | Create a contact, or update one by email (fields, custom fields); add and remove tags; add a note. |
 | **automation:write** | List your marketing automations, and enroll contacts in one by email. |
 | **actions:write** | Mark items of your action queue as done. |

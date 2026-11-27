@@ -37,6 +37,37 @@ with the contact's details filled in, tracking and the unsubscribe link.
 - **Email limit:** a contact who already had the workspace's maximum of
   marketing emails waits on this step until there is room again. See
   [Email limit per contact](settings.md#email-limit-per-contact).
+- **Who gets it:** only **Subscribed** contacts. A contact with another status
+  leaves the flow here, unless the email is transactional (below).
+
+### Transactional email
+
+For an email the person asked for: a quiz result, a confirmation, a download
+link. Switch on **Transactional email** in the Send email panel. The card then
+shows a **Transactional** tag.
+
+A transactional email:
+
+- goes out **at once**, whatever the flow's [sending hours](settings.md#sending-hours);
+- is **never held** by the [email limit](settings.md#email-limit-per-contact),
+  but still counts toward it;
+- also reaches **Regular** contacts (no marketing consent);
+- never reaches **Unsubscribed**, **Bounced** or **Do not contact** contacts;
+- keeps tracking and the unsubscribe link.
+
+A Regular contact stays in the flow for its transactional emails. Tags, notes
+and field updates keep running. The contact leaves the flow at the first
+marketing email: "the result, and nothing after it".
+
+- **Admins only.** Only a workspace admin can switch it on, or change the email
+  of a transactional step. Other users see the switch greyed out; they can
+  still edit the rest of the flow, or switch it off.
+- **Use it only for what the person requested.** Mailing contacts without
+  consent is allowed for an email they asked for, not for promotion (PDPA). A
+  newsletter or an offer is never transactional.
+- **Reports keep them apart.** The flow's [Report tab](results.md#the-report-tab)
+  counts transactional and marketing emails separately. The contact's history
+  tags each transactional email.
 
 ## Wait
 
@@ -48,6 +79,10 @@ Pauses for a number of minutes, hours or days (from one minute to 365 days).
 
 Holds the contact until they open (or click) an email sent earlier in this
 flow, or until **At most** passes, whichever comes first.
+
+For a click, **Link** can name one link of the email: the wait then ends only
+when that link is clicked, for example the *kit* button and not the footer.
+See [Naming a link](../marketing/emails.md#naming-a-link-and-tagging-on-click).
 
 ![The Wait for open / click panel: Wait until clicked, on the email sent by Tutorial · Getting started, at most 3 days](../../img/screenshots/automations/panel-wait-for-event.png){ width="30%" }
 

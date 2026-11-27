@@ -66,9 +66,40 @@ the lanes of each branch split.
 Above the canvas, tiles sum up the flow: **Enrolled**, **Active**, **Waiting**,
 **Completed**, **Exited**, **Failed** and **Skipped**. A flow with a goal adds
 **Goal reached** and the **Conversion** rate; a flow with AI steps adds the AI
-credits spent this month against the budget.
+credits spent this month against the budget. A flow that sent a
+[transactional email](steps.md#transactional-email) adds **Marketing emails
+sent** and **Transactional emails sent**, and its table tags those steps
+**Transactional**.
 
 ![The report tiles: enrolled, active, waiting, completed, exited, failed and skipped](../../img/screenshots/automations/run-report-tiles.png)
+
+Once the flow has sent emails, three more tiles show what happened to them:
+**Delivered**, **Unsubscribed** and **Spam complaints**. Under each email step
+of the table, a line gives the same for that email, plus the opens and clicks
+made by **machines** (Apple Mail privacy, link scanners). Opened and clicked
+always count real people only.
+
+!!! warning "Watch the spam complaints"
+    A complaint means the recipient marked the email as spam. Too many and your
+    email provider can stop your sends. Check who gets the flow, and how often.
+
+A flow with a [random split](branches.md#random-split) shows a table per split:
+the lanes side by side and which one leads.
+
+## Recipients
+
+Under the report, **Recipients** lists one row per contact and email: whether
+it was sent, delivered, opened and clicked, and any bounce, unsubscribe or spam
+complaint. A contact opened or clicked only by a machine reads **Machine
+only**. In a split, the **Lane** column says which lane the contact took.
+
+- Pick one email in the list above the table to see only that step.
+- **Export CSV** downloads every row, with the times in your workspace's
+  timezone. It needs the permission to read the audience, like any export of
+  contacts.
+
+The same rows are in the API and in MCP; see
+[Use the API](../guides/use-the-api.md#read-an-automations-results).
 
 ## Good to know
 

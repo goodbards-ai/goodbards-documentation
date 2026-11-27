@@ -60,6 +60,7 @@ nav:
       - Emails & Forms:
           - pages/emails/index.md
           - Emails: pages/marketing/emails.md
+          - A/B testing: pages/marketing/ab-testing.md
           - Email designs: pages/marketing/email-designs.md
           - Forms: pages/marketing/forms.md
       - Events:

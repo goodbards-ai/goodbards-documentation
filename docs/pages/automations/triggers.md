@@ -11,8 +11,9 @@ your own hand-picked list.
 ## How to choose a trigger
 
 1. In the designer, select the **Trigger** card at the top.
-2. Under **Starts when**, choose one of the six triggers below.
-3. Fill in what it asks for: the form, the tag, the segment, the schedule.
+2. Under **Starts when**, choose one of the seven triggers below.
+3. Fill in what it asks for: the form, the tag, the link, the segment, the
+   schedule.
 
 The trigger card then names what starts the flow, with an icon per trigger.
 
@@ -88,6 +89,27 @@ Tags are the easiest way to connect a flow to the rest of your tools.
 [Tutorial 7](samples.md#7-ai-lead-qualification),
 [Tutorial 8](samples.md#8-trial-with-a-stop-rule).*
 
+## Link clicked
+
+A contact who clicks a link in an email enrols about a minute later, whichever
+flow or campaign sent them that email.
+
+- **Email:** one email, or **Any email**.
+- **Link:** one named link of that email (for example the *kit* button), or
+  **Any link**. Links are named in the email editor: see
+  [Naming a link](../marketing/emails.md#naming-a-link-and-tagging-on-click).
+  With **Any email**, the list offers the names used in all your emails, so
+  "any *kit* link" works too.
+
+Only people count. A click by a link scanner, by Apple Mail opening the email
+on its own, or by a suspected bot starts nothing. That's why a click waits
+about 30 seconds before it counts: long enough to tell a scanner's burst from
+a real click.
+
+*Example:* the A2 email's kit button is named *kit*. A flow starting on
+**Link clicked**, A2, *kit*, sends the buying sequence to everyone who
+clicked it, from the quiz flow or from a campaign.
+
 ## Segment (daily)
 
 Every day at 03:00 UTC, members of the segment who are not in the flow yet
@@ -113,10 +135,10 @@ Combine it with **Re-entry: after a cooldown** in
 
 ## Several ways in
 
-A flow that starts on a **form**, a **tag** or a **new contact** can have up
-to five more ways in. In the trigger panel, under **Also starts when**, choose
-**Add another way in** and pick a form, a tag or new contacts. A contact
-enters when any of them happens.
+A flow that starts on a **form**, a **tag**, a **new contact** or a **link
+click** can have up to five more ways in. In the trigger panel, under **Also
+starts when**, choose **Add another way in** and pick a form, a tag, new
+contacts or a link. A contact enters when any of them happens.
 
 For example, an enquiry flow can start when the enquiry form is submitted *and*
 when the website chatbot captures a lead (it tags every lead `chatbot`).
