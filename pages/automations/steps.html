@@ -1976,6 +1976,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Send email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transactional-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactional email
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2370,6 +2387,8 @@
       
         
       
+        
+      
     
     
     
@@ -2442,6 +2461,34 @@
     
   
     Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/ab-testing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A/B testing
   
 
     
@@ -5348,6 +5395,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Send email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#transactional-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transactional email
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5530,6 +5594,35 @@ with the contact's details filled in, tracking and the unsubscribe link.</p>
 <li><strong>Email limit:</strong> a contact who already had the workspace's maximum of
   marketing emails waits on this step until there is room again. See
   <a href="settings.html#email-limit-per-contact">Email limit per contact</a>.</li>
+<li><strong>Who gets it:</strong> only <strong>Subscribed</strong> contacts. A contact with another status
+  leaves the flow here, unless the email is transactional (below).</li>
+</ul>
+<h3 id="transactional-email">Transactional email<a class="headerlink" href="#transactional-email" title="Permanent link">¶</a></h3>
+<p>For an email the person asked for: a quiz result, a confirmation, a download
+link. Switch on <strong>Transactional email</strong> in the Send email panel. The card then
+shows a <strong>Transactional</strong> tag.</p>
+<p>A transactional email:</p>
+<ul>
+<li>goes out <strong>at once</strong>, whatever the flow's <a href="settings.html#sending-hours">sending hours</a>;</li>
+<li>is <strong>never held</strong> by the <a href="settings.html#email-limit-per-contact">email limit</a>,
+  but still counts toward it;</li>
+<li>also reaches <strong>Regular</strong> contacts (no marketing consent);</li>
+<li>never reaches <strong>Unsubscribed</strong>, <strong>Bounced</strong> or <strong>Do not contact</strong> contacts;</li>
+<li>keeps tracking and the unsubscribe link.</li>
+</ul>
+<p>A Regular contact stays in the flow for its transactional emails. Tags, notes
+and field updates keep running. The contact leaves the flow at the first
+marketing email: "the result, and nothing after it".</p>
+<ul>
+<li><strong>Admins only.</strong> Only a workspace admin can switch it on, or change the email
+  of a transactional step. Other users see the switch greyed out; they can
+  still edit the rest of the flow, or switch it off.</li>
+<li><strong>Use it only for what the person requested.</strong> Mailing contacts without
+  consent is allowed for an email they asked for, not for promotion (PDPA). A
+  newsletter or an offer is never transactional.</li>
+<li><strong>Reports keep them apart.</strong> The flow's <a href="results.html#the-report-tab">Report tab</a>
+  counts transactional and marketing emails separately. The contact's history
+  tags each transactional email.</li>
 </ul>
 <h2 id="wait">Wait<a class="headerlink" href="#wait" title="Permanent link">¶</a></h2>
 <p>Pauses for a number of minutes, hours or days (from one minute to 365 days).</p>
@@ -5537,6 +5630,9 @@ with the contact's details filled in, tracking and the unsubscribe link.</p>
 <h2 id="wait-for-open-click">Wait for open / click<a class="headerlink" href="#wait-for-open-click" title="Permanent link">¶</a></h2>
 <p>Holds the contact until they open (or click) an email sent earlier in this
 flow, or until <strong>At most</strong> passes, whichever comes first.</p>
+<p>For a click, <strong>Link</strong> can name one link of the email: the wait then ends only
+when that link is clicked, for example the <em>kit</em> button and not the footer.
+See <a href="../marketing/emails.html#naming-a-link-and-tagging-on-click">Naming a link</a>.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-wait-for-event.png" data-desc-position="bottom"><img alt="The Wait for open / click panel: Wait until clicked, on the email sent by Tutorial · Getting started, at most 3 days" src="../../img/screenshots/automations/panel-wait-for-event.png" width="30%"></a></p>
 <p>Follow it with a <a href="branches.html#yes-no-branch">Yes / No branch</a> on <strong>Opened or
 clicked an email</strong> to treat the two groups differently.</p>
@@ -5651,7 +5747,7 @@ every card.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-24
+    2026-11-27
   </span>
 
     

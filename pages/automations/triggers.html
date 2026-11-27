@@ -2001,6 +2001,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#link-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link clicked
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#segment-daily" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2332,6 +2343,8 @@
       
         
       
+        
+      
     
     
     
@@ -2404,6 +2417,34 @@
     
   
     Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/ab-testing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A/B testing
   
 
     
@@ -5363,6 +5404,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#link-clicked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Link clicked
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#segment-daily" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5432,8 +5484,9 @@ your own hand-picked list.</p>
 <h2 id="how-to-choose-a-trigger">How to choose a trigger<a class="headerlink" href="#how-to-choose-a-trigger" title="Permanent link">¶</a></h2>
 <ol>
 <li>In the designer, select the <strong>Trigger</strong> card at the top.</li>
-<li>Under <strong>Starts when</strong>, choose one of the six triggers below.</li>
-<li>Fill in what it asks for: the form, the tag, the segment, the schedule.</li>
+<li>Under <strong>Starts when</strong>, choose one of the seven triggers below.</li>
+<li>Fill in what it asks for: the form, the tag, the link, the segment, the
+   schedule.</li>
 </ol>
 <p>The trigger card then names what starts the flow, with an icon per trigger.</p>
 <div class="admonition note">
@@ -5495,6 +5548,24 @@ contacts before you activated the flow never start it.</p>
 <em>Samples: <a href="samples.html#3-route-by-interest">Tutorial 3</a>,
 <a href="samples.html#7-ai-lead-qualification">Tutorial 7</a>,
 <a href="samples.html#8-trial-with-a-stop-rule">Tutorial 8</a>.</em></p>
+<h2 id="link-clicked">Link clicked<a class="headerlink" href="#link-clicked" title="Permanent link">¶</a></h2>
+<p>A contact who clicks a link in an email enrols about a minute later, whichever
+flow or campaign sent them that email.</p>
+<ul>
+<li><strong>Email:</strong> one email, or <strong>Any email</strong>.</li>
+<li><strong>Link:</strong> one named link of that email (for example the <em>kit</em> button), or
+  <strong>Any link</strong>. Links are named in the email editor: see
+  <a href="../marketing/emails.html#naming-a-link-and-tagging-on-click">Naming a link</a>.
+  With <strong>Any email</strong>, the list offers the names used in all your emails, so
+  "any <em>kit</em> link" works too.</li>
+</ul>
+<p>Only people count. A click by a link scanner, by Apple Mail opening the email
+on its own, or by a suspected bot starts nothing. That's why a click waits
+about 30 seconds before it counts: long enough to tell a scanner's burst from
+a real click.</p>
+<p><em>Example:</em> the A2 email's kit button is named <em>kit</em>. A flow starting on
+<strong>Link clicked</strong>, A2, <em>kit</em>, sends the buying sequence to everyone who
+clicked it, from the quiz flow or from a campaign.</p>
 <h2 id="segment-daily">Segment (daily)<a class="headerlink" href="#segment-daily" title="Permanent link">¶</a></h2>
 <p>Every day at 03:00 UTC, members of the segment who are not in the flow yet
 enrol.</p>
@@ -5511,10 +5582,10 @@ choose.</p>
 <a href="settings.html">Flow settings</a>, or each contact only runs once. <em>Sample:
 <a href="samples.html#5-monthly-check-in">Tutorial 5 · Monthly check-in</a>.</em></p>
 <h2 id="several-ways-in">Several ways in<a class="headerlink" href="#several-ways-in" title="Permanent link">¶</a></h2>
-<p>A flow that starts on a <strong>form</strong>, a <strong>tag</strong> or a <strong>new contact</strong> can have up
-to five more ways in. In the trigger panel, under <strong>Also starts when</strong>, choose
-<strong>Add another way in</strong> and pick a form, a tag or new contacts. A contact
-enters when any of them happens.</p>
+<p>A flow that starts on a <strong>form</strong>, a <strong>tag</strong>, a <strong>new contact</strong> or a <strong>link
+click</strong> can have up to five more ways in. In the trigger panel, under <strong>Also
+starts when</strong>, choose <strong>Add another way in</strong> and pick a form, a tag, new
+contacts or a link. A contact enters when any of them happens.</p>
 <p>For example, an enquiry flow can start when the enquiry form is submitted <em>and</em>
 when the website chatbot captures a lead (it tags every lead <code>chatbot</code>).</p>
 <ul>
@@ -5558,7 +5629,7 @@ when the website chatbot captures a lead (it tags every lead <code>chatbot</code
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-24
+    2026-11-27
   </span>
 
     

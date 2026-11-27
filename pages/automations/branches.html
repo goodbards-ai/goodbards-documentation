@@ -2007,6 +2007,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#random-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random split
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ai-decides" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2282,6 +2293,8 @@
       
         
       
+        
+      
     
     
     
@@ -2354,6 +2367,34 @@
     
   
     Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/ab-testing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A/B testing
   
 
     
@@ -5263,6 +5304,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#random-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Random split
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ai-decides" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5350,6 +5402,10 @@ below</strong>, so the steps after the branch run for everyone, unless a lane en
 <td><strong>Routing</strong></td>
 </tr>
 <tr>
+<td>To compare two paths on a random share, for example 50/50</td>
+<td><strong>Random split</strong></td>
+</tr>
+<tr>
 <td>The AI to judge, for example hot / warm / cold</td>
 <td><strong>AI decides</strong></td>
 </tr>
@@ -5385,6 +5441,48 @@ arrows: order matters when a contact could match two rules.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-routing-rule-field.png" data-desc-position="bottom"><img alt="Rule 1 of a routing: lane Retail, condition Field value, field industry, equal to Retail" src="../../img/screenshots/automations/panel-routing-rule-field.png" width="30%"></a>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/panel-routing-rule-tags.png" data-desc-position="bottom"><img alt="Rule 3 of a routing: lane Key accounts, condition Has tag, tags vip and key-account, match any of them" src="../../img/screenshots/automations/panel-routing-rule-tags.png" width="30%"></a></p>
 <p><em>Sample: <a href="samples.html#3-route-by-interest">Tutorial 3 · Route by interest</a>.</em></p>
+<h2 id="random-split">Random split<a class="headerlink" href="#random-split" title="Permanent link">¶</a></h2>
+<p>Share the contacts at random between 2 to 4 lanes, to compare two paths: a
+designed email against a plain one, a discount against free shipping, a 2-day
+wait against a 5-day one.</p>
+<ol>
+<li>Drag <strong>Random split</strong> from the palette onto the canvas. It starts with two
+   lanes, <strong>A · 50%</strong> and <strong>B · 50%</strong>.</li>
+<li>In the panel, give each lane a name and a <strong>share</strong>. Each share is at least
+   5% and the shares add up to 100%; <strong>Even split</strong> fills in 50/50, 34/33/33
+   or 25 each. <strong>Add a lane</strong> goes up to four.</li>
+<li>Each lane starts with an <strong>Add tag</strong> step, <code>split: A</code> and <code>split: B</code>, so you
+   can find the contacts of a lane later, in a segment or a report. Rename the
+   tag (for example <code>ab: w0-design</code>) or delete the step.</li>
+<li>Put the steps you want to compare in each lane, for example a different
+   email.</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/split-designer.png" data-desc-position="bottom"><img alt="A Random split on the canvas, Split 50 / 50, with lanes A · 50% and B · 50% each starting with an Add tag step; the panel shows the lane names, the shares, Add a lane and Even split" src="../../img/screenshots/automations/split-designer.png"></a></p>
+<p>Good to know:</p>
+<ul>
+<li><strong>The draw is random, but it sticks.</strong> A contact keeps their lane: a retry,
+  or entering the flow again, lands them in the same one.</li>
+<li><strong>Shares are close, not exact, on small numbers.</strong> With 1,000 contacts a
+  50/50 split lands between 45% and 55% per lane; with 20 contacts it can be
+  13 and 7.</li>
+<li><strong>Two splits in one flow draw separately.</strong> Being in lane A of the first says
+  nothing about the second.</li>
+<li><strong>Nothing is picked for you.</strong> The split never moves contacts to the better
+  lane; you read the result and decide.</li>
+</ul>
+<p><strong>Reading the result:</strong> on the flow's <strong>Report</strong> tab (see
+<a href="results.html">Results and analytics</a>), each split has its own table: per lane, the contacts, how many were emailed, opened and clicked (real
+people only, a contact counted once), and a line per measure:</p>
+<ul>
+<li><em>"Clicks: A is ahead (15% against 7.5% for B), 95% sure"</em>: the gap is too
+  large to be luck;</li>
+<li><em>"… but it is too close to call"</em>: the gap could be luck, wait for more
+  contacts;</li>
+<li>with fewer than 100 contacts emailed, a note says to treat it as a hint.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/screenshots/automations/split-report.png" data-desc-position="bottom"><img alt="The split on the Report tab: lanes A and B with contacts, emailed, opened, clicked and bounced, and the lines &quot;Clicks: A is ahead … 95% sure&quot; and &quot;Opens: … too close to call&quot;" src="../../img/screenshots/automations/split-report.png"></a></p>
+<p>A lane needs an email step for its figures; a split with fewer than two such
+lanes shows contacts only.</p>
 <h2 id="ai-decides">AI decides<a class="headerlink" href="#ai-decides" title="Permanent link">¶</a></h2>
 <p>The AI answers one question about the contact and picks a lane. See
 <a href="ai-steps.html#ai-decides">AI and human steps</a>.</p>
@@ -5417,7 +5515,7 @@ rules</a>:</p>
 </tr>
 <tr>
 <td><strong>Opened or clicked an email</strong></td>
-<td>The contact opened (or clicked) an email sent earlier in this flow.</td>
+<td>The contact opened (or clicked) an email sent earlier in this flow. With <strong>Clicked</strong> ticked, <strong>Link</strong> narrows it to one named link: "clicked the <em>kit</em> button" rather than any link. See <a href="../marketing/emails.html#naming-a-link-and-tagging-on-click">Naming a link</a>.</td>
 </tr>
 <tr>
 <td><strong>Outcome of a task</strong></td>
@@ -5494,7 +5592,7 @@ contact's second survey would still show the first score.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-24
+    2026-11-27
   </span>
 
     

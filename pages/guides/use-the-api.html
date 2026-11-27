@@ -1371,6 +1371,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#read-an-automations-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read an automation's results
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2327,6 +2338,8 @@
       
         
       
+        
+      
     
     
     
@@ -2396,6 +2409,34 @@
     
   
     Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/ab-testing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A/B testing
   
 
     
@@ -5351,6 +5392,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#read-an-automations-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read an automation's results
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5550,8 +5602,49 @@ your changes.</p>
 <td><code>POST /v1/{tenant-id}/campaigns/{campaign-id}/analytics/reports</code></td>
 <td>Starts a new report. It answers <code>202</code> at once; read it a little later.</td>
 </tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/emails/{email-id}/analytics</code></td>
+<td>One email's totals: sent, delivered, opened, clicked, unsubscribed, bounced, spam complaints, and the rates. Opens and clicks count real people; add <code>?traffic=all</code> to include machines.</td>
+</tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/emails/{email-id}/recipients-status</code></td>
+<td>One row per recipient: when it was sent, delivered, opened and clicked (real people), opened and clicked by machines, bounced, unsubscribed, spam complaint. <code>/export</code> gives the CSV.</td>
+</tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/campaigns/{campaign-id}/tactics/{tactic-id}/ab-test</code></td>
+<td>An email tactic's <a href="../marketing/ab-testing.html">A/B test</a>: settings, state, each version's figures, the verdict and the hourly series.</td>
+</tr>
 </tbody>
 </table>
+<h3 id="read-an-automations-results">Read an automation's results<a class="headerlink" href="#read-an-automations-results" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Call</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /v1/{tenant-id}/marketing/automation/flows</code></td>
+<td>Lists your automation flows (find the id).</td>
+</tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/report</code></td>
+<td>The flow's report: contacts per status, then per step how many reached it; for an email step sent, delivered, opened and clicked by real people, opened and clicked by machines, bounced, unsubscribed and spam complaints; per <a href="../automations/branches.html#random-split">random split</a> the lanes compared.</td>
+</tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/recipients?page=0&amp;size=50</code></td>
+<td>One row per contact and email step: sent, delivered, opened, machine opened, clicked, machine clicked, bounced, unsubscribed, spam complaint, and the split lane. Add <code>stepId=</code> for one email. Times in UTC.</td>
+</tr>
+<tr>
+<td><code>GET /v1/{tenant-id}/marketing/automation/flows/{flow-id}/recipients/export</code></td>
+<td>The same rows as a CSV, times in your workspace's timezone.</td>
+</tr>
+</tbody>
+</table>
+<p>For a weekly file by email instead, set up a scheduled task
+<a href="../tool-box/scheduler.html#email-a-report">Email a report</a>.</p>
 <h2 id="4-errors">4. Errors<a class="headerlink" href="#4-errors" title="Permanent link">¶</a></h2>
 <p>Errors come back with an HTTP status and a JSON body:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
@@ -5625,7 +5718,7 @@ key fail with <code>401</code> straight away.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-24
+    2026-11-27
   </span>
 
     

@@ -2145,6 +2145,8 @@
       
         
       
+        
+      
     
     
     
@@ -2214,6 +2216,34 @@
     
   
     Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketing/ab-testing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A/B testing
   
 
     
@@ -4015,6 +4045,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#email-a-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email a report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#good-to-know" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5218,6 +5259,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#email-a-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Email a report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#good-to-know" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5291,6 +5343,10 @@ in your Content Repository.</p>
 <td><strong>Drive sync</strong></td>
 <td>Keeps a Google Drive folder in sync with your Content Repository.</td>
 </tr>
+<tr>
+<td><strong>Email a report</strong></td>
+<td>Emails the results of chosen campaigns and automation flows, with a CSV attached. See <a href="#email-a-report">Email a report</a>.</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -5309,6 +5365,34 @@ its past runs, and <strong>Edit</strong> or <strong>Delete</strong> change or re
 <p class="admonition-title">Deleting a task also deletes its history</p>
 <p>The task and its run history are removed, and this cannot be undone. To
 pause a task instead, turn off <strong>Enabled</strong>.</p>
+</div>
+<h2 id="email-a-report">Email a report<a class="headerlink" href="#email-a-report" title="Permanent link">¶</a></h2>
+<p>A weekly results email, for you, your team or a client, with every figure in an
+attached CSV: for example every Monday at 08:00.</p>
+<ol>
+<li>Create a task of type <strong>Email a report</strong>.</li>
+<li>Under <strong>Details</strong>, tick the <strong>Campaigns</strong> and <strong>Automation flows</strong> to report
+   on (up to 30), and choose <strong>Emails to include</strong>:<ul>
+<li><strong>Sent in the last 7 days</strong>: the emails sent in the week before the run,
+  with what their recipients did since;</li>
+<li><strong>Every email, figures to date</strong>: every email of the campaigns and flows.</li>
+</ul>
+</li>
+<li>Under <strong>Send the report to</strong>, pick members of your workspace, and add up to
+   5 addresses outside it (a client's manager, for example).</li>
+<li>Set the <strong>Schedule</strong>, for example <strong>Weekly</strong>, <strong>Monday</strong>, <strong>08:00</strong>, your
+   timezone.</li>
+</ol>
+<p>The email shows a short table of the emails; the attached CSV has one row per
+email: the campaign or flow, the tactic or step, the split lane, the email, when
+it was first sent, then sent, delivered, opened and clicked by real people (with
+rates), opened and clicked by machines, unsubscribed, spam complaints and
+bounced. An <a href="../marketing/ab-testing.html">A/B test</a> gives one row per version.</p>
+<div class="admonition info">
+<p class="admonition-title">Totals only</p>
+<p>The report never lists contacts: it can be forwarded without sharing anyone's
+personal data. To see who opened or clicked, use the email's or the flow's
+<strong>Recipients</strong>, or the API.</p>
 </div>
 <h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <div class="admonition info">
@@ -5345,7 +5429,7 @@ content; it can prepare them for you.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    2026-11-24
+    2026-11-27
   </span>
 
     
